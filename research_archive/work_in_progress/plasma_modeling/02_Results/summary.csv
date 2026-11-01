@@ -1,0 +1,18 @@
+case,group,n,nx,pressure_x,physics,gamma_per_tau_A,gamma_per_s,tau_A_us,converged,t_end_tau_A,peak_psi_n,peak_side,note
+bench,05_Benchmark_cbm18,15,68,,S1e8,0.25635,694045.8,0.3694,True,40.0,,outboard,BOUT++ elm-pb benchmark (README: 0.275 from an older code version)
+tomahawk_n15,a_first_runs,15,68,1,S1e8,0.04845,74786.3,0.6478,True,60.0,0.74,inboard,"first run, 60 tau_A"
+t_nx132_S1e8_n15,a_first_runs,15,132,1,S1e8,0.03523,54377.3,0.6478,True,60.0,0.716,inboard,
+t_nx68_spitzer_n15,a_first_runs,15,68,1,spitzer,0.03155,48703.2,0.6478,False,60.0,0.74,inboard,"60 tau_A, not long enough"
+diag_nx132_n15_nojpar0,b_diagnostics,15,132,1,"S1e8, no J0 drive",0.05941,91712.5,0.6478,True,200.0,0.798,inboard,
+diag_nx132_n15_nocurv,b_diagnostics,15,132,1,"S1e8, no curvature drive",0.00284,4389.4,0.6478,True,200.0,0.716,inboard,
+diag_nx132_n15_ideal,b_diagnostics,15,132,1,ideal (no resistivity),0.0714,110218.7,0.6478,False,200.0,0.991,edge (last closed surface),"edge-localised, not converged"
+diag_nx132_n15_p6,c_pressure_margin,15,132,6,S1e8,0.55204,852140.5,0.6478,True,100.0,0.858,outboard,
+margin_nx132_n15_p1.5,c_pressure_margin,15,132,1.5,S1e8,0.07454,115055.0,0.6478,True,120.0,0.78,inboard,
+margin_nx132_n15_p2,c_pressure_margin,15,132,2.0,S1e8,0.0913,140935.6,0.6478,True,120.0,0.78,inboard,
+margin_nx132_n15_p3,c_pressure_margin,15,132,3.0,S1e8,0.27378,422611.3,0.6478,True,120.0,0.876,outboard,
+margin_nx132_n15_p4,c_pressure_margin,15,132,4.0,S1e8,0.3836,592137.1,0.6478,True,120.0,0.867,outboard,
+nscan_nx132_spitzer_n5,d_n_scan_design_pressure,5,132,1,spitzer,0.04484,69210.8,0.6478,False,200.0,0.991,edge (last closed surface),
+nscan_nx132_spitzer_n10,d_n_scan_design_pressure,10,132,1,spitzer,0.05778,89186.7,0.6478,False,200.0,0.991,edge (last closed surface),
+nscan_nx132_spitzer_n15,d_n_scan_design_pressure,15,132,1,spitzer,0.06048,93361.7,0.6478,True,200.0,0.991,edge (last closed surface),
+nscan_nx132_spitzer_n20,d_n_scan_design_pressure,20,132,1,spitzer,0.06043,93280.6,0.6478,True,200.0,0.991,edge (last closed surface),
+nscan_nx132_spitzer_n30,d_n_scan_design_pressure,30,132,1,spitzer,0.09413,145295.4,0.6478,True,200.0,0.908,inboard,
