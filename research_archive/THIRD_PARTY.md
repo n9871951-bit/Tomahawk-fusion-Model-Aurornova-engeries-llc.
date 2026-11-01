@@ -15,6 +15,3 @@ One explicit existing license file was identified in the indexed original packag
 That notice is preserved inside the original archive. The license-file scan is an
 inventory aid, not a claim that every embedded component has been independently
 audited. Existing credits, source references and notices are preserved in all originals.
-
-The MIT / CC BY 4.0 / CERN-OHL-P-2.0 allocation applies to the investigator's own
-material. It does not replace existing terms for outside software or data.

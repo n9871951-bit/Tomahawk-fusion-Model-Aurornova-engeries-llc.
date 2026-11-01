@@ -18,6 +18,6 @@ Keep historical iterations distinct from the current 16 T geometry. A recorded n
 
 `Tomahawk_Full_Model.FCStd` and `Tomahawk_FreeCAD_All_Components.zip` are preserved separately in the source collection. Those native CAD files and larger solver packages are not part of this source-code commit. The current assembly's recorded SHA-256 is `2baa050fedaadd737369680b16d4b1edd31847f22be5ee01da8002895342735b`. Earlier CAD scripts and geometry tables in G1 remain useful for reconstruction, but their placements must be reconciled with the current assembly.
 
-## License and external dependencies
+## Authorship and references
 
-See `LICENSE` for the allocation of permissive terms to original software, research material, and hardware design files. Existing third-party notices remain applicable. No chat exports, marketing/solicitation material, or personal preservation inventories are included in this source tree.
+Original Tomahawk reactor research, design and modeling are attributed to Nicole Marie Bryant, AuroraNova Engeries LLC. Previously published software, data and literature retain their specific citations and applicable notices. See [COPYRIGHT.md](../COPYRIGHT.md). No chat exports, marketing/solicitation material, or personal preservation inventories are included in this source tree.
