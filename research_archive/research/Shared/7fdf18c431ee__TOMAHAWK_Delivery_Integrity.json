@@ -1,0 +1,16 @@
+{
+  "all_checks_passed": true,
+  "files": [
+    {
+      "name": "TOMAHAWK_G3_FIXED_PACKAGE.zip",
+      "sha256": "4a13fc9ce303da679564d5d0a35dc68f2b75b6ac51b6aa42dd7e1c16a6103377",
+      "size_bytes": 19238611
+    },
+    {
+      "name": "TOMAHAWK_Verified_Quick_Run.ipynb",
+      "sha256": "9d8114b67ae1279a4fd5ad087c5f996bba327580a1f9fec0a2d0a3ebd507d56d",
+      "size_bytes": 375913
+    }
+  ],
+  "standalone_notebook_elapsed_seconds": 17.21
+}

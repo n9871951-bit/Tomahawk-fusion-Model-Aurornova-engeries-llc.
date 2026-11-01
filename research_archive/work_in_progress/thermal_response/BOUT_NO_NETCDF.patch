@@ -1,0 +1,13 @@
+diff --git a/src/sys/options/options_netcdf.hxx b/src/sys/options/options_netcdf.hxx
+index 09a2da3..06deef7 100644
+--- a/src/sys/options/options_netcdf.hxx
++++ b/src/sys/options/options_netcdf.hxx
+@@ -12,7 +12,7 @@
+ #if !BOUT_HAS_NETCDF || BOUT_HAS_LEGACY_NETCDF
+ 
+ namespace {
+-RegisterUnavailableOptionsIO
++bout::RegisterUnavailableOptionsIO
+     registerunavailableoptionsnetcdf("netcdf", "BOUT++ was not configured with NetCDF");
+ }
+ 

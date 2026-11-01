@@ -1,0 +1,49 @@
+{
+  "interface_id": "TOMAHAWK_DD_TO_T1_TRC_PRODUCT_INTERFACE_REV1",
+  "status": "UNFILLED_INTERFACE_CONTRACT",
+  "source_component": "T1_TRC_Validation_Package_Rev4_v3",
+  "source_method": "native_waveform_resonant_rectification",
+  "design_role": "Recover validated charged-product energy after field-guided exhaust while enforcing a declared He-3 residence-time target.",
+  "product_control_target": {
+    "temperature_keV": 30.0,
+    "density_multiplier": 10.0,
+    "he3_burn_fraction_max": 0.01,
+    "tau_He3_max_s": 0.9401738480948874,
+    "B0_screen_target_for_beta_0.05_T": 19.557874137652902,
+    "status": "REDUCED_ORDER_TARGET_REQUIRES_FIELD_AND_EXHAUST_VALIDATION"
+  },
+  "product_side_inputs": {
+    "charged_product_capture_fraction": null,
+    "product_to_waveform_fraction": null,
+    "he3_exhaust_capture_fraction": null,
+    "he3_exhaust_time_s": null,
+    "collector_return_fraction": null,
+    "collector_temperature_limit_C": null,
+    "collector_fault_trip_latency_s": null
+  },
+  "native_conversion_inputs": {
+    "reflected_fraction": null,
+    "rectifier_efficiency": null,
+    "dab_efficiency": null,
+    "inverter_efficiency": null,
+    "rf_drive_W": null,
+    "trc_aux_W": null,
+    "grid_aux_W": null,
+    "calibrated_terminal_waveforms": null,
+    "mode_map": null,
+    "lock_thresholds": null
+  },
+  "ledger": {
+    "P_RF_incident": "P_charged * charged_product_capture_fraction * product_to_waveform_fraction",
+    "P_grid_gross": "(P_RF_incident - P_RF_reflected) * eta_rectifier * eta_DAB * eta_inverter",
+    "P_net": "P_grid_gross - P_RF_drive - P_TRC_aux - P_grid_aux",
+    "neutron_path": "separate shielding and thermal handling; not converted by this RF-native path"
+  },
+  "acceptance_gates": [
+    "He-3 residence time is at or below tau_He3_max_s for the selected state.",
+    "Product-side collection does not return an uncontrolled fraction to the plasma.",
+    "Outward terminal power is measured with calibrated V/I and reflected power.",
+    "Native conversion stages and auxiliary loads close a positive net-power ledger.",
+    "Arc, overcurrent, overtemperature, loss-of-lock, and collector faults detune/block extraction."
+  ]
+}

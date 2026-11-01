@@ -1,0 +1,17 @@
+{
+  "equilibrium_sha256": "8e6b295e4f8dbfe7450975774c580ea9d784483d2afef3ef4de186b121f283f8",
+  "equilibrium_name": "N9A2_axisymmetric_enlarged_TF.h5",
+  "profiles_pressure_match_max_relative": 4.733419381402786e-13,
+  "thermal_pressure_from_species_max_relative_difference": 3.871468761097715e-07,
+  "radial_nodes": 48,
+  "volume_m3": 1055.9337350557648,
+  "geometry_quadrature": "DESC 0.17.3 V_r(r), 48 Gauss-Legendre rho nodes, 65 poloidal nodes, one toroidal plane for the supplied axisymmetric N9A2 state. Additional toroidal/poloidal quadrature convergence checks have not been performed in this work.",
+  "files": {
+    "H2_results.json": "9a3b7e45df75503c3ba329fe132d01e2b08ae70d9b3abcb84b1360d51663c5ac",
+    "bosch_hale_uw_table6.csv": "a4b123b108ba47eafeaf4151105f6008dbbc9493480983af4f255ca6eb84d202",
+    "radial_profile.csv": "e3ff36e5dbdcc43d7f1694ca43e65879f38652dc3670a3b0d5d8cbb26030bd08",
+    "Tomahawk_N9_Kinetic_Profile_Screen.xlsx": "d509150d6f1e513bc3f39f11e35c9710004374237059665be52199c91bf2416f",
+    "settings.json": "917cc06212e9d3285e5227ab397a2a6b6c19f61311002b4794207838c891f3ee",
+    "N9A2_axisymmetric_enlarged_TF.h5": "8e6b295e4f8dbfe7450975774c580ea9d784483d2afef3ef4de186b121f283f8"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": "TOMAHAWK-TF48-MESH-FIELD-1.0",
+  "generated_utc": "2026-09-14T00:45:21Z",
+  "status": "SUPPLIED_TF48_FIELD_MAPPED_WITHOUT_AMPLITUDE_RESCALING",
+  "case": "supplied-14T",
+  "tf_coil_count": 48,
+  "supplied_geometric_axis_checkpoint_T": 14.0,
+  "tf_amplitude_scale": 1.0,
+  "pf_field_included": true,
+  "node_count": 307200,
+  "coordinate_unit": "metre",
+  "field_unit": "tesla",
+  "array_order_contract": "all arrays align row-for-row with node_id",
+  "mesh": {
+    "path": "/workspace/scratch/dddf4d4ab346/tomahawk_ods_conformal_mesh_v1/generated/Tomahawk_ODS_Pb17Li_conformal_full_torus.msh",
+    "sha256": "7fb35bbd5c5325cf457afe936644814fc3e4157793c6435554baf0880d75760d"
+  },
+  "tf_mgrid": {
+    "label": "TF48",
+    "path": "/workspace/scratch/dddf4d4ab346/upload/mgrid_tomahawk_tf48_FULL.nc",
+    "sha256": "9e4d6ccf6944943ee517117b47113edac40837b486c50b27c4f7f1c0b50e1fc3",
+    "ir": 201,
+    "jz": 201,
+    "kp": 36,
+    "nfp": 1,
+    "nextcur": 1,
+    "rmin_m": 4.0,
+    "rmax_m": 11.0,
+    "zmin_m": -2.6,
+    "zmax_m": 2.6,
+    "mode": "S",
+    "extcur_path": "/workspace/scratch/dddf4d4ab346/magnetic_behavior_test/input/extcur.tomahawk_tf48",
+    "extcur_sha256": "69fb7cc6d73bee12aba1524b79f89f04afae866800cea56236fe1fc38c65ed6b",
+    "extcur_max_delta_A": 3.0995579436421394e-08,
+    "groups": [
+      {
+        "index": 1,
+        "label": "T",
+        "current_A": -109374.999994731
+      }
+    ]
+  },
+  "pf_mgrid": {
+    "label": "PF",
+    "path": "/workspace/scratch/dddf4d4ab346/upload/mgrid_tomahawk_pf.nc",
+    "sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+    "ir": 201,
+    "jz": 201,
+    "kp": 36,
+    "nfp": 1,
+    "nextcur": 6,
+    "rmin_m": 4.0,
+    "rmax_m": 11.0,
+    "zmin_m": -3.5,
+    "zmax_m": 3.5,
+    "mode": "S",
+    "extcur_path": "/workspace/scratch/dddf4d4ab346/upload/extcur.tomahawk_pf",
+    "extcur_sha256": "1db04e2d69d5e7b8ec31ee1fa3d0cd0547a3414c7614b6e574dc38eeb62bbb27",
+    "extcur_max_delta_A": 0.0,
+    "groups": [
+      {
+        "index": 1,
+        "label": "PF_L_IN",
+        "current_A": 19123.4976703
+      },
+      {
+        "index": 2,
+        "label": "PF_L_OUT",
+        "current_A": 19904.2740987
+      },
+      {
+        "index": 3,
+        "label": "PF_M_IN",
+        "current_A": -19395.6036404
+      },
+      {
+        "index": 4,
+        "label": "PF_M_OUT",
+        "current_A": 19304.7552541
+      },
+      {
+        "index": 5,
+        "label": "PF_U_IN",
+        "current_A": 19123.4976703
+      },
+      {
+        "index": 6,
+        "label": "PF_U_OUT",
+        "current_A": 19904.2740987
+      }
+    ]
+  },
+  "mapped_magnitude_statistics": {
+    "minimum_T": 9.82755857214735,
+    "mean_T": 15.352555664201985,
+    "maximum_T": 24.0335517057612,
+    "p05_T": 9.990521541796635,
+    "p95_T": 23.5179227607515,
+    "finite": true
+  },
+  "archive": {
+    "file": "TF48_14T_supplied_mesh_node_field.npz",
+    "sha256": "17bfec74c829e06aa978f0239402277130917fe6836eac7f8bf084203298df0f",
+    "arrays": [
+      "node_id",
+      "B_r_T",
+      "B_phi_T",
+      "B_z_T",
+      "B_x_T",
+      "B_y_T",
+      "B_magnitude_T"
+    ]
+  },
+  "warnings": [
+    "The supplied TF48 MGRID has 36 toroidal planes and under-resolves 48-fold ripple.",
+    "The magnetic axis requires an equilibrium solution; the 14 T checkpoint is on the geometric axis.",
+    "No 16 T sensitivity scaling is present in this package.",
+    "MHD must use the mapped vector components, not only B magnitude."
+  ],
+  "elapsed_seconds": 3.8554162979125977
+}

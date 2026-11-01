@@ -1,0 +1,87 @@
+{
+  "scope": "MATHEMATICAL_SURFACE_REPAIR_PREPARATION",
+  "native_FreeCAD_executed": false,
+  "formal_G1_approved": false,
+  "source_sha256": "8317664cb1d897872fa73a4a73255ce7b5a4e32e2f18921a3d09f4dc066d2899",
+  "recovery": {
+    "method": "Four-parameter helical fit to retained STEP interpolation sites; 20% holdout.",
+    "original_generator_available": false,
+    "authority": "CAD_DATA_RECOVERY_NOT_EQUILIBRIUM_OR_SOLVER_AUTHORITY",
+    "retained_sites": 8001,
+    "training_sites": 6400,
+    "holdout_sites": 1601,
+    "maximum_site_residual_m": 3.6072844851720746e-11,
+    "maximum_holdout_residual_m": 3.530858700318713e-11,
+    "rms_site_residual_m": 1.0339674078593174e-11,
+    "toroidal_angle_grid_error_rad": 3.446480099142154e-12,
+    "closing_row_matches_first_row_m": 0.0,
+    "closing_column_matches_first_column_m": 0.0,
+    "closure_diagnosis": "Last indexed samples repeat the first; preceding retained sites follow 64 x 128 endpoint-excluded angular sampling. Missing last unique samples recovered from the fitted formula.",
+    "formula": {
+      "R": "R0 + a*cos(theta) + epsilon*cos(theta - 16*phi)",
+      "Z": "b*sin(theta) + epsilon*sin(theta - 16*phi)",
+      "X": "R*cos(phi)",
+      "Y": "R*sin(phi)"
+    },
+    "parameters": {
+      "R0_m": 7.499999999999888,
+      "a_m": 2.999999999999756,
+      "b_m": 2.13896943244938,
+      "epsilon_m": 0.009999999999999069,
+      "periods": 16
+    },
+    "no_volume_fitting_or_rescaling": true
+  },
+  "old_seams": {
+    "u": {
+      "position_gap_m": 0.0,
+      "normal_jump_deg": 77.03562513131841
+    },
+    "v": {
+      "position_gap_m": 0.0,
+      "normal_jump_deg": 74.730650098074
+    }
+  },
+  "repaired_seams": {
+    "u": {
+      "position_gap_m": 3.552713678800501e-15,
+      "normal_jump_deg": 4.998281349668755e-12
+    },
+    "v": {
+      "position_gap_m": 0.0,
+      "normal_jump_deg": 2.783330372700974e-12
+    }
+  },
+  "rotation_22_5_deg_max_correspondence_error_m": 1.124398888354623e-14,
+  "spline_vs_recovered_formula_max_sample_error_m": 1.3230364335756031e-06,
+  "analytic_volume_m3": 949.9999999999205,
+  "spline_quadrature_volume_m3": 949.9997523086323,
+  "quadrature_3_vs_4_relative_change": 7.749854242551422e-13,
+  "prior_step_volume_m3_reused": 949.4077767534301,
+  "volume_change_percent": 0.0623520861843474,
+  "old_to_recovered_formula_distance": {
+    "samples": 262144,
+    "maximum_m": 0.0787386708735528,
+    "rms_m": 0.005436475889297307,
+    "p99_m": 0.025684741005827225,
+    "method": "20-step analytic Gauss-Newton projection of sampled old STEP points.",
+    "limitation": "One-sided sampled displacement, not a certified bidirectional Hausdorff bound."
+  },
+  "no_changes_to_cassette_coils_ports_or_Kaggle_inputs": true,
+  "native_checks_still_required": [
+    "BREP/BOP validity",
+    "STEP roundtrip",
+    "mesh topology and self-intersections",
+    "mesh refinement",
+    "native seam-normal checks",
+    "plasma containment",
+    "interface review"
+  ],
+  "physics_not_run": [
+    "equilibrium/MHD",
+    "alpha orbits",
+    "laser coupling",
+    "neutronics",
+    "CFD/CHF"
+  ]
+}

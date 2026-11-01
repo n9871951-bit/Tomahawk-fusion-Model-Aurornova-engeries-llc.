@@ -1,0 +1,45 @@
+schema_version: "1.0"
+file_role: confinement_and_transport_closures
+units_system: SI_with_IPB98_inputs_in_documented_engineering_units
+status: empirical_screening_closure_not_a_3D_MHD_or_transport_solution
+confinement_scalings:
+  primary:
+    name: IPB98(y,2)
+    applicability: tokamak_like_H_mode_screening_only
+    equation: "tau_E_s = 0.0562*H98*I_p_MA^0.93*B_T^0.15*n_e19^0.41*P_loss_MW^-0.69*R_m^1.97*epsilon^0.58*kappa^0.78*M_eff^0.19"
+    coefficient: 0.0562
+    inputs:
+      H98: required_external_input
+      I_p_MA: required_external_input
+      B_T: 35.0
+      n_e19: volume_or_line_average_electron_density_divided_by_1e19_m^-3
+      P_loss_MW: required_power_balance_input
+      R_m: 7.5
+      epsilon: 0.4
+      kappa: required_external_input
+      M_eff: required_isotope_mass_input
+    output: tau_E_s
+  reference_values_from_existing_screen:
+    tau_E_reference_s: 1.36
+    tau_E_active_screen_target_s: 2.70
+    self_heating_ratio_reference: 1.1982
+  energy_content:
+    equation: "W_J = 1.5*integral[(n_e*T_e_J)+(n_D+n_T)*T_i_J+2*n_alpha*T_alpha_J]dV"
+    keV_to_J: 1.602176634e-16
+    note: "Use CAD cell-volume weights; do not substitute central density times CAD volume."
+  power_balance:
+    equation: "dW_dt = P_alpha_deposited + P_aux_absorbed - P_transport - P_radiated"
+    steady_state_condition: "dW_dt = 0"
+    tau_E_definition: "tau_E = W/P_loss"
+    avoid_double_counting: "Declare whether P_loss includes radiation before applying the scaling law."
+required_before_confinement_claim:
+  - volume_weighted_n_e_profile
+  - solved_or_declared_T_i_profile
+  - solved_or_declared_T_e_profile
+  - plasma_current_I_p
+  - elongation_kappa
+  - H98_factor_or_measured_transport_closure
+  - radiation_and_impurity_model
+  - alpha_ash_dilution_model
+references:
+  - "ITER Physics Basis, Chapter 2, Nuclear Fusion 39 (1999), https://scipub.euro-fusion.org/"

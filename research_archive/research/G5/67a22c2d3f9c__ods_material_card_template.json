@@ -1,0 +1,56 @@
+{
+  "schema_version": "TOMAHAWK-ODS-MATERIAL-CARD-0.1",
+  "status": "MATERIAL_CARD_UNQUALIFIED_FAIL_CLOSED",
+  "liquid_candidate": {
+    "name": "Pb-17Li",
+    "status": "SCREENING_ASSUMPTION",
+    "required_functions": [
+      "density(T)",
+      "dynamic_viscosity(T)",
+      "thermal_conductivity(T)",
+      "specific_heat(T)",
+      "electrical_conductivity(T)",
+      "vapor_pressure(T)"
+    ]
+  },
+  "structural_family": {
+    "name": "low-chromium ODS FeCrAl",
+    "status": "CANDIDATE_NOT_QUALIFIED",
+    "reference_candidate": "125YZ-like Fe-12Cr-5Al + Y2O3/ZrO2; direct static Pb-17Li compatibility evidence, but limited ductility",
+    "development_candidate": "106ZY-like Fe-10Cr-6Al-0.3Zr + approximately 0.3Y2O3; improved ductility candidate requiring full qualification",
+    "not_selected_for_direct_wetted_baseline": "14YWT-class ODS without Al, due to inferior static Pb-17Li compatibility in the cited screening studies",
+    "required_functions": [
+      "density(T)",
+      "thermal_conductivity(T, dose)",
+      "specific_heat(T)",
+      "elastic_modulus(T, dose)",
+      "Poisson_ratio(T, dose)",
+      "thermal_expansion(T, dose)",
+      "yield_strength(T, dose)",
+      "ultimate_strength(T, dose)",
+      "creep_law(T, stress, dose, He)",
+      "fatigue_curve(T, environment, dose)",
+      "swelling(DPA, T)",
+      "fracture_toughness(T, dose, He)",
+      "electrical_resistivity(T, dose)"
+    ]
+  },
+  "liquid_solid_interface": {
+    "candidate": "Al2O3 or in-situ LiAlO2-bearing barrier system",
+    "status": "BOUNDARY_MODEL_ONLY_NOT_A_RESOLVED_SOLID_LAYER",
+    "purpose": [
+      "reduce electrical coupling and MHD pressure drop",
+      "screen Pb-17Li corrosion and mass transfer"
+    ],
+    "required_inputs": [
+      "qualified coating chemistry",
+      "thickness",
+      "electrical resistivity(T, dose)",
+      "thermal contact resistance(T, pressure, dose)",
+      "Pb-17Li compatibility under flowing conditions",
+      "irradiation and thermal-cycle stability"
+    ]
+  },
+  "blocked_until_supplied": true,
+  "do_not_infer_missing_properties": true
+}

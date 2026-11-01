@@ -1,0 +1,76 @@
+{
+  "generator_version": "INPUT-DATA-GENERATOR-1.0",
+  "model_version": "CAD-A2-WHOLE-CONCEPT-1.7-MULTIPHYSICS-DOMAINS",
+  "created_utc": "2026-09-03T18:36:52Z",
+  "data_status": "PROVISIONAL_INPUTS_GENERATED_NOT_SOLVER_RESULTS",
+  "build_report_used": "/workspace/scratch/9740310843df/upload/build_report(6).json",
+  "build_report_sha256": "9f4db19d0066c87f0963e58fcdae58f2ae2058de5fdcebaf29705d78b5a70cc8",
+  "contract_values": {
+    "coolant_pressure_Pa": 7000000.0,
+    "coolant_inlet_temperature_K": 348.15,
+    "velocity_min_m_s": 3.5,
+    "velocity_max_m_s": 4.5,
+    "bulk_rise_min_K": 17.5,
+    "bulk_rise_max_K": 25.0,
+    "pressure_drop_limit_Pa": 100000.0,
+    "CuCrZr_temperature_limit_K": 573.15,
+    "minimum_DNBR": 1.3,
+    "major_radius_m": 7.5,
+    "reference_volume_m3": 950.0,
+    "central_ion_temperature_keV": 22.0,
+    "central_electron_temperature_keV": 18.0,
+    "magnetic_field_T": 35.0,
+    "rf_channels": 128,
+    "rf_channel_side_m": 0.016,
+    "rf_front_skin_m": 0.0025,
+    "rf_width_m": 1.079,
+    "rf_height_m": 2.318
+  },
+  "datasets": {
+    "MHD": {
+      "rows": 27
+    },
+    "NEUTRONICS": {
+      "rows": 35
+    },
+    "CFD": {
+      "rows": 972
+    },
+    "CHF": {
+      "rows": 1
+    }
+  },
+  "provenance": {
+    "CONTRACT": [
+      "coolant baseline and G1 geometry dimensions from Rev1.7 contract",
+      "acceptance thresholds from Tomahawk_Multiphysics_Physics_Contract.json"
+    ],
+    "PROVISIONAL": [
+      "smooth MHD screening profile using ideal two-temperature pressure closure",
+      "MHD source/coil placeholders",
+      "CFD sweep values and screening Darcy estimates",
+      "neutronics source scale scenarios"
+    ],
+    "REQUIRED": [
+      "coil currents and mgrid",
+      "equilibrium profiles and perturbation spectrum",
+      "DAGMC h5m, isotope cards, and cross-section library",
+      "CFD volume mesh and transport heat source",
+      "CHF correlation/LUT and local CFD fields"
+    ]
+  },
+  "runner_note": "This bundle does not create solver outputs. The fail-closed continuous runner must remain blocked until real executables and required files are supplied.",
+  "files": {
+    "CFD/cfd_case_manifest.json": "685164bf4544eb7d89735734baef3dbe842c53928e54ec14bfe2dfe225660a7b",
+    "CFD/cfd_cht_parameter_sweep.csv": "d89474c494ebc69446c0925cce78fc32e99b14168fb9a3bb4ac15f2bed541981",
+    "CHF/chf_input.json": "267efa7ba967b2483d891d41576833e9fe794c739c0f7628f6ff79c4e8d11760",
+    "MHD/mhd_coil_table.csv": "b915de4b22f511a9fb538069f4fb6dd979582fdf8457d5cac5101de5a58138f2",
+    "MHD/mhd_input.json": "98247950563c4fb87c074cd795a17152bd08ce7f69876994c8efc0fb65dde7ee",
+    "MHD/mhd_profile_sweep.csv": "22791f2054c690d2c8e34402cf37f3eec1d3bab02bd071918f4573c5b3caf9ea",
+    "NEUTRONICS/material_region_map.csv": "71f93d50b97141ad3421f6fcd875181e30b5847ae9d6a1abd36ade67dacf236e",
+    "NEUTRONICS/openmc_input_manifest.json": "9874b6e4f4845c7bc951050d51b25556cf38f10bc7233a0b81632b34237008f9",
+    "NEUTRONICS/source_sweep.csv": "f83773ef7ffd14f8c6e18fd347ad3e2843b8b932c2d118355fda026c46fc3a12",
+    "README.md": "7467d74fbc1dbce5526a3e06f8d759495c5aafdde6748e5ba266aded1b6e7aba",
+    "Tomahawk_Continuous_Run_Config.provisional.json": "a56c3f2d31bd13d9386cd48c33b2371c064dabf62935eb18bf2f2dcfd9d9898e"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "rows": 972,
+  "max_pressure_drop_Pa": 33300.648834036125,
+  "max_bulk_rise_K": 15.933117218662936,
+  "max_wall_temperature_K": 471.16426057424326,
+  "maximum_declared_Darcy_check_error_Pa": 375.4942659638764,
+  "min_DNBR_screening": 3.0058559004262113,
+  "minimum_DNBR_required": 1.3,
+  "secondary_heat_routing": {
+    "fractions_by_scenario": {
+      "full_incident_stress": 0.5,
+      "layer_screen": 0.0,
+      "transport_screen": 0.0
+    },
+    "provenance": "50% full-incident heat split to secondary systems as an explicit design screening assumption; no validated deposition or secondary-system capacity result",
+    "energy_balance": "incident heat = secondary routed heat + cassette-local heat",
+    "secondary_system_capacity_status": "NOT_MODELED; routed heat is reported but not qualified"
+  },
+  "gates": {
+    "hydraulic_screen_pass": true,
+    "thermal_capacity_screen_pass": true,
+    "wall_temperature_screen_pass": true,
+    "chf_correlation_screen_pass": true,
+    "chf_correlation_within_validated_range": true,
+    "water_property_model_pass": true,
+    "coolant_screen_pass": true
+  },
+  "scenario_summary": {
+    "full_incident_stress": {
+      "rows": 324,
+      "secondary_heat_removal_fraction": [
+        0.5
+      ],
+      "max_incident_heat_load_W_per_cassette": 10000000.0,
+      "max_secondary_heat_routed_W_per_cassette": 5000000.0,
+      "max_local_heat_load_W_per_cassette": 5000000.0,
+      "max_heat_balance_residual_W": 0.0,
+      "max_pressure_drop_Pa": 33300.648834036125,
+      "max_bulk_rise_K": 15.933117218662936,
+      "max_wall_temperature_K": 471.16426057424326,
+      "min_DNBR_screening": 3.0058559004262113,
+      "screen_pass": true
+    },
+    "layer_screen": {
+      "rows": 324,
+      "secondary_heat_removal_fraction": [
+        0.0
+      ],
+      "max_incident_heat_load_W_per_cassette": 1930000.0,
+      "max_secondary_heat_routed_W_per_cassette": 0.0,
+      "max_local_heat_load_W_per_cassette": 1930000.0,
+      "max_heat_balance_residual_W": 0.0,
+      "max_pressure_drop_Pa": 33300.648834036125,
+      "max_bulk_rise_K": 6.150183246403894,
+      "max_wall_temperature_K": 395.6335045816579,
+      "min_DNBR_screening": 7.878853348370953,
+      "screen_pass": true
+    },
+    "transport_screen": {
+      "rows": 324,
+      "secondary_heat_removal_fraction": [
+        0.0
+      ],
+      "max_incident_heat_load_W_per_cassette": 1625000.0,
+      "max_secondary_heat_routed_W_per_cassette": 0.0,
+      "max_local_heat_load_W_per_cassette": 1625000.0,
+      "max_heat_balance_residual_W": 0.0,
+      "max_pressure_drop_Pa": 33300.648834036125,
+      "max_bulk_rise_K": 5.1782630960654545,
+      "max_wall_temperature_K": 388.12963468662906,
+      "min_DNBR_screening": 9.368469205673028,
+      "screen_pass": true
+    }
+  },
+  "water_properties_status": "IAPWS_CORRELATIONS_VERIFIED",
+  "water_property_model": {
+    "standards": {
+      "thermodynamics": "IAPWS-IF97 Region 1",
+      "viscosity": "IAPWS 2008 industrial branch (mu2=1)",
+      "thermal_conductivity": "IAPWS 2011 industrial branch (lambda2=0)"
+    },
+    "verification": {
+      "status": "IAPWS_CORRELATIONS_VERIFIED",
+      "check_count": 14,
+      "sources": {
+        "if97_region_1": "https://iapws.org/technical-guidance/release/IF97-Rev.download",
+        "viscosity_2008": "https://iapws.org/technical-guidance/release/viscosity.download",
+        "thermal_conductivity_2011": "https://iapws.org/technical-guidance/release/ThCond.download"
+      }
+    },
+    "state_policy": "T/P states outside IF97 Region 1 are blocked; no constant-value fallback is permitted."
+  },
+  "CHF_status": "BIASI_1967_CORRELATION_SCREEN_NOT_A_QUALIFIED_CHF_RESULT",
+  "CHF_provenance": "Biasi (1967) empirical CHF correlation; local equilibrium quality estimated from bulk subcooling via a Watson-correlation latent-heat estimate, not a full IAPWS steam-table enthalpy balance. This narrows but does not remove the qualified_CHF external-solver blocker -- it is a validated *correlation*, not a certified CHF test or a mechanistic sub-channel code result.",
+  "status": "IAPWS_PROPERTY_COOLANT_HYDRAULIC_AND_ENERGY_SCREEN"
+}

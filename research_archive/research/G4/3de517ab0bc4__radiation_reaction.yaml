@@ -1,0 +1,47 @@
+schema_version: "1.0"
+file_role: fusion_reaction_alpha_heating_and_radiation_information
+units_system: SI_with_reactivity_in_m3_per_s_and_power_in_GW
+status: screening_coefficients_and_conventions; alpha_loss_and_capture_are_design_assumptions
+reaction:
+  name: D-T
+  reactivity_model: Bosch-Hale_Maxwellian_thermal_reactivity
+  reactivity_equation: "P_fusion = integral[n_D*n_T*<sigma*v>_DT(T_i)*E_fusion]dV"
+  valid_temperature_range_keV: [0.2, 100.0]
+  E_fusion_MeV: 17.6
+  E_alpha_MeV: 3.5
+  E_neutron_MeV: 14.1
+  intrinsic_alpha_fraction_of_fusion_power: 0.1988636364
+  intrinsic_neutron_fraction_of_fusion_power: 0.8011363636
+alpha_heating:
+  definitions:
+    generated_alpha_power: "P_alpha_generated = 0.1988636364*P_fusion"
+    deposition_fraction: "f_alpha_dep = 1 - f_alpha_loss"
+    deposited_alpha_power: "P_alpha_deposited = f_alpha_dep*P_alpha_generated"
+    alpha_heating_fraction_of_fusion: "f_alpha_heat_fusion = 0.1988636364*f_alpha_dep"
+    alpha_fraction_of_total_plasma_heating: "f_alpha_heat_total = P_alpha_deposited/(P_alpha_deposited+P_aux_absorbed)"
+  design_assumption:
+    f_alpha_loss: 0.10
+    f_alpha_dep: 0.90
+    f_alpha_heat_fusion: 0.1789772727
+    label: design_assumption_not_measured_or_derived
+  existing_reference_screen:
+    deposited_alpha_power_GW: 0.186
+    modeled_loss_power_GW: 0.155
+    deposited_alpha_to_modeled_loss_ratio: 0.63
+    bremsstrahlung_power_GW: 0.010
+    transport_loss_power_GW: 0.145
+    tau_E_s: 1.36
+    note: "0.63 is a deposited-alpha-to-modeled-loss ratio; it is not the 19.886% intrinsic alpha energy fraction."
+  channeling:
+    required_outputs: [orbit_resolved_deposition, electron_fraction, ion_fraction, RF_channel_fraction]
+    closure_status: not_qualified_in_current_information_file
+radiation:
+  bremsstrahlung_reference_power_GW: 0.010
+  radiation_model_status: reference_value_only_until_Z_eff_and_profile_model_are_solved
+  required_inputs: [n_e_profile, ion_profiles, T_e_profile, Z_eff_profile, radiation_coefficients]
+blanket:
+  f_neutron_capture: 0.95
+  tritium_breeding_ratio: 1.15
+  label: design_assumptions_not_measured_or_derived
+references:
+  - "Bosch and Hale, Improved formulas for fusion cross-sections and thermal reactivities, Nuclear Fusion 32 (1992) 611-631, https://doi.org/10.1088/0029-5515/32/4/I07"

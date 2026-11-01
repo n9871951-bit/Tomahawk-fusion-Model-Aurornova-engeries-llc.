@@ -1,0 +1,191 @@
+{
+  "schema_version": "TOMAHAWK-LASER-ALPHA-SOURCE-CONTRACT-1.1-NUMERIC-HANDOFF",
+  "status": "NUMERIC_SCREEN_HANDOFF_MERGED_NOT_QUALIFIED",
+  "calculation_enabled": false,
+  "purpose": "Merged contract: populates traceable screen values from the 2026-09-29 numeric handoff into the original contract schema. Fields the handoff itself leaves open remain null -- nothing has been inferred or filled beyond what was supplied.",
+
+  "selected_screen_basis": {
+    "name": "latest_CAD_A2_reference_screen",
+    "screen_status": "MODEL_DERIVED_SCREEN_NOT_HARDWARE_VALIDATION",
+    "P_fusion_W": 1039640646.6,
+    "P_deposited_alpha_screen_W": 186072047.5,
+    "P_modeled_losses_W": 155293526.9,
+    "alpha_self_heating_ratio": 1.1981957735,
+    "fusion_to_modeled_losses_ratio": 6.6946811471,
+    "tau_E_target_s": 2.7,
+    "tau_E_required_s": 2.2280274683,
+    "tau_E_margin_ratio": 0.2118342518,
+    "cross_check": "alpha_self_heating_ratio and fusion_to_modeled_losses_ratio independently verified against the module power screen (deck slide 5); tau_E figures independently verified against the same source. Both match."
+  },
+
+  "alpha_self_heating": {
+    "fraction_reference": 0.63,
+    "reference_status": "USER_CARRIED_SCREENING_REFERENCE_NOT_RECOMPUTED",
+    "P_alpha_generated_W": 206746719.4943182,
+    "P_alpha_to_plasma_W": 186072047.5,
+    "alpha_deposition_fraction_screen": 0.899999999782892,
+    "P_escaped_alpha_to_wall_screen_W": 20674671.994318187,
+    "formula": "P_alpha_to_plasma = f_alpha_self_heat * P_alpha_generated",
+    "generation_formula": "P_alpha_generated = P_fusion * (3.5 MeV / 17.6 MeV)",
+    "status": "SCREEN_DERIVED_WITH_0.90_DEPOSITION_BRANCH_NOT_QUALIFIED",
+    "qualification_note": "The 0.90 deposition / 0.10 escaped-alpha split is the model branch used to reproduce the screen, not orbit-resolved qualified transport. Keep the qualified replacement (real plasma transport / orbit-loss model) open."
+  },
+
+  "plasma_heating_balance": {
+    "P_total_absorbed_heating_required_W": 155293526.9,
+    "P_RF_absorbed_W": 0.0,
+    "P_other_absorbed_W": 0.0,
+    "P_external_laser_absorbed_required_W": 0.0,
+    "formula": "P_external_laser_absorbed_required = max(0, P_total_absorbed_heating_required - P_alpha_to_plasma - P_RF_absorbed - P_other_absorbed)",
+    "status": "RESOLVED_FOR_STEADY_STATE_ON_SELECTED_CAD_A2_SCREEN",
+    "boundary_note": "P_RF_absorbed_W and P_other_absorbed_W are zero only because this is the laser-only accounting boundary -- not a claim the full reactor has no RF/auxiliary heating.",
+    "interpretation": "Alpha self-heating alone (186.1 MW) exceeds the modeled steady-state loss requirement (155.3 MW) on this screen, so the steady external laser requirement is zero. The laser remains a required transient/startup/perturbation source; no validated transient energy-to-state map exists yet (see pulse_definition_required and remaining_blockers)."
+  },
+
+  "laser_conversion_and_wall_loss": {
+    "eta_laser_to_plasma": 0.268574,
+    "eta_laser_to_plasma_status": "NOMINAL_MODEL_OBSERVATION_NOT_QUALIFIED",
+    "eta_laser_to_plasma_nominal_context": "EV-009 nominal absorption on a 100 micrometer ramp",
+    "eta_laser_to_plasma_optimized_sensitivity": 0.860024,
+    "eta_laser_to_plasma_optimized_context": "EV-009 inverse result at 629.05 micrometer ramp and 2 keV background; validation open",
+    "fraction_stray_laser_to_liquid_wall": null,
+    "fraction_stray_laser_to_liquid_wall_upper_bound_nominal": 0.731426,
+    "fraction_stray_laser_to_liquid_wall_upper_bound_optimized": 0.139976,
+    "P_laser_incident_W": 0.0,
+    "P_stray_laser_to_liquid_wall_W": 0.0,
+    "formulas": [
+      "P_laser_incident = P_external_laser_absorbed_required / eta_laser_to_plasma",
+      "P_stray_laser_to_liquid_wall = P_laser_incident * fraction_stray_laser_to_liquid_wall"
+    ],
+    "status": "STEADY_STATE_VALUE_IS_ZERO_ON_SELECTED_SCREEN; TRANSIENT_WALL_FRACTION_REMAINS_OPEN",
+    "wall_fraction_note": "1 - eta_laser_to_plasma is only an upper bound if every uncoupled joule reaches the liquid wall -- it is NOT the liquid-wall fraction. Still requires beam tracing, aperture-loss accounting, and a resolved target/corona/wall map before use."
+  },
+
+  "other_plasma_facing_surface_sources": {
+    "P_bremsstrahlung_to_wall_W": null,
+    "P_synchrotron_to_wall_W": null,
+    "P_escaped_alpha_to_wall_W": null,
+    "P_other_radiation_to_wall_W": null,
+    "screening_reference_values": {
+      "P_bremsstrahlung_to_wall_W_legacy_rev2_4_approx": 10000000.0,
+      "P_escaped_alpha_to_wall_W_screen": 20674671.994318187
+    },
+    "rule": "Escaped alpha power may be a wall source; deposited alpha self-heating may not be copied into a wall source.",
+    "status": "WALL_SOURCE_MAP_NOT_QUALIFIED"
+  },
+
+  "pulse_definition_required": {
+    "pulse_shape": "two_component_preconditioning_plus_fast_ignition_spike",
+    "pulse_duration_s": 5.0e-9,
+    "pulse_duration_semantics": "long_preconditioning_component_only; the fast spike is stored separately",
+    "fast_spike_duration_s": 1.0e-11,
+    "repetition_rate_Hz": 10.0,
+    "duty_factor": 5.0e-8,
+    "fast_spike_duty_factor": 1.0e-10,
+    "combined_nonoverlap_duty_factor_upper_bound": 5.01e-8,
+    "total_pulse_energy_J": 2500000.0,
+    "energy_split": {
+      "f_pre": null,
+      "f_spike": null,
+      "constraint": "f_pre + f_spike = 1",
+      "status": "OPEN; no fixed split is claimed without a target/source design"
+    },
+    "peak_power_coefficients": {
+      "P_pre_peak_W": "5.0e14 * f_pre",
+      "P_spike_peak_W": "2.5e17 * f_spike",
+      "P_pre_peak_per_port_W": "3.125e13 * f_pre",
+      "P_spike_peak_per_port_W": "1.5625e16 * f_spike"
+    },
+    "cycle_average_optical_power_W": 25000000.0,
+    "distinguish_peak_from_cycle_average": true
+  },
+
+  "laser_driver_baseline": {
+    "wavelength_nm": 351.0,
+    "port_count": 16,
+    "ring_count": 2,
+    "module_shot_energy_J": 2500000.0,
+    "module_repetition_rate_Hz": 10.0,
+    "module_average_delivered_optical_power_W": 25000000.0,
+    "equal_port_energy_fraction": 0.0625,
+    "equal_port_energy_J": 156250.0,
+    "wall_plug_efficiency_target": 0.15,
+    "average_electrical_input_at_0.15_wall_plug_W": 166666666.6666667,
+    "wall_plug_status": "INTERNAL_DEVELOPMENT_TARGET_NOT_DEMONSTRATED_AT_THIS_MODULE_SCALE",
+    "source_status": "DECLARED_TOMAHAWK_DESIGN_ENVELOPE_NOT_A_VENDOR_CONTRACT_OR_FACILITY_MEASUREMENT"
+  },
+
+  "laser_port_allocation": [
+    {"name": "laser_upper_01", "physical_tag": 20, "ring": "upper", "phi_deg": 0.0,   "theta_deg": 15.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_01", "physical_tag": 28, "ring": "lower", "phi_deg": 22.5,  "theta_deg": -15.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_upper_02", "physical_tag": 21, "ring": "upper", "phi_deg": 45.0,  "theta_deg": 30.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_02", "physical_tag": 29, "ring": "lower", "phi_deg": 67.5,  "theta_deg": -30.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_upper_03", "physical_tag": 22, "ring": "upper", "phi_deg": 90.0,  "theta_deg": 45.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_03", "physical_tag": 30, "ring": "lower", "phi_deg": 112.5, "theta_deg": -45.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_upper_04", "physical_tag": 23, "ring": "upper", "phi_deg": 135.0, "theta_deg": 60.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_04", "physical_tag": 31, "ring": "lower", "phi_deg": 157.5, "theta_deg": -60.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_upper_05", "physical_tag": 24, "ring": "upper", "phi_deg": 180.0, "theta_deg": 60.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_05", "physical_tag": 32, "ring": "lower", "phi_deg": 202.5, "theta_deg": -60.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_upper_06", "physical_tag": 25, "ring": "upper", "phi_deg": 225.0, "theta_deg": 45.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_06", "physical_tag": 33, "ring": "lower", "phi_deg": 247.5, "theta_deg": -45.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_upper_07", "physical_tag": 26, "ring": "upper", "phi_deg": 270.0, "theta_deg": 30.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_07", "physical_tag": 34, "ring": "lower", "phi_deg": 292.5, "theta_deg": -30.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_upper_08", "physical_tag": 27, "ring": "upper", "phi_deg": 315.0, "theta_deg": 15.0,  "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0},
+    {"name": "laser_lower_08", "physical_tag": 35, "ring": "lower", "phi_deg": 337.5, "theta_deg": -15.0, "fraction_of_shot_energy": 0.0625, "energy_J": 156250.0, "temporal_phase_s": null, "peak_multiplier": 1.0}
+  ],
+
+  "alternate_rev2_4_active_profile_case": {
+    "status": "SEPARATE_LEGACY_SCREEN_BRANCH_DO_NOT_MIX_WITH_SELECTED_CAD_A2_CASE",
+    "P_total_absorbed_heating_required_W_approx": 298000000.0,
+    "P_alpha_to_plasma_W_approx": 186000000.0,
+    "P_bremsstrahlung_to_wall_W_approx": 10000000.0,
+    "P_transport_W_approx": 288000000.0,
+    "P_RF_absorbed_W": 0.0,
+    "P_other_absorbed_W": 0.0,
+    "P_external_laser_absorbed_required_W_approx": 112000000.0,
+    "nominal_coupling_case": {
+      "eta_laser_to_plasma": 0.268574,
+      "P_laser_incident_W_approx": 417000000.0,
+      "upper_bound_stray_wall_power_W_approx": 305000000.0
+    },
+    "optimized_coupling_sensitivity_case": {
+      "eta_laser_to_plasma": 0.860024,
+      "P_laser_incident_W_approx": 130000000.0,
+      "upper_bound_stray_wall_power_W_approx": 18200000.0
+    },
+    "interpretation": "This is the branch that produces a nonzero steady external-laser requirement. Values are rounded from the prior review and must not be combined with the CAD-A2 reference screen above."
+  },
+
+  "mandatory_solver_guards": [
+    "All fractions must be within [0,1].",
+    "The 16 port energy fractions must sum to one when shot energy is nonzero.",
+    "P_external_laser_absorbed_required may not be negative.",
+    "Deposited alpha self-heating may appear only in the plasma balance.",
+    "Escaped alpha power must be derived independently before assignment to a wall boundary.",
+    "A transient solve requires a resolved pulse split, timing schedule and per-port allocation.",
+    "Peak and cycle-averaged heat fluxes must be stored as different variables.",
+    "Do not use wall-plug efficiency as laser-to-plasma efficiency.",
+    "Do not use 1 - eta_laser_to_plasma as the liquid-wall fraction.",
+    "Do not treat 0.268574 or 0.860024 as qualified coupling.",
+    "Do not choose f_pre or f_spike until the source/target design specifies the split.",
+    "Keep the selected CAD-A2 balance and the Rev2.4 legacy balance as separate cases."
+  ],
+
+  "still_blocking_a_full_solver_launch": [
+    "fraction_stray_laser_to_liquid_wall (transient wall heat load undefined without it)",
+    "pulse energy split f_pre / f_spike",
+    "per-port temporal_phase_s (all 16 ports still null)",
+    "beam origins, directions, polarization, focus and spot-size schedule",
+    "background bremsstrahlung, synchrotron and other-radiation wall source maps",
+    "vendor/facility evidence for 10 Hz, 2.50 MJ/module operation",
+    "module-scale wall-plug efficiency and thermal-duty qualification",
+    "qualified (orbit-resolved) alpha deposition fraction to replace the 0.90 screen branch"
+  ],
+
+  "what_is_now_resolved": [
+    "Steady-state P_external_laser_absorbed_required_W = 0 on the selected CAD-A2 screen (alpha self-heating alone covers modeled losses)",
+    "Full laser driver baseline (wavelength, port count, shot energy, repetition rate, average power, per-port energy split)",
+    "Both eta_laser_to_plasma values recorded with their model context, correctly labeled as unqualified",
+    "Legacy Rev2.4 branch fully computed and kept separate, for reference if that branch is ever reselected"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": "TOMAHAWK-MGRID-G1-PREFLIGHT-0.1",
+  "run_date": "2026-09-09",
+  "disposition": "SCREENING_COMPATIBLE_BUT_NOT_AUTHORIZED_FOR_VMEC",
+  "native_makegrid": {
+    "status_as_supplied": "NATIVE_MAKEGRID_COMPLETED",
+    "return_code": 0,
+    "command": "/home/STELLOPT/MAKEGRID/Release/xgrid",
+    "native_rerun_in_current_workspace": false
+  },
+  "g1_boundary": {
+    "revision": "EV007_PERIODIC_REPAIR_1",
+    "units": "m",
+    "formal_g1_approved": false,
+    "native_freecad_executed": false,
+    "source_sha256": "8317664cb1d897872fa73a4a73255ce7b5a4e32e2f18921a3d09f4dc066d2899",
+    "parameterization": {
+      "R0_m": 7.499999999999888,
+      "a_m": 2.999999999999756,
+      "b_m": 2.13896943244938,
+      "epsilon_m": 0.009999999999999069,
+      "periods": 16
+    },
+    "sampled_extents": {
+      "R_min_m": 4.490000000000132,
+      "R_max_m": 10.509999999999646,
+      "Z_min_m": -2.148969432449379,
+      "Z_max_m": 2.148969432449379
+    }
+  },
+  "mgrid": {
+    "file": "mgrid_tomahawk_pf.nc",
+    "sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+    "dimensions": {"rad": 201, "zee": 201, "phi": 36},
+    "nfp": 1,
+    "nextcur": 6,
+    "mgrid_mode": "S",
+    "bounds_m": {"rmin": 4.0, "rmax": 11.0, "zmin": -3.5, "zmax": 3.5},
+    "groups": ["PF_L_IN", "PF_L_OUT", "PF_M_IN", "PF_M_OUT", "PF_U_IN", "PF_U_OUT"],
+    "raw_coil_currents_A": [19123.4976703, 19904.2740987, -19395.6036404, 19304.7552541, 19123.4976703, 19904.2740987]
+  },
+  "checks": {
+    "coil_group_labels_match_mgrid": true,
+    "coil_file_loops": 578,
+    "filament_points_per_loop": 128,
+    "coil_csv_max_coordinate_error_m": 0.0,
+    "coil_csv_max_signed_current_error_A": 0.0,
+    "extcur_max_difference_from_coil_A": 0.0,
+    "boundary_samples": 524288,
+    "boundary_all_in_mgrid_bounds": true,
+    "radial_margin_m": 0.4900000000001317,
+    "vertical_margin_m": 1.351030567550621,
+    "field_values_finite_on_boundary": true,
+    "pf_field_on_candidate_boundary_T": {
+      "min": 0.4861661314590266,
+      "max": 0.544059638307379,
+      "mean": 0.5054176792668821
+    },
+    "coil_centerline_clearance_m": {
+      "PF_L_IN": 2.9386784194087623,
+      "PF_L_OUT": 2.7588536162562085,
+      "PF_M_IN": 1.9157819574099169,
+      "PF_M_OUT": 1.8532398642878003,
+      "PF_U_IN": 2.9386784194087627,
+      "PF_U_OUT": 2.758853616256211
+    },
+    "minimum_centerline_clearance_m": 1.8532398642878003,
+    "minimum_clearance_group": "PF_M_OUT"
+  },
+  "blockers": [
+    "formal/native G1 approval is not present",
+    "PF-only nfp=1 MGRID does not represent the total 3-D external field for a 16-period plasma boundary",
+    "no VMEC/DESC runtime is available in the current workspace",
+    "coil source has no embedded units/coordinate manifest; metres are inherited from the matching PF CAD export",
+    "makegrid_run_manifest.json does not include a coils.tomahawk_pf SHA-256 entry"
+  ],
+  "gate": {
+    "mgrid_to_candidate_g1_screening": "PASS",
+    "free_boundary_3D_MHD_pass": "BLOCKED_REQUIRED_G1_APPROVAL_TOTAL_FIELD_AND_SOLVER"
+  },
+  "artifacts": {
+    "coils.tomahawk_pf_sha256": "b65e977cf7b24c4f2e2640ac963ec99a0692849a2be409b59f8900171b32b37c",
+    "extcur.tomahawk_pf_sha256": "1db04e2d69d5e7b8ec31ee1fa3d0cd0547a3414c7614b6e574dc38eeb62bbb27",
+    "makegrid_run_manifest.json_sha256": "d2b3d6786229ea92e2443b179147307eb840dc0f5d0e914f91b6c548edf0dc7f",
+    "xgrid_tomahawk_pf.log_sha256": "aeef387b70c35af9c4fe064d720bc10b3f4b05ed25991e3034e2dd51f39e2435"
+  }
+}

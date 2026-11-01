@@ -1,0 +1,18 @@
+{
+  "source_sha256": "8317664cb1d897872fa73a4a73255ce7b5a4e32e2f18921a3d09f4dc066d2899",
+  "original_source_sha256": "871c8dc94ccff5b390cbd6d07a30eb2367e238edbefa8b66a042fecfb4a35764",
+  "corrected_coordinate_units": "m",
+  "integrated_volume_m3": 949.4077767534301,
+  "reference_volume_m3": 950.0,
+  "reference_difference_percent": 0.062339289112622875,
+  "sampled_height_m": 4.297818523648086,
+  "sampled_x_extent_m": 21.056211925981415,
+  "finest_surface_triangles": 524288,
+  "finest_mesh_volume_m3": 949.3333479117691,
+  "finest_mesh_volume_error_percent": 0.007839502001494303,
+  "quadrature_order_3_vs_5_relative_difference": 2.7699897042765542e-08,
+  "g1_status": "UNRESOLVED_PENDING_NATIVE_CAD_AND_INTERFACE_REVIEW",
+  "native_freecad_executed": false,
+  "confinement_or_stability_simulation": false,
+  "note": "Existing integration audit reused. New drawing evaluates the supplied control net; no redesign or physics rerun."
+}

@@ -1,0 +1,139 @@
+{
+  "schema_version": "TOMAHAWK-DESC-BOUNDARY-RESOLUTION-AUDIT-0.1",
+  "status": "MESH_ARTIFACT_CHECK_COMPLETED",
+  "solver_artifact": "/workspace/scratch/40c425c80e7e/phase2_20260910/desc_runtime_tf48/desc_free_boundary_vacuum_equilibrium.h5",
+  "field_sources": {
+    "pf_mgrid": "/workspace/scratch/40c425c80e7e/mgrid_g1_check_20260909/evidence_bundle/PF_MAKEGRID/mgrid_tomahawk_pf.nc",
+    "tf_mgrid": "/workspace/scratch/40c425c80e7e/phase2_20260910/tf48_mgrid_build/mgrid_tomahawk_tf48_equivalent.nc",
+    "field_model": "DESC SplineMagneticField(PF) + SplineMagneticField(TF48 MGRID-equivalent)"
+  },
+  "candidate_surface": [
+    {
+      "M": 6,
+      "N": 3,
+      "sample_count": 91,
+      "max_abs_Bnormal_T": 0.995258520956527,
+      "rms_Bnormal_T": 0.5010352952471667,
+      "mean_Bnormal_T": -7.152276329189581e-13,
+      "max_location": {
+        "R_m": 5.262598316481483,
+        "phi_rad": 0.1121997376282069,
+        "Z_m": -1.4242209494188465,
+        "abs_Bnormal_T": 0.995258520956527
+      }
+    },
+    {
+      "M": 12,
+      "N": 6,
+      "sample_count": 325,
+      "max_abs_Bnormal_T": 1.001062751386308,
+      "rms_Bnormal_T": 0.5012596358071106,
+      "mean_Bnormal_T": -1.1438644903067213e-13,
+      "max_location": {
+        "R_m": 5.08131371825526,
+        "phi_rad": 0.1208304866765305,
+        "Z_m": -1.2627348125716942,
+        "abs_Bnormal_T": 1.001062751386308
+      }
+    },
+    {
+      "M": 24,
+      "N": 12,
+      "sample_count": 1225,
+      "max_abs_Bnormal_T": 1.0219545156161396,
+      "rms_Bnormal_T": 0.5012588451379497,
+      "mean_Bnormal_T": -7.696715739136696e-06,
+      "max_location": {
+        "R_m": 4.803043628253764,
+        "phi_rad": 0.10995574287564278,
+        "Z_m": -0.9361011404776065,
+        "abs_Bnormal_T": 1.0219545156161396
+      }
+    },
+    {
+      "M": 36,
+      "N": 18,
+      "sample_count": 2701,
+      "max_abs_Bnormal_T": 1.0233823331550225,
+      "rms_Bnormal_T": 0.5012598300236574,
+      "mean_Bnormal_T": 8.588800429474977e-07,
+      "max_location": {
+        "R_m": 4.835569904795987,
+        "phi_rad": 0.10613488694560111,
+        "Z_m": -0.9834195861260667,
+        "abs_Bnormal_T": 1.0233823331550225
+      }
+    }
+  ],
+  "postrun_surface": [
+    {
+      "M": 6,
+      "N": 3,
+      "sample_count": 91,
+      "max_abs_Bnormal_T": 18.28292623595539,
+      "rms_Bnormal_T": 8.541721027066364,
+      "mean_Bnormal_T": 1.1917535090645658e-10,
+      "max_location": {
+        "R_m": 4.879760218986017,
+        "phi_rad": 0.1121997376282069,
+        "Z_m": 1.1514489289021437,
+        "abs_Bnormal_T": 18.28292623595539
+      }
+    },
+    {
+      "M": 12,
+      "N": 6,
+      "sample_count": 325,
+      "max_abs_Bnormal_T": 18.477207228338244,
+      "rms_Bnormal_T": 8.61518171648719,
+      "mean_Bnormal_T": -7.679681437786292e-11,
+      "max_location": {
+        "R_m": 4.89555344602274,
+        "phi_rad": 0.09062286500739787,
+        "Z_m": 0.8877264048393333,
+        "abs_Bnormal_T": 18.477207228338244
+      }
+    },
+    {
+      "M": 24,
+      "N": 12,
+      "sample_count": 1225,
+      "max_abs_Bnormal_T": 18.6043890812861,
+      "rms_Bnormal_T": 8.616054264915851,
+      "mean_Bnormal_T": -0.0001281229300945356,
+      "max_location": {
+        "R_m": 4.8150651380263305,
+        "phi_rad": 0.0942477796076938,
+        "Z_m": 0.8128558737240063,
+        "abs_Bnormal_T": 18.6043890812861
+      }
+    },
+    {
+      "M": 36,
+      "N": 18,
+      "sample_count": 2701,
+      "max_abs_Bnormal_T": 18.612837414671027,
+      "rms_Bnormal_T": 8.616077048006495,
+      "mean_Bnormal_T": 1.4238856385229092e-05,
+      "max_location": {
+        "R_m": 4.78985322419297,
+        "phi_rad": 0.095521398251041,
+        "Z_m": 0.7869051499519597,
+        "abs_Bnormal_T": 18.612837414671027
+      }
+    }
+  ],
+  "interpretation": {
+    "rms_stable_under_refinement": true,
+    "mesh_refinement_reduces_residual": false,
+    "conclusion": "The 18.48 T post-run maximum is not a coarse-mesh artifact; RMS remains approximately 8.62 T as M,N increase.",
+    "coil_harmonics_applicable": false,
+    "coil_harmonics_reason": "The current run consumes fixed TF48 MGRID geometry; no coil-shape optimization variables are present.",
+    "tikhonov_penalty_present": false,
+    "tikhonov_reason": "The current DESC objective has no coil curvature/length regularization term to relax."
+  },
+  "artifacts": {
+    "csv": "/workspace/scratch/40c425c80e7e/phase2_20260910/desc_runtime_tf48/boundary_normal_residual_map.csv",
+    "png": "/workspace/scratch/40c425c80e7e/phase2_20260910/desc_runtime_tf48/boundary_normal_residual_map.png"
+  }
+}

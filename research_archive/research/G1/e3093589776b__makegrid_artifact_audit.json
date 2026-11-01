@@ -1,0 +1,426 @@
+{
+  "schema_version": "TOMAHAWK-MAKEGRID-ARTIFACT-AUDIT-0.1",
+  "status": "NATIVE_MAKEGRID_PF_ARTIFACTS_VERIFIED_TF_NOT_PRESENT",
+  "generated_utc_not_recorded": true,
+  "wall_seconds": 0.9663832187652588,
+  "source_files": {
+    "source_dir": "/workspace/scratch/40c425c80e7e/upload",
+    "mgrid": {
+      "path": "/workspace/scratch/40c425c80e7e/upload/mgrid_tomahawk_pf.nc",
+      "sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+      "size_bytes": 209440640
+    },
+    "coils": {
+      "path": "/workspace/scratch/40c425c80e7e/upload/coils.tomahawk_pf",
+      "sha256": "b65e977cf7b24c4f2e2640ac963ec99a0692849a2be409b59f8900171b32b37c",
+      "size_bytes": 5780522
+    },
+    "extcur": {
+      "path": "/workspace/scratch/40c425c80e7e/upload/extcur.tomahawk_pf",
+      "sha256": "1db04e2d69d5e7b8ec31ee1fa3d0cd0547a3414c7614b6e574dc38eeb62bbb27",
+      "size_bytes": 216
+    },
+    "manifest": {
+      "path": "/workspace/scratch/40c425c80e7e/upload/makegrid_run_manifest.json",
+      "sha256": "d2b3d6786229ea92e2443b179147307eb840dc0f5d0e914f91b6c548edf0dc7f",
+      "size_bytes": 807
+    },
+    "log": {
+      "path": "/workspace/scratch/40c425c80e7e/upload/xgrid_tomahawk_pf.log",
+      "sha256": "aeef387b70c35af9c4fe064d720bc10b3f4b05ed25991e3034e2dd51f39e2435",
+      "size_bytes": 20332
+    }
+  },
+  "manifest": {
+    "schema_version": "TOMAHAWK-MAKEGRID-RUN-0.1",
+    "runner_version": "TOMAHAWK-MAKEGRID-RUNNER-1.0",
+    "started_utc": "2026-09-09T22:32:15.359896+00:00",
+    "package_dir": "/data",
+    "coil_file": "coils.tomahawk_pf",
+    "input_file": "input_xgrid.tomahawk_pf",
+    "mgrid_generated": true,
+    "native_solver_evidence": true,
+    "command": [
+      "/home/STELLOPT/MAKEGRID/Release/xgrid"
+    ],
+    "return_code": 0,
+    "log": "xgrid_tomahawk_pf.log",
+    "mgrid_candidate_files": [
+      "mgrid_tomahawk_pf.nc",
+      "mgrid_tomahawk_pf"
+    ],
+    "extcur_present": true,
+    "status": "NATIVE_MAKEGRID_COMPLETED",
+    "mgrid_file": "mgrid_tomahawk_pf.nc",
+    "mgrid_sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+    "extcur_sha256": "1db04e2d69d5e7b8ec31ee1fa3d0cd0547a3414c7614b6e574dc38eeb62bbb27"
+  },
+  "manifest_hash_checks": {
+    "mgrid_sha256_matches_manifest": true,
+    "extcur_sha256_matches_manifest": true,
+    "coils_sha256_declared": false,
+    "coils_sha256_matches_manifest": null
+  },
+  "coils": {
+    "periods": 1,
+    "mirror": "NIL",
+    "data_rows": 73984,
+    "loop_count": 578,
+    "group_order": [
+      "PF_L_IN",
+      "PF_L_OUT",
+      "PF_M_IN",
+      "PF_M_OUT",
+      "PF_U_IN",
+      "PF_U_OUT"
+    ],
+    "groups": {
+      "PF_L_IN": {
+        "loop_count": 28,
+        "filament_points_per_loop": 128,
+        "max_closure_gap_m": 0.0,
+        "min_xyz_m": [
+          -4.04455,
+          -4.04455,
+          -4.3391
+        ],
+        "max_xyz_m": [
+          4.04455,
+          4.04455,
+          -4.1609
+        ],
+        "current_min_A": 19123.4976703,
+        "current_max_A": 19123.4976703,
+        "uniform_current_pass": true
+      },
+      "PF_L_OUT": {
+        "loop_count": 162,
+        "filament_points_per_loop": 128,
+        "max_closure_gap_m": 0.0,
+        "min_xyz_m": [
+          -11.1188,
+          -11.1188,
+          -4.50245
+        ],
+        "max_xyz_m": [
+          11.1188,
+          11.1188,
+          -3.99755
+        ],
+        "current_min_A": 19904.2740987,
+        "current_max_A": 19904.2740987,
+        "uniform_current_pass": true
+      },
+      "PF_M_IN": {
+        "loop_count": 48,
+        "filament_points_per_loop": 128,
+        "max_closure_gap_m": 0.0,
+        "min_xyz_m": [
+          -2.57425,
+          -2.57425,
+          -0.10395
+        ],
+        "max_xyz_m": [
+          2.57425,
+          2.57425,
+          0.10395
+        ],
+        "current_min_A": -19395.6036404,
+        "current_max_A": -19395.6036404,
+        "uniform_current_pass": true
+      },
+      "PF_M_OUT": {
+        "loop_count": 150,
+        "filament_points_per_loop": 128,
+        "max_closure_gap_m": 0.0,
+        "min_xyz_m": [
+          -12.63365,
+          -12.63365,
+          -0.2079
+        ],
+        "max_xyz_m": [
+          12.63365,
+          12.63365,
+          0.2079
+        ],
+        "current_min_A": 19304.7552541,
+        "current_max_A": 19304.7552541,
+        "uniform_current_pass": true
+      },
+      "PF_U_IN": {
+        "loop_count": 28,
+        "filament_points_per_loop": 128,
+        "max_closure_gap_m": 0.0,
+        "min_xyz_m": [
+          -4.04455,
+          -4.04455,
+          4.1609
+        ],
+        "max_xyz_m": [
+          4.04455,
+          4.04455,
+          4.3391
+        ],
+        "current_min_A": 19123.4976703,
+        "current_max_A": 19123.4976703,
+        "uniform_current_pass": true
+      },
+      "PF_U_OUT": {
+        "loop_count": 162,
+        "filament_points_per_loop": 128,
+        "max_closure_gap_m": 0.0,
+        "min_xyz_m": [
+          -11.1188,
+          -11.1188,
+          3.99755
+        ],
+        "max_xyz_m": [
+          11.1188,
+          11.1188,
+          4.50245
+        ],
+        "current_min_A": 19904.2740987,
+        "current_max_A": 19904.2740987,
+        "uniform_current_pass": true
+      }
+    }
+  },
+  "extcur_A": [
+    19123.4976703,
+    19904.2740987,
+    -19395.6036404,
+    19304.7552541,
+    19123.4976703,
+    19904.2740987
+  ],
+  "mgrid": {
+    "file_format": 2,
+    "dimensions": {
+      "stringsize": 30,
+      "external_coil_groups": 6,
+      "dim_00001": 1,
+      "external_coils": 6,
+      "rad": 201,
+      "zee": 201,
+      "phi": 36
+    },
+    "variables": [
+      "ir",
+      "jz",
+      "kp",
+      "nfp",
+      "nextcur",
+      "rmin",
+      "zmin",
+      "rmax",
+      "zmax",
+      "coil_group",
+      "mgrid_mode",
+      "raw_coil_cur",
+      "br_001",
+      "bp_001",
+      "bz_001",
+      "br_002",
+      "bp_002",
+      "bz_002",
+      "br_003",
+      "bp_003",
+      "bz_003",
+      "br_004",
+      "bp_004",
+      "bz_004",
+      "br_005",
+      "bp_005",
+      "bz_005",
+      "br_006",
+      "bp_006",
+      "bz_006"
+    ],
+    "group_names": [
+      "PF_L_IN",
+      "PF_L_OUT",
+      "PF_M_IN",
+      "PF_M_OUT",
+      "PF_U_IN",
+      "PF_U_OUT"
+    ],
+    "field_variable_count": 18,
+    "field_variables_finite": true,
+    "field_nonfinite_count": 0,
+    "field_global_min": -4.430000584462129e-05,
+    "field_global_max": 4.4300005844621214e-05,
+    "max_first_last_phi_plane_difference": 3.4045076370731547e-09,
+    "per_group_field_stats": {
+      "PF_L_IN": {
+        "br": {
+          "min": 2.776333462904892e-08,
+          "max": 7.212335192137829e-06,
+          "nonfinite_count": 0
+        },
+        "bp": {
+          "min": -1.1984093695065812e-16,
+          "max": 1.1984093695065812e-16,
+          "nonfinite_count": 0
+        },
+        "bz": {
+          "min": -1.8993485384054968e-06,
+          "max": 1.9111388244711816e-06,
+          "nonfinite_count": 0
+        }
+      },
+      "PF_L_OUT": {
+        "br": {
+          "min": 4.4161411398401833e-07,
+          "max": 4.4300005844621214e-05,
+          "nonfinite_count": 0
+        },
+        "bp": {
+          "min": -1.6205448159625728e-09,
+          "max": 1.620544815959784e-09,
+          "nonfinite_count": 0
+        },
+        "bz": {
+          "min": 1.9695258040910695e-06,
+          "max": 2.7974455331269627e-05,
+          "nonfinite_count": 0
+        }
+      },
+      "PF_M_IN": {
+        "br": {
+          "min": -1.8971272260322174e-06,
+          "max": 1.897127226032218e-06,
+          "nonfinite_count": 0
+        },
+        "bp": {
+          "min": -3.1598800193360023e-19,
+          "max": 3.1589856292937334e-19,
+          "nonfinite_count": 0
+        },
+        "bz": {
+          "min": -2.5526254776059165e-06,
+          "max": 3.5877540950262587e-07,
+          "nonfinite_count": 0
+        }
+      },
+      "PF_M_OUT": {
+        "br": {
+          "min": -1.0271481754470823e-05,
+          "max": 1.0271481754470823e-05,
+          "nonfinite_count": 0
+        },
+        "bp": {
+          "min": -2.933720267570451e-14,
+          "max": 2.933720267570451e-14,
+          "nonfinite_count": 0
+        },
+        "bz": {
+          "min": 6.15568881750842e-06,
+          "max": 2.5375813790346007e-05,
+          "nonfinite_count": 0
+        }
+      },
+      "PF_U_IN": {
+        "br": {
+          "min": -7.2123351921378395e-06,
+          "max": -2.776333462904889e-08,
+          "nonfinite_count": 0
+        },
+        "bp": {
+          "min": -1.1984093695065812e-16,
+          "max": 1.198394855647195e-16,
+          "nonfinite_count": 0
+        },
+        "bz": {
+          "min": -1.8993485384055008e-06,
+          "max": 1.9111388244711824e-06,
+          "nonfinite_count": 0
+        }
+      },
+      "PF_U_OUT": {
+        "br": {
+          "min": -4.430000584462129e-05,
+          "max": -4.4161411398401775e-07,
+          "nonfinite_count": 0
+        },
+        "bp": {
+          "min": -1.620544815956995e-09,
+          "max": 1.620544815954206e-09,
+          "nonfinite_count": 0
+        },
+        "bz": {
+          "min": 1.96952580409107e-06,
+          "max": 2.7974455331269664e-05,
+          "nonfinite_count": 0
+        }
+      }
+    },
+    "mgrid_mode": "S",
+    "ir": 201,
+    "jz": 201,
+    "kp": 36,
+    "nfp": 1,
+    "nextcur": 6,
+    "rmin_m": 4.0,
+    "rmax_m": 11.0,
+    "zmin_m": -3.5,
+    "zmax_m": 3.5,
+    "raw_coil_cur_A": [
+      19123.4976703,
+      19904.2740987,
+      -19395.6036404,
+      19304.7552541,
+      19123.4976703,
+      19904.2740987
+    ]
+  },
+  "reconciliations": {
+    "group_labels_match_mgrid": true,
+    "loop_counts_match_expected_order": true,
+    "coil_current_vs_extcur_max_difference_A": 0.0,
+    "mgrid_raw_current_vs_extcur_max_difference_A": 0.0,
+    "mgrid_raw_current_vs_extcur_pass": true,
+    "coil_current_vs_extcur_pass": true,
+    "all_loops_128_points": true,
+    "all_loops_closed_by_duplicate_endpoint": true
+  },
+  "native_run": {
+    "manifest_status": "NATIVE_MAKEGRID_COMPLETED",
+    "command": [
+      "/home/STELLOPT/MAKEGRID/Release/xgrid"
+    ],
+    "return_code": 0,
+    "xgrid_log_contains_all_36_planes": true,
+    "xgrid_log_contains_nan_summary_values": true,
+    "xgrid_log_nan_interpretation": "The NaN entries are zero-spread SD report fields for uniform-current groups; all MGRID field arrays were separately checked finite.",
+    "native_makegrid_run_pass": true,
+    "input_configuration_file_present_in_supplied_directory": false,
+    "input_configuration_file": "/workspace/scratch/40c425c80e7e/upload/input_xgrid.tomahawk_pf"
+  },
+  "scope": {
+    "pf_source_present": true,
+    "tf_source_present": false,
+    "only_pf_group_labels": true,
+    "mgrid_nfp": 1,
+    "total_field_or_tf_ripple_evaluable_from_this_mgrid": false,
+    "tf_edge_ripple_gate": "BLOCKED_TF_SOURCE_ABSENT",
+    "free_boundary_3D_MHD_gate": "BLOCKED_TOTAL_FIELD_AND_APPROVED_BOUNDARY",
+    "formal_G1_approval": false
+  },
+  "gates": {
+    "native_makegrid_return_code_zero": true,
+    "manifest_hashes_for_mgrid_and_extcur": true,
+    "complete_manifest_hash_coverage_including_coils": false,
+    "coil_labels_and_currents_reconciled": true,
+    "mgrid_dimensions_valid": true,
+    "mgrid_field_arrays_finite": true,
+    "tf_edge_ripple_screen_pass": false,
+    "free_boundary_3D_MHD_pass": false,
+    "formal_G1_approval": false
+  },
+  "interpretation": [
+    "The supplied mgrid_tomahawk_pf.nc is a native-successful PF MAKEGRID output and is byte-identical to the archived PF MGRID copy.",
+    "The supplied coils.tomahawk_pf contains six PF groups and 578 closed 128-point filament loops; no TF coil group is present.",
+    "The MGRID has nfp=1 and six PF field-group arrays on a 201 x 201 x 36 grid. It cannot evaluate TF edge ripple or total-field symmetry for the 16-period plasma boundary.",
+    "The makegrid input_xgrid file named in the manifest is not present beside the supplied artifacts, so the native output is verifiable but the run is not fully replayable from this upload alone."
+  ]
+}

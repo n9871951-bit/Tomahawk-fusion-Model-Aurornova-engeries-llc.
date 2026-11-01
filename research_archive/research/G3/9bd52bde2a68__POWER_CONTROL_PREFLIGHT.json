@@ -1,0 +1,278 @@
+{
+  "schema_version": "TOMAHAWK-POWER-CONTROL-PREFLIGHT-0.1",
+  "status": "POWER_CONTROL_INTEGRATION_READY_SCREENING_ONLY",
+  "generated_wall_seconds": 1.1290781497955322,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.39",
+  "scope": {
+    "geometry_changed": false,
+    "existing_power_model_changed": false,
+    "power_multiplier_applied": 1.0,
+    "incremental_power_output_W": null,
+    "solver_compilation_or_execution_performed": false
+  },
+  "makegrid": {
+    "pf_native_artifact_pass": true,
+    "pf_audit_path": "/workspace/scratch/40c425c80e7e/phase2_20260910/makegrid_artifact_audit/makegrid_artifact_audit.json",
+    "pf_mgrid_sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+    "pf_mgrid_nfp": 1,
+    "project_mgrid_inventory": {
+      "unique_mgrid_sha256_count": 1,
+      "files": [
+        {
+          "path": "/workspace/scratch/40c425c80e7e/mgrid_g1_check_20260909/evidence_bundle/PF_MAKEGRID/mgrid_tomahawk_pf.nc",
+          "sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+          "group_names": [
+            "PF_L_IN",
+            "PF_L_OUT",
+            "PF_M_IN",
+            "PF_M_OUT",
+            "PF_U_IN",
+            "PF_U_OUT"
+          ],
+          "nfp": 1,
+          "nextcur": 6,
+          "dimensions": {
+            "stringsize": 30,
+            "external_coil_groups": 6,
+            "dim_00001": 1,
+            "external_coils": 6,
+            "rad": 201,
+            "zee": 201,
+            "phi": 36
+          },
+          "tf_group_present": false
+        }
+      ],
+      "native_tf_mgrid_present": false
+    },
+    "native_tf_mgrid_present": false
+  },
+  "tf_sources": {
+    "cad_a2_16_coil": {
+      "geometry": {
+        "path": "/workspace/scratch/40c425c80e7e/tf_library_materialized_20260909/cad_a2_coil_centerlines.csv",
+        "sha256": "9f92a7702d7136d8da5bbb6c79bbab17ccf8c84c058ecdaa8af5c73c0a7bcb31",
+        "row_count": 8192,
+        "coil_count": 16,
+        "first_coil_id": "TF01",
+        "last_coil_id": "TF16",
+        "branches": [
+          "CAD_A2_MODEL_DERIVED_CENTERLINE"
+        ],
+        "turns": [
+          "100"
+        ],
+        "current_value_count": 0,
+        "current_values_A": [],
+        "rows_per_coil_min": 512,
+        "rows_per_coil_max": 512
+      },
+      "currents": {
+        "path": "/workspace/scratch/40c425c80e7e/tf_library_materialized_20260909/cad_a2_coil_currents.csv",
+        "sha256": "b328ace3dc25e8f26719a87069298d06abee9ccb954aef69cddcbe817e9193f1",
+        "row_count": 64,
+        "coil_count": 16,
+        "first_coil_id": "TF01",
+        "last_coil_id": "TF16",
+        "branches": [
+          "CAD_A2_MODEL_DERIVED_CENTERLINE"
+        ],
+        "turns": [
+          "100"
+        ],
+        "current_value_count": 3,
+        "current_values_A": [
+          0.0,
+          163391.41483780002,
+          326782.82967560005
+        ],
+        "rows_per_coil_min": 4,
+        "rows_per_coil_max": 4
+      },
+      "ripple": {
+        "path": "/workspace/scratch/40c425c80e7e/cad_a2_resolution_20260906/native_smoke/smoke/tf_ripple_screen_CAD_A2_MODEL_DERIVED.json",
+        "sha256": "2fdb9c2a23a29c934829d7986184e1dbb91d419440ff5e8a1081ad815906255a",
+        "status": "CAD_A2_MODEL_DERIVED_SCREENING_RESULT",
+        "branch": "CAD_A2_MODEL_DERIVED_CENTERLINE",
+        "coil_count": 16,
+        "schedule_status": "MODEL_DERIVED_OR_LEGACY_SCREENING",
+        "edge_ripple_percent": 25.023777746333263,
+        "threshold_percent": 1.0,
+        "reported_pass": false
+      }
+    },
+    "legacy_16_coil": {
+      "ripple": {
+        "path": "/workspace/scratch/40c425c80e7e/cad_a2_resolution_20260906/native_smoke/smoke/tf_ripple_screen_LEGACY_BRANCH_ADVISORY.json",
+        "sha256": "ca37b0faf772bfe72845699a0e72cbbf8d51cdf05c186e2161d95d1fca47e257",
+        "status": "LEGACY_BRANCH_ADVISORY_ONLY_NOT_A_CONTROLLING_GATE",
+        "branch": "LEGACY_KAGGLE_MODEL_DERIVED_FILAMENT_CENTERLINE",
+        "coil_count": 16,
+        "schedule_status": "MODEL_DERIVED_OR_LEGACY_SCREENING",
+        "edge_ripple_percent": 69.16465439152202,
+        "threshold_percent": 1.0,
+        "reported_pass": false
+      }
+    },
+    "cad_a2_tf48_interleaved": {
+      "geometry": {
+        "path": "/workspace/scratch/40c425c80e7e/tf_library_materialized_20260909/cad_a2_tf48_interleaved_centerlines.csv",
+        "sha256": "5bfa75b0e8da4ec370dfe6a3e1c26a615af4aab1196384f8c24a5bceb7406661",
+        "row_count": 24576,
+        "coil_count": 48,
+        "first_coil_id": "TF001",
+        "last_coil_id": "TF048",
+        "branches": [
+          "CAD_A2_TF48_INTERLEAVED_SCREENING_CORRECTION"
+        ],
+        "turns": [
+          "100"
+        ],
+        "current_value_count": 0,
+        "current_values_A": [],
+        "rows_per_coil_min": 512,
+        "rows_per_coil_max": 512
+      },
+      "currents": {
+        "path": "/workspace/scratch/40c425c80e7e/tf_library_materialized_20260909/cad_a2_tf48_interleaved_currents.csv",
+        "sha256": "d2bb069a55b79ba0aaabba05847e300d025ebf8dfba8fcb3f4ee92529f30c30b",
+        "row_count": 192,
+        "coil_count": 48,
+        "first_coil_id": "TF001",
+        "last_coil_id": "TF048",
+        "branches": [
+          "CAD_A2_TF48_INTERLEAVED_SCREENING_CORRECTION"
+        ],
+        "turns": [
+          "100"
+        ],
+        "current_value_count": 3,
+        "current_values_A": [
+          0.0,
+          109374.99999473072,
+          54687.49999736536
+        ],
+        "rows_per_coil_min": 4,
+        "rows_per_coil_max": 4
+      },
+      "ripple": {
+        "path": "/workspace/scratch/40c425c80e7e/phase2_20260910/field_reconciliation/total_field_reconciliation.json",
+        "sha256": "fb7d760eac840d84eb2a4946b818fe674a6a5752ceb28951c765d258063f538d",
+        "status": "TOTAL_FIELD_RECONCILIATION_COMPLETED",
+        "branch": "CAD_A2_TF48_INTERLEAVED_SCREENING_CORRECTION",
+        "coil_count": 48,
+        "schedule_status": "MODEL_DERIVED_NOT_AS_BUILT",
+        "edge_ripple_percent": 0.7539158736776759,
+        "threshold_percent": 1.0,
+        "reported_pass": true
+      }
+    },
+    "use_rule": "Use source_kaggle_model_derived files only for the legacy model-derived branch. Use cad_a2_winding_envelope.csv for the CAD-A2 geometric envelope. A solver-ready CAD-A2 coil schedule requires an electrical design or a field rerun using the CAD-A2 centerline/envelope.",
+    "cad_a2_schedule_status": "MODEL_DERIVED_NOT_AS_BUILT"
+  },
+  "strict_tf_ripple_gate": {
+    "limit_percent": 1.0,
+    "controlling_screening_branch": "CAD_A2_TF48_INTERLEAVED_SCREENING_CORRECTION",
+    "controlling_screening_coil_count": 48,
+    "controlling_screening_edge_ripple_percent": 0.7539158736776759,
+    "native_tf_mgrid_present": false,
+    "sixteen_coil_cad_a2_edge_ripple_percent": 25.023777746333263,
+    "sixteen_coil_cad_a2_branch_fails_limit": true,
+    "48_coil_model_derived_edge_ripple_percent": 0.7539158736776759,
+    "48_coil_model_derived_branch_passes_limit": true,
+    "48_coil_model_derived_result_accepted_as_native_tf_evidence": false,
+    "tf_edge_ripple_screen_pass": true,
+    "screening_power_control_integration_authorized": true,
+    "native_solver_or_as_built_authorized": false,
+    "reason": "The declared controlling screening branch is the 48-coil interleaved branch and its recorded edge ripple is below the limit. The native MGRID remains PF-only, so this authorizes screening integration only; it does not establish a native/as-built TF source or VMEC/DESC approval."
+  },
+  "requested_controls": {
+    "rotational_shear": {
+      "requested": true,
+      "control_law_present": true,
+      "applied_to_existing_power_model": false,
+      "status": "BLOCKED_MISSING_ABSORPTION_AND_ROTATING_MHD_SOLVER",
+      "required_inputs": [
+        "laser_power_waveform_per_beam",
+        "absorption_fraction_per_beam_and_time",
+        "absorption_point_or_surface_intersection_per_beam_and_time",
+        "plasma_corona_inertia_and_rotation_profile",
+        "rotating_MHD_or_radiation_hydrodynamics_RT_growth_model"
+      ]
+    },
+    "temporal_pulse_shaping": {
+      "requested": true,
+      "control_law_present": true,
+      "applied_to_existing_power_model": false,
+      "status": "BLOCKED_MISSING_LASER_WAVEFORM_AND_RADIATION_HYDRODYNAMICS",
+      "required_inputs": [
+        "laser_energy_budget",
+        "foot_and_main_pulse_durations",
+        "inter-pulse_delay",
+        "target_trajectory_and_shock_arrival_time",
+        "laser_damage_and_bandwidth_limits",
+        "radiation_hydrodynamics_coupling_model"
+      ]
+    },
+    "asymmetry_compensation": {
+      "requested": true,
+      "control_law_present": true,
+      "applied_to_existing_power_model": false,
+      "status": "BLOCKED_MISSING_3D_RAY_TRACE_AND_HYDRODYNAMICS",
+      "required_inputs": [
+        "3D chamber_and_target_surface",
+        "beam_ray_trace_and_focus_model",
+        "time-dependent absorption_map",
+        "radiation_hydrodynamics_objective_and_constraints"
+      ]
+    },
+    "magnetic_insulation": {
+      "requested": true,
+      "control_law_present": true,
+      "applied_to_existing_power_model": false,
+      "status": "BLOCKED_MISSING_RADIATION_MHD_FLUX_COMPRESSION_AND_TRANSPORT",
+      "required_inputs": [
+        "time-dependent radiation-MHD compression tensor",
+        "finite_resistivity_and_heat_transport_model",
+        "initial_temperature_and_density_profiles",
+        "field-line topology_and_reconnection_model"
+      ]
+    }
+  },
+  "missing_for_real_evaluation": [
+    "3D chamber_and_target_surface",
+    "absorption_fraction_per_beam_and_time",
+    "absorption_point_or_surface_intersection_per_beam_and_time",
+    "beam_ray_trace_and_focus_model",
+    "field-line topology_and_reconnection_model",
+    "finite_resistivity_and_heat_transport_model",
+    "foot_and_main_pulse_durations",
+    "initial_temperature_and_density_profiles",
+    "inter-pulse_delay",
+    "laser_damage_and_bandwidth_limits",
+    "laser_energy_budget",
+    "laser_power_waveform_per_beam",
+    "plasma_corona_inertia_and_rotation_profile",
+    "radiation_hydrodynamics_coupling_model",
+    "radiation_hydrodynamics_objective_and_constraints",
+    "rotating_MHD_or_radiation_hydrodynamics_RT_growth_model",
+    "target_trajectory_and_shock_arrival_time",
+    "time-dependent absorption_map",
+    "time-dependent radiation-MHD compression tensor"
+  ],
+  "gates": {
+    "tf_edge_ripple_screen_pass": true,
+    "screening_power_control_integration_authorized": true,
+    "native_tf_solver_authorized": false,
+    "power_control_changes_applied": false,
+    "free_boundary_3D_MHD_pass": false,
+    "formal_G1_approval": false
+  },
+  "interpretation": [
+    "The four requested controls are represented as explicit control contracts, but no numerical gain is applied.",
+    "The native PF MAKEGRID files are internally verified; they do not contain TF coils or a total-field schedule.",
+    "The 16-coil CAD-A2 screening result is 25.0238% at the outboard edge against a 1.0% provisional limit; the legacy branch is 69.1647%.",
+    "The 0.7539% result is the declared 48-coil screening gate and is below 1.0%; it remains model-derived and is not native/as-built TF evidence."
+  ]
+}

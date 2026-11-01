@@ -1,0 +1,50 @@
+schema_version: "1.0"
+file_role: plasma_initial_state_information
+units_system: SI_except_temperatures_keV_and_power_GW_or_MW_as_labeled
+normalization: flux_coordinate_rho_flux_equals_0_on_axis_and_1_at_plasma_edge
+status: screening_reference_not_measured_or_experimentally_validated
+design_baseline:
+  geometry:
+    major_radius_m: 7.5
+    minor_radius_m: 3.0
+    CAD_plasma_volume_m3: 950.0
+  magnetic_field:
+    B_peak_T: 35.0
+  fill:
+    fill_pressure_Pa: 0.300
+    fill_temperature_K: 300.0
+    estimated_D_T_mass_g: 0.571
+  density:
+    n_D0_m3: 1.2e20
+    n_T0_m3: 1.2e20
+    n_e0_m3_pure_DT: 2.4e20
+    gamma_n_reference: 0.657
+    gamma_n_scan: [0.5, 1.0]
+    profile_formula: "n_s(rho)=n_s_edge+(n_s0-n_s_edge)*(1-rho^2)^gamma_n"
+  temperature:
+    reference_T_i0_keV: 20.0
+    reference_T_e0_keV: 20.0
+    alternate_ion_hot_T_i0_keV: 22.0
+    alternate_ion_hot_T_e0_keV: 18.0
+    profile_formula: "T_s(rho)=T_s_edge+(T_s0-T_s_edge)*(1-rho^2)^gamma_Ts"
+    edge_values_status: provisional_screening_values_used_in_profiles_csv
+    reference_edge_density_fraction: 0.10
+    reference_T_i_edge_keV: 1.0
+    reference_T_e_edge_keV: 1.0
+    open_inputs_for_solved_run: [T_i_edge, T_e_edge, gamma_Ti, gamma_Te, ash_profile, impurity_profile]
+  external_heating:
+    R_MAPLA_wavelength_nm: 351.0
+    pulse_rate_Hz_per_module: 10.0
+    pulse_energy_MJ_per_module: 2.5
+  profile_files:
+    reference: "04_plasma/profiles.csv"
+    scenarios: [reference_20keV_20keV, ion_hot_22keV_18keV]
+  analytic_screening_volume_averages:
+    weighting: "2*rho_flux for a circular cross-section; replace with CAD cell-volume weights for production"
+    reference_n_D_avg_m3: 7.717803259e19
+    reference_n_T_avg_m3: 7.717803259e19
+    reference_n_e_avg_m3: 1.543560652e20
+    reference_T_i_avg_keV: 10.5
+    reference_T_e_avg_keV: 10.5
+    ion_hot_T_i_avg_keV: 11.5
+    ion_hot_T_e_avg_keV: 9.5

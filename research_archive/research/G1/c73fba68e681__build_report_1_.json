@@ -1,0 +1,11 @@
+{
+  "native_execution": "FAILED_NO_APPROVAL",
+  "assembly_build_accepted": false,
+  "native_CAD_executed": false,
+  "error": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\n",
+  "traceback": "Traceback (most recent call last):\n  File \"C:/Users/Nicol/Downloads/tomahawk_entire_model (5).py\", line 878, in run\n    g1_report,repaired_boundary=g1_prepare_native(out,parent,repair_payload)\n                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Users/Nicol/Downloads/tomahawk_entire_model (5).py\", line 240, in g1_prepare_native\n    shape.check(True)\nValueError: BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\n\n",
+  "new_physics_run": false,
+  "G1_approved": false,
+  "formal_G1_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+  "Kaggle_evidence_register": "Kaggle_Evidence_Register.md"
+}

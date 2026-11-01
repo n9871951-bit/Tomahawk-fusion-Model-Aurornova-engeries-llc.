@@ -1,0 +1,45 @@
+{
+  "checks": {
+    "all_arrays_finite": true,
+    "cylindrical_to_cartesian_residual_max_T": 0.0,
+    "magnitude_component_residual_max_T": 1.0658141036401503e-14,
+    "node_ids_contiguous": true,
+    "node_ids_row_aligned": true
+  },
+  "coordinate_components": [
+    "R_m",
+    "phi_rad",
+    "z_m"
+  ],
+  "coordinate_unit": "metre",
+  "field_components": [
+    "B_r_T",
+    "B_phi_T",
+    "B_z_T"
+  ],
+  "field_unit": "tesla",
+  "limitations": [
+    "The supplied 36-plane checkpoint is not sufficient to resolve 48-fold TF ripple.",
+    "This is a spatial nodal mapping, not a free-boundary equilibrium solution.",
+    "VMEC/DESC authorization remains false until an adequate native field and solver run pass."
+  ],
+  "mapping_file": {
+    "name": "tf48_14T_spatial_vector_field_mapping.npz",
+    "sha256": "c2d34a7d1724ad3eab09aea6a3895dca0bc198f05f348de1fc238abd7bd3c94f"
+  },
+  "node_count": 307200,
+  "schema_version": "TOMAHAWK-TF48-NODAL-VECTOR-MAPPING-1.0",
+  "source": {
+    "field_file": "TF48_14T_supplied_mesh_node_field.npz",
+    "field_sha256": "17bfec74c829e06aa978f0239402277130917fe6836eac7f8bf084203298df0f",
+    "mesh_file": "Tomahawk_ODS_Pb17Li_conformal_full_torus.msh",
+    "mesh_sha256": "7fb35bbd5c5325cf457afe936644814fc3e4157793c6435554baf0880d75760d"
+  },
+  "status": "MAPPED_NODE_FIELD_VALIDATED",
+  "tf_configuration": {
+    "amplitude_scale": 1.0,
+    "field_periods": 16,
+    "physical_coils": 48,
+    "supplied_checkpoint_toroidal_planes": 36
+  }
+}

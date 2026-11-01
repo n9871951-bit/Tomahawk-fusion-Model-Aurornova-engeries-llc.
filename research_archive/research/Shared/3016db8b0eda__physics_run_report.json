@@ -1,0 +1,54 @@
+{
+  "runner_version": "PHYSICS-RUNNER-1.0-FAIL-CLOSED",
+  "results_folder": "C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_Whole_Model\\CAD_A2_20260903_032131_6oeaj80e\\__pycache__",
+  "started_utc": "2026-09-03T11:14:26Z",
+  "validation_status": "BLOCKED_MISSING_BUILD_REPORT",
+  "validation_reason": "Build report not found: C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_Whole_Model\\CAD_A2_20260903_032131_6oeaj80e\\__pycache__\\build_report.json",
+  "build_report": "C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_Whole_Model\\CAD_A2_20260903_032131_6oeaj80e\\__pycache__\\build_report.json",
+  "native_build_execution": null,
+  "new_physics_run": false,
+  "stages": {
+    "MHD": {
+      "stage": "MHD",
+      "status": "BLOCKED_MISSING_BUILD_REPORT",
+      "reason": "Build report not found: C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_Whole_Model\\CAD_A2_20260903_032131_6oeaj80e\\__pycache__\\build_report.json",
+      "command": "",
+      "returncode": null,
+      "elapsed_s": 0.0,
+      "log": ""
+    },
+    "NEUTRONICS": {
+      "stage": "NEUTRONICS",
+      "status": "BLOCKED_MISSING_BUILD_REPORT",
+      "reason": "Build report not found: C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_Whole_Model\\CAD_A2_20260903_032131_6oeaj80e\\__pycache__\\build_report.json",
+      "command": "",
+      "returncode": null,
+      "elapsed_s": 0.0,
+      "log": ""
+    },
+    "CFD": {
+      "stage": "CFD",
+      "status": "BLOCKED_MISSING_BUILD_REPORT",
+      "reason": "Build report not found: C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_Whole_Model\\CAD_A2_20260903_032131_6oeaj80e\\__pycache__\\build_report.json",
+      "command": "",
+      "returncode": null,
+      "elapsed_s": 0.0,
+      "log": ""
+    },
+    "CHF": {
+      "stage": "CHF",
+      "status": "BLOCKED_MISSING_BUILD_REPORT",
+      "reason": "Build report not found: C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_Whole_Model\\CAD_A2_20260903_032131_6oeaj80e\\__pycache__\\build_report.json",
+      "command": "",
+      "returncode": null,
+      "elapsed_s": 0.0,
+      "log": ""
+    }
+  },
+  "limitations": [
+    "A zero return code means the external program completed, not that its physics is validated.",
+    "Mesh convergence, conservation, material qualification, and comparison to measurements remain required."
+  ],
+  "overall_status": "BLOCKED_MISSING_BUILD_REPORT",
+  "elapsed_s": 0.03391220001503825
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "TOMAHAWK-OPENMC-INPUT-MANIFEST-1.0",
+  "data_status": "PROVISIONAL_MANIFEST_DAGMC_AND_MATERIAL_CARDS_REQUIRED",
+  "dagmc_geometry": "../Solver_Geometry/Tomahawk_reactor_CONCEPT_FULL.h5m",
+  "material_region_map": "material_region_map.csv",
+  "source_sweep": "source_sweep.csv",
+  "settings": {
+    "run_mode": "fixed source",
+    "particles": 100000,
+    "batches": 100,
+    "inactive": 0,
+    "value_status": "PROVISIONAL_CONVERGENCE_STARTING_POINT"
+  },
+  "required_before_solver": [
+    "watertight imprinted DAGMC h5m",
+    "OpenMC materials.xml with isotope cards and densities",
+    "cross_sections.xml pointing to an evaluated data library",
+    "source spatial/angular distribution",
+    "tally definitions for heating, TBR, dpa, helium, and spectra"
+  ]
+}

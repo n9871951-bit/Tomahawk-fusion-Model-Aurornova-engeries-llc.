@@ -1,0 +1,634 @@
+{
+  "scope": "TOMAHAWK_FUSION_ONLY_DBC_EXCLUDED",
+  "purpose": "Carry forward prior Kaggle work without inheriting untested CAD-dependent claims.",
+  "notebooks_reexecuted": false,
+  "notebooks": [
+    {
+      "filename": "Tomahawk_Cassette_Channel_Topology_Kaggle.ipynb",
+      "original_path": "Tomahawk_Cassette_Channel_Topology_Kaggle.ipynb",
+      "sha256": "1c0d8ca266639d4b12696e20ab333a59d47412e31498353a25a147c172cfd1f3",
+      "code_sha256": "fe8a4ccb547c26f1f337ab215dd7e68f5690f6335896a6b41400d4483acf5974",
+      "code_cells": 6,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Preliminary_Thermal_Neutronics_Screen.ipynb",
+      "original_path": "Tomahawk_Preliminary_Thermal_Neutronics_Screen.ipynb",
+      "sha256": "3bdfaea1de7d66c4ff5a9f7f7778d685015c7bb936cbaa106102c78a98231ec6",
+      "code_sha256": "6768b4b0d761f6da9d956627915e79f60c4e2616ca00970e0be080e83089a4a9",
+      "code_cells": 10,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev21_Kaggle_No_Extra_Modules.ipynb",
+      "original_path": "Tomahawk_Rev21_Kaggle_No_Extra_Modules.ipynb",
+      "sha256": "4bf33e851a5fb3861fdf6c1ed9d4731312033e11c6ef4b582549873142e0d17d",
+      "code_sha256": "72a623852bb17ac8943876a8157a57cd3569f6497627e66f43aab2c41772ffee",
+      "code_cells": 7,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev21_Kaggle_Smoke_Then_Full.ipynb",
+      "original_path": "Tomahawk_Rev21_Kaggle_Smoke_Then_Full.ipynb",
+      "sha256": "1f0086d875cc600a60c1abcc970b1baf57408bfb962dbc520292c07588af63e3",
+      "code_sha256": "82d4b9d3b92c6f44da3ab10bf761d1761cff541eb9889f0a853c814493ce6c8b",
+      "code_cells": 8,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev22_Kaggle_RMAPLA_Smoke_Then_Full.ipynb",
+      "original_path": "Tomahawk_Rev22_Kaggle_RMAPLA_Smoke_Then_Full.ipynb",
+      "sha256": "20f167ac635fe13e5b35cd5740fc3553eaf5988a35e750adf1ee5e894bbf98db",
+      "code_sha256": "227bfabad40205936d0c3ad5a7be2843618bdd87926e3ebc2315dfaeceb47276",
+      "code_cells": 9,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev22_RMAPLA_Proof_of_Concept_Kaggle.ipynb",
+      "original_path": "Tomahawk_Rev22_RMAPLA_Proof_of_Concept_Kaggle.ipynb",
+      "sha256": "e343e2672c8a68338606314449f30f701b7fc57060a26f4914e3efa2a5053a12",
+      "code_sha256": "1bf7d441830608ea7a2df4f76e5f403b950bdb815801efd53b2d8e305dd7f87f",
+      "code_cells": 9,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev231_Coupled_TwoTemperature_HardwareInputs_Kaggle.ipynb",
+      "original_path": "Tomahawk_Rev231_Coupled_TwoTemperature_HardwareInputs_Kaggle.ipynb",
+      "sha256": "b6c9245fb2b6180a73b2a26a769a5a4d3660989d9fd69c00383a5805afed7884",
+      "code_sha256": "3562b642b158f750b8da3242c423a3f592c7623919ff9fcaf518f914c15b685f",
+      "code_cells": 8,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev231_Coupled_TwoTemperature_IonHeating_Kaggle.ipynb",
+      "original_path": "Tomahawk_Rev231_Coupled_TwoTemperature_IonHeating_Kaggle.ipynb",
+      "sha256": "e97cf6111561896d87a3b8aa63aa720905c3150e0896b5abb04fda008a7700ea",
+      "code_sha256": "7b1d879a2cebe7a4dc299b9b92d381e1a38d047c5cdc7d8c4d95e98c6368d52f",
+      "code_cells": 6,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev231_SelfHeating_RootSearch.ipynb",
+      "original_path": "Tomahawk_Rev231_SelfHeating_RootSearch.ipynb",
+      "sha256": "010a7877bd492d7523daf456309b825044d628546efe30e7ed10c09dfc6a7f0b",
+      "code_sha256": "880cf57d315b103b5614b0fb6c5819a643b45e5ef8f334f28e9dbcb8f19b1199",
+      "code_cells": 9,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev23_Equilibrium_MHD_Feasibility_Kaggle.ipynb",
+      "original_path": "Tomahawk_Rev23_Equilibrium_MHD_Feasibility_Kaggle.ipynb",
+      "sha256": "9286247d26bbb84979e79ae6325d59ddf6e3b278ace0b6c8cba83c5a9b2b093e",
+      "code_sha256": "c538d0c022002e89cf9684d2c884fa1980fb4425a7c8857dddfdac151a0da60d",
+      "code_cells": 7,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_v2_0_Kaggle_Fixed.ipynb",
+      "original_path": "Tomahawk_v2_0_Kaggle_Fixed.ipynb",
+      "sha256": "4bf33e851a5fb3861fdf6c1ed9d4731312033e11c6ef4b582549873142e0d17d",
+      "code_sha256": "72a623852bb17ac8943876a8157a57cd3569f6497627e66f43aab2c41772ffee",
+      "code_cells": 7,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Cassette_Channel_Topology_Solution_Screen_Kaggle.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/Tomahawk_Cassette_Channel_Topology_Solution_Screen_Kaggle.ipynb",
+      "sha256": "86ba039686860d41fe825be39d3173058e6a8c8df150a175528505ddc091c45e",
+      "code_sha256": "b6c589bacc9767957452e9331afb2866c28f4e74a77c671be804d00324581e64",
+      "code_cells": 7,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev22_Fast_Vectorized_MonteCarlo_Kaggle(1).ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/Tomahawk_Rev22_Fast_Vectorized_MonteCarlo_Kaggle(1).ipynb",
+      "sha256": "238bd040acb18f61c76b107c84de711641d83f84dc17121fec3c54f529e6c4b8",
+      "code_sha256": "0afeccdd934907082c99e1c5e28a6de80f9debe3d6895cc4545fd7c5375e4cae",
+      "code_cells": 1,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev22_Fast_Vectorized_MonteCarlo_Kaggle.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/Tomahawk_Rev22_Fast_Vectorized_MonteCarlo_Kaggle.ipynb",
+      "sha256": "992af82d75562c377a0fa66d9207ce08d9703e85165e6e12883388897e953a63",
+      "code_sha256": "ef6dca24aeb326bf9ab5fb616fb21529165ab7f15f211aabed85a4e6d32f7f53",
+      "code_cells": 1,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev22_Frozen_External_Input_Evaluator_Kaggle.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/Tomahawk_Rev22_Frozen_External_Input_Evaluator_Kaggle.ipynb",
+      "sha256": "e9d9521cc6fe95328307e18d57c2cb3d86d2cb726ad0b1add9a60fb57cde9f7d",
+      "code_sha256": "5f0626ceb119db72fbac1c22a6394a5c8d91d0f16ef47b672a001ad514238e51",
+      "code_cells": 1,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev22_Investor_Validation_Kaggle(1).ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/Tomahawk_Rev22_Investor_Validation_Kaggle(1).ipynb",
+      "sha256": "a53ee689e1739be0ac3f60ec2efa90e139ff6b8e8e28b5bfccc62351d54180b5",
+      "code_sha256": "80369d47aff6f7ae521a852f47113e8ce9733fb3ddf48c15567a20d2a5d41c01",
+      "code_cells": 1,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "Tomahawk_Rev22_Investor_Validation_Kaggle.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/Tomahawk_Rev22_Investor_Validation_Kaggle.ipynb",
+      "sha256": "a53ee689e1739be0ac3f60ec2efa90e139ff6b8e8e28b5bfccc62351d54180b5",
+      "code_sha256": "80369d47aff6f7ae521a852f47113e8ce9733fb3ddf48c15567a20d2a5d41c01",
+      "code_cells": 1,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "cassette-correction.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/cassette-correction.ipynb",
+      "sha256": "b6fe4eb47ba64a057c5651d027dcec1d831ae5c830745549923c1eca3877fd8d",
+      "code_sha256": "6c58d397f6996c15af6b034d1ad75923bcec38251bdfebd8e4db6094ccf760ef",
+      "code_cells": 1,
+      "cells_with_execution_counts": 1,
+      "output_blocks": 1,
+      "status": "RECORDED_OUTPUTS_INSPECTED",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [
+        "027afd5d2cc160bfc769c6b3ba3ab45a611fc5163b90e21016bd5a88c55e14e5"
+      ],
+      "structured_output_summaries": [],
+      "recorded_output_text": "Python: 3.12.13\nSelected input: /kaggle/input/datasets/nicolebryant29/cassette-corrected-input/Tomahawk_Cassette_Rev3_2_Broad_Full_Incident_Area_Corrected_Input.csv\nRows: 10935\nInput SHA-256: 027afd5d2cc160bfc769c6b3ba3ab45a611fc5163b90e21016bd5a88c55e14e5\nInput validation: PASS\n                                   analysis_branch  rows  legacy_rev31_passing_rows  legacy_rev31_pass_percent  rev32_passing_rows  rev32_pass_percent      acceptance_rule  acceptance_passed  elapsed_seconds  minimum_passing_mass_flow_kg_s_module  maximum_passing_mass_flow_kg_s_module\nfull_incident_broad_challenge_rev32_area_corrected 10935                        672                   6.145405                6974           63.776863 pass_percent >= 60.0               True          0.01708                             482.057416                             974.880383\n\nGate rates:\n                gate  passing_rows  pass_percent\n   gate_temperature         10839        99.122\ngate_boiling_margin         10211        93.379\n      gate_velocity          7614        69.630\n gate_pressure_drop         10692        97.778\n    gate_pump_power         10935       100.000\n     gate_flow_area         10935       100.000\n\nFailure matrix:\n                           failure_group  rows\n                               Velocity  2994\n                         Boiling margin   547\n               Velocity + Pressure drop   243\n           Temperature + Boiling margin    93\n              Boiling margin + Velocity    81\nTemperature + Boiling margin + Velocity     3\n\nSensitivity:\n  effective_wetted_area_efficiency  passing_rows  pass_percent\n                             0.65          5949       54.4033\n                             0.70          6271       57.3480\n                             0.75          6563       60.0183\n                             0.80          6783       62.0302\n                             0.85          6974       63.7769\n                             0.90          7123       65.1395\n                             1.00          7356       67.2702\n\nACCEPTANCE CHECK: PASS\nResults ZIP: /kaggle/working/tomahawk_rev32_area_corrected/Tomahawk_Cassette_Rev3_2_Area_Corrected_Results.zip\n",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "full-incident.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/full-incident.ipynb",
+      "sha256": "b12b72437b57c1a6102e05196804d34183d277ec807640c800abecd46a5c92d8",
+      "code_sha256": "691dd98e970e7de4e7f0a5291ec1e2fe76eb8624d64dafa8b0643bc8049800a9",
+      "code_cells": 5,
+      "cells_with_execution_counts": 5,
+      "output_blocks": 9,
+      "status": "RECORDED_OUTPUTS_INSPECTED",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [
+        "60cbec591ff27b1bed3f009bb165fcb515b3b9235200dcf4981b55c0f3683a5e",
+        "8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09"
+      ],
+      "structured_output_summaries": [
+        {
+          "model": "Tomahawk Cassette Rev3.1 single-branch reduced-order thermal-hydraulic screen",
+          "analysis_branch": "full_incident_broad_challenge",
+          "scope": "deterministic reduced-order screen; not CFD, neutronics, structural, irradiation, or hardware validation",
+          "input_path": "/kaggle/input/datasets/nicolebryant29/cassette/Tomahawk_Cassette_Rev3_Full_Incident_Stress_Input (2).csv",
+          "input_sha256": "60cbec591ff27b1bed3f009bb165fcb515b3b9235200dcf4981b55c0f3683a5e",
+          "frozen_evaluator_source_sha256": "8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09",
+          "constants": {
+            "n_cassettes_per_module": 4,
+            "cassette_area_m2": 2.5,
+            "rf_power_absorbed_MW_module": 15.0,
+            "rho_kg_m3": 950.0,
+            "mu_Pa_s": 0.00023,
+            "water_k_W_mK": 0.68,
+            "cp_J_kgK": 4180.0,
+            "cucrzr_k_W_mK": 300.0,
+            "minor_loss_K": 3.0,
+            "pump_efficiency": 0.7
+          },
+          "gates": {
+            "max_CuCrZr_temperature_C": 300.0,
+            "minimum_boiling_margin_C": 10.0,
+            "max_velocity_m_s": 5.0,
+            "max_pressure_drop_MPa": 0.25,
+            "max_pump_power_MW_module": 1.0,
+            "max_flow_area_fraction": 0.08
+          },
+          "summary": {
+            "analysis_branch": "full_incident_broad_challenge",
+            "rows": 10935,
+            "passing_rows": 672,
+            "pass_percent": 6.145404663923182,
+            "minimum_wall_temp_C": 156.5440161868553,
+            "maximum_wall_temp_C": 664.6629995759971,
+            "minimum_boiling_margin_C": -400.7629995759971,
+            "maximum_velocity_m_s": 15.658414865194535,
+            "maximum_pressure_drop_kPa": 674.5579742255012,
+            "maximum_pump_power_MW": 0.9888922347623548,
+            "minimum_passing_mass_flow_kg_s_module": 482.0574162679426,
+            "maximum_passing_mass_flow_kg_s_module": 974.8803827751196
+          },
+          "acceptance_rule": "passing_rows > 0",
+          "acceptance_passed": true,
+          "elapsed_seconds": 0.018096646000003602
+        }
+      ],
+      "recorded_output_text": "Python: 3.12.13\nOutput: /kaggle/working\nSeed: 20260826\nGPU required: no\nExpected analysis branch: full_incident_broad_challenge\nPreferred input filename: Tomahawk_Cassette_Rev3_Full_Incident_Stress_Input.csv\nFrozen evaluator source SHA-256: 8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09\n\nSelected input: /kaggle/input/datasets/nicolebryant29/cassette/Tomahawk_Cassette_Rev3_Full_Incident_Stress_Input (2).csv\nRows: 10935\nBranch: full_incident_broad_challenge\nInput SHA-256: 60cbec591ff27b1bed3f009bb165fcb515b3b9235200dcf4981b55c0f3683a5e\nInput validation: PASS\n\nEvaluated rows: 10935 elapsed_seconds: 0.0181\n\n                 analysis_branch   rows  passing_rows  pass_percent  \\\n0  full_incident_broad_challenge  10935           672        6.1454   \n\n   minimum_wall_temp_C  maximum_wall_temp_C  minimum_boiling_margin_C  \\\n0              156.544              664.663                  -400.763   \n\n   maximum_velocity_m_s  maximum_pressure_drop_kPa  maximum_pump_power_MW  \\\n0               15.6584                    674.558                 0.9889   \n\n   minimum_passing_mass_flow_kg_s_module  \\\n0                               482.0574   \n\n   maximum_passing_mass_flow_kg_s_module  \n0                               974.8804  \n                  gate  pass_percent\n0     gate_temperature         50.70\n1  gate_boiling_margin         34.13\n2        gate_velocity         69.63\n3   gate_pressure_drop         91.85\n4      gate_pump_power        100.00\n5       gate_flow_area        100.00\nACCEPTANCE RULE: passing_rows > 0\nACCEPTANCE CHECK: PASS\nInterpretation: deterministic grid coverage only; not a hardware-success probability.\n\nTop passing candidates:\n\n             topology  q_nuclear_areal_MW_m2  rf_loss_fraction  pressure_MPa  \\\n2709  parallel_ribbed                    4.0              0.02           7.0   \n2710  parallel_ribbed                    4.0              0.02           7.0   \n6354  parallel_ribbed                    4.0              0.03           7.0   \n2711  parallel_ribbed                    4.0              0.02           7.0   \n6355  parallel_ribbed                    4.0              0.03           7.0   \n6356  parallel_ribbed                    4.0              0.03           7.0   \n1494  parallel_ribbed                    4.0              0.02           6.0   \n1495  parallel_ribbed                    4.0              0.02           6.0   \n5139  parallel_ribbed                    4.0              0.03           6.0   \n1496  parallel_ribbed                    4.0              0.02           6.0   \n5140  parallel_ribbed                    4.0              0.03           6.0   \n5141  parallel_ribbed                    4.0              0.03           6.0   \n279   parallel_ribbed                    4.0              0.02           5.0   \n280   parallel_ribbed                    4.0              0.02           5.0   \n3924  parallel_ribbed                    4.0              0.03           5.0   \n281   parallel_ribbed                    4.0              0.02           5.0   \n3925  parallel_ribbed                    4.0              0.03           5.0   \n3926  parallel_ribbed                    4.0              0.03           5.0   \n3114  parallel_ribbed                    4.0              0.02           7.0   \n3115  parallel_ribbed                    4.0              0.02           7.0   \n2493  parallel_ribbed                    4.0              0.02           7.0   \n6759  parallel_ribbed                    4.0              0.03           7.0   \n3116  parallel_ribbed                    4.0              0.02           7.0   \n2494  parallel_ribbed                    4.0              0.02           7.0   \n6760  parallel_ribbed                    4.0              0.03           7.0   \n\n      inlet_temp_C  deltaT_C  channel_count_per_cassette  Dh_mm  \\\n2709          75.0      20.0                          64   20.0   \n2710          75.0      20.0                          64   20.0   \n6354          75.0      20.0                          64   20.0   \n2711          75.0      20.0                          64   20.0   \n6355          75.0      20.0                          64   20.0   \n6356          75.0      20.0                          64   20.0   \n1494          75.0      20.0                          64   20.0   \n1495          75.0      20.0                          64   20.0   \n5139          75.0      20.0                          64   20.0   \n1496          75.0      20.0                          64   20.0   \n5140          75.0      20.0                          64   20.0   \n5141          75.0      20.0                          64   20.0   \n279           75.0      20.0                          64   20.0   \n280           75.0      20.0                          64   20.0   \n3924          75.0      20.0                          64   20.0   \n281           75.0      20.0                          64   20.0   \n3925          75.0      20.0                          64   20.0   \n3926          75.0      20.0                          64   20.0   \n3114          85.0      20.0                          64   20.0   \n3115          85.0      20.0                          64   20.0   \n2493          75.0      10.0                         128   20.0   \n6759          85.0      20.0                          64   20.0   \n3116          85.0      20.0                          64   20.0   \n2494          75.0      10.0                         128   20.0   \n6760          85.0      20.0                          64   20.0   \n\n      cucrzr_skin_mm  channel_length_m  mdot_kg_s_module  velocity_m_s  \\\n2709             2.0              0.50          482.0574        4.9554   \n2710             2.0              0.75          482.0574        4.9554   \n6354             2.0              0.50          483.8517        4.9738   \n2711             2.0              1.00          482.0574        4.9554   \n6355             2.0              0.75          483.8517        4.9738   \n6356             2.0              1.00          483.8517        4.9738   \n1494             2.0              0.50          482.0574        4.9554   \n1495             2.0              0.75          482.0574        4.9554   \n5139             2.0              0.50          483.8517        4.9738   \n1496             2.0              1.00          482.0574        4.9554   \n5140             2.0              0.75          483.8517        4.9738   \n5141             2.0              1.00          483.8517        4.9738   \n279              2.0              0.50          482.0574        4.9554   \n280              2.0              0.75          482.0574        4.9554   \n3924             2.0              0.50          483.8517        4.9738   \n281              2.0              1.00          482.0574        4.9554   \n3925             2.0              0.75          483.8517        4.9738   \n3926             2.0              1.00          483.8517        4.9738   \n3114             2.0              0.50          482.0574        4.9554   \n3115             2.0              0.75          482.0574        4.9554   \n2493             2.0              0.50          964.1148        4.9554   \n6759             2.0              0.50          483.8517        4.9738   \n3116             2.0              1.00          482.0574        4.9554   \n2494             2.0              0.75          964.1148        4.9554   \n6760             2.0              0.75          483.8517        4.9738   \n\n      pressure_drop_kPa  pump_power_MW_module  wall_temp_C  boiling_margin_C  \\\n2709            61.8227                0.0448     238.1050           47.6950   \n2710            64.7407                0.0469     238.1050           47.6950   \n6354            62.2784                0.0453     238.2914           47.5086   \n2711            67.6587                0.0490     238.1050           47.6950   \n6355            65.2154                0.0475     238.2914           47.5086   \n6356            68.1524                0.0496     238.2914           47.5086   \n1494            61.8227                0.0448     238.1050           37.4950   \n1495            64.7407                0.0469     238.1050           37.4950   \n5139            62.2784                0.0453     238.2914           37.3086   \n1496            67.6587                0.0490     238.1050           37.4950   \n5140            65.2154                0.0475     238.2914           37.3086   \n5141            68.1524                0.0496     238.2914           37.3086   \n279             61.8227                0.0448     238.1050           25.7950   \n280             64.7407                0.0469     238.1050           25.7950   \n3924            62.2784                0.0453     238.2914           25.6086   \n281             67.6587                0.0490     238.1050           25.7950   \n3925            65.2154                0.0475     238.2914           25.6086   \n3926            68.1524                0.0496     238.2914           25.6086   \n3114            61.8227                0.0448     248.1050           37.6950   \n3115            64.7407                0.0469     248.1050           37.6950   \n2493            61.8227                0.0896     228.1050           57.6950   \n6759            62.2784                0.0453     248.2914           37.5086   \n3116            67.6587                0.0490     248.1050           37.6950   \n2494            64.7407                0.0939     228.1050           57.6950   \n6760            65.2154                0.0475     248.2914           37.5086   \n\n      ranking_score  \n2709        38.2505  \n2710        38.0065  \n6354        37.8613  \n2711        37.7625  \n6355        37.6156  \n6356        37.3700  \n1494        36.2105  \n1495        35.9665  \n5139        35.8213  \n1496        35.7225  \n5140        35.5756  \n5141        35.3300  \n279         33.8705  \n280         33.6265  \n3924        33.4813  \n281         33.3825  \n3925        33.2356  \n3926        32.9900  \n3114        26.2505  \n3115        26.0065  \n2493        25.9236  \n6759        25.8613  \n3116        25.7625  \n2494        25.6690  \n6760        25.6156  \nSaved result bundle: /kaggle/working/Tomahawk_Cassette_Rev3_1_broad_full_incident_challenge_Result_Bundle.zip\n{\n  \"model\": \"Tomahawk Cassette Rev3.1 single-branch reduced-order thermal-hydraulic screen\",\n  \"analysis_branch\": \"full_incident_broad_challenge\",\n  \"scope\": \"deterministic reduced-order screen; not CFD, neutronics, structural, irradiation, or hardware validation\",\n  \"input_path\": \"/kaggle/input/datasets/nicolebryant29/cassette/Tomahawk_Cassette_Rev3_Full_Incident_Stress_Input (2).csv\",\n  \"input_sha256\": \"60cbec591ff27b1bed3f009bb165fcb515b3b9235200dcf4981b55c0f3683a5e\",\n  \"frozen_evaluator_source_sha256\": \"8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09\",\n  \"constants\": {\n    \"n_cassettes_per_module\": 4,\n    \"cassette_area_m2\": 2.5,\n    \"rf_power_absorbed_MW_module\": 15.0,\n    \"rho_kg_m3\": 950.0,\n    \"mu_Pa_s\": 0.00023,\n    \"water_k_W_mK\": 0.68,\n    \"cp_J_kgK\": 4180.0,\n    \"cucrzr_k_W_mK\": 300.0,\n    \"minor_loss_K\": 3.0,\n    \"pump_efficiency\": 0.7\n  },\n  \"gates\": {\n    \"max_CuCrZr_temperature_C\": 300.0,\n    \"minimum_boiling_margin_C\": 10.0,\n    \"max_velocity_m_s\": 5.0,\n    \"max_pressure_drop_MPa\": 0.25,\n    \"max_pump_power_MW_module\": 1.0,\n    \"max_flow_area_fraction\": 0.08\n  },\n  \"summary\": {\n    \"analysis_branch\": \"full_incident_broad_challenge\",\n    \"rows\": 10935,\n    \"passing_rows\": 672,\n    \"pass_percent\": 6.145404663923182,\n    \"minimum_wall_temp_C\": 156.5440161868553,\n    \"maximum_wall_temp_C\": 664.6629995759971,\n    \"minimum_boiling_margin_C\": -400.7629995759971,\n    \"maximum_velocity_m_s\": 15.658414865194535,\n    \"maximum_pressure_drop_kPa\": 674.5579742255012,\n    \"maximum_pump_power_MW\": 0.9888922347623548,\n    \"minimum_passing_mass_flow_kg_s_module\": 482.0574162679426,\n    \"maximum_passing_mass_flow_kg_s_module\": 974.8803827751196\n  },\n  \"acceptance_rule\": \"passing_rows > 0\",\n  \"acceptance_passed\": true,\n  \"elapsed_seconds\": 0.018096646000003602\n}\n",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "notebook6d6019742f.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/notebook6d6019742f.ipynb",
+      "sha256": "6bb3addacf1a754e5ebe59c7de5c19757f32ec7fd600ccada235aca8e7db9595",
+      "code_sha256": "11000fc7b7c27d27cdd388e04b58d6991061ae9557788615df41a1f063d5a745",
+      "code_cells": 5,
+      "cells_with_execution_counts": 5,
+      "output_blocks": 9,
+      "status": "RECORDED_OUTPUTS_INSPECTED",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [
+        "4a40a8d14440b85222b073906409a339a3bfd03633778f126917c5eefbba6d33",
+        "8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09"
+      ],
+      "structured_output_summaries": [
+        {
+          "model": "Tomahawk Cassette Rev3.1 single-branch reduced-order thermal-hydraulic screen",
+          "analysis_branch": "full_incident_engineered",
+          "scope": "deterministic reduced-order screen; not CFD, neutronics, structural, irradiation, or hardware validation",
+          "input_path": "/kaggle/input/datasets/nicolebryant29/engineered-full-incident/Tomahawk_Cassette_Rev3_Engineered_Full_Incident_Input (2).csv",
+          "input_sha256": "4a40a8d14440b85222b073906409a339a3bfd03633778f126917c5eefbba6d33",
+          "frozen_evaluator_source_sha256": "8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09",
+          "constants": {
+            "n_cassettes_per_module": 4,
+            "cassette_area_m2": 2.5,
+            "rf_power_absorbed_MW_module": 15.0,
+            "rho_kg_m3": 950.0,
+            "mu_Pa_s": 0.00023,
+            "water_k_W_mK": 0.68,
+            "cp_J_kgK": 4180.0,
+            "cucrzr_k_W_mK": 300.0,
+            "minor_loss_K": 3.0,
+            "pump_efficiency": 0.7
+          },
+          "gates": {
+            "max_CuCrZr_temperature_C": 300.0,
+            "minimum_boiling_margin_C": 10.0,
+            "max_velocity_m_s": 5.0,
+            "max_pressure_drop_MPa": 0.25,
+            "max_pump_power_MW_module": 1.0,
+            "max_flow_area_fraction": 0.08
+          },
+          "summary": {
+            "analysis_branch": "full_incident_engineered",
+            "rows": 432,
+            "passing_rows": 336,
+            "pass_percent": 77.77777777777779,
+            "minimum_wall_temp_C": 228.10501242056534,
+            "maximum_wall_temp_C": 284.4704023324976,
+            "minimum_boiling_margin_C": -8.870402332497576,
+            "maximum_velocity_m_s": 4.97380422122891,
+            "maximum_pressure_drop_kPa": 68.15243320674416,
+            "maximum_pump_power_MW": 0.09917494417429225,
+            "minimum_passing_mass_flow_kg_s_module": 482.0574162679426,
+            "maximum_passing_mass_flow_kg_s_module": 967.7033492822967
+          },
+          "acceptance_rule": "pass_percent >= 60.0",
+          "acceptance_passed": true,
+          "elapsed_seconds": 0.018435473000181446
+        }
+      ],
+      "recorded_output_text": "Python: 3.12.13\nOutput: /kaggle/working\nSeed: 20260826\nGPU required: no\nExpected analysis branch: full_incident_engineered\nPreferred input filename: Tomahawk_Cassette_Rev3_Engineered_Full_Incident_Input.csv\nFrozen evaluator source SHA-256: 8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09\n\nSelected input: /kaggle/input/datasets/nicolebryant29/engineered-full-incident/Tomahawk_Cassette_Rev3_Engineered_Full_Incident_Input (2).csv\nRows: 432\nBranch: full_incident_engineered\nInput SHA-256: 4a40a8d14440b85222b073906409a339a3bfd03633778f126917c5eefbba6d33\nInput validation: PASS\n\nEvaluated rows: 432 elapsed_seconds: 0.0184\n\n            analysis_branch  rows  passing_rows  pass_percent  \\\n0  full_incident_engineered   432           336       77.7778   \n\n   minimum_wall_temp_C  maximum_wall_temp_C  minimum_boiling_margin_C  \\\n0              228.105             284.4704                   -8.8704   \n\n   maximum_velocity_m_s  maximum_pressure_drop_kPa  maximum_pump_power_MW  \\\n0                4.9738                    68.1524                 0.0992   \n\n   minimum_passing_mass_flow_kg_s_module  \\\n0                               482.0574   \n\n   maximum_passing_mass_flow_kg_s_module  \n0                               967.7033  \n                  gate  pass_percent\n0     gate_temperature        100.00\n1  gate_boiling_margin         77.78\n2        gate_velocity        100.00\n3   gate_pressure_drop        100.00\n4      gate_pump_power        100.00\n5       gate_flow_area        100.00\nACCEPTANCE RULE: pass_percent >= 60.0\nACCEPTANCE CHECK: PASS\nInterpretation: deterministic grid coverage only; not a hardware-success probability.\nSystem-integration caution: minimum passing mass flow = 482.06 kg/s/module; no plant-level mass-flow feasibility gate has been established.\n\nTop passing candidates:\n\n            topology  q_nuclear_areal_MW_m2  rf_loss_fraction  pressure_MPa  \\\n18   parallel_ribbed                    4.0              0.02           7.0   \n19   parallel_ribbed                    4.0              0.02           7.0   \n54   parallel_ribbed                    4.0              0.03           7.0   \n20   parallel_ribbed                    4.0              0.02           7.0   \n55   parallel_ribbed                    4.0              0.03           7.0   \n56   parallel_ribbed                    4.0              0.03           7.0   \n0    parallel_ribbed                    4.0              0.02           6.0   \n1    parallel_ribbed                    4.0              0.02           6.0   \n36   parallel_ribbed                    4.0              0.03           6.0   \n2    parallel_ribbed                    4.0              0.02           6.0   \n37   parallel_ribbed                    4.0              0.03           6.0   \n38   parallel_ribbed                    4.0              0.03           6.0   \n27   parallel_ribbed                    4.0              0.02           7.0   \n28   parallel_ribbed                    4.0              0.02           7.0   \n306  parallel_ribbed                    4.0              0.02           7.0   \n63   parallel_ribbed                    4.0              0.03           7.0   \n29   parallel_ribbed                    4.0              0.02           7.0   \n307  parallel_ribbed                    4.0              0.02           7.0   \n64   parallel_ribbed                    4.0              0.03           7.0   \n342  parallel_ribbed                    4.0              0.03           7.0   \n308  parallel_ribbed                    4.0              0.02           7.0   \n65   parallel_ribbed                    4.0              0.03           7.0   \n343  parallel_ribbed                    4.0              0.03           7.0   \n344  parallel_ribbed                    4.0              0.03           7.0   \n162  parallel_ribbed                    4.0              0.02           7.0   \n\n     inlet_temp_C  deltaT_C  channel_count_per_cassette  Dh_mm  \\\n18           75.0      20.0                          64   20.0   \n19           75.0      20.0                          64   20.0   \n54           75.0      20.0                          64   20.0   \n20           75.0      20.0                          64   20.0   \n55           75.0      20.0                          64   20.0   \n56           75.0      20.0                          64   20.0   \n0            75.0      20.0                          64   20.0   \n1            75.0      20.0                          64   20.0   \n36           75.0      20.0                          64   20.0   \n2            75.0      20.0                          64   20.0   \n37           75.0      20.0                          64   20.0   \n38           75.0      20.0                          64   20.0   \n27           85.0      20.0                          64   20.0   \n28           85.0      20.0                          64   20.0   \n306          75.0      10.0                         128   20.0   \n63           85.0      20.0                          64   20.0   \n29           85.0      20.0                          64   20.0   \n307          75.0      10.0                         128   20.0   \n64           85.0      20.0                          64   20.0   \n342          75.0      10.0                         128   20.0   \n308          75.0      10.0                         128   20.0   \n65           85.0      20.0                          64   20.0   \n343          75.0      10.0                         128   20.0   \n344          75.0      10.0                         128   20.0   \n162          75.0      15.0                          96   20.0   \n\n     cucrzr_skin_mm  channel_length_m  mdot_kg_s_module  velocity_m_s  \\\n18              2.0              0.50          482.0574        4.9554   \n19              2.0              0.75          482.0574        4.9554   \n54              2.0              0.50          483.8517        4.9738   \n20              2.0              1.00          482.0574        4.9554   \n55              2.0              0.75          483.8517        4.9738   \n56              2.0              1.00          483.8517        4.9738   \n0               2.0              0.50          482.0574        4.9554   \n1               2.0              0.75          482.0574        4.9554   \n36              2.0              0.50          483.8517        4.9738   \n2               2.0              1.00          482.0574        4.9554   \n37              2.0              0.75          483.8517        4.9738   \n38              2.0              1.00          483.8517        4.9738   \n27              2.0              0.50          482.0574        4.9554   \n28              2.0              0.75          482.0574        4.9554   \n306             2.0              0.50          964.1148        4.9554   \n63              2.0              0.50          483.8517        4.9738   \n29              2.0              1.00          482.0574        4.9554   \n307             2.0              0.75          964.1148        4.9554   \n64              2.0              0.75          483.8517        4.9738   \n342             2.0              0.50          967.7033        4.9738   \n308             2.0              1.00          964.1148        4.9554   \n65              2.0              1.00          483.8517        4.9738   \n343             2.0              0.75          967.7033        4.9738   \n344             2.0              1.00          967.7033        4.9738   \n162             2.0              0.50          642.7432        4.4048   \n\n     pressure_drop_kPa  pump_power_MW_module  wall_temp_C  boiling_margin_C  \\\n18             61.8227                0.0448     238.1050           47.6950   \n19             64.7407                0.0469     238.1050           47.6950   \n54             62.2784                0.0453     238.2914           47.5086   \n20             67.6587                0.0490     238.1050           47.6950   \n55             65.2154                0.0475     238.2914           47.5086   \n56             68.1524                0.0496     238.2914           47.5086   \n0              61.8227                0.0448     238.1050           37.4950   \n1              64.7407                0.0469     238.1050           37.4950   \n36             62.2784                0.0453     238.2914           37.3086   \n2              67.6587                0.0490     238.1050           37.4950   \n37             65.2154                0.0475     238.2914           37.3086   \n38             68.1524                0.0496     238.2914           37.3086   \n27             61.8227                0.0448     248.1050           37.6950   \n28             64.7407                0.0469     248.1050           37.6950   \n306            61.8227                0.0896     228.1050           57.6950   \n63             62.2784                0.0453     248.2914           37.5086   \n29             67.6587                0.0490     248.1050           37.6950   \n307            64.7407                0.0939     228.1050           57.6950   \n64             65.2154                0.0475     248.2914           37.5086   \n342            62.2784                0.0906     228.2914           57.5086   \n308            67.6587                0.0981     228.1050           57.6950   \n65             68.1524                0.0496     248.2914           37.5086   \n343            65.2154                0.0949     228.2914           57.5086   \n344            68.1524                0.0992     228.2914           57.5086   \n162            48.9854                0.0473     244.5904           41.2096   \n\n     ranking_score  \n18         38.2505  \n19         38.0065  \n54         37.8613  \n20         37.7625  \n55         37.6156  \n56         37.3700  \n0          36.2105  \n1          35.9665  \n36         35.8213  \n2          35.7225  \n37         35.5756  \n38         35.3300  \n27         26.2505  \n28         26.0065  \n306        25.9236  \n63         25.8613  \n29         25.7625  \n307        25.6690  \n64         25.6156  \n342        25.4421  \n308        25.4144  \n65         25.3700  \n343        25.1858  \n344        24.9295  \n162        24.5493  \nSaved result bundle: /kaggle/working/Tomahawk_Cassette_Rev3_1_engineered_full_incident_Result_Bundle.zip\n{\n  \"model\": \"Tomahawk Cassette Rev3.1 single-branch reduced-order thermal-hydraulic screen\",\n  \"analysis_branch\": \"full_incident_engineered\",\n  \"scope\": \"deterministic reduced-order screen; not CFD, neutronics, structural, irradiation, or hardware validation\",\n  \"input_path\": \"/kaggle/input/datasets/nicolebryant29/engineered-full-incident/Tomahawk_Cassette_Rev3_Engineered_Full_Incident_Input (2).csv\",\n  \"input_sha256\": \"4a40a8d14440b85222b073906409a339a3bfd03633778f126917c5eefbba6d33\",\n  \"frozen_evaluator_source_sha256\": \"8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09\",\n  \"constants\": {\n    \"n_cassettes_per_module\": 4,\n    \"cassette_area_m2\": 2.5,\n    \"rf_power_absorbed_MW_module\": 15.0,\n    \"rho_kg_m3\": 950.0,\n    \"mu_Pa_s\": 0.00023,\n    \"water_k_W_mK\": 0.68,\n    \"cp_J_kgK\": 4180.0,\n    \"cucrzr_k_W_mK\": 300.0,\n    \"minor_loss_K\": 3.0,\n    \"pump_efficiency\": 0.7\n  },\n  \"gates\": {\n    \"max_CuCrZr_temperature_C\": 300.0,\n    \"minimum_boiling_margin_C\": 10.0,\n    \"max_velocity_m_s\": 5.0,\n    \"max_pressure_drop_MPa\": 0.25,\n    \"max_pump_power_MW_module\": 1.0,\n    \"max_flow_area_fraction\": 0.08\n  },\n  \"summary\": {\n    \"analysis_branch\": \"full_incident_engineered\",\n    \"rows\": 432,\n    \"passing_rows\": 336,\n    \"pass_percent\": 77.77777777777779,\n    \"minimum_wall_temp_C\": 228.10501242056534,\n    \"maximum_wall_temp_C\": 284.4704023324976,\n    \"minimum_boiling_margin_C\": -8.870402332497576,\n    \"maximum_velocity_m_s\": 4.97380422122891,\n    \"maximum_pressure_drop_kPa\": 68.15243320674416,\n    \"maximum_pump_power_MW\": 0.09917494417429225,\n    \"minimum_passing_mass_flow_kg_s_module\": 482.0574162679426,\n    \"maximum_passing_mass_flow_kg_s_module\": 967.7033492822967\n  },\n  \"acceptance_rule\": \"pass_percent >= 60.0\",\n  \"acceptance_passed\": true,\n  \"elapsed_seconds\": 0.018435473000181446\n}\n",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "notebook98960ad648.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/notebook98960ad648.ipynb",
+      "sha256": "6fdf51a9045736fdb86d4ff2ea5ce309fd3bc6522c59668bd4c4e6290f037cf5",
+      "code_sha256": "df4a473b6f0d9fa42c81107fe05278bd89088c948e59a15ec085c277d97e9ffc",
+      "code_cells": 5,
+      "cells_with_execution_counts": 5,
+      "output_blocks": 9,
+      "status": "RECORDED_OUTPUTS_INSPECTED",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [
+        "8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09",
+        "ad7edd9e93eb8a1e3d6d6d5f3897e952b47a60b6cadd82355b19c126ec03128f"
+      ],
+      "structured_output_summaries": [
+        {
+          "model": "Tomahawk Cassette Rev3.1 single-branch reduced-order thermal-hydraulic screen",
+          "analysis_branch": "transport_deposition_controlled",
+          "scope": "deterministic reduced-order screen; not CFD, neutronics, structural, irradiation, or hardware validation",
+          "input_path": "/kaggle/input/datasets/nicolebryant29/controlled/Tomahawk_Cassette_Rev3_Controlled_Envelope_Input (1).csv",
+          "input_sha256": "ad7edd9e93eb8a1e3d6d6d5f3897e952b47a60b6cadd82355b19c126ec03128f",
+          "frozen_evaluator_source_sha256": "8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09",
+          "constants": {
+            "n_cassettes_per_module": 4,
+            "cassette_area_m2": 2.5,
+            "rf_power_absorbed_MW_module": 15.0,
+            "rho_kg_m3": 950.0,
+            "mu_Pa_s": 0.00023,
+            "water_k_W_mK": 0.68,
+            "cp_J_kgK": 4180.0,
+            "cucrzr_k_W_mK": 300.0,
+            "minor_loss_K": 3.0,
+            "pump_efficiency": 0.7
+          },
+          "gates": {
+            "max_CuCrZr_temperature_C": 300.0,
+            "minimum_boiling_margin_C": 10.0,
+            "max_velocity_m_s": 5.0,
+            "max_pressure_drop_MPa": 0.25,
+            "max_pump_power_MW_module": 1.0,
+            "max_flow_area_fraction": 0.08
+          },
+          "summary": {
+            "analysis_branch": "transport_deposition_controlled",
+            "rows": 1728,
+            "passing_rows": 1346,
+            "pass_percent": 77.89351851851852,
+            "minimum_wall_temp_C": 157.82468853620173,
+            "maximum_wall_temp_C": 347.43441867112904,
+            "minimum_boiling_margin_C": -83.53441867112906,
+            "maximum_velocity_m_s": 2.420810150938051,
+            "maximum_pressure_drop_kPa": 17.765382751921518,
+            "maximum_pump_power_MW": 0.003019801903184847,
+            "minimum_passing_mass_flow_kg_s_module": 54.22647527910686,
+            "maximum_passing_mass_flow_kg_s_module": 113.03827751196172
+          },
+          "acceptance_rule": "pass_percent >= 60.0",
+          "acceptance_passed": true,
+          "elapsed_seconds": 0.012671372999989217
+        }
+      ],
+      "recorded_output_text": "Python: 3.12.13\nOutput: /kaggle/working\nSeed: 20260826\nGPU required: no\nExpected analysis branch: transport_deposition_controlled\nPreferred input filename: Tomahawk_Cassette_Rev3_Controlled_Envelope_Input.csv\nFrozen evaluator source SHA-256: 8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09\n\nSelected input: /kaggle/input/datasets/nicolebryant29/controlled/Tomahawk_Cassette_Rev3_Controlled_Envelope_Input (1).csv\nRows: 1728\nBranch: transport_deposition_controlled\nInput SHA-256: ad7edd9e93eb8a1e3d6d6d5f3897e952b47a60b6cadd82355b19c126ec03128f\nInput validation: PASS\n\nEvaluated rows: 1728 elapsed_seconds: 0.0127\n\n                   analysis_branch  rows  passing_rows  pass_percent  \\\n0  transport_deposition_controlled  1728          1346       77.8935   \n\n   minimum_wall_temp_C  maximum_wall_temp_C  minimum_boiling_margin_C  \\\n0             157.8247             347.4344                  -83.5344   \n\n   maximum_velocity_m_s  maximum_pressure_drop_kPa  maximum_pump_power_MW  \\\n0                2.4208                    17.7654                  0.003   \n\n   minimum_passing_mass_flow_kg_s_module  \\\n0                                54.2265   \n\n   maximum_passing_mass_flow_kg_s_module  \n0                               113.0383  \n                  gate  pass_percent\n0     gate_temperature         95.14\n1  gate_boiling_margin         77.89\n2        gate_velocity        100.00\n3   gate_pressure_drop        100.00\n4      gate_pump_power        100.00\n5       gate_flow_area        100.00\nACCEPTANCE RULE: pass_percent >= 60.0\nACCEPTANCE CHECK: PASS\nInterpretation: deterministic grid coverage only; not a hardware-success probability.\n\nTop passing candidates:\n\n             topology  q_nuclear_areal_MW_m2  rf_loss_fraction  pressure_MPa  \\\n864   parallel_ribbed                  0.650              0.02           5.0   \n865   parallel_ribbed                  0.650              0.02           5.0   \n1008  parallel_ribbed                  0.650              0.03           5.0   \n1009  parallel_ribbed                  0.650              0.03           5.0   \n866   parallel_ribbed                  0.650              0.02           5.0   \n867   parallel_ribbed                  0.650              0.02           5.0   \n1010  parallel_ribbed                  0.650              0.03           5.0   \n1011  parallel_ribbed                  0.650              0.03           5.0   \n1152  parallel_ribbed                  0.772              0.02           5.0   \n1153  parallel_ribbed                  0.772              0.02           5.0   \n1296  parallel_ribbed                  0.772              0.03           5.0   \n1297  parallel_ribbed                  0.772              0.03           5.0   \n1154  parallel_ribbed                  0.772              0.02           5.0   \n1155  parallel_ribbed                  0.772              0.02           5.0   \n1298  parallel_ribbed                  0.772              0.03           5.0   \n1440  parallel_ribbed                  0.900              0.02           5.0   \n1299  parallel_ribbed                  0.772              0.03           5.0   \n1441  parallel_ribbed                  0.900              0.02           5.0   \n1584  parallel_ribbed                  0.900              0.03           5.0   \n1585  parallel_ribbed                  0.900              0.03           5.0   \n1442  parallel_ribbed                  0.900              0.02           5.0   \n1443  parallel_ribbed                  0.900              0.02           5.0   \n1586  parallel_ribbed                  0.900              0.03           5.0   \n1587  parallel_ribbed                  0.900              0.03           5.0   \n936   parallel_ribbed                  0.650              0.02           5.0   \n\n      inlet_temp_C  deltaT_C  channel_count_per_cassette  Dh_mm  \\\n864           90.0      20.0                          48   16.0   \n865           90.0      20.0                          48   16.0   \n1008          90.0      20.0                          48   16.0   \n1009          90.0      20.0                          48   16.0   \n866           90.0      20.0                          48   16.0   \n867           90.0      20.0                          48   16.0   \n1010          90.0      20.0                          48   16.0   \n1011          90.0      20.0                          48   16.0   \n1152          90.0      20.0                          48   16.0   \n1153          90.0      20.0                          48   16.0   \n1296          90.0      20.0                          48   16.0   \n1297          90.0      20.0                          48   16.0   \n1154          90.0      20.0                          48   16.0   \n1155          90.0      20.0                          48   16.0   \n1298          90.0      20.0                          48   16.0   \n1440          90.0      20.0                          48   16.0   \n1299          90.0      20.0                          48   16.0   \n1441          90.0      20.0                          48   16.0   \n1584          90.0      20.0                          48   16.0   \n1585          90.0      20.0                          48   16.0   \n1442          90.0      20.0                          48   16.0   \n1443          90.0      20.0                          48   16.0   \n1586          90.0      20.0                          48   16.0   \n1587          90.0      20.0                          48   16.0   \n936          100.0      20.0                          48   16.0   \n\n      cucrzr_skin_mm  channel_length_m  mdot_kg_s_module  velocity_m_s  \\\n864              2.0              0.75           81.3397        1.7420   \n865              2.0              1.00           81.3397        1.7420   \n1008             2.0              0.75           83.1340        1.7804   \n1009             2.0              1.00           83.1340        1.7804   \n866              3.0              0.75           81.3397        1.7420   \n867              3.0              1.00           81.3397        1.7420   \n1010             3.0              0.75           83.1340        1.7804   \n1011             3.0              1.00           83.1340        1.7804   \n1152             2.0              0.75           95.9330        2.0545   \n1153             2.0              1.00           95.9330        2.0545   \n1296             2.0              0.75           97.7273        2.0929   \n1297             2.0              1.00           97.7273        2.0929   \n1154             3.0              0.75           95.9330        2.0545   \n1155             3.0              1.00           95.9330        2.0545   \n1298             3.0              0.75           97.7273        2.0929   \n1440             2.0              0.75          111.2440        2.3824   \n1299             3.0              1.00           97.7273        2.0929   \n1441             2.0              1.00          111.2440        2.3824   \n1584             2.0              0.75          113.0383        2.4208   \n1585             2.0              1.00          113.0383        2.4208   \n1442             3.0              0.75          111.2440        2.3824   \n1443             3.0              1.00          111.2440        2.3824   \n1586             3.0              0.75          113.0383        2.4208   \n1587             3.0              1.00          113.0383        2.4208   \n936              2.0              0.75           81.3397        1.7420   \n\n      pressure_drop_kPa  pump_power_MW_module  wall_temp_C  boiling_margin_C  \\\n864              8.7753                0.0011     157.8247          106.0753   \n865              9.3943                0.0011     157.8247          106.0753   \n1008             9.1562                0.0011     158.1140          105.7860   \n1009             9.7992                0.0012     158.1140          105.7860   \n866              8.7753                0.0011     160.0914          103.8086   \n867              9.3943                0.0011     160.0914          103.8086   \n1010             9.1562                0.0011     160.4307          103.4693   \n1011             9.7992                0.0012     160.4307          103.4693   \n1152            12.1022                0.0017     160.0906          103.8094   \n1153            12.9284                0.0019     160.0906          103.8094   \n1296            12.5473                0.0018     160.3567          103.5433   \n1297            13.4007                0.0020     160.3567          103.5433   \n1154            12.1022                0.0017     162.7639          101.1361   \n1155            12.9284                0.0019     162.7639          101.1361   \n1298            12.5473                0.0018     163.0801          100.8199   \n1440            16.1524                0.0027     162.2889          101.6111   \n1299            13.4007                0.0020     163.0801          100.8199   \n1441            17.2230                0.0029     162.2889          101.6111   \n1584            16.6644                0.0028     162.5366          101.3634   \n1585            17.7654                0.0030     162.5366          101.3634   \n1442            16.1524                0.0027     165.3889           98.5111   \n1443            17.2230                0.0029     165.3889           98.5111   \n1586            16.6644                0.0028     165.6866           98.2134   \n1587            17.7654                0.0030     165.6866           98.2134   \n936              8.7753                0.0011     167.8247           96.0753   \n\n      ranking_score  \n864        158.6160  \n865        158.5661  \n1008       158.1483  \n1009       158.0964  \n866        155.8960  \n867        155.8461  \n1010       155.3683  \n1011       155.3164  \n1152       154.8977  \n1153       154.8310  \n1296       154.4525  \n1297       154.3836  \n1154       151.6897  \n1155       151.6230  \n1298       151.1845  \n1440       151.1655  \n1299       151.1156  \n1441       151.0789  \n1584       150.7369  \n1585       150.6479  \n1442       147.4455  \n1443       147.3589  \n1586       146.9569  \n1587       146.8679  \n936        146.6160  \nSaved result bundle: /kaggle/working/Tomahawk_Cassette_Rev3_1_controlled_deposition_Result_Bundle.zip\n{\n  \"model\": \"Tomahawk Cassette Rev3.1 single-branch reduced-order thermal-hydraulic screen\",\n  \"analysis_branch\": \"transport_deposition_controlled\",\n  \"scope\": \"deterministic reduced-order screen; not CFD, neutronics, structural, irradiation, or hardware validation\",\n  \"input_path\": \"/kaggle/input/datasets/nicolebryant29/controlled/Tomahawk_Cassette_Rev3_Controlled_Envelope_Input (1).csv\",\n  \"input_sha256\": \"ad7edd9e93eb8a1e3d6d6d5f3897e952b47a60b6cadd82355b19c126ec03128f\",\n  \"frozen_evaluator_source_sha256\": \"8e509d0f5ac31fdbef099e14c54324632a72c4495e6895ed5de4f3eea46e4f09\",\n  \"constants\": {\n    \"n_cassettes_per_module\": 4,\n    \"cassette_area_m2\": 2.5,\n    \"rf_power_absorbed_MW_module\": 15.0,\n    \"rho_kg_m3\": 950.0,\n    \"mu_Pa_s\": 0.00023,\n    \"water_k_W_mK\": 0.68,\n    \"cp_J_kgK\": 4180.0,\n    \"cucrzr_k_W_mK\": 300.0,\n    \"minor_loss_K\": 3.0,\n    \"pump_efficiency\": 0.7\n  },\n  \"gates\": {\n    \"max_CuCrZr_temperature_C\": 300.0,\n    \"minimum_boiling_margin_C\": 10.0,\n    \"max_velocity_m_s\": 5.0,\n    \"max_pressure_drop_MPa\": 0.25,\n    \"max_pump_power_MW_module\": 1.0,\n    \"max_flow_area_fraction\": 0.08\n  },\n  \"summary\": {\n    \"analysis_branch\": \"transport_deposition_controlled\",\n    \"rows\": 1728,\n    \"passing_rows\": 1346,\n    \"pass_percent\": 77.89351851851852,\n    \"minimum_wall_temp_C\": 157.82468853620173,\n    \"maximum_wall_temp_C\": 347.43441867112904,\n    \"minimum_boiling_margin_C\": -83.53441867112906,\n    \"maximum_velocity_m_s\": 2.420810150938051,\n    \"maximum_pressure_drop_kPa\": 17.765382751921518,\n    \"maximum_pump_power_MW\": 0.003019801903184847,\n    \"minimum_passing_mass_flow_kg_s_module\": 54.22647527910686,\n    \"maximum_passing_mass_flow_kg_s_module\": 113.03827751196172\n  },\n  \"acceptance_rule\": \"pass_percent >= 60.0\",\n  \"acceptance_passed\": true,\n  \"elapsed_seconds\": 0.012671372999989217\n}\n",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "secondary-systems-check.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/secondary-systems-check.ipynb",
+      "sha256": "001d38b22ae8e2541c713effef4fc28f6b50f94a9d6e4f707df30d2896eb9752",
+      "code_sha256": "111b46f513297f50b47929fa8b09696c80224764bf043a0dae4151dc2c96c64e",
+      "code_cells": 5,
+      "cells_with_execution_counts": 0,
+      "output_blocks": 0,
+      "status": "NO_EMBEDDED_OUTPUTS",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "",
+      "rerun_in_this_CAD_task": false
+    },
+    {
+      "filename": "secondary-systems-poc.ipynb",
+      "original_path": "tomahawk fusion reactor AURORANOVA ENGERIES LLC/secondary-systems-poc.ipynb",
+      "sha256": "ae63c2238383976a268c34278688885f6e3a4e1a9d6688fa13f29ca994d7ac7f",
+      "code_sha256": "e48d55450bdace8a71f6109d3775d06f141ad2b2f1800b2e524ff4bbe1c14521",
+      "code_cells": 1,
+      "cells_with_execution_counts": 1,
+      "output_blocks": 1,
+      "status": "RECORDED_OUTPUTS_INSPECTED",
+      "errors": [],
+      "hashes_reported_in_outputs_not_independently_checked_against_input_files": [],
+      "structured_output_summaries": [],
+      "recorded_output_text": "Python: 3.12.13\nSeed: 20260829\nDataset ID: secondary_systems_computational_poc_v1\nDataset source: model_generated_from_declared_screening_ranges\nPrior POC data mixed: False\nBase rows per branch: 10000\nNormalized process interface: 1.0 MWth + 1.0 MWe\nContinuous interface energy: 24000.0 kWhth/day + 24000.0 kWhe/day\nOutput: /kaggle/working/tomahawk_secondary_systems_computational_poc\nModel checks: PASS\n system                       process  rows  accounting_pass_rows  interface_capacity_pass_rows  target_met_rows  poc_pass_rows  accounting_pass_percent  interface_capacity_pass_percent  target_met_percent  poc_pass_percent                             dataset_id                                                                                    interpretation process_validity_status\nlithium simplified_brine_mass_balance 10000                 10000                          5509             4618           1837                    100.0                            55.09               46.18             18.37 secondary_systems_computational_poc_v1 Computational target/resource feasibility under declared ranges; not physical process validation.           NOT_VALIDATED\n  water     industrial_water_recovery 10000                 10000                          4764             4764           4764                    100.0                            47.64               47.64             47.64 secondary_systems_computational_poc_v1 Computational target/resource feasibility under declared ranges; not physical process validation.           NOT_VALIDATED\n  water                   seawater_ro 10000                 10000                          5915             5915           5915                    100.0                            59.15               59.15             59.15 secondary_systems_computational_poc_v1 Computational target/resource feasibility under declared ranges; not physical process validation.           NOT_VALIDATED\n  water          thermal_desalination 10000                 10000                          3201             3201           3201                    100.0                            32.01               32.01             32.01 secondary_systems_computational_poc_v1 Computational target/resource feasibility under declared ranges; not physical process validation.           NOT_VALIDATED\nBase computational POC rows: 40000\nheartbeat: batch=63, elapsed_minutes=1.02\nheartbeat: batch=108, elapsed_minutes=2.02\nheartbeat: batch=150, elapsed_minutes=3.05\nheartbeat: batch=196, elapsed_minutes=4.05\nheartbeat: batch=240, elapsed_minutes=5.10\nheartbeat: batch=286, elapsed_minutes=6.11\nheartbeat: batch=327, elapsed_minutes=7.11\nheartbeat: batch=364, elapsed_minutes=8.12\nheartbeat: batch=403, elapsed_minutes=9.12\nheartbeat: batch=440, elapsed_minutes=10.16\nheartbeat: batch=478, elapsed_minutes=11.18\nheartbeat: batch=512, elapsed_minutes=12.18\nheartbeat: batch=553, elapsed_minutes=13.20\nheartbeat: batch=596, elapsed_minutes=14.20\nheartbeat: batch=640, elapsed_minutes=15.26\nheartbeat: batch=686, elapsed_minutes=16.27\nheartbeat: batch=730, elapsed_minutes=17.35\nheartbeat: batch=775, elapsed_minutes=18.36\nheartbeat: batch=820, elapsed_minutes=19.44\nheartbeat: batch=865, elapsed_minutes=20.44\nheartbeat: batch=910, elapsed_minutes=21.52\nheartbeat: batch=954, elapsed_minutes=22.53\nheartbeat: batch=997, elapsed_minutes=23.53\nheartbeat: batch=1040, elapsed_minutes=24.59\nheartbeat: batch=1084, elapsed_minutes=25.59\nheartbeat: batch=1127, elapsed_minutes=26.60\nheartbeat: batch=1169, elapsed_minutes=27.60\nheartbeat: batch=1210, elapsed_minutes=28.66\nheartbeat: batch=1253, elapsed_minutes=29.67\nComputational POC invasive run complete.\nElapsed minutes: 30.092 Batches: 1270\n system                       process  batches      rows  accounting_pass_percent_P10  accounting_pass_percent_P50  accounting_pass_percent_P90  interface_capacity_pass_percent_P50  target_met_percent_P50  poc_pass_percent_P50  battery_grade_screen_percent_P50                             dataset_id process_validity_status                                                                                    interpretation\nlithium simplified_brine_mass_balance     1270 317500000                        100.0                        100.0                        100.0                              55.6080                 46.1782               18.5988                            4.0384 secondary_systems_computational_poc_v1           NOT_VALIDATED Computational target/resource feasibility under declared ranges; not physical process validation.\n  water     industrial_water_recovery     1270 317500000                        100.0                        100.0                        100.0                              47.8428                 47.8428               47.8428                               NaN secondary_systems_computational_poc_v1           NOT_VALIDATED Computational target/resource feasibility under declared ranges; not physical process validation.\n  water                   seawater_ro     1270 317500000                        100.0                        100.0                        100.0                              59.3164                 59.3164               59.3164                               NaN secondary_systems_computational_poc_v1           NOT_VALIDATED Computational target/resource feasibility under declared ranges; not physical process validation.\n  water          thermal_desalination     1270 317500000                        100.0                        100.0                        100.0                              32.4718                 32.4718               32.4718                               NaN secondary_systems_computational_poc_v1           NOT_VALIDATED Computational target/resource feasibility under declared ranges; not physical process validation.\n",
+      "rerun_in_this_CAD_task": false
+    }
+  ],
+  "chat_history_register": [
+    {
+      "work": "Rev2.2 R-MAPLA proof-of-concept screen",
+      "reported_result": "495/262144 = 0.1888%; geometry and laser bookkeeping reportedly passed.",
+      "interpretation": "0-D design-range screen, not absorbed-fluence or plasma validation.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Rev2.2 fast million-case broad screen",
+      "reported_result": "1877/1000000 = 0.1877%.",
+      "interpretation": "Broad feasibility inputs, not hardware reliability.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Local Rev2.2 robustness envelope",
+      "reported_result": "795680/1000000 = 79.568%.",
+      "interpretation": "Conditional on narrowed synthetic ranges.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Frozen external broad dataset",
+      "reported_result": "184/100000 = 0.184%.",
+      "interpretation": "Same frozen equations, external synthetic broad inputs.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Original frozen controlled dataset",
+      "reported_result": "79460/100000 = 79.46%.",
+      "interpretation": "Superseded by distinct CONTROLLED_ENVELOPE_V2 inputs.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Controlled envelope V2",
+      "reported_result": "79555/100000 = 79.555%.",
+      "interpretation": "Synthetic controlled envelope; not measured uncertainty.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Multifactor improvement envelope",
+      "reported_result": "96107/100000 = 96.107%.",
+      "interpretation": "Design-range changes, not proof of improved physical reactor performance.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Four-dataset numerical validation audit",
+      "reported_result": "400000 external rows; broad 0.184%, holdout 0.189%, controlled 79.555%, multifactor 96.107%.",
+      "interpretation": "Local preflight reported in chat. A supplied notebook template is not an executed Kaggle record.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "D-T reference and quadrature checks",
+      "reported_result": "Bosch-Hale reference discrepancy reportedly 0.336%; 32-to-64-node change 3.52e-6.",
+      "interpretation": "Implementation/reference checks only; not transport or experimental validation.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Rev3.1 local-deposition cassette screen",
+      "reported_result": "1346/1728 = 77.8935%.",
+      "interpretation": "Executed notebook verified below; local nuclear-deposition assumptions.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Rev3.1 full-incident broad challenge",
+      "reported_result": "672/10935 = 6.1454%.",
+      "interpretation": "Executed notebook verified below; retain as historical failure map.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Rev3.1 engineered full-incident envelope",
+      "reported_result": "336/432 = 77.7778%.",
+      "interpretation": "Executed notebook verified below; narrower envelope than broad challenge.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Rev3.2 area-corrected full-incident broad challenge",
+      "reported_result": "6974/10935 = 63.7769%.",
+      "interpretation": "Executed cassette-correction.ipynb verified below. Effective wetted-area utilization 0.85 remains an assumption.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Superseded zero-pass full wall-load branch",
+      "reported_result": "Zero passing cases reported in chat; exact executed artifact not recovered in this task.",
+      "interpretation": "Do not erase. Superseded reduced-order branch; not a result for repaired G1 geometry.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Coupled Ti/Te and self-heating root searches",
+      "reported_result": "Earlier positive thermal eigenvalue and no-root baseline discussed; no executed numeric artifacts recovered here.",
+      "interpretation": "Retrieved source notebooks are included. A thermal root/eigenvalue does not establish 3-D MHD stability.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Rev2.3 equilibrium/MHD feasibility and confinement notebooks",
+      "reported_result": "Source templates recovered; uploaded plasma-confinement-validation.ipynb not resolved in this task.",
+      "interpretation": "Do not claim a completed 3-D equilibrium/confinement result from the templates.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Bayesian MCMC work",
+      "reported_result": "Four-chain identifiable-parameter/synthetic-recovery workflow discussed; no completed chain output recovered.",
+      "interpretation": "No R-hat, ESS, posterior predictive agreement or measured-data calibration claimed.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Secondary-systems checks and computational POC",
+      "reported_result": "Executed secondary-systems-poc.ipynb recovered; 30.092 minutes and 1270 batches recorded.",
+      "interpretation": "Resource/accounting/target screens, not physical water or lithium process validation.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Historical missing-input Kaggle attempts",
+      "reported_result": "FileNotFoundError attempts discussed before the successful returned cassette runs.",
+      "interpretation": "Those errors are not assigned to the now-recovered successful notebooks.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "Optical/FRC/toroidal alternatives and 8\u201320 cm target discussion",
+      "reported_result": "Geometry/ray-tracing changes discussed; no additional executed result established here.",
+      "interpretation": "Design discussion is not a completed optical-hydrodynamic validation run.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    },
+    {
+      "work": "G3 / 3-D MHD / alpha / target-corona / neutronics requests",
+      "reported_result": "Packages and missing-input work referenced in project history; completed transport/equilibrium output not recovered.",
+      "interpretation": "10% alpha loss, 95% neutron capture and TBR=1.15 must not be promoted from assumptions by this CAD repair.",
+      "basis": "CHAT_REPORTED_UNLESS_MATCHED_TO_RECORDED_OUTPUT_BELOW"
+    }
+  ],
+  "limits": [
+    "Notebook outputs are inspected records, not independent remote attestation.",
+    "Printed input hashes are not reverified without the original CSV bytes.",
+    "Not every historical executed artifact was recovered; gaps are named, not fabricated."
+  ]
+}

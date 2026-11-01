@@ -1,0 +1,12 @@
+{
+  "tests": 24,
+  "failures": 0,
+  "errors": 0,
+  "native_FreeCAD_executed": false,
+  "new_physics_run": false,
+  "input_sha256": "8317664cb1d897872fa73a4a73255ce7b5a4e32e2f18921a3d09f4dc066d2899",
+  "delivered_script_sha256": "0cb4f8fa7677a3ee6be34976069ce93d1b92c54855ecf6d09dafff9b90e5101a",
+  "source_build": "Embedded exact reviewed boundary; all newly selected sizes marked concept proposals",
+  "reactor_component_count": 269,
+  "plant_layout_object_count": 34
+}

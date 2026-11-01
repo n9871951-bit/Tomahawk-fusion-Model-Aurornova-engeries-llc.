@@ -2,23 +2,8 @@
 
 **Nicole Marie Bryant — AuroraNova Engeries LLC**
 
-The research archive preserves the project's CAD, plasma-calculation code, Kaggle
-notebooks, inputs, outputs and historical iterations.
+[Technical source archive](research_archive/README.md) · [Source index with SHA-256 hashes](research_archive/catalog/SOURCE_INDEX.csv) · [License allocation](research_archive/LICENSE)
 
-- [Research archive and current design entry points](research_archive/README.md)
-- [Original file catalog](research_archive/catalog/original_records.csv)
-- [Kaggle/notebook execution index](research_archive/catalog/notebook_execution_index.csv)
-- [New fixed-profile thermal-response screen](research_archive/work_in_progress/thermal_response/MODEL.md)
-- [Publication status](research_archive/catalog/PUBLICATION_STATUS.json)
+The archive holds reactor modeling code, notebooks, geometry/current tables, solver inputs, recorded screen outputs, and a thermal response prototype. G1–G3 are the investigator-identified computed scope. G4–G7 materials are preliminary or historical and do not assert completed validation.
 
-The catalog accounts for **636 original records and 568 distinct file payloads**,
-including **142 standalone notebook records**. Source code, notebooks, catalogs and
-the reduced thermal screen are included here. The 8.75 GB collection of original
-CAD and simulation downloads is prepared separately; its release upload is pending.
-
-Original file dates and hashes are retained. Historical, unsuccessful and incomplete
-runs remain part of the research record; this upload does not assign new gate passes.
-
-The existing repository LICENSE is retained. The added research archive's
-[license notice](research_archive/LICENSE) specifies permissive terms by content type
-and preserves existing external notices.
+Current native FreeCAD assemblies and larger simulation packages remain in the preserved source collection and have not yet been added to this GitHub repository. See the archive README for the current CAD basis and interpretation limits.

@@ -1,0 +1,31 @@
+{
+  "schema_version": "TOMAHAWK-MAGNETIC-CORRECTION-MANIFEST-1.0",
+  "status": "CORRECTION_INPUTS_AND_SCREENING_REPORT",
+  "baseline_failure_preserved": true,
+  "files": {
+    "CFD/cfd_case_manifest.json": "685164bf4544eb7d89735734baef3dbe842c53928e54ec14bfe2dfe225660a7b",
+    "CFD/cfd_cht_parameter_sweep.csv": "d89474c494ebc69446c0925cce78fc32e99b14168fb9a3bb4ac15f2bed541981",
+    "CHF/chf_input.json": "267efa7ba967b2483d891d41576833e9fe794c739c0f7628f6ff79c4e8d11760",
+    "MHD/cad_a2_coil_centerlines.csv": "9f92a7702d7136d8da5bbb6c79bbab17ccf8c84c058ecdaa8af5c73c0a7bcb31",
+    "MHD/cad_a2_coil_currents.csv": "b328ace3dc25e8f26719a87069298d06abee9ccb954aef69cddcbe817e9193f1",
+    "MHD/cad_a2_tf48_interleaved_centerlines.csv": "5bfa75b0e8da4ec370dfe6a3e1c26a615af4aab1196384f8c24a5bceb7406661",
+    "MHD/cad_a2_tf48_interleaved_currents.csv": "d2bb069a55b79ba0aaabba05847e300d025ebf8dfba8fcb3f4ee92529f30c30b",
+    "MHD/cad_kaggle_reconciliation.json": "e7a9b02845a9bda106cc7d9d321735af4a4112cce3f6f0f3cb1ff39d4aae8fcf",
+    "MHD/magnetic_correction_input.json": "42751b51fcd8c5b78be6b9ebdc6eec7bc4418636fed29eae5ec7478fc7685c46",
+    "MHD/mhd_coil_table.csv": "b915de4b22f511a9fb538069f4fb6dd979582fdf8457d5cac5101de5a58138f2",
+    "MHD/mhd_coil_table_tf48_correction.csv": "6269f77019c88d7a68e582a87f896ff692202f439648a198f54a297c4c78618c",
+    "MHD/mhd_input.json": "7a996f92e0103ce985a6f1ede7ae69621e15feb907a81a4e674112cfbc1f74c7",
+    "MHD/mhd_input_correction.json": "5b9d705baf832a5d2b166f4ad58f8890cc77d79230eec0007df84c5413e15f1e",
+    "MHD/mhd_profile_sweep.csv": "22791f2054c690d2c8e34402cf37f3eec1d3bab02bd071918f4573c5b3caf9ea",
+    "MHD/mhd_shear_target.csv": "df44c8aa06dbdb5b64869e028fa614e0adf45087be9b20b33988d57a1c042cee",
+    "MHD/water_property_sources.json": "c9c0da44658b48914e6756f3a3e7c527e73dfde5209e5045955cc75bbf7c40cb",
+    "NEUTRONICS/material_region_map.csv": "71f93d50b97141ad3421f6fcd875181e30b5847ae9d6a1abd36ade67dacf236e",
+    "NEUTRONICS/openmc_input_manifest.json": "9874b6e4f4845c7bc951050d51b25556cf38f10bc7233a0b81632b34237008f9",
+    "NEUTRONICS/source_sweep.csv": "f83773ef7ffd14f8c6e18fd347ad3e2843b8b932c2d118355fda026c46fc3a12",
+    "README.md": "6beeb60ddada317b811315cc22f3bb18fb83366da44b32ce8210d40994c30ea1",
+    "Tomahawk_Magnetic_Correction_Screen.py": "1ee5ecded44ee22e5223dd85fa865f62ed4a8d66469b7d61f60d685ee44036ef",
+    "__pycache__/Tomahawk_Magnetic_Correction_Screen.cpython-312.pyc": "8cdedd1ae6d3642f224c2873209974c4ca43b6f61bd042a10ced9ba46bad2985",
+    "dataset_manifest_baseline.json": "4fb4f47adbc1e2e88b37d9ee7984345d784ecd5916bd496b3563b29c84d5a905",
+    "magnetic_correction_report.json": "7cedc251b2ab291d7ff2967d6eb4e47cd0fe6c44251cccecdc6c8a2655d3f2b9"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "do_not_overwrite": [
+    "Tomahawk_Rev21_Kaggle_Preliminary_Results.zip",
+    "Tomahawk_Fusion_Architecture_Rev2.1.docx",
+    "completed_prior_checkpoints"
+  ],
+  "files": {
+    "04_plasma/initial_state.yaml": {
+      "sha256": "4adb5b590c74044cb26ca4871007e950bd91b9c7b3a0486eb5889a273c2b7bd5",
+      "size_bytes": 1882
+    },
+    "04_plasma/profiles.csv": {
+      "sha256": "889909f98f7557144d1705bab9385eb50de07afea864331c97f72b7e96fe48ce",
+      "size_bytes": 36204
+    },
+    "04_plasma/species.yaml": {
+      "sha256": "02e5c1e53e1eea16529770369c45f6e79400581be194d4e3e1771d8fdf096b12",
+      "size_bytes": 1012
+    },
+    "07_transport/closures.yaml": {
+      "sha256": "f4d8b329a958b78c3387cb959e1e0df304afadf4f27b2d5f978470037870d386",
+      "size_bytes": 1879
+    },
+    "07_transport/radiation_reaction.yaml": {
+      "sha256": "3de517ab0bc46a0618f2fcb2f573ab7854f60321f530f074b2e735e8ff74d7f9",
+      "size_bytes": 2304
+    },
+    "README.md": {
+      "sha256": "3163d3ec3d0bb93551a950585cca9247dc6e4d8ed50dffa65b3bb2cdf0105725",
+      "size_bytes": 2308
+    },
+    "coefficients.json": {
+      "sha256": "b77b6eef3655b6d243c29d12ac248a6dbc87865d34398f1791a136db0771be5f",
+      "size_bytes": 1525
+    },
+    "power_balance.yaml": {
+      "sha256": "d39c73fd38f91bf0533f513d99e5a6125bff744b4ea0ee191425d67ac1b64252",
+      "size_bytes": 1897
+    }
+  },
+  "package": "Tomahawk_Rev2.1_Plasma_Information_Files_v1.0",
+  "provenance": {
+    "baseline": "Tomahawk Rev 2.1/2.4 project records",
+    "created_utc": "2026-09-13",
+    "warnings": [
+      "Profiles are assumed screening realizations.",
+      "10% alpha loss, 95% neutron capture, and TBR=1.15 are design assumptions.",
+      "Physical confinement remains unvalidated without the required equilibrium and transport solves."
+    ]
+  },
+  "schema_version": "1.0",
+  "status": "information_files_screening_only"
+}

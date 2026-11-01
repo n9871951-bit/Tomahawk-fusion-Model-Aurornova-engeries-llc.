@@ -1,0 +1,73 @@
+{
+  "schema_version": "TOMAHAWK-CHEMICAL-FUEL-CYCLE-0.1",
+  "case_id": "TOMAHAWK_PROTECTED_FUEL_CYCLE_001",
+  "classification": {
+    "process_type": "CHEMICAL_RECOVERY_SEPARATION_RECYCLING",
+    "recipe_disclosure": "PROTECTED_BLACK_BOX",
+    "process_id": "AN-CFCP-001",
+    "recipe_hash": null,
+    "chemistry_can_create_nuclei": false,
+    "claimed_chemical_nuclear_breeding": false
+  },
+  "time": {
+    "dt_s": null,
+    "horizon_s": null
+  },
+  "nuclear_source": {
+    "source_status": "REQUIRED_FROM_3D_NEUTRONICS",
+    "tbr": null,
+    "reaction_rate_s": null,
+    "tritium_bred_kg_s": null
+  },
+  "process": {
+    "delay_s": null,
+    "process_feed_kg_s": {
+      "D": null,
+      "T": null
+    },
+    "direct_makeup_kg_s": {
+      "D": null,
+      "T": null
+    },
+    "bred_delivery_efficiency": {
+      "T": null
+    },
+    "capture_efficiency": {
+      "D": null,
+      "T": null
+    },
+    "separation_efficiency": {
+      "D": null,
+      "T": null
+    },
+    "purification_efficiency": {
+      "D": null,
+      "T": null
+    },
+    "recovery_feed_already_debited": false,
+    "aux_power_W": null,
+    "aux_heat_W": null
+  },
+  "inventory": {
+    "initial_kg": {
+      "D": null,
+      "T": null
+    },
+    "reserve_kg": {
+      "D": null,
+      "T": null
+    },
+    "permeation_loss_kg_s": {
+      "T": null
+    },
+    "other_loss_kg_s": {
+      "D": null,
+      "T": null
+    }
+  },
+  "provenance": {
+    "recipe_available_to_public_model": false,
+    "all_rates_are_performance_level_inputs": true,
+    "validation_state": "OPEN"
+  }
+}

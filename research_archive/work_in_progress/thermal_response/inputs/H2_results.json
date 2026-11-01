@@ -1,0 +1,236 @@
+{
+  "enlarged_TF48": {
+    "inboard_centroid_R_m": 3.997280325421273,
+    "outboard_centerline_R_m": 13.469999999999999,
+    "half_height_m": 5.41
+  },
+  "check0": {
+    "filament_vs_MGRID_TF_group_max_relative_error": 6.369396515875443e-05,
+    "pass": true
+  },
+  "B_axis_R7p5_enlarged_TF_T": 16.000000000003844,
+  "ripple_imprint_removed_max_R_coefficient_m": 0.002762536165875215,
+  "ripple_imprint_removed_max_Z_coefficient_m": 0.0016738659275111695,
+  "interior_ripple_coefficients_zeroed_max": {
+    "R_lmn": 0.0026977443114395237,
+    "Z_lmn": 0.0027952814457425533,
+    "L_lmn": 0.002854440222188944
+  },
+  "N9A_solver_history": [
+    {
+      "block": 1,
+      "iterations": 3,
+      "initial_cost": 2.4783069707654456e-08,
+      "final_cost": 3.589669112160217e-10,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 1266.525274935
+    },
+    {
+      "block": 2,
+      "iterations": 3,
+      "initial_cost": 3.589669112160217e-10,
+      "final_cost": 1.7274063715191763e-10,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 2456.1521327319997
+    },
+    {
+      "block": 3,
+      "iterations": 3,
+      "initial_cost": 1.7274063715191763e-10,
+      "final_cost": 1.1581788818220609e-10,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 3638.594223446
+    },
+    {
+      "block": 4,
+      "iterations": 3,
+      "initial_cost": 1.1581788818220609e-10,
+      "final_cost": 8.825899989075652e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 4818.211690407
+    },
+    {
+      "block": 5,
+      "iterations": 3,
+      "initial_cost": 8.825899989075652e-11,
+      "final_cost": 7.006150981873116e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 6027.921740566
+    },
+    {
+      "block": 6,
+      "iterations": 3,
+      "initial_cost": 7.006150981873116e-11,
+      "final_cost": 5.650932803414176e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 7228.009674156
+    },
+    {
+      "block": 7,
+      "iterations": 3,
+      "initial_cost": 5.650932803414176e-11,
+      "final_cost": 4.605669990142498e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 8435.422778731
+    },
+    {
+      "block": 8,
+      "iterations": 3,
+      "initial_cost": 4.605669990142498e-11,
+      "final_cost": 3.791775772141729e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 9638.826523556
+    },
+    {
+      "block": 9,
+      "iterations": 3,
+      "initial_cost": 3.791775772141729e-11,
+      "final_cost": 3.156283731667867e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 10839.150908745
+    },
+    {
+      "block": 10,
+      "iterations": 3,
+      "initial_cost": 3.156283731667867e-11,
+      "final_cost": 2.6595675242809222e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 12046.270682481
+    },
+    {
+      "block": 11,
+      "iterations": 3,
+      "initial_cost": 2.6595675242809222e-11,
+      "final_cost": 2.2710760436763413e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 13244.955330624
+    },
+    {
+      "block": 12,
+      "iterations": 3,
+      "initial_cost": 2.2710760436763413e-11,
+      "final_cost": 1.967060277709263e-11,
+      "success": false,
+      "message": "Maximum number of iterations has been exceeded.",
+      "elapsed_s": 14442.32501623
+    }
+  ],
+  "N9A_file": "outputs/tf_enlarged_resolve2/N9A2_axisymmetric_enlarged_TF.h5",
+  "N9A_sha256": "8e6b295e4f8dbfe7450975774c580ea9d784483d2afef3ef4de186b121f283f8",
+  "N9A_resolution_unchanged": true,
+  "profiles_unchanged": true,
+  "Psi_unchanged": true,
+  "force_audit": {
+    "pressure_scaled_force_rms_volume_weighted": {
+      "N9": 0.0008184676043195519,
+      "N9A": 0.0005534071402254198
+    },
+    "pressure_scaled_force_rms_volume_weighted_excl_rho_0995": {
+      "N9": 0.00033799534016076984,
+      "N9A": 0.00035013669536521265
+    },
+    "magnetic_gradient_normalized_force_rms": {
+      "N9": 2.7793072889761663e-05,
+      "N9A": 1.9965514065221502e-05
+    },
+    "magnetic_gradient_normalized_force_max": {
+      "N9": 0.0003352792647476978,
+      "N9A": 0.00011591802146018122
+    },
+    "edge_iota": {
+      "N9": 0.3015578350130173,
+      "N9A": 0.3015578350130173
+    },
+    "edge_toroidal_current_A": {
+      "N9": 24279951.863903467,
+      "N9A": 24280602.198601983
+    },
+    "axis_R_m": {
+      "N9": 8.116229819935413,
+      "N9A": 8.116229683390284
+    },
+    "axis_B_phi_T": {
+      "N9": 15.110401949447542,
+      "N9A": 15.110397543926338
+    }
+  },
+  "force_screens": {
+    "all_samples_limit_0p015": true,
+    "excl_rho_0995_limit_0p005": true
+  },
+  "N9_original_field_M34_N15": {
+    "normal_max": 0.0007361009464139127,
+    "pressure_max": 0.00039497408266844704,
+    "normal_rms": 0.0002632667484523119,
+    "pressure_rms": 0.0001871251703769174,
+    "R_min_m": 5.302554936620131,
+    "R_max_m": 10.58930282313757,
+    "abs_Z_max_m": 2.6058651351889432,
+    "boundary_gates_pass": true
+  },
+  "N9_original_field_M34_N24": {
+    "normal_max": 0.0007516732310952186,
+    "pressure_max": 0.00044011908576703355,
+    "normal_rms": 0.00026332897725909674,
+    "pressure_rms": 0.00019277587656980465,
+    "R_min_m": 5.302554936620131,
+    "R_max_m": 10.58930282313757,
+    "abs_Z_max_m": 2.6058651351889432,
+    "boundary_gates_pass": true
+  },
+  "N9_enlarged_TF_field_M34_N15": {
+    "normal_max": 0.010875800528279484,
+    "pressure_max": 0.013452716537107164,
+    "normal_rms": 0.004284243948721409,
+    "pressure_rms": 0.005797843182455471,
+    "R_min_m": 5.302554936620131,
+    "R_max_m": 10.58930282313757,
+    "abs_Z_max_m": 2.6058651351889432,
+    "boundary_gates_pass": false
+  },
+  "N9_enlarged_TF_field_M34_N24": {
+    "normal_max": 0.010876515792473021,
+    "pressure_max": 0.01345273213361583,
+    "normal_rms": 0.004283733338764861,
+    "pressure_rms": 0.005799076212784522,
+    "R_min_m": 5.302554936620131,
+    "R_max_m": 10.58930282313757,
+    "abs_Z_max_m": 2.6058651351889432,
+    "boundary_gates_pass": false
+  },
+  "N9A_enlarged_TF_field_M34_N15": {
+    "normal_max": 0.0006504175342497107,
+    "pressure_max": 0.00023503560743430455,
+    "normal_rms": 0.0002572155126946878,
+    "pressure_rms": 0.0001675255248543639,
+    "R_min_m": 5.302572021721777,
+    "R_max_m": 10.587059921598245,
+    "abs_Z_max_m": 2.6047792218674704,
+    "boundary_gates_pass": true
+  },
+  "N9A_enlarged_TF_field_M34_N24": {
+    "normal_max": 0.00065952717029818,
+    "pressure_max": 0.0002777255439814522,
+    "normal_rms": 0.0002572426264625709,
+    "pressure_rms": 0.0001735100978941547,
+    "R_min_m": 5.302572021721777,
+    "R_max_m": 10.587059921598245,
+    "abs_Z_max_m": 2.6047792218674704,
+    "boundary_gates_pass": true
+  },
+  "reproduces_report_normal_max_7.361e-4": true,
+  "enlarged_design_G2_boundary_pass": true,
+  "enlarged_design_G2_force_pass": true,
+  "wall_time_s": 14623.732379639
+}

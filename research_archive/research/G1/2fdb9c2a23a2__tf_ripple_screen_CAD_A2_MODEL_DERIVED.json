@@ -1,0 +1,43 @@
+{
+  "geometry_branch": "CAD_A2_MODEL_DERIVED_CENTERLINE",
+  "current_derivation": "KAGGLE_100_TURN_REFERENCE_REMAP_AND_CAD_A2_BIOT_SAVART_B0_RERUN",
+  "scope_note": "TF (toroidal-field) ripple diagnostic only. Does NOT constitute a free-boundary POLOIDAL equilibrium solve; no PF/shaping coil data was supplied. PF/free-boundary closure remains a separate blocked gate.",
+  "provenance_warning": "CAD-A2 uses the exact CAD-A2 centerline generated from the Rev1.7 winding envelope and a separate model-derived current rerun using the 100-turn reference count recovered from the Kaggle output. It is not an as-built electrical schedule.",
+  "method": "Exact closed-form Biot-Savart (Hanson & Hirshman 2002) summed over all real coil filament segments; validated against the analytic on-axis field of a circular loop to 7 significant figures (see accompanying test).",
+  "coil_count": 16,
+  "turns_per_coil": [
+    100
+  ],
+  "flattop_current_A": [
+    326782.82967560005
+  ],
+  "coil_inner_leg_R_m": 3.3009999999999953,
+  "coil_outer_leg_R_m": 11.699000000000002,
+  "plasma_inboard_R_m": 4.5,
+  "plasma_outboard_R_m": 10.5,
+  "inboard_clearance_m": 1.1990000000000047,
+  "outboard_clearance_m": 1.1990000000000016,
+  "ripple_at_axis": {
+    "radius_m": 7.5,
+    "Bphi_min_T": 13.885683157960555,
+    "Bphi_max_T": 13.99999999999989,
+    "Bphi_mean_T": 13.943628846375201,
+    "ripple_percent": 0.4099481493488213
+  },
+  "ripple_at_plasma_outboard_edge": {
+    "radius_m": 10.5,
+    "Bphi_min_T": 7.8003763177907235,
+    "Bphi_max_T": 13.007223967536385,
+    "Bphi_mean_T": 10.006722764760742,
+    "ripple_percent": 25.023777746333263
+  },
+  "edge_evaluation_status": "EVALUATED",
+  "ripple_screening_threshold_percent": 1.0,
+  "ripple_screening_threshold_provenance": "Literature range ~0.3-0.5% (ITER; de Vries et al., Nucl. Fusion 48, 035007, 2008) up to ~2% tolerated in tight-aspect-ratio compact devices before mitigation (FAST, ORNL-EPR). This is a provisional screening threshold, not a certified design limit.",
+  "screening_gates": {
+    "tf_coil_plasma_clearance_positive": true,
+    "tf_ripple_within_screening_threshold_at_plasma_edge": false
+  },
+  "controlling_gate": true,
+  "status": "CAD_A2_MODEL_DERIVED_SCREENING_RESULT"
+}

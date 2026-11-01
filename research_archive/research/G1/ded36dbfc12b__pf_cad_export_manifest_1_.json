@@ -1,0 +1,36 @@
+{
+  "schema_version": "TOMAHAWK-PF-CAD-MAKEGRID-EXPORT-0.1",
+  "macro_version": "PF-CAD-MAKEGRID-EXPORT-1.3",
+  "status": "CAD_CENTERLINES_EXPORTED_MGRID_REQUIRED",
+  "source_files": {
+    "winding_pack_turns_csv": "C:\\Users\\Nicol\\Downloads\\Tomahawk_Kaggle_Data(3)_PF_CAD_INPUT_20260907_181632\\Tomahawk_Kaggle_Data\\MHD\\engineering\\pf_winding_pack_turns.csv",
+    "winding_pack_turns_sha256": "0724087188322f5eede787a6dab862780a5762fe361ea74b5d849725df3a21c1",
+    "winding_pack_screen_csv": "C:\\Users\\Nicol\\Downloads\\Tomahawk_Kaggle_Data(3)_PF_CAD_INPUT_20260907_181632\\Tomahawk_Kaggle_Data\\MHD\\engineering\\pf_winding_pack_screen.csv",
+    "winding_pack_screen_sha256": "ceec8bd10bae170642a1ffbc3e5b0942fae6c56698472a1c48ce08d85c36d880"
+  },
+  "coordinate_convention": "R_phi_Z; exported X=R*cos(phi), Y=R*sin(phi), phi in radians",
+  "points_per_turn": 128,
+  "coil_count": 6,
+  "total_turn_count": 578,
+  "outputs": {
+    "fcstd": "Tomahawk_PF_CAD_MAKEGRID.FCStd",
+    "centerlines_csv": "pf_makegrid_centerlines.csv",
+    "currents_csv": "pf_makegrid_currents.csv"
+  },
+  "validation": {
+    "table_ids_match": true,
+    "turn_counts_match": true,
+    "operating_currents_match": true,
+    "reference_current_limits_checked": true,
+    "all_exported_loops_closed_by_duplicate_endpoint": true,
+    "native_solver_evidence": false,
+    "mgrid_generated": false,
+    "qualified_design": false
+  },
+  "limitations": [
+    "The CAD contains finite-turn axisymmetric centerlines only; it is not a winding-pack solid or fabrication release.",
+    "The currents and limits are retained model-derived screening inputs, not independently qualified engineering data.",
+    "A real MAKEGRID/native solver must consume the exported tables and generate a native mgrid file.",
+    "This macro does not run VMEC, DESC, MAKEGRID, or any free-boundary equilibrium solver."
+  ]
+}

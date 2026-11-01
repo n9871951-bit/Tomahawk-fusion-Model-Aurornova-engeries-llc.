@@ -1,0 +1,22 @@
+{
+  "schema_version": "TOMAHAWK-TF48-MHD-COUPLING-CONTRACT-1.0",
+  "status": "FIELD_MAPPING_REQUIRED_BEFORE_MHD_SOLVE",
+  "tf_coil_count": 48,
+  "run_field_case_T": 14.0,
+  "run_field_status": "SUPPLIED_MGRID_COMPUTATIONAL_SCREENING_RESULT",
+  "supplied_tf48_mgrid_checkpoint": {
+    "on_geometric_axis_Bphi_T": 14.0,
+    "status": "COMPUTATIONAL_SCREENING_RESULT",
+    "known_sha256": "9e4d6ccf6944943ee517117b47113edac40837b486c50b27c4f7f1c0b50e1fc3",
+    "toroidal_planes": 36,
+    "resolution_warning": "36 MGRID planes do not resolve 48-fold coil ripple; use the direct-coil ripple reference or regenerate at adequate phi resolution"
+  },
+  "field_case": "Interpolate the supplied 14 T TF48 MGRID without amplitude rescaling.",
+  "required_vector_mapping": [
+    "B_r(R,Z,phi)",
+    "B_phi(R,Z,phi)",
+    "B_z(R,Z,phi)"
+  ],
+  "mhd_rule": "Lorentz force and Joule heating must use the spatial vector field; a uniform 14 T scalar is insufficient.",
+  "magnet_self_heating_rule": "Coil AC/hysteresis/coupling and resistive heat, if modeled, belong to the magnet cryogenic/thermal ledger and must not be deposited in the liquid-wall laser patches."
+}

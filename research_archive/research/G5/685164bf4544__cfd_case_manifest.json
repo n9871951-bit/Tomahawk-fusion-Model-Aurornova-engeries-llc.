@@ -1,0 +1,23 @@
+{
+  "schema_version": "TOMAHAWK-CFD-CHT-INPUT-MANIFEST-1.0",
+  "data_status": "PROVISIONAL_SWEEP_MESH_REQUIRED",
+  "solid_geometry": "../Solver_Geometry/CFD_RF_Cassette_Solid_Regions.step",
+  "coolant_geometry": "../Solver_Geometry/CFD_RF_Connected_Coolant_Domains.step",
+  "boundary_seed_file": "../Solver_Geometry/CFD_RF_Named_Boundary_Seeds.json",
+  "sweep_csv": "cfd_cht_parameter_sweep.csv",
+  "property_model": "REQUIRED_TEMPERATURE_AND_PRESSURE_DEPENDENT_WATER_PROPERTIES",
+  "screening_assumptions": {
+    "constant_density_kg_m3": 997.0,
+    "dynamic_viscosity_Pa_s": 0.00035,
+    "roughness_m": 1e-05,
+    "heated_length_m": 2.318,
+    "note": "Only for row generation and parser checks; do not report as CFD output."
+  },
+  "required_before_solver": [
+    "watertight volume mesh with named boundaries",
+    "temperature/pressure-dependent fluid properties",
+    "transport or volumetric heat source field",
+    "solid thermal properties and interface conditions",
+    "three-level mesh and time-step convergence plan"
+  ]
+}

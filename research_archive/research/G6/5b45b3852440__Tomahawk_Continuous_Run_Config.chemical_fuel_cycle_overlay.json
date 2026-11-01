@@ -1,0 +1,61 @@
+{
+  "schema_version": "TOMAHAWK-CONTINUOUS-FUEL-CYCLE-OVERLAY-0.1",
+  "base_config": "Tomahawk_Continuous_Run_Config.provisional.json",
+  "status": "OVERLAY_DEFINED_INPUTS_REQUIRED",
+  "purpose": "Adds a protected reduced-order chemical fuel-cycle handoff without changing the existing baseline until performance inputs are supplied.",
+  "stage_order": [
+    "MHD",
+    "NEUTRONICS",
+    "FUEL_CYCLE",
+    "CFD",
+    "CHF"
+  ],
+  "stages": {
+    "FUEL_CYCLE": {
+      "command": [
+        "python3",
+        "tomahawk_chemical_fuel_cycle_adapter.py",
+        "{fuel_cycle_input}",
+        "--output",
+        "{stage_dir}/chemical_fuel_cycle_output.json"
+      ],
+      "inputs": {
+        "fuel_cycle_input": "provisional_inputs/FUEL_CYCLE/chemical_fuel_cycle_interface.json",
+        "neutronics_output": "{previous_output}/neutronics_output.json"
+      },
+      "outputs": [
+        "chemical_fuel_cycle_output.json"
+      ],
+      "consumes_previous_output": true,
+      "requires": [
+        "realized_3d_neutronics_reaction_rate_s",
+        "realized_3d_neutronics_tbr",
+        "protected_process_performance_sheet"
+      ]
+    }
+  },
+  "handoffs": {
+    "NEUTRONICS_to_FUEL_CYCLE": [
+      "reaction_rate_s",
+      "TBR",
+      "tritium_bred_kg_s",
+      "tally_uncertainty",
+      "nuclear_data_manifest"
+    ],
+    "FUEL_CYCLE_to_PLANT_LEDGER": [
+      "usable_D_kg_s",
+      "usable_T_kg_s",
+      "T_bred_to_process_kg_s",
+      "T_process_loss_kg_s",
+      "P_fuel_cycle_W",
+      "Q_fuel_cycle_W",
+      "inventory_screen",
+      "double_counting_guard"
+    ]
+  },
+  "gate_policy": {
+    "chemical_interface_complete": false,
+    "gate_6_self_sufficiency": "DO_NOT_CLAIM_UNTIL_3D_NEUTRONICS_AND_TIME_DEPENDENT_INVENTORY_PASS",
+    "net_electric_update": "BLOCKED_UNTIL_P_fuel_cycle_W_AND_Q_fuel_cycle_W_ARE_SUPPLIED"
+  }
+}

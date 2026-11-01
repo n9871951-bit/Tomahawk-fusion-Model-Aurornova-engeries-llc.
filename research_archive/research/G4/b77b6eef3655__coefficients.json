@@ -1,0 +1,58 @@
+{
+  "confinement": {
+    "IPB98y2_coefficient": 0.0562,
+    "epsilon": 0.4,
+    "exponents": {
+      "B_T": 0.15,
+      "H98": 1.0,
+      "I_p_MA": 0.93,
+      "M_eff": 0.19,
+      "P_loss_MW": -0.69,
+      "R_m": 1.97,
+      "epsilon": 0.58,
+      "kappa": 0.78,
+      "n_e19": 0.41
+    },
+    "tau_E_active_screen_target_s": 2.7,
+    "tau_E_reference_s": 1.36
+  },
+  "design_assumptions": {
+    "TBR": 1.15,
+    "alpha_loss_fraction": 0.1,
+    "neutron_capture_fraction": 0.95,
+    "thermal_to_electric_efficiency": 0.4
+  },
+  "file_role": "portable_scalar_coefficients",
+  "fill": {
+    "P_fill_Pa": 0.3,
+    "T_fill_K": 300.0
+  },
+  "geometry": {
+    "B_peak_T": 35.0,
+    "CAD_plasma_volume_m3": 950.0,
+    "R_m": 7.5,
+    "a_m": 3.0
+  },
+  "provenance": {
+    "source": "Tomahawk Rev 2.1/2.4 project baseline carried from user-provided project records",
+    "warning": "Reference and design values are not measured or independently validated."
+  },
+  "reaction_energy": {
+    "E_alpha_MeV": 3.5,
+    "E_fusion_MeV": 17.6,
+    "E_neutron_MeV": 14.1,
+    "alpha_fraction": 0.1988636364,
+    "neutron_fraction": 0.8011363636
+  },
+  "reference_screen": {
+    "alpha_to_modeled_loss_ratio": 0.63,
+    "bremsstrahlung_power_GW": 0.01,
+    "deposited_alpha_power_GW": 0.186,
+    "modeled_loss_power_GW": 0.155,
+    "self_heating_ratio": 1.1982,
+    "transport_loss_power_GW": 0.145
+  },
+  "schema_version": "1.0",
+  "status": "screening_coefficients_not_measurements",
+  "units_system": "SI_with_explicit_engineering_units"
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "TOMAHAWK-FIXED-BOUNDARY-CORRECTION-INPUT-1.0",
+  "status": "MODEL_DERIVED_FIXED_BOUNDARY_INPUT_NOT_QUALIFIED",
+  "geometry": {
+    "R0_m": 7.5,
+    "a_m": 3.0,
+    "boundary": "fixed circular boundary",
+    "tf_branch": "CAD_A2_TF48_INTERLEAVED_SCREENING_CORRECTION"
+  },
+  "pressure_profile": "MHD/mhd_profile_sweep.csv",
+  "corrected_current_profile": "MHD/mhd_shear_target_toroidal_corrected.csv",
+  "solved_q_profile": "MHD/fixed_boundary_q_profile.csv",
+  "field_archive": "MHD/fixed_boundary_equilibrium_fields.npz",
+  "mesh_convergence": "MHD/fixed_boundary_mesh_convergence.json",
+  "tf_ripple_screen": "magnetic_correction_report.json",
+  "target_q": "q(rho) = 1.20 + 2.00 rho + 3.16478587963 rho^4",
+  "solver": {
+    "grid_nr": 161,
+    "grid_nz": 161,
+    "equation": "Delta_star(psi) = -mu0 * R * j_phi",
+    "gs_residual_tolerance": 1e-10,
+    "q_fit_tolerance_relative": 0.1
+  },
+  "qualification": {
+    "fixed_boundary_stability_screen": true,
+    "free_boundary_3D_MHD": "BLOCKED_NO_PF_OR_MGRID_INPUT",
+    "qualified_design": false
+  }
+}

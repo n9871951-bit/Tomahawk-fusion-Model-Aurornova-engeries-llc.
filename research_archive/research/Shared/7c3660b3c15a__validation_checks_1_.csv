@@ -1,0 +1,12 @@
+check,status,detail
+Bosch-Hale D-T reference table,PASS,max relative error=0.3364% at published rounded values
+Fusion energy partition,PASS,alpha plus neutron power equals total fusion power
+Captured-heat accounting,PASS,"neutron, alpha, and absorbed laser terms reconcile"
+Thermal-to-electric accounting,PASS,high-grade plus low-grade heat equals captured heat
+Finite and nonnegative core outputs,PASS,fusion output is finite and nonnegative for the probe
+Laser reference power,PASS,2.50 MJ/module-shot at 10 Hz maps to 25 MW/module optical input
+Radial quadrature convergence,PASS,max 32-to-64 relative change=3.519e-06
+Repeatability: broad_global_stress,PASS,"two evaluations of the same external CSV are bytewise-equivalent in output arrays; 100,000 rows"
+Repeatability: independent_computational_holdout,PASS,"two evaluations of the same external CSV are bytewise-equivalent in output arrays; 100,000 rows"
+Repeatability: controlled_envelope_v2,PASS,"two evaluations of the same external CSV are bytewise-equivalent in output arrays; 100,000 rows"
+Repeatability: multifactor_improved_envelope,PASS,"two evaluations of the same external CSV are bytewise-equivalent in output arrays; 100,000 rows"

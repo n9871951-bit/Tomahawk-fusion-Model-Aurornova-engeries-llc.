@@ -1,0 +1,31 @@
+{
+  "model": "fixed-density fixed-shape single-temperature burn-response screen with a delayed alpha-energy reservoir",
+  "tau_E_s": 1.47614200749459,
+  "tau_E_status": "Required time from the earlier steady power-balance screen; NOT an independently predicted confinement time",
+  "synchrotron_baseline_MW": 120.190267247479,
+  "synchrotron_temperature_exponent": 2.5,
+  "synchrotron_status": "Baseline from workbook. T-scale exponent 2.5 is a new local screening assumption, not a recomputed radiation-transfer solution.",
+  "absorbed_external_MW": 25.0,
+  "external_status": "Upper-bound scenario: all 25 MW delivered laser power absorbed by plasma. Also run zero absorption.",
+  "alpha_retention": 1.0,
+  "alpha_retention_status": "Upper bound, not a measured or orbit-derived retention. Also run 0.9.",
+  "alpha_energy_MeV": 3.5,
+  "fusion_energy_MeV": 17.6,
+  "alpha_delay_temperature_exponent": 1.5,
+  "alpha_delay_status": "Baseline reservoir residence time Wfast0/Palpha_birth0 from the supplied profile; T^1.5 extension is a screening approximation.",
+  "duration_s": 5.0,
+  "output_dt_s": 0.01,
+  "temperature_scale_min": 0.5,
+  "temperature_scale_max": 2.0,
+  "source_workbook_row": "All Feasible!A9:R9; Recommended Profile!A4:G51",
+  "source_fusion_GW": 5.2653073686999,
+  "source_brems_MW": 141.093591309187,
+  "assumptions": [
+    "Ti=Te with a common evolving temperature multiplier; temperature profile shape, density, composition and magnetic geometry remain fixed.",
+    "Confinement loss is Wthermal/tau_E; no spatial transport coefficient, turbulence or MHD mode is solved.",
+    "Fuel replenishment and ash control are implicit in the fixed-composition approximation.",
+    "No RF deposition term is inserted without an absorbed-power input.",
+    "Wall heat used by secondary systems is downstream heat recovery, not an additional plasma loss term.",
+    "This is a first thermal-response calculation, not a G3/G4 pass or a full 3D plasma simulation."
+  ]
+}

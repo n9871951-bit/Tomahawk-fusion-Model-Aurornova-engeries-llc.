@@ -1,0 +1,104 @@
+[
+  {
+    "case": "reference",
+    "status": "completed",
+    "overrides": {},
+    "initial_temperature_scale": 1.0,
+    "final_time_s": 5.0,
+    "initial_peak_T_keV": 11.9999983762949,
+    "final_peak_T_keV": 7.019078591694877,
+    "max_energy_identity_residual_MJ": 3.410605131648481e-12
+  },
+  {
+    "case": "temperature_plus_1pct",
+    "status": "completed",
+    "overrides": {},
+    "initial_temperature_scale": 1.01,
+    "final_time_s": 5.0,
+    "initial_peak_T_keV": 12.11999836005785,
+    "final_peak_T_keV": 17.589879354130574,
+    "max_energy_identity_residual_MJ": 4.092726157978177e-12
+  },
+  {
+    "case": "temperature_minus_1pct",
+    "status": "screening_range_exited",
+    "overrides": {},
+    "initial_temperature_scale": 0.99,
+    "final_time_s": 4.156683329220274,
+    "initial_peak_T_keV": 11.879998392531952,
+    "final_peak_T_keV": 5.9999991881474495,
+    "max_energy_identity_residual_MJ": 2.9558577807620168e-12
+  },
+  {
+    "case": "confinement_minus_10pct",
+    "status": "screening_range_exited",
+    "overrides": {
+      "tau_E_s": 1.328527806745131
+    },
+    "initial_temperature_scale": 1.0,
+    "final_time_s": 2.4505956859028717,
+    "initial_peak_T_keV": 11.9999983762949,
+    "final_peak_T_keV": 5.99999918814745,
+    "max_energy_identity_residual_MJ": 1.5916157281026244e-12
+  },
+  {
+    "case": "confinement_plus_10pct",
+    "status": "screening_range_exited",
+    "overrides": {
+      "tau_E_s": 1.623756208244049
+    },
+    "initial_temperature_scale": 1.0,
+    "final_time_s": 3.2371388418016958,
+    "initial_peak_T_keV": 11.9999983762949,
+    "final_peak_T_keV": 23.999996752589805,
+    "max_energy_identity_residual_MJ": 7.503331289626658e-12
+  },
+  {
+    "case": "external_heating_off",
+    "status": "screening_range_exited",
+    "overrides": {
+      "absorbed_external_MW": 0.0
+    },
+    "initial_temperature_scale": 1.0,
+    "final_time_s": 3.5255485882753,
+    "initial_peak_T_keV": 11.9999983762949,
+    "final_peak_T_keV": 5.9999991881474495,
+    "max_energy_identity_residual_MJ": 2.0463630789890885e-12
+  },
+  {
+    "case": "alpha_retention_90pct",
+    "status": "screening_range_exited",
+    "overrides": {
+      "alpha_retention": 0.9
+    },
+    "initial_temperature_scale": 1.0,
+    "final_time_s": 2.51062517529548,
+    "initial_peak_T_keV": 11.9999983762949,
+    "final_peak_T_keV": 5.99999918814745,
+    "max_energy_identity_residual_MJ": 2.0463630789890885e-12
+  },
+  {
+    "case": "synch_exponent_2",
+    "status": "completed",
+    "overrides": {
+      "synchrotron_temperature_exponent": 2.0
+    },
+    "initial_temperature_scale": 1.0,
+    "final_time_s": 5.0,
+    "initial_peak_T_keV": 11.9999983762949,
+    "final_peak_T_keV": 6.469827821104735,
+    "max_energy_identity_residual_MJ": 4.774847184307873e-12
+  },
+  {
+    "case": "synch_exponent_3",
+    "status": "completed",
+    "overrides": {
+      "synchrotron_temperature_exponent": 3.0
+    },
+    "initial_temperature_scale": 1.0,
+    "final_time_s": 5.0,
+    "initial_peak_T_keV": 11.9999983762949,
+    "final_peak_T_keV": 7.5302380079425015,
+    "max_energy_identity_residual_MJ": 5.229594535194337e-12
+  }
+]

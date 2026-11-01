@@ -1,0 +1,156 @@
+{
+  "schema_version": "TOMAHAWK-FIXED-BOUNDARY-CORRECTION-1.0",
+  "status": "FIXED_BOUNDARY_STABILITY_SCREEN_PASS_WITH_3D_BLOCKER",
+  "baseline_user_reported_failure": {
+    "q_target_at_rho_0_96": 5.808,
+    "q_solved_at_rho_0_96": 6.98,
+    "q_ratio_at_rho_0_96": 1.2017906336088156,
+    "min_suydam_D": -0.146,
+    "max_ballooning_alpha_over_alpha_crit": 3.28,
+    "provenance": "user-provided fixed-boundary run result in current task"
+  },
+  "method": {
+    "equation": "Delta_star(psi) = -mu0 * R * j_phi",
+    "operator": "same finite-difference Delta-star operator as the existing fixed-boundary screen",
+    "flux_surface_q": "toroidal-flux derivative from solved psi surfaces using radial ray intersections",
+    "inverse_update": "q_design <- q_design / (q_solved / q_target), clipped to 15 percent per iteration",
+    "toroidal_precompensation": "1 + 0.20 rho^2, inferred from reported 1.0-to-1.2 q drift",
+    "diagnostic_caution": "Suydam and s-alpha values are local proxy diagnostics from this module's continuous radial-ray surfaces; cross-check against the project's exact independent diagnostic before promotion."
+  },
+  "baseline_same_operator_q_drift": {
+    "target_profile": "q(rho) = 1.20 + 5.00 rho^2",
+    "q_target_at_rho_0_96": 5.808,
+    "q_solved_at_rho_0_96": 6.924354855582716,
+    "q_ratio_at_rho_0_96": 1.1922098580548754,
+    "gs_residual_relative": 1.460821505478396e-12,
+    "provenance": "recomputed with this correction module's toroidal fixed-boundary operator"
+  },
+  "correction_profile": {
+    "solved_q_target": "q(rho) = 1.20 + 2.00 rho + 3.16478587963 rho^4",
+    "q_at_rho_0_96_target": 5.808,
+    "current_profile_derivation": "j_phi from d/dr [2 pi B0 r^2 / (mu0 R0 q_design)]",
+    "iterations_completed": 1,
+    "iteration_history": [
+      {
+        "iteration": 1,
+        "q_at_rho_0_96": 5.847941471510578,
+        "q_ratio_at_rho_0_96": 1.0068769751223448,
+        "max_abs_q_target_relative_error": 0.0529565006250905,
+        "min_suydam_D": 2.4483330469176594,
+        "max_ballooning_alpha_over_alpha_crit": 0.45237129435685913,
+        "gates": {
+          "GS_residual_pass": true,
+          "divB_pass": true,
+          "q_target_fit_pass": true,
+          "q_monotonic_pass": true,
+          "suydam_interchange_proxy_pass": true,
+          "ballooning_s_alpha_proxy_pass": true,
+          "fixed_boundary_correction_screen_pass": true
+        }
+      }
+    ]
+  },
+  "tf_ripple_screen": {
+    "baseline_16_coil_edge_ripple_percent": 25.031194652503938,
+    "correction_48_coil_edge_ripple_percent": 0.7539178029174242,
+    "correction_48_coil_current_A": 109374.99999473072,
+    "correction_48_coil_current_limit_A": 401934.4881008213,
+    "source_report": "magnetic_correction_report.json",
+    "scope": "exact finite-segment Biot-Savart TF-ripple screen; analytic interleaved screening topology"
+  },
+  "fixed_boundary_candidate": {
+    "status": "FIXED_BOUNDARY_SOLVED_EQUILIBRIUM_SCREEN",
+    "solver_equation": "Delta_star(psi) = -mu0 * R * j_phi",
+    "solver_grid": [
+      161,
+      161
+    ],
+    "gs_residual_relative": 2.524097445082773e-12,
+    "divB_relative": 1.3080883571078067e-14,
+    "axis_R_m": 7.70625,
+    "axis_Z_m": 0.0,
+    "psi_axis_Wb": 22.116285664340936,
+    "I_p_solved_MA": 15.837030550278508,
+    "q_min": 1.4460555410100278,
+    "q_max": 5.934360830575755,
+    "q_at_rho_0_96": 5.847941471510578,
+    "q_target_at_rho_0_96": 5.808,
+    "q_ratio_at_rho_0_96": 1.0068769751223448,
+    "max_abs_q_target_relative_error": 0.0529565006250905,
+    "q_monotonic_pass": true,
+    "min_suydam_D": 2.4483330469176594,
+    "min_suydam_D_at_rho": 0.14117419773919557,
+    "max_ballooning_alpha_over_alpha_crit": 0.45237129435685913,
+    "max_ballooning_at_rho": 0.9657177869716936,
+    "min_shear": 0.15335152761545978,
+    "n_gradeable_surfaces": 64,
+    "n_surfaces": 64,
+    "suydam_proxy_method": "Suydam D = r Bphi^2/4 (d ln q/dr)^2 + mu0 dp/dr",
+    "ballooning_proxy_method": "alpha = -2 mu0 R0 q^2 dp/dr / B0^2; alpha_crit = 0.6 |s|",
+    "pressure_label": "supplied pressure profile interpolated by geometric rho",
+    "limitations": [
+      "fixed circular boundary; no PF/shaping coil fit",
+      "prescribed geometric-rho j_phi and pressure, not a full p(psi), F(psi) closure",
+      "local large-aspect-ratio Suydam and s-alpha proxies, not eigenvalue stability",
+      "no 3-D free-boundary equilibrium or nonlinear MHD"
+    ],
+    "iteration": 1
+  },
+  "mesh_convergence": {
+    "schema_version": "TOMAHAWK-FIXED-BOUNDARY-MESH-CHECK-1.0",
+    "purpose": "Grid-resolution check for the corrected fixed-boundary toroidal equilibrium screen.",
+    "diagnostic_scope": "The two runs use the same prescribed geometric-rho pressure/current model, finite-difference Delta-star operator, radial-ray flux-surface extraction, and local Suydam/s-alpha proxy definitions.",
+    "runs": [
+      {
+        "grid": [
+          161,
+          161
+        ],
+        "gs_residual_relative": 2.524097445082773e-12,
+        "divB_relative": 1.3080883571078067e-14,
+        "q_at_rho_0_96": 5.847941471510578,
+        "q_ratio_at_rho_0_96": 1.0068769751223448,
+        "max_abs_q_target_relative_error": 0.0529565006250905,
+        "min_suydam_D": 2.4483330469176594,
+        "max_ballooning_alpha_over_alpha_crit": 0.45237129435685913,
+        "fixed_boundary_correction_screen_pass": true,
+        "source_report": "fixed_boundary_correction_report.json"
+      },
+      {
+        "grid": [
+          201,
+          201
+        ],
+        "gs_residual_relative": 3.5492214965064024e-12,
+        "divB_relative": 1.4261725691012933e-14,
+        "q_at_rho_0_96": 5.850852733095264,
+        "q_ratio_at_rho_0_96": 1.0073782253951902,
+        "max_abs_q_target_relative_error": 0.0529694205741712,
+        "min_suydam_D": 2.091625121322182,
+        "max_ballooning_alpha_over_alpha_crit": 0.45272462338845343,
+        "fixed_boundary_correction_screen_pass": true,
+        "source_report": "independent rerun of Tomahawk_MHD_FixedBoundary_Correction.py at 201 x 201"
+      }
+    ],
+    "interpretation": "The corrected edge-q ratio and ballooning proxy are stable across the two grids; the minimum Suydam D remains positive. This supports numerical repeatability of this screening diagnostic, not qualification of the device or proof of a self-consistent free-boundary equilibrium."
+  },
+  "gates": {
+    "GS_residual_pass": true,
+    "divB_pass": true,
+    "q_target_fit_pass": true,
+    "q_monotonic_pass": true,
+    "suydam_interchange_proxy_pass": true,
+    "ballooning_s_alpha_proxy_pass": true,
+    "fixed_boundary_correction_screen_pass": true,
+    "free_boundary_3D_MHD_pass": false,
+    "qualified_design_pass": false
+  },
+  "remaining_blockers": [
+    "PF/shaping coil geometry, currents, and engineering limits",
+    "free-boundary 3-D equilibrium and mgrid/MAKEGRID input",
+    "self-consistent p(psi), F(psi), and plasma-current/current-drive closure",
+    "nonlinear MHD stability spectrum",
+    "orbit-resolved alpha transport",
+    "qualified neutronics, CFD/CHT, and CHF"
+  ]
+}

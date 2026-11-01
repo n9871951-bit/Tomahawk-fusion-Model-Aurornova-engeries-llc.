@@ -1,0 +1,13 @@
+&MGRID_NLI
+  TASK = 'MGRID'
+  MGRID_EXT = 'tomahawk_pf'
+  MGRID_MODE = 'S'
+  LSTELL_SYM = F
+  RMIN = 4.0
+  RMAX = 11.0
+  ZMIN = -3.5
+  ZMAX = 3.5
+  KP = 36
+  IR = 201
+  JZ = 201
+/

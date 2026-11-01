@@ -1,0 +1,729 @@
+BOUT++ version 5.2.0
+Revision: 650bfc6d0b952dc567fca625b2721b7ee543a608
+Code compiled on Oct 31 2026 at 21:56:04
+
+B.Dudson (University of York), M.Umansky (LLNL) 2007
+Based on BOUT by Xueqiao Xu, 1999
+
+Processor number: 0 of 1
+
+pid: 21
+
+Compile-time options:
+	Runtime error checking enabled, level 2
+	Parallel NetCDF support disabled
+	Metrics mode is 2D
+	FFT support disabled
+	Natural language support enabled
+	LAPACK support disabled
+	NetCDF support disabled
+	ADIOS2 support disabled
+	PETSc support disabled
+	Pretty function name support enabled
+	PVODE support enabled
+	Score-P support disabled
+	SLEPc support disabled
+	SUNDIALS support disabled
+	Backtrace in exceptions disabled
+	Colour in logs enabled
+	OpenMP parallelisation disabled, using 1 threads
+	Extra debug output disabled
+	Floating-point exceptions disabled
+	Signal handling support enabled
+	Field name tracking enabled
+	Message stack enabled
+	Compiled with flags : "-Wall -Wextra -Wnull-dereference -Wno-cast-function-type -DCHECK=2 -O3 -DNDEBUG"
+	Command line options for this run : /workspace/scratch/5c6b1f23ce8f/thermal_build/tomahawk_thermal -d /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full 
+Reading options file /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full (Command line)
+	Option optionfile = BOUT.inp (default)
+	Option settingsfile = BOUT.settings (default)
+Writing options to file /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.settings
+	Option mesh:type = bout (default)
+
+Getting grid data from options
+	Option mesh:calcParallelSlices_on_communicate = 1 (default)
+	Option mesh:maxregionblocksize = 64 (default)
+	Option mesh:staggergrids = 0 (default)
+	Option mesh:include_corner_cells = 1 (default)
+	Option mesh:ddz:fft_filter = 0 (default)
+	Option mesh:symmetricGlobalX = 1 (default)
+	Option optionfile = BOUT.inp (default)
+WARNING: The default of this option has changed in release 4.1.
+If you want the old setting, you have to specify mesh:symmetricGlobalY=false in BOUT.inp
+	Option mesh:symmetricGlobalY = 1 (default)
+Loading mesh
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option mesh:nx = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option mesh:ny = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option mesh:nz = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Read nz from input grid file
+	Grid size: 1 x 1 x 1
+Variable 'MXG' not in mesh options. Setting to 0
+	Option MXG = 0 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+Variable 'MYG' not in mesh options. Setting to 0
+	Option MYG = 0 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Guard cells (x,y,z): 0, 0, 0
+Variable 'ixseps1' not in mesh options. Setting to 1
+Variable 'ixseps2' not in mesh options. Setting to 1
+Variable 'jyseps1_1' not in mesh options. Setting to -1
+Variable 'jyseps1_2' not in mesh options. Setting to 0
+Variable 'jyseps2_1' not in mesh options. Setting to 0
+Variable 'jyseps2_2' not in mesh options. Setting to 0
+Variable 'ny_inner' not in mesh options. Setting to 0
+Finding value for NXPE (ideal = 1.000000)
+	Candidate value: 1
+	 -> Good value
+	Domain split (NXPE=1, NYPE=1) into domains (localNx=1, localNy=1)
+	Option IncIntShear = 0 (default)
+	Option periodicX = 0 (default)
+	Option async_send = 0 (default)
+	Option ZMIN = 0 (default)
+	Option ZMAX = 1 (default)
+	EQUILIBRIUM IS SINGLE NULL (SND) 
+Connection between top of Y processor 0 and bottom of 0 in range 0 <= x < 1
+=> This processor sending in up
+=> This processor sending in down
+WARNING adding connection: poloidal index -1 out of range
+	MYPE_IN_CORE = true
+	DXS = 1, DIN = 0. DOUT = -1
+	UXS = 1, UIN = 0. UOUT = -1
+	XIN = -1, XOUT = -1
+	Twist-shift: DI UI 
+	Option twistshift = 0 (default)
+Variable 'ShiftAngle' not in mesh options. Setting to empty vector
+No boundary regions; domain is periodic
+No boundary regions in this processor
+Constructing default regions
+	Boundary region inner X
+	Boundary region outer X
+	Option mesh:extrapolate_x = 0 (default)
+	Option mesh:extrapolate_y = 0 (default)
+Variable 'dx' not in mesh options. Setting to 1.000000e+00
+Variable 'dy' not in mesh options. Setting to 1.000000e+00
+	Option ZMIN = 0 (default)
+	Option ZMAX = 1 (default)
+Variable 'dz' not in mesh options. Setting to 6.283185e+00
+	Option mesh:paralleltransform:type = identity (default)
+Variable 'g11' not in mesh options. Setting to 1.000000e+00
+Variable 'g22' not in mesh options. Setting to 1.000000e+00
+Variable 'g33' not in mesh options. Setting to 1.000000e+00
+Variable 'g12' not in mesh options. Setting to 0.000000e+00
+Variable 'g13' not in mesh options. Setting to 0.000000e+00
+Variable 'g23' not in mesh options. Setting to 0.000000e+00
+	Local maximum error in diagonal inversion is 0.000000e+00
+	Local maximum error in off-diagonal inversion is 0.000000e+00
+Variable 'J' not in mesh options. Setting to 0.000000e+00
+	WARNING: Jacobian 'J' not found. Calculating from metric tensor
+Variable 'Bxy' not in mesh options. Setting to 0.000000e+00
+	WARNING: Magnitude of B field 'Bxy' not found. Calculating from metric tensor
+Variable 'ShiftTorsion' not in mesh options. Setting to 0.000000e+00
+	WARNING: No Torsion specified for zShift. Derivatives may not be correct
+Calculating differential geometry terms
+	Communicating connection terms
+	Option non_uniform = 1 (default)
+Variable 'd2x' not in mesh options. Setting to 0.000000e+00
+	WARNING: differencing quantity 'd2x' not found. Calculating from dx
+Variable 'd2y' not in mesh options. Setting to 0.000000e+00
+	WARNING: differencing quantity 'd2y' not found. Calculating from dy
+	done
+	Option output:enabled = false (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option restart_files:enabled = false (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option solver:type = rk4 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option solver:monitor_timestep = 0 (default)
+	Option solver:save_repeat_run_id = 0 (default)
+	Option solver:is_nonsplit_model_diffusive = 1 (default)
+	Option solver:mms = 0 (default)
+	Option solver:mms_initialise = 0 (default)
+	Option nout = 500 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option solver:nout = 500 (default)
+	Option timestep = 0.01 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option solver:output_step = 0.01 (default)
+Setting `nout` is deprecated. Please set `solver:nout` instead.Setting `timestep` is deprecated. Please set `solver:output_step` instead.	Option solver:atol = 1e-10 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option solver:rtol = 1e-09 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option solver:max_timestep = 0.001 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option solver:timestep = 0.001 (default)
+	Option solver:mxstep = 500 (default)
+	Option solver:adaptive = 0 (default)
+Setting up output (experimental output) file
+	Option restart = 0 (default)
+	Option thermal:tau_e = 1.47614200749459 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:sync_mw = 120.190267247479 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:sync_exponent = 2.5 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:external_mw = 25 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:alpha_retention = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:delay_exponent = 1.5 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:profile = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/inputs/radial_profile.csv (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:time_offset = 0 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:scale_min = 0.5 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:scale_max = 2 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+Setting boundary for variable W
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = 0 (default)
+	Option W:evolve_bndry = 0 (default)
+Setting boundary for variable A
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = false (default)
+	Option A:evolve_bndry = 0 (default)
+Setting boundary for variable Ein
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = false (default)
+	Option Ein:evolve_bndry = 0 (default)
+Setting boundary for variable Eout
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = false (default)
+	Option Eout:evolve_bndry = 0 (default)
+	Option thermal:initial_w = 1206.6536056623875 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:initial_a = 55.75579880485155 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:initial_ein = 0 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:initial_eout = 0 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+	Option thermal:csv = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/trajectory.csv (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.inp)
+Variable 'grid_id' not in mesh options. Setting to 
+Variable 'hypnotoad_version' not in mesh options. Setting to 
+Variable 'hypnotoad_git_hash' not in mesh options. Setting to 
+Variable 'hypnotoad_git_diff' not in mesh options. Setting to 
+Variable 'hypnotoad_geqdsk_filename' not in mesh options. Setting to 
+	Option wall_limit = -1 (default)
+	Option stopCheck = 0 (default)
+	Option stopCheckName = BOUT.stop (default)
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full (Command line)
+Solver running for 500 outputs with output timestep of 1.000000e-02
+Initialising solver
+
+	Runge-Kutta 4th-order solver
+	3d fields = 4, 2d fields = 0 neq=4, local_N=4
+Running simulation
+
+Run ID: 1288fc2d-a8ca-43c6-90b8-06237551fe90
+
+Run started at  : Sat Oct 31 22:53:09 2026
+	Option restart = false (default)
+	Option append = 0 (default)
+	Option dump_on_restart = 1 (default)
+	Option input:validate = 0 (default)
+	Option input:error_on_unused_options = 1 (default)
+	Option optionfile = BOUT.inp (default)
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full (Command line)
+Sim Time  |  RHS evals  | Wall Time |  Calc    Inv   Comm    I/O   SOLVER
+
+0.000e+00          1       3.93e-04   -18.0    0.0   23.2   54.5   40.2
+1.000e-02         41       4.59e-04    55.4    0.0    0.0   10.3   34.3
+2.000e-02         41       4.49e-04    61.4    0.0    0.0   10.2   28.4
+3.000e-02         41       4.17e-04    60.4    0.0    0.0   10.1   29.6
+4.000e-02         41       4.39e-04    60.9    0.0    0.0    9.8   29.3
+5.000e-02         41       4.43e-04    61.8    0.0    0.0    9.5   28.7
+6.000e-02         41       4.38e-04    57.6    0.0    0.0    9.8   32.6
+7.000e-02         41       4.17e-04    60.4    0.0    0.0    9.9   29.6
+8.000e-02         41       4.17e-04    60.5    0.0    0.0    9.8   29.7
+9.000e-02         41       4.30e-04    61.5    0.0    0.0    9.7   28.8
+1.000e-01         41       4.14e-04    60.4    0.0    0.0    9.9   29.7
+1.100e-01         41       4.31e-04    58.3    0.0    0.0    9.6   32.1
+1.200e-01         41       4.18e-04    60.6    0.0    0.0   10.0   29.4
+1.300e-01         41       4.33e-04    61.7    0.0    0.0    9.5   28.8
+1.400e-01         41       4.39e-04    61.7    0.0    0.0    9.6   28.7
+1.500e-01         41       4.19e-04    60.0    0.0    0.0   10.1   29.9
+1.600e-01         41       4.31e-04    58.2    0.0    0.0    9.7   32.1
+1.700e-01         41       4.18e-04    60.3    0.0    0.0    9.9   29.8
+1.800e-01         41       4.30e-04    61.4    0.0    0.0    9.7   28.9
+1.900e-01         41       4.18e-04    60.3    0.0    0.0    9.9   29.8
+2.000e-01         41       4.36e-04    58.0    0.0    0.0    9.5   32.5
+2.100e-01         41       4.17e-04    60.3    0.0    0.0    9.9   29.7
+2.200e-01         41       4.18e-04    60.6    0.0    0.0    9.8   29.6
+2.300e-01         41       4.28e-04    61.6    0.0    0.0    9.5   28.8
+2.400e-01         41       4.61e-04    63.5    0.0    0.0    9.1   27.3
+2.500e-01         41       4.36e-04    57.5    0.0    0.0    9.7   32.8
+2.600e-01         41       4.18e-04    60.5    0.0    0.0    9.8   29.7
+2.700e-01         41       4.48e-04    62.8    0.0    0.0    9.2   28.0
+2.800e-01         41       4.18e-04    60.3    0.0    0.0    9.7   29.9
+2.900e-01         41       4.18e-04    60.6    0.0    0.0    9.7   29.7
+3.000e-01         41       4.33e-04    57.8    0.0    0.0    9.6   32.6
+3.100e-01         41       4.16e-04    60.4    0.0    0.0   10.0   29.6
+3.200e-01         41       4.33e-04    58.3    0.0    0.0    9.5   32.2
+3.300e-01         41       4.46e-04    62.3    0.0    0.0    9.4   28.3
+3.400e-01         41       4.36e-04    61.4    0.0    0.0    9.5   29.1
+3.500e-01         41       4.16e-04    60.4    0.0    0.0    9.7   29.9
+3.600e-01         41       4.20e-04    60.1    0.0    0.0    9.8   30.0
+3.700e-01         41       4.33e-04    61.3    0.0    0.0    9.8   29.0
+3.800e-01         41       4.17e-04    60.5    0.0    0.0    9.8   29.7
+3.900e-01         41       4.32e-04    61.4    0.0    0.0    9.6   29.0
+4.000e-01         41       4.13e-04    60.5    0.0    0.0   10.0   29.6
+4.100e-01         41       4.30e-04    61.6    0.0    0.0    9.7   28.7
+4.200e-01         41       4.41e-04    62.2    0.0    0.0    9.4   28.4
+4.300e-01         41       4.29e-04    59.0    0.0    0.0    9.7   31.2
+4.400e-01         41       4.34e-04    57.9    0.0    0.0    9.5   32.6
+4.500e-01         41       4.15e-04    60.5    0.0    0.0    9.8   29.7
+4.600e-01         41       4.34e-04    61.8    0.0    0.0    9.5   28.7
+4.700e-01         41       4.16e-04    60.5    0.0    0.0    9.8   29.7
+4.800e-01         41       4.30e-04    61.3    0.0    0.0    9.8   28.8
+4.900e-01         41       4.34e-04    61.1    0.0    0.0    9.6   29.2
+5.000e-01         41       4.29e-04    61.1    0.0    0.0    9.8   29.1
+5.100e-01         41       4.44e-04    56.5    0.0    0.0    9.3   34.1
+5.200e-01         41       4.38e-04    57.2    0.0    0.0    9.7   33.1
+5.300e-01         41       4.36e-04    61.6    0.0    0.0    9.6   28.7
+5.400e-01         41       4.16e-04    60.5    0.0    0.0    9.8   29.6
+5.500e-01         41       4.33e-04    61.6    0.0    0.0    9.6   28.8
+5.600e-01         41       4.14e-04    60.4    0.0    0.0    9.9   29.7
+5.700e-01         41       4.15e-04    60.7    0.0    0.0    9.8   29.5
+5.800e-01         41       4.32e-04    61.3    0.0    0.0    9.7   29.0
+5.900e-01         41       4.16e-04    60.4    0.0    0.0    9.8   29.8
+6.000e-01         41       4.35e-04    58.1    0.0    0.0    9.4   32.5
+6.100e-01         41       4.41e-04    61.0    0.0    0.0    9.5   29.4
+6.200e-01         41       4.31e-04    61.3    0.0    0.0    9.7   29.1
+6.300e-01         41       4.20e-04    59.7    0.0    0.0    9.9   30.4
+6.400e-01         41       4.13e-04    60.5    0.0    0.0    9.8   29.7
+6.500e-01         41       4.28e-04    58.6    0.0    0.0    9.5   31.9
+6.600e-01         41       4.16e-04    60.6    0.0    0.0    9.8   29.6
+6.700e-01         41       4.34e-04    61.2    0.0    0.0   10.1   28.7
+6.800e-01         41       4.14e-04    60.6    0.0    0.0    9.8   29.6
+6.900e-01         41       4.30e-04    58.4    0.0    0.0   12.9   28.7
+7.000e-01         41       4.43e-04    56.6    0.0    0.0   14.9   28.5
+7.100e-01         41       4.17e-04    60.0    0.0    0.0   10.0   30.0
+7.200e-01         41       4.46e-04    59.3    0.0    0.0    9.3   31.4
+7.300e-01         41       4.18e-04    60.6    0.0    0.0    9.8   29.6
+7.400e-01         41       4.30e-04    61.6    0.0    0.0    9.4   28.9
+7.500e-01         41       4.16e-04    60.1    0.0    0.0   10.3   29.6
+7.600e-01         41       4.29e-04    58.5    0.0    0.0   13.0   28.6
+7.700e-01         41       4.16e-04    60.4    0.0    0.0    9.9   29.7
+7.800e-01         41       4.16e-04    60.7    0.0    0.0    9.7   29.6
+7.900e-01         41       4.31e-04    61.7    0.0    0.0    9.5   28.9
+8.000e-01         41       4.35e-04    57.7    0.0    0.0    9.6   32.7
+8.100e-01         41       4.36e-04    61.3    0.0    0.0    9.9   28.8
+8.200e-01         41       4.13e-04    60.6    0.0    0.0    9.7   29.7
+8.300e-01         41       4.14e-04    60.7    0.0    0.0    9.8   29.5
+8.400e-01         41       4.31e-04    58.3    0.0    0.0   13.0   28.7
+8.500e-01         41       4.15e-04    60.3    0.0    0.0    9.8   29.8
+8.600e-01         41       4.33e-04    61.1    0.0    0.0    9.5   29.4
+8.700e-01         41       4.18e-04    60.4    0.0    0.0    9.8   29.8
+8.800e-01         41       4.33e-04    61.7    0.0    0.0    9.5   28.9
+8.900e-01         41       4.44e-04    61.9    0.0    0.0    9.4   28.6
+9.000e-01         41       4.20e-04    60.3    0.0    0.0    9.9   29.8
+9.100e-01         41       4.29e-04    58.6    0.0    0.0    9.4   32.0
+9.200e-01         41       4.16e-04    60.1    0.0    0.0   10.1   29.8
+9.300e-01         41       4.31e-04    58.7    0.0    0.0    9.7   31.7
+9.400e-01         41       4.16e-04    60.4    0.0    0.0    9.9   29.8
+9.500e-01         41       4.27e-04    61.6    0.0    0.0    9.5   29.0
+9.600e-01         41       4.13e-04    60.3    0.0    0.0    9.8   29.9
+9.700e-01         41       5.43e-04    59.8    0.0    0.0   10.0   30.2
+9.800e-01         41       4.51e-04    60.6    0.0    0.0   10.0   29.3
+9.900e-01         41       4.16e-04    59.9    0.0    0.0   10.0   30.1
+1.000e+00         41       4.35e-04    61.6    0.0    0.0    9.8   28.6
+1.010e+00         45       4.48e-04    61.0    0.0    0.0    9.1   29.9
+1.020e+00         45       4.66e-04    62.0    0.0    0.0    8.8   29.2
+1.030e+00         45       4.54e-04    60.9    0.0    0.0    9.4   29.7
+1.040e+00         45       4.64e-04    62.3    0.0    0.0    8.9   28.9
+1.050e+00         45       4.51e-04    61.3    0.0    0.0    9.1   29.7
+1.060e+00         45       4.64e-04    62.4    0.0    0.0    8.8   28.9
+1.070e+00         45       4.69e-04    62.0    0.0    0.0    8.9   29.1
+1.080e+00         45       4.80e-04    57.3    0.0    0.0   13.4   29.3
+1.090e+00         45       4.56e-04    60.8    0.0    0.0    9.0   30.2
+1.100e+00         45       4.48e-04    61.2    0.0    0.0    9.0   29.8
+1.110e+00         45       4.92e-04    56.2    0.0    0.0    8.5   35.3
+1.120e+00         45       4.54e-04    61.3    0.0    0.0    9.2   29.5
+1.130e+00         45       4.67e-04    62.4    0.0    0.0    8.9   28.7
+1.140e+00         45       4.67e-04    62.5    0.0    0.0    8.8   28.7
+1.150e+00         45       4.71e-04    62.3    0.0    0.0    8.8   28.9
+1.160e+00         45       5.58e-04    53.6    0.0    0.0   20.4   26.0
+1.170e+00         45       5.02e-04    56.7    0.0    0.0    9.2   34.1
+1.180e+00         45       4.63e-04    60.0    0.0    0.0    9.3   30.7
+1.190e+00         45       4.68e-04    62.4    0.0    0.0    8.8   28.8
+1.200e+00         45       4.52e-04    61.4    0.0    0.0    8.9   29.7
+1.210e+00         45       5.36e-04    64.9    0.0    0.0    8.3   26.8
+1.220e+00         45       4.51e-04    60.5    0.0    0.0    9.4   30.1
+1.230e+00         45       4.81e-04    58.1    0.0    0.0    8.9   33.0
+1.240e+00         45       4.75e-04    62.2    0.0    0.0    8.8   29.0
+1.250e+00         45       4.71e-04    62.2    0.0    0.0    8.9   29.0
+1.260e+00         45       4.49e-04    61.2    0.0    0.0    9.1   29.6
+1.270e+00         45       4.68e-04    59.4    0.0    0.0    8.8   31.8
+1.280e+00         45       4.48e-04    61.2    0.0    0.0    9.1   29.7
+1.290e+00         45       4.52e-04    60.6    0.0    0.0    9.1   30.3
+1.300e+00         45       4.67e-04    58.8    0.0    0.0   11.9   29.2
+1.310e+00         45       4.47e-04    61.2    0.0    0.0    9.1   29.7
+1.320e+00         45       4.62e-04    59.5    0.0    0.0    8.9   31.7
+1.330e+00         45       4.71e-04    58.3    0.0    0.0    8.9   32.8
+1.340e+00         45       4.67e-04    62.2    0.0    0.0    8.9   28.9
+1.350e+00         45       4.51e-04    61.5    0.0    0.0    9.0   29.5
+1.360e+00         45       4.65e-04    59.6    0.0    0.0    8.9   31.5
+1.370e+00         45       4.50e-04    61.2    0.0    0.0    9.0   29.8
+1.380e+00         45       4.67e-04    62.2    0.0    0.0    9.0   28.8
+1.390e+00         45       4.48e-04    61.3    0.0    0.0    9.3   29.4
+1.400e+00         45       4.64e-04    59.2    0.0    0.0   12.2   28.6
+1.410e+00         45       4.67e-04    62.4    0.0    0.0    8.8   28.9
+1.420e+00         45       4.53e-04    61.2    0.0    0.0    9.0   29.8
+1.430e+00         45       4.70e-04    62.6    0.0    0.0    8.7   28.7
+1.440e+00         45       4.47e-04    61.3    0.0    0.0    9.1   29.6
+1.450e+00         45       4.62e-04    59.6    0.0    0.0    8.8   31.6
+1.460e+00         45       4.49e-04    61.2    0.0    0.0    9.1   29.7
+1.470e+00         45       4.64e-04    59.2    0.0    0.0    8.8   32.0
+1.480e+00         45       4.46e-04    61.4    0.0    0.0    9.0   29.6
+1.490e+00         45       4.67e-04    62.7    0.0    0.0    8.7   28.6
+1.500e+00         45       4.69e-04    58.7    0.0    0.0    8.6   32.7
+1.510e+00         45       4.70e-04    62.0    0.0    0.0    8.9   29.1
+1.520e+00         45       4.50e-04    61.3    0.0    0.0    8.9   29.8
+1.530e+00         45       4.60e-04    59.6    0.0    0.0    8.8   31.7
+1.540e+00         45       4.48e-04    61.3    0.0    0.0    9.1   29.6
+1.550e+00         45       4.54e-04    61.6    0.0    0.0    9.0   29.4
+1.560e+00         45       4.62e-04    62.5    0.0    0.0    8.7   28.8
+1.570e+00         45       4.52e-04    61.5    0.0    0.0    9.0   29.5
+1.580e+00         45       5.73e-04    66.4    0.0    0.0    8.0   25.7
+1.590e+00         45       4.84e-04    57.0    0.0    0.0   14.0   29.0
+1.600e+00         45       4.89e-04    62.2    0.0    0.0    9.0   28.8
+1.610e+00         45       4.48e-04    61.2    0.0    0.0    9.2   29.6
+1.620e+00         45       4.69e-04    62.2    0.0    0.0    9.0   28.9
+1.630e+00         45       4.54e-04    60.3    0.0    0.0    9.1   30.6
+1.640e+00         45       5.38e-04    53.0    0.0    0.0    8.3   38.6
+1.650e+00         45       4.51e-04    60.9    0.0    0.0    9.5   29.6
+1.660e+00         45       4.79e-04    58.5    0.0    0.0    8.7   32.7
+1.670e+00         45       4.79e-04    62.7    0.0    0.0    8.9   28.5
+1.680e+00         45       4.68e-04    62.4    0.0    0.0    8.9   28.7
+1.690e+00         45       4.49e-04    61.1    0.0    0.0    9.3   29.6
+1.700e+00         45       4.63e-04    62.3    0.0    0.0    8.9   28.9
+1.710e+00         45       4.45e-04    61.3    0.0    0.0    9.2   29.5
+1.720e+00         45       4.50e-04    60.8    0.0    0.0    9.0   30.2
+1.730e+00         45       4.62e-04    62.5    0.0    0.0    8.8   28.6
+1.740e+00         45       4.45e-04    61.4    0.0    0.0    9.1   29.5
+1.750e+00         45       4.67e-04    61.8    0.0    0.0    9.0   29.2
+1.760e+00         45       4.76e-04    62.8    0.0    0.0    9.1   28.1
+1.770e+00         45       4.65e-04    62.0    0.0    0.0    9.1   29.0
+1.780e+00         45       4.48e-04    61.3    0.0    0.0    9.2   29.6
+1.790e+00         45       4.61e-04    62.2    0.0    0.0    9.0   28.8
+1.800e+00         45       4.45e-04    61.2    0.0    0.0    9.3   29.5
+1.810e+00         45       4.60e-04    62.3    0.0    0.0    9.0   28.7
+1.820e+00         45       4.47e-04    61.5    0.0    0.0    9.1   29.4
+1.830e+00         45       4.48e-04    61.6    0.0    0.0    9.0   29.4
+1.840e+00         45       4.76e-04    57.4    0.0    0.0   11.1   31.5
+1.850e+00         45       4.51e-04    61.1    0.0    0.0    9.1   29.8
+1.860e+00         45       4.74e-04    60.4    0.0    0.0    8.8   30.9
+1.870e+00         45       4.53e-04    61.6    0.0    0.0    9.1   29.3
+1.880e+00         45       5.77e-04    68.7    0.0    0.0    7.6   23.7
+1.890e+00         45       4.51e-04    60.8    0.0    0.0    9.5   29.7
+1.900e+00         45       4.68e-04    58.4    0.0    0.0    9.0   32.6
+1.910e+00         45       4.48e-04    61.3    0.0    0.0    9.2   29.5
+1.920e+00         45       4.64e-04    59.5    0.0    0.0    9.0   31.4
+1.930e+00         45       4.71e-04    62.7    0.0    0.0    8.8   28.5
+1.940e+00         45       4.64e-04    62.0    0.0    0.0    9.0   29.0
+1.950e+00         45       4.46e-04    61.4    0.0    0.0    9.1   29.5
+1.960e+00         45       4.64e-04    61.7    0.0    0.0    8.8   29.5
+1.970e+00         45       4.49e-04    61.1    0.0    0.0    9.1   29.8
+1.980e+00         45       4.69e-04    59.5    0.0    0.0   12.2   28.3
+1.990e+00         45       7.84e-04    39.6    0.0    0.0    6.7   53.7
+2.000e+00         45       4.95e-04    61.8    0.0    0.0    9.3   28.9
+2.010e+00         45       4.87e-04    59.2    0.0    0.0    9.0   31.9
+2.020e+00         45       4.64e-04    62.0    0.0    0.0    9.1   28.9
+2.030e+00         45       4.45e-04    61.2    0.0    0.0    9.3   29.4
+2.040e+00         45       4.58e-04    62.3    0.0    0.0    8.9   28.8
+2.050e+00         45       1.34e-03    21.4    0.0    0.0    4.0   74.6
+2.060e+00         45       4.53e-04    60.3    0.0    0.0    9.7   29.9
+2.070e+00         45       5.02e-04    60.1    0.0    0.0   12.7   27.2
+2.080e+00         45       4.51e-04    60.4    0.0    0.0    9.3   30.2
+2.090e+00         45       4.65e-04    62.5    0.0    0.0    8.9   28.5
+2.100e+00         45       4.44e-04    61.4    0.0    0.0    9.1   29.5
+2.110e+00         45       5.10e-04    61.3    0.0    0.0    8.4   30.3
+2.120e+00         45       4.48e-04    60.9    0.0    0.0    9.3   29.8
+2.130e+00         45       4.82e-04    59.5    0.0    0.0    9.8   30.7
+2.140e+00         45       4.44e-04    61.4    0.0    0.0    9.1   29.4
+2.150e+00         45       4.62e-04    59.2    0.0    0.0    9.2   31.6
+2.160e+00         45       4.72e-04    61.9    0.0    0.0    8.8   29.3
+2.170e+00         45       4.70e-04    58.3    0.0    0.0    9.6   32.1
+2.180e+00         45       4.44e-04    61.2    0.0    0.0    9.2   29.5
+2.190e+00         45       4.61e-04    59.1    0.0    0.0    8.8   32.1
+2.200e+00         45       4.61e-04    59.6    0.0    0.0    9.1   31.4
+2.210e+00         45       4.44e-04    61.3    0.0    0.0    9.2   29.5
+2.220e+00         45       4.62e-04    59.2    0.0    0.0    9.4   31.5
+2.230e+00         45       4.42e-04    61.5    0.0    0.0    9.1   29.3
+2.240e+00         45       4.79e-04    62.1    0.0    0.0    9.1   28.8
+2.250e+00         45       4.70e-04    58.0    0.0    0.0    8.7   33.3
+2.260e+00         45       4.65e-04    58.8    0.0    0.0    8.9   32.3
+2.270e+00         45       4.44e-04    61.3    0.0    0.0    9.3   29.4
+2.280e+00         45       4.59e-04    62.4    0.0    0.0    9.0   28.6
+2.290e+00         45       4.46e-04    60.8    0.0    0.0    9.2   30.1
+2.300e+00         45       4.58e-04    59.4    0.0    0.0   12.3   28.3
+2.310e+00         45       4.46e-04    61.2    0.0    0.0    9.2   29.6
+2.320e+00         45       4.45e-04    61.2    0.0    0.0    9.1   29.7
+2.330e+00         45       4.63e-04    62.6    0.0    0.0    8.9   28.5
+2.340e+00         45       4.67e-04    62.6    0.0    0.0    9.0   28.4
+2.350e+00         45       4.62e-04    62.3    0.0    0.0    9.0   28.7
+2.360e+00         45       4.42e-04    61.3    0.0    0.0    9.3   29.4
+2.370e+00         45       4.60e-04    62.4    0.0    0.0    8.9   28.7
+2.380e+00         45       4.48e-04    61.9    0.0    0.0    9.2   29.0
+2.390e+00         45       4.60e-04    62.9    0.0    0.0    8.8   28.3
+2.400e+00         45       4.47e-04    61.0    0.0    0.0    9.2   29.9
+2.410e+00         45       4.60e-04    59.3    0.0    0.0   12.4   28.3
+2.420e+00         45       4.69e-04    62.8    0.0    0.0    8.7   28.4
+2.430e+00         45       4.44e-04    61.3    0.0    0.0    9.2   29.5
+2.440e+00         45       4.86e-04    56.1    0.0    0.0    8.4   35.5
+2.450e+00         45       4.41e-04    61.5    0.0    0.0    9.1   29.4
+2.460e+00         45       4.60e-04    62.7    0.0    0.0    8.8   28.4
+2.470e+00         45       4.43e-04    61.6    0.0    0.0    9.2   29.3
+2.480e+00         45       4.58e-04    62.6    0.0    0.0    8.8   28.6
+2.490e+00         45       4.42e-04    61.7    0.0    0.0    9.0   29.3
+2.500e+00         45       4.61e-04    62.7    0.0    0.0    8.9   28.4
+2.510e+00         45       4.82e-04    63.4    0.0    0.0    8.7   27.9
+2.520e+00         45       4.64e-04    62.3    0.0    0.0    8.9   28.7
+2.530e+00         45       4.43e-04    61.3    0.0    0.0    9.2   29.5
+2.540e+00         45       4.60e-04    62.3    0.0    0.0    8.8   28.8
+2.550e+00         45       4.58e-04    59.8    0.0    0.0    9.0   31.3
+2.560e+00         45       4.46e-04    61.2    0.0    0.0    9.3   29.4
+2.570e+00         45       4.59e-04    62.5    0.0    0.0    9.0   28.4
+2.580e+00         45       4.43e-04    61.4    0.0    0.0    9.1   29.5
+2.590e+00         45       4.63e-04    58.9    0.0    0.0    8.8   32.3
+2.600e+00         45       4.71e-04    62.4    0.0    0.0    8.8   28.7
+2.610e+00         45       4.72e-04    61.8    0.0    0.0    9.3   29.0
+2.620e+00         45       4.50e-04    60.9    0.0    0.0    9.1   30.0
+2.630e+00         45       4.64e-04    62.6    0.0    0.0    8.8   28.6
+2.640e+00         45       4.46e-04    61.3    0.0    0.0    9.1   29.6
+2.650e+00         45       4.49e-04    61.4    0.0    0.0    9.2   29.4
+2.660e+00         45       4.62e-04    59.6    0.0    0.0    9.0   31.5
+2.670e+00         45       4.46e-04    61.7    0.0    0.0    9.0   29.3
+2.680e+00         45       4.63e-04    62.3    0.0    0.0    9.0   28.7
+2.690e+00         45       4.67e-04    62.5    0.0    0.0    8.9   28.6
+2.700e+00         45       4.63e-04    62.3    0.0    0.0    8.8   28.8
+2.710e+00         45       4.48e-04    61.4    0.0    0.0    9.3   29.4
+2.720e+00         45       4.60e-04    59.5    0.0    0.0    8.9   31.6
+2.730e+00         45       4.47e-04    61.6    0.0    0.0    9.2   29.2
+2.740e+00         45       4.62e-04    62.4    0.0    0.0    8.8   28.7
+2.750e+00         45       4.49e-04    61.4    0.0    0.0    9.0   29.5
+2.760e+00         45       4.61e-04    59.4    0.0    0.0   12.0   28.6
+2.770e+00         45       4.66e-04    62.1    0.0    0.0    8.9   29.0
+2.780e+00         45       4.63e-04    59.6    0.0    0.0    9.0   31.4
+2.790e+00         45       4.66e-04    62.4    0.0    0.0    8.9   28.7
+2.800e+00         45       4.47e-04    61.2    0.0    0.0    9.2   29.6
+2.810e+00         45       4.68e-04    59.0    0.0    0.0    8.9   32.2
+2.820e+00         45       4.52e-04    61.5    0.0    0.0    9.2   29.3
+2.830e+00         45       4.65e-04    62.5    0.0    0.0    8.9   28.6
+2.840e+00         45       4.47e-04    61.2    0.0    0.0    9.2   29.6
+2.850e+00         45       4.63e-04    62.6    0.0    0.0    8.8   28.6
+2.860e+00         45       4.67e-04    62.3    0.0    0.0    8.9   28.9
+2.870e+00         45       4.65e-04    62.3    0.0    0.0    8.8   28.9
+2.880e+00         45       4.59e-04    61.8    0.0    0.0    9.0   29.2
+2.890e+00         45       9.05e-04    68.1    0.0    0.0    6.2   25.8
+2.900e+00         45       4.57e-04    59.9    0.0    0.0   10.0   30.1
+2.910e+00         45       4.91e-04    63.3    0.0    0.0    8.8   27.9
+2.920e+00         45       4.45e-04    61.1    0.0    0.0    9.4   29.5
+2.930e+00         45       4.62e-04    59.6    0.0    0.0    8.9   31.5
+2.940e+00         45       4.69e-04    58.1    0.0    0.0    8.7   33.2
+2.950e+00         45       4.75e-04    57.4    0.0    0.0    8.8   33.8
+2.960e+00         45       4.42e-04    61.2    0.0    0.0    9.3   29.6
+2.970e+00         45       4.58e-04    62.3    0.0    0.0    9.1   28.6
+2.980e+00         45       4.40e-04    61.3    0.0    0.0    9.1   29.6
+2.990e+00         45       4.64e-04    59.1    0.0    0.0    8.8   32.1
+3.000e+00         45       4.44e-04    61.6    0.0    0.0    9.1   29.2
+3.010e+00         45       4.54e-04    62.0    0.0    0.0    9.2   28.8
+3.020e+00         45       4.78e-04    57.1    0.0    0.0   12.0   30.8
+3.030e+00         45       4.68e-04    61.0    0.0    0.0    9.0   30.0
+3.040e+00         45       4.74e-04    63.2    0.0    0.0    8.9   27.9
+3.050e+00         45       4.47e-04    61.2    0.0    0.0    9.2   29.6
+3.060e+00         45       5.03e-04    57.2    0.0    0.0    8.5   34.2
+3.070e+00         45       4.58e-04    61.0    0.0    0.0    9.2   29.8
+3.080e+00         45       4.86e-04    58.2    0.0    0.0    8.5   33.2
+3.090e+00         45       4.47e-04    61.0    0.0    0.0    9.4   29.6
+3.100e+00         45       4.58e-04    62.5    0.0    0.0    8.8   28.7
+3.110e+00         45       4.80e-04    63.2    0.0    0.0    8.6   28.1
+3.120e+00         45       4.62e-04    58.9    0.0    0.0    8.9   32.2
+3.130e+00         45       4.44e-04    61.4    0.0    0.0    9.1   29.4
+3.140e+00         45       4.61e-04    59.1    0.0    0.0   12.5   28.4
+3.150e+00         45       4.47e-04    61.3    0.0    0.0    9.0   29.7
+3.160e+00         45       4.43e-04    61.7    0.0    0.0    9.0   29.3
+3.170e+00         45       4.61e-04    62.7    0.0    0.0    9.0   28.3
+3.180e+00         45       4.45e-04    61.5    0.0    0.0    9.2   29.3
+3.190e+00         45       4.58e-04    62.7    0.0    0.0    8.7   28.6
+3.200e+00         45       4.65e-04    62.5    0.0    0.0    8.8   28.7
+3.210e+00         45       4.62e-04    59.0    0.0    0.0    9.0   32.0
+3.220e+00         45       4.44e-04    61.6    0.0    0.0    9.0   29.4
+3.230e+00         45       4.59e-04    59.6    0.0    0.0    8.7   31.7
+3.240e+00         45       4.46e-04    60.9    0.0    0.0    9.1   30.0
+3.250e+00         45       4.57e-04    59.5    0.0    0.0   12.1   28.4
+3.260e+00         45       4.42e-04    61.3    0.0    0.0    9.2   29.5
+3.270e+00         45       4.43e-04    61.6    0.0    0.0    9.1   29.3
+3.280e+00         45       7.12e-04    61.9    0.0    0.0   10.2   27.9
+3.290e+00         45       6.99e-04    60.2    0.0    0.0    7.6   32.1
+3.300e+00         45       5.43e-04    51.1    0.0    0.0    8.9   40.0
+3.310e+00         45       4.83e-04    58.2    0.0    0.0    8.7   33.1
+3.320e+00         45       5.09e-04    59.4    0.0    0.0   12.7   27.9
+3.330e+00         45       5.53e-04    54.2    0.0    0.0    8.4   37.4
+3.340e+00         45       5.87e-04    61.3    0.0    0.0    7.6   31.1
+3.350e+00         45       7.41e-04    52.8    0.0    0.0   17.9   29.3
+3.360e+00         45       6.83e-04    59.9    0.0    0.0   10.8   29.3
+3.370e+00         45       4.82e-04    57.9    0.0    0.0    9.2   32.9
+3.380e+00         45       4.96e-04    59.4    0.0    0.0    8.8   31.7
+3.390e+00         45       4.76e-04    62.1    0.0    0.0    9.0   29.0
+3.400e+00         45       4.89e-04    62.3    0.0    0.0    8.8   28.9
+3.410e+00         45       4.44e-04    61.3    0.0    0.0    9.2   29.5
+3.420e+00         45       5.11e-04    57.9    0.0    0.0    8.4   33.7
+3.430e+00         45       4.76e-04    58.0    0.0    0.0    9.0   33.0
+3.440e+00         45       4.84e-04    62.7    0.0    0.0    8.7   28.6
+3.450e+00         45       4.53e-04    60.1    0.0    0.0    9.2   30.6
+3.460e+00         45       4.68e-04    58.5    0.0    0.0    8.7   32.8
+3.470e+00         45       4.46e-04    61.5    0.0    0.0    9.1   29.4
+3.480e+00         45       5.19e-04    53.3    0.0    0.0    9.7   37.0
+3.490e+00         45       4.49e-04    61.3    0.0    0.0    9.2   29.5
+3.500e+00         45       4.65e-04    62.8    0.0    0.0    8.9   28.3
+3.510e+00         45       4.69e-04    62.7    0.0    0.0    8.8   28.5
+3.520e+00         45       4.47e-04    60.9    0.0    0.0    9.4   29.7
+3.530e+00         45       4.65e-04    59.1    0.0    0.0   12.4   28.4
+3.540e+00         45       4.44e-04    61.6    0.0    0.0    9.1   29.3
+3.550e+00         45       4.58e-04    62.5    0.0    0.0    8.8   28.7
+3.560e+00         45       4.45e-04    61.7    0.0    0.0    9.0   29.3
+3.570e+00         45       4.57e-04    62.5    0.0    0.0    8.9   28.6
+3.580e+00         45       4.50e-04    61.5    0.0    0.0    9.1   29.4
+3.590e+00         45       6.77e-04    56.8    0.0    0.0   10.3   32.9
+3.600e+00         45       7.11e-04    52.0    0.0    0.0   14.4   33.6
+3.610e+00         45       6.60e-04    59.9    0.0    0.0   10.3   29.7
+3.620e+00         45       7.08e-04    50.7    0.0    0.0   13.8   35.6
+3.630e+00         45       6.90e-04    62.6    0.0    0.0   10.1   27.2
+3.640e+00         45       7.42e-04    62.4    0.0    0.0   10.0   27.6
+3.650e+00         45       6.35e-04    55.3    0.0    0.0    7.5   37.2
+3.660e+00         45       5.90e-04    59.6    0.0    0.0    8.0   32.4
+3.670e+00         45       4.63e-04    58.7    0.0    0.0    9.4   31.9
+3.680e+00         45       5.00e-04    60.3    0.0    0.0    8.5   31.2
+3.690e+00         45       4.45e-04    61.0    0.0    0.0    9.4   29.7
+3.700e+00         45       7.21e-04    73.6    0.0    0.0    6.4   20.0
+3.710e+00         45       4.53e-04    60.5    0.0    0.0    9.7   29.8
+3.720e+00         45       5.07e-04    65.4    0.0    0.0    8.5   26.2
+3.730e+00         45       4.74e-04    57.8    0.0    0.0    9.3   32.9
+3.740e+00         45       4.63e-04    62.3    0.0    0.0    9.1   28.6
+3.750e+00         45       4.44e-04    61.6    0.0    0.0    9.1   29.3
+3.760e+00         45       4.59e-04    62.4    0.0    0.0    9.1   28.5
+3.770e+00         45       5.40e-04    60.0    0.0    0.0    8.4   31.7
+3.780e+00         45       5.60e-04    65.3    0.0    0.0    8.4   26.3
+3.790e+00         45       4.47e-04    60.7    0.0    0.0    9.5   29.8
+3.800e+00         45       4.96e-04    55.0    0.0    0.0    8.3   36.7
+3.810e+00         45       4.82e-04    56.2    0.0    0.0    8.8   35.1
+3.820e+00         45       4.79e-04    56.8    0.0    0.0   15.0   28.2
+3.830e+00         45       4.45e-04    61.0    0.0    0.0    9.3   29.7
+3.840e+00         45       4.41e-04    61.6    0.0    0.0    9.1   29.3
+3.850e+00         45       4.73e-04    58.0    0.0    0.0    8.7   33.3
+3.860e+00         45       4.43e-04    61.3    0.0    0.0    9.2   29.5
+3.870e+00         45       4.75e-04    63.7    0.0    0.0    8.7   27.6
+3.880e+00         45       4.46e-04    61.5    0.0    0.0    9.5   29.0
+3.890e+00         45       4.86e-04    56.0    0.0    0.0    8.5   35.4
+3.900e+00         45       4.70e-04    62.4    0.0    0.0    8.9   28.6
+3.910e+00         45       4.83e-04    62.6    0.0    0.0    8.7   28.7
+3.920e+00         45       4.44e-04    61.3    0.0    0.0    9.4   29.3
+3.930e+00         45       4.84e-04    63.8    0.0    0.0    8.7   27.4
+3.940e+00         45       4.52e-04    60.8    0.0    0.0    9.1   30.0
+3.950e+00         45       4.90e-04    65.1    0.0    0.0    8.3   26.6
+3.960e+00         45       4.50e-04    60.8    0.0    0.0    9.5   29.7
+3.970e+00         45       4.44e-04    61.6    0.0    0.0    9.4   29.0
+3.980e+00         45       4.85e-04    56.0    0.0    0.0    8.6   35.5
+3.990e+00         45       4.44e-04    61.0    0.0    0.0    9.4   29.6
+4.000e+00         45       4.77e-04    62.9    0.0    0.0    8.6   28.4
+4.010e+00         41       4.09e-04    60.8    0.0    0.0    9.8   29.4
+4.020e+00         41       4.47e-04    62.6    0.0    0.0    9.2   28.2
+4.030e+00         41       4.12e-04    60.9    0.0    0.0   10.0   29.1
+4.040e+00         41       4.35e-04    62.5    0.0    0.0    9.3   28.2
+4.050e+00         41       4.11e-04    60.6    0.0    0.0    9.9   29.4
+4.060e+00         41       4.07e-04    60.8    0.0    0.0    9.9   29.3
+4.070e+00         41       4.49e-04    63.9    0.0    0.0    9.2   26.9
+4.080e+00         41       4.33e-04    57.1    0.0    0.0    9.8   33.1
+4.090e+00         41       4.53e-04    56.4    0.0    0.0    9.5   34.1
+4.100e+00         41       4.10e-04    60.3    0.0    0.0   10.1   29.5
+4.110e+00         41       4.28e-04    62.0    0.0    0.0    9.6   28.3
+4.120e+00         41       4.07e-04    60.6    0.0    0.0   10.1   29.3
+4.130e+00         41       4.07e-04    60.8    0.0    0.0   10.0   29.3
+4.140e+00         41       4.21e-04    61.6    0.0    0.0    9.7   28.6
+4.150e+00         41       4.07e-04    60.9    0.0    0.0    9.8   29.3
+4.160e+00         41       4.22e-04    61.7    0.0    0.0    9.6   28.7
+4.170e+00         41       4.38e-04    57.2    0.0    0.0    9.3   33.5
+4.180e+00         41       4.08e-04    60.3    0.0    0.0   10.0   29.6
+4.190e+00         41       4.25e-04    58.4    0.0    0.0   12.8   28.7
+4.200e+00         41       4.08e-04    60.8    0.0    0.0    9.8   29.5
+4.210e+00         41       4.22e-04    61.8    0.0    0.0    9.5   28.7
+4.220e+00         41       4.09e-04    60.9    0.0    0.0    9.8   29.2
+4.230e+00         41       4.23e-04    58.7    0.0    0.0    9.7   31.6
+4.240e+00         41       4.08e-04    60.7    0.0    0.0   10.0   29.4
+4.250e+00         41       4.08e-04    60.9    0.0    0.0    9.8   29.3
+4.260e+00         41       4.22e-04    62.0    0.0    0.0    9.5   28.5
+4.270e+00         41       4.41e-04    57.2    0.0    0.0    9.4   33.3
+4.280e+00         41       4.29e-04    57.6    0.0    0.0    9.6   32.8
+4.290e+00         41       4.10e-04    60.4    0.0    0.0   10.1   29.5
+4.300e+00         41       4.21e-04    58.8    0.0    0.0   12.6   28.6
+4.310e+00         41       4.09e-04    60.8    0.0    0.0    9.9   29.3
+4.320e+00         41       4.19e-04    59.2    0.0    0.0   12.2   28.6
+4.330e+00         41       5.75e-04    61.6    0.0    0.0   12.7   25.6
+4.340e+00         41       5.53e-04    63.2    0.0    0.0    8.2   28.6
+4.350e+00         41       5.56e-04    58.0    0.0    0.0   13.5   28.5
+4.360e+00         41       6.35e-04    62.8    0.0    0.0    7.4   29.8
+4.370e+00         41       6.32e-04    56.8    0.0    0.0   14.5   28.6
+4.380e+00         41       6.70e-04    59.1    0.0    0.0   10.0   30.9
+4.390e+00         41       6.14e-04    54.4    0.0    0.0   14.6   31.1
+4.400e+00         41       5.94e-04    58.4    0.0    0.0   11.8   29.8
+4.410e+00         41       6.61e-04    63.3    0.0    0.0   13.0   23.7
+4.420e+00         41       6.34e-04    61.5    0.0    0.0   14.3   24.1
+4.430e+00         41       6.24e-04    57.7    0.0    0.0    7.7   34.6
+4.440e+00         41       6.52e-04    59.1    0.0    0.0    7.1   33.8
+4.450e+00         41       4.97e-04    57.3    0.0    0.0    9.0   33.7
+4.460e+00         41       4.91e-04    65.4    0.0    0.0    8.9   25.7
+4.470e+00         41       4.12e-04    60.1    0.0    0.0   10.2   29.7
+4.480e+00         41       4.71e-04    58.8    0.0    0.0    9.0   32.2
+4.490e+00         41       4.40e-04    61.5    0.0    0.0    9.7   28.8
+4.500e+00         41       4.10e-04    60.2    0.0    0.0   10.0   29.7
+4.510e+00         41       4.62e-04    58.1    0.0    0.0    9.2   32.8
+4.520e+00         41       4.12e-04    60.3    0.0    0.0   10.1   29.6
+4.530e+00         41       4.53e-04    55.1    0.0    0.0    9.1   35.8
+4.540e+00         41       4.09e-04    60.4    0.0    0.0   10.0   29.5
+4.550e+00         41       4.25e-04    58.4    0.0    0.0    9.7   32.0
+4.560e+00         41       4.09e-04    60.5    0.0    0.0   10.0   29.5
+4.570e+00         41       4.47e-04    62.3    0.0    0.0    9.4   28.3
+4.580e+00         41       4.63e-04    53.8    0.0    0.0   14.3   31.9
+4.590e+00         41       4.23e-04    59.0    0.0    0.0    9.8   31.2
+4.600e+00         41       4.31e-04    61.6    0.0    0.0    9.6   28.8
+4.610e+00         41       4.11e-04    60.4    0.0    0.0   10.0   29.6
+4.620e+00         41       4.25e-04    58.5    0.0    0.0    9.6   32.0
+4.630e+00         41       4.07e-04    60.7    0.0    0.0   10.0   29.3
+4.640e+00         41       4.08e-04    60.6    0.0    0.0   10.1   29.3
+4.650e+00         41       4.24e-04    58.4    0.0    0.0    9.8   31.8
+4.660e+00         41       4.07e-04    60.8    0.0    0.0    9.8   29.4
+4.670e+00         41       4.27e-04    62.1    0.0    0.0    9.5   28.3
+4.680e+00         41       4.34e-04    61.9    0.0    0.0    9.5   28.5
+4.690e+00         41       4.89e-04    59.3    0.0    0.0    9.1   31.6
+4.700e+00         41       4.12e-04    60.0    0.0    0.0   10.3   29.7
+4.710e+00         41       4.08e-04    60.8    0.0    0.0    9.8   29.5
+4.720e+00         41       4.24e-04    62.0    0.0    0.0    9.5   28.5
+4.730e+00         41       4.07e-04    60.8    0.0    0.0    9.8   29.3
+4.740e+00         41       4.22e-04    62.0    0.0    0.0    9.6   28.4
+4.750e+00         41       4.06e-04    60.6    0.0    0.0    9.9   29.5
+4.760e+00         41       4.29e-04    58.1    0.0    0.0   12.7   29.3
+4.770e+00         41       4.34e-04    62.0    0.0    0.0    9.5   28.5
+4.780e+00         41       4.10e-04    60.5    0.0    0.0    9.9   29.6
+4.790e+00         41       4.29e-04    62.2    0.0    0.0    9.6   28.2
+4.800e+00         41       4.08e-04    60.6    0.0    0.0   10.1   29.3
+4.810e+00         41       4.25e-04    62.0    0.0    0.0    9.7   28.3
+4.820e+00         41       4.09e-04    60.8    0.0    0.0    9.8   29.4
+4.830e+00         41       4.09e-04    60.8    0.0    0.0    9.9   29.3
+4.840e+00         41       4.25e-04    62.3    0.0    0.0    9.5   28.2
+4.850e+00         41       4.08e-04    60.4    0.0    0.0   10.0   29.6
+4.860e+00         41       5.09e-04    50.2    0.0    0.0   21.7   28.1
+4.870e+00         41       4.39e-04    61.3    0.0    0.0    9.7   29.0
+4.880e+00         41       4.55e-04    62.0    0.0    0.0    9.3   28.7
+4.890e+00         41       4.09e-04    60.5    0.0    0.0   10.0   29.5
+4.900e+00         41       4.29e-04    58.1    0.0    0.0   13.6   28.2
+4.910e+00         41       4.16e-04    60.9    0.0    0.0    9.8   29.3
+4.920e+00         41       4.08e-04    61.1    0.0    0.0    9.7   29.2
+4.930e+00         41       4.34e-04    61.3    0.0    0.0    9.6   29.1
+4.940e+00         41       4.06e-04    60.8    0.0    0.0   10.0   29.2
+4.950e+00         41       4.25e-04    58.4    0.0    0.0    9.5   32.1
+4.960e+00         41       4.36e-04    62.7    0.0    0.0    9.3   28.0
+4.970e+00         41       4.11e-04    60.5    0.0    0.0    9.9   29.5
+4.980e+00         41       4.28e-04    58.2    0.0    0.0    9.5   32.3
+4.990e+00         41       4.09e-04    60.7    0.0    0.0   10.0   29.3
+5.000e+00         41       4.23e-04    62.1    0.0    0.0    9.5   28.4
+
+Run finished at  : Sat Oct 31 22:53:09 2026
+Run time : 0 s
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full (Command line)
+	Option settingsfile = BOUT.settings (default)
+Writing options to file /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_full/BOUT.settings
+	Option time_report:show = 0 (default)

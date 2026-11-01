@@ -1,0 +1,14 @@
+{
+  "reactivity_reference_max_relative_error": 0.00336362229506737,
+  "reactivity_reference_tolerance": 0.005,
+  "reactivity_reference_pass": true,
+  "energy_identity_pass": true,
+  "native_comparison_performed": true,
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.17.0",
+  "native_vs_radau_max_state_difference_MJ": 7.641858701390447e-09,
+  "restart_max_state_difference_MJ": 1.9099388737231493e-10,
+  "native_vs_radau_pass": true,
+  "checkpoint_restart_pass": true
+}

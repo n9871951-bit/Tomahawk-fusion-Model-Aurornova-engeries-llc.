@@ -1,0 +1,70 @@
+{
+  "schema_version": "TOMAHAWK-ODS-MATERIAL-CARD-0.1",
+  "status": "PARTIALLY_QUALIFIED_LIQUID_ONLY_STRUCTURAL_STILL_FAIL_CLOSED",
+  "liquid_candidate": {
+    "name": "Pb-17Li",
+    "status": "SCREENING_LITERATURE_REFERENCE_NOT_QUALIFIED_TEST_DATA",
+    "functions": {
+      "density(T)": {
+        "formula": "rho_kg_m3 = 10450 * (1 - 1.61e-4 * T_K)",
+        "source": "Schulz, B., Fusion Eng. Design 14 (1991) 199",
+        "valid_range_K": [508, 625],
+        "known_scatter_pct": "~4% (Martelli et al. 2019 review)"
+      },
+      "specific_heat(T)": {
+        "formula": "Cp_J_kgK = 195 - 9.116e-3 * T_K",
+        "source": "Schulz (1991)",
+        "valid_range_K": [508, 800],
+        "known_scatter_pct": "~32% across published correlations (Martelli et al. 2019)"
+      },
+      "thermal_conductivity(T)": {
+        "formula": "lambda_W_mK = 14.51 + 0.0196 * T_C",
+        "source": "Kondo (2016), calculated from density/diffusivity/specific heat",
+        "valid_range_K": [508, 873],
+        "known_scatter_pct": "~32-37% across published correlations (Martelli et al. 2019) -- largest uncertainty of any Pb-17Li property"
+      },
+      "dynamic_viscosity(T)": {
+        "formula": "eta_Pa_s = 1.87e-4 * exp(1400 / T_K)",
+        "source": "Schulz (1991)",
+        "valid_range_K": [521, 900],
+        "known_scatter_pct": "~12% (Martelli et al. 2019)"
+      },
+      "electrical_conductivity(T)": {
+        "formula": null,
+        "status": "NOT_FILLED_UNRELIABLE_SOURCE_EXTRACTION",
+        "note": "A candidate Schulz (1991) resistivity correlation was found but its extracted units did not sanity-check against known Pb-17Li resistivity (~90-110 microOhm-cm). Needs direct primary-source verification before use -- this property directly drives your MHD pressure-drop result, so a wrong value here is worse than no value."
+      },
+      "vapor_pressure(T)": {
+        "formula": null,
+        "status": "NOT_FILLED_NO_CONFIDENT_SOURCE_FOUND"
+      }
+    }
+  },
+  "structural_family": {
+    "name": "low-chromium ODS FeCrAl",
+    "status": "CANDIDATE_NOT_QUALIFIED_INTENTIONALLY_LEFT_BLOCKED",
+    "note": "Unlike Pb-17Li, this is a developmental alloy family, not a standardized reference material. Dose-dependent properties (creep, swelling, fracture toughness with He, irradiated strength) have no generic published correlation and depend on the specific alloy composition/processing route. Fabricating plausible-looking values here would be exactly the failure mode this material card's fail-closed design exists to prevent. Requires supplier data sheet or irradiation campaign results.",
+    "required_functions_still_null": [
+      "density(T)", "thermal_conductivity(T, dose)", "specific_heat(T)",
+      "elastic_modulus(T, dose)", "Poisson_ratio(T, dose)", "thermal_expansion(T, dose)",
+      "yield_strength(T, dose)", "ultimate_strength(T, dose)", "creep_law(T, stress, dose, He)",
+      "fatigue_curve(T, environment, dose)", "swelling(DPA, T)",
+      "fracture_toughness(T, dose, He)", "electrical_resistivity(T, dose)"
+    ]
+  },
+  "liquid_solid_interface": {
+    "candidate": "Al2O3 or in-situ LiAlO2-bearing barrier system",
+    "status": "BOUNDARY_MODEL_ONLY_NOT_A_RESOLVED_SOLID_LAYER_STILL_BLOCKED",
+    "note": "No generic literature data exists for this. Requires the actual coating chemistry and thickness spec from your own design."
+  },
+  "blocked_until_supplied": true,
+  "do_not_infer_missing_properties": true,
+  "solver_launch_allowed": false,
+  "still_blocking_solver_launch": [
+    "structural_family: all 13 functions",
+    "liquid_solid_interface: all required inputs",
+    "liquid_candidate.electrical_conductivity(T)",
+    "liquid_candidate.vapor_pressure(T)",
+    "self_heating_laser_source_contract.json: entirely untouched, all values still null"
+  ]
+}

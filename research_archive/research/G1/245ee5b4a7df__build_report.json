@@ -1,0 +1,59 @@
+{
+  "native_execution": "BLOCKED_G1_BOUNDARY_CHECKS",
+  "native_CAD_executed": true,
+  "assembly_build_accepted": false,
+  "g1_audit": {
+    "status": "FAIL",
+    "checks": {
+      "brep_valid": {
+        "status": "PASS",
+        "value": null
+      },
+      "one_closed_solid": {
+        "status": "PASS",
+        "value": null
+      },
+      "brep_bop_check": {
+        "status": "FAIL",
+        "value": "BOP check found the following errors:\nError in Edge: BOPAlgo SelfIntersect\nError in Edge: BOPAlgo SelfIntersect\n"
+      }
+    },
+    "details": {
+      "freecad_version": [
+        "1",
+        "1",
+        "3",
+        "20260725 (Git shallow)",
+        "Unknown",
+        "2026/07/25 04:52:02",
+        "grafted,grafted",
+        "145529fe741292ff0b3977a01195bf0247425794"
+      ],
+      "checkpoint_key": "41c7089114792858686c425fe7256da0142e2910ac1862807268f1ed13b8b32a",
+      "brep_counts": {
+        "Solids": 1,
+        "Shells": 1,
+        "Faces": 1,
+        "Edges": 2,
+        "Vertexes": 1
+      },
+      "checkpoint_events": [
+        {
+          "stage": "complete_audit",
+          "action": "REUSED_VERIFIED_CHECKPOINT"
+        }
+      ],
+      "this_run_elapsed_seconds": 1.0,
+      "all_native_checks_reused": true
+    },
+    "note": "Mesh/export promotion stopped on BREP failure; corrected STEP retained.",
+    "repaired_step_sha256": "a567586b0d8582d2c8d9490341529fe104a0ae6ef281e51d38a130e72edcc74c",
+    "formal_G1_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+    "scope": "PLASMA_BOUNDARY_ONLY_NOT_FULL_ASSEMBLY_OR_CONFINEMENT",
+    "boundary_cache_reused": true
+  },
+  "new_physics_run": false,
+  "G1_approved": false,
+  "formal_G1_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+  "Kaggle_evidence_register": "Kaggle_Evidence_Register.md"
+}

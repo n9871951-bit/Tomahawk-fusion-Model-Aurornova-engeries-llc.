@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "mesh_sha256_matches": true,
+    "node_count_matches": true,
+    "element_count_matches": true,
+    "quad_count_matches": true,
+    "hex_count_matches": true,
+    "laser_physical_groups_16": true,
+    "shared_interface_declared": true,
+    "all_hex_orientations_positive": true,
+    "tf_coils_48": true,
+    "run_field_14T": true,
+    "field_not_rescaled": true,
+    "field_archive_sha256_matches": true,
+    "field_rows_match_mesh_nodes": true,
+    "field_arrays_finite": true,
+    "alpha_self_heating_not_wall_source": true,
+    "source_model_fails_closed": true,
+    "solver_launch_blocked_until_inputs": true
+  },
+  "mesh_sha256": "7fb35bbd5c5325cf457afe936644814fc3e4157793c6435554baf0880d75760d",
+  "field_archive_sha256": "17bfec74c829e06aa978f0239402277130917fe6836eac7f8bf084203298df0f"
+}

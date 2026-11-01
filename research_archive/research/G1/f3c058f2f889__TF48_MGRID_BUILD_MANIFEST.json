@@ -1,0 +1,129 @@
+{
+  "schema_version": "TOMAHAWK-TF48-MGRID-BUILD-0.1",
+  "status": "TF48_NATIVE_INPUTS_BUILT_EQUIVALENT_MGRID_READY_NATIVE_TOOL_BLOCKED",
+  "created_utc": "2026-09-10T02:21:22Z",
+  "builder": {
+    "script": "/workspace/scratch/40c425c80e7e/phase2_20260910/build_tf48_mgrid_package.py",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.39"
+  },
+  "controlling_screen": {
+    "branch": "CAD_A2_TF48_INTERLEAVED_SCREENING_CORRECTION",
+    "coil_count": 48,
+    "edge_ripple_percent": 0.7539158736776759,
+    "limit_percent": 1.0,
+    "pass": true
+  },
+  "input_validation": {
+    "source_sha256": {
+      "cad_a2_tf48_interleaved_centerlines.csv": "5bfa75b0e8da4ec370dfe6a3e1c26a615af4aab1196384f8c24a5bceb7406661",
+      "cad_a2_tf48_interleaved_currents.csv": "d2bb069a55b79ba0aaabba05847e300d025ebf8dfba8fcb3f4ee92529f30c30b",
+      "mhd_coil_table_tf48_correction.csv": "6269f77019c88d7a68e582a87f896ff692202f439648a198f54a297c4c78618c",
+      "POWER_CONTROL_PREFLIGHT.json": "9bd52bde2a68ef10da2dfabdcf3535e5498e5dfbe11400590f2b63f577406652",
+      "repaired_surface.json": "d551331fb78e18e11acd386d8f06c4822ade1c77ef41ebd370f7541bdd749d35"
+    },
+    "coil_count": 48,
+    "segments_per_coil": 512,
+    "turns_per_coil": 100,
+    "flattop_current_A": 109374.99999473072,
+    "current_limit_A": 401934.4881008213,
+    "max_rotation_error_m": 9.947598300641403e-14,
+    "boundary_box_m": {
+      "R_min": 4.49,
+      "R_max": 10.51,
+      "Z_min": -2.2,
+      "Z_max": 2.2
+    },
+    "boundary_inside_mgrid_box": true,
+    "ripple": {
+      "branch": "CAD_A2_TF48_INTERLEAVED_SCREENING_CORRECTION",
+      "coil_count": 48,
+      "edge_ripple_percent": 0.7539158736776759,
+      "limit_percent": 1.0,
+      "pass": true
+    }
+  },
+  "native_makegrid_inputs": {
+    "coil_file": "coils.tomahawk_tf48",
+    "coil_file_sha256": "f55b8c2214edc84d681ab7dd55b714be4b29f90337e478797c4b8748fa28d78d",
+    "coil_file_loops": 300,
+    "coil_file_points_per_loop": 512,
+    "coil_file_periods": 16,
+    "coil_group": "TF48",
+    "coil_current_per_turn_A": -109374.99999473072,
+    "turns_per_physical_coil": 100,
+    "expanded_physical_coil_count": 48,
+    "extcur_file": "extcur.tomahawk_tf48",
+    "extcur_file_sha256": "69fb7cc6d73bee12aba1524b79f89f04afae866800cea56236fe1fc38c65ed6b",
+    "command_file": "input_xgrid_tomahawk_tf48",
+    "command_file_sha256": "8ea2ec236203463235de9a0d3298c52cc1fa34632e60bb177b8aa59d9f9d016a",
+    "grid": {
+      "R_min_m": 4.0,
+      "R_max_m": 11.0,
+      "Z_min_m": -2.6,
+      "Z_max_m": 2.6,
+      "planes_per_field_period": 36,
+      "radial_points": 201,
+      "vertical_points": 201
+    }
+  },
+  "equivalent_mgrid": {
+    "path": "/workspace/scratch/40c425c80e7e/phase2_20260910/tf48_mgrid_build/mgrid_tomahawk_tf48_equivalent.nc",
+    "sha256": "cf3b2e3c054a20de3580459f61036869767cb744ae84017d5a5fa0d5ff6f500d",
+    "status": "PYTHON_DESC_FIELD_GRID_EQUIVALENT_NOT_NATIVE_MAKEGRID",
+    "dimensions": {
+      "rad": 201,
+      "zee": 201,
+      "phi": 36
+    },
+    "nfp": 16,
+    "nextcur": 1,
+    "mgrid_mode": "S",
+    "raw_coil_cur_A": [
+      -109374.99999473072
+    ],
+    "wall_seconds": 0.052591800689697266,
+    "field_min_T": 7.363436997526403e-07,
+    "field_max_T": 0.06307810659464204
+  },
+  "total_equivalent_mgrid": {
+    "path": "/workspace/scratch/40c425c80e7e/phase2_20260910/tf48_mgrid_build/mgrid_tomahawk_total_tf48_equivalent.nc",
+    "sha256": "5c14cfc90e4ad50cb66b44e4911ffdcab0b14afe3c1e8eb64ca849fd20649924",
+    "status": "PYTHON_DESC_TOTAL_FIELD_GRID_EQUIVALENT_NOT_NATIVE_MAKEGRID",
+    "dimensions": {
+      "rad": 201,
+      "zee": 201,
+      "phi": 36
+    },
+    "nfp": 16,
+    "nextcur": 1,
+    "mgrid_mode": "R",
+    "raw_coil_cur_A": [
+      1.0
+    ],
+    "pf_mgrid_sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+    "tf_mgrid_sha256": "cf3b2e3c054a20de3580459f61036869767cb744ae84017d5a5fa0d5ff6f500d",
+    "wall_seconds": 58.8162636756897,
+    "field_min_T": 0.3002042843517425,
+    "field_max_T": 6899.167924851585
+  },
+  "native_makegrid_run": {
+    "status": "BLOCKED_NATIVE_XGRID_EXECUTABLE_NOT_FOUND",
+    "executable": null,
+    "attempted": false
+  },
+  "native_solver": {
+    "vmec_executable": null,
+    "desc_python": "/workspace/scratch/40c425c80e7e/desc_runtime_20260909/bin/python",
+    "vmec_template": "vmec_tf48_free_boundary.input.template",
+    "status": "DESC_RUNTIME_AVAILABLE_VMEC_EXECUTABLE_NOT_FOUND",
+    "free_boundary_run_authorized": false,
+    "reason": "TF48 MGRID is model-derived, and the final G1 boundary/current closure is not formally approved."
+  },
+  "provenance": {
+    "geometry_status": "MODEL_DERIVED_NOT_AS_BUILT",
+    "no_geometry_changes": true,
+    "no_power_controls_applied": true,
+    "native_output_claimed_only_if_xgrid_succeeded": true
+  }
+}

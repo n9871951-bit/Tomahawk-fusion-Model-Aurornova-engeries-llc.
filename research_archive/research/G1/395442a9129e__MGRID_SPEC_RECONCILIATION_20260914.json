@@ -1,0 +1,49 @@
+{
+  "schema_version": "TOMAHAWK-TF48-PF-SHARED-GRID-RECONCILIATION-1.0",
+  "status": "SHARED_NUMERICAL_GRID_MATCH_BRANCH_PHYSICS_INTENTIONALLY_DISTINCT",
+  "shared_grid": {
+    "rmin_m": 4.0,
+    "rmax_m": 11.0,
+    "zmin_m": -3.5,
+    "zmax_m": 3.5,
+    "toroidal_planes_kp": 36,
+    "radial_points_ir": 201,
+    "vertical_points_jz": 201,
+    "mgrid_mode": "S",
+    "stellarator_symmetry": false
+  },
+  "tf48_branch": {
+    "physical_coils": 48,
+    "field_periods_nfp": 16,
+    "native_base_coils": 3,
+    "target_axis_field_T": 16.0,
+    "canonical_current_A_per_turn": -125000.0,
+    "direct_edge_ripple_percent": 0.7539178029174242,
+    "ripple_limit_percent": 1.0,
+    "strict_ripple_reference_pass": true
+  },
+  "pf_branch": {
+    "coil_groups": [
+      "PF_L_IN",
+      "PF_L_OUT",
+      "PF_M_IN",
+      "PF_M_OUT",
+      "PF_U_IN",
+      "PF_U_OUT"
+    ],
+    "full_loop_count": 578,
+    "loops_per_filament": 128,
+    "field_periods_nfp": 1,
+    "target_axis_field_T": null,
+    "reference_axis_field_T": 0.5050786776,
+    "native_pf_is_16T": false,
+    "three_chunk_loop_counts": [190, 198, 190]
+  },
+  "downstream": {
+    "total_field_requires_native_tf48_mgrid": true,
+    "total_field_requires_native_pf_mgrid": true,
+    "g1_boundary_reconciliation_required": true,
+    "vmec_or_desc_run_required": true,
+    "downstream_solver_authorized": false
+  }
+}

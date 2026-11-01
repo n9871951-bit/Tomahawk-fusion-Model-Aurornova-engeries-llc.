@@ -1,0 +1,41 @@
+schema_version: "1.0"
+file_role: plant_power_balance_information
+units_system: GW_for_power_and_fraction_for_efficiencies
+status: screening_math_only; not a validated reactor output
+definitions:
+  fusion_source: "P_fusion = integral[n_D*n_T*<sigma*v>_DT(T_i)*17.6MeV]dV"
+  usable_thermal: "P_thermal_usable = (0.8011363636*f_neutron_capture + 0.1988636364*f_alpha_dep)*P_fusion"
+  gross_electric: "P_electric_gross = eta_thermal_to_electric*P_thermal_usable"
+  net_electric: "P_electric_net = P_electric_gross - P_recirc"
+  engineering_gain: "Q_engineering = P_electric_gross/P_electric_recirc"
+assumptions:
+  f_alpha_loss: 0.10
+  f_alpha_dep: 0.90
+  f_neutron_capture: 0.95
+  eta_thermal_to_electric: 0.40
+  TBR: 1.15
+  labels: design_assumptions_not_measured_or_derived
+derived_screening_fractions:
+  alpha_energy_fraction_of_fusion: 0.1988636364
+  neutron_energy_fraction_of_fusion: 0.8011363636
+  alpha_heat_fraction_of_fusion: 0.1789772727
+  captured_neutron_thermal_fraction_of_fusion: 0.7610795455
+  usable_thermal_fraction_of_fusion: 0.9400568182
+  gross_electric_fraction_of_fusion: 0.3760227273
+Tomahawk_Rev2.1_targets:
+  active_modules: 10
+  hot_standby_modules: 2
+  fusion_source_target_GW_per_active_module: 5.0
+  net_electric_target_GW: 17.0
+  gross_electric_target_GW: 20.0
+  recirculating_ceiling_GW: 3.0
+screening_implication_if_5GW_is_fusion_source:
+  total_fusion_source_GW: 50.0
+  gross_electric_after_capture_and_alpha_deposition_GW: 18.801136
+  net_electric_after_3GW_recirculation_GW: 15.801136
+  fusion_source_required_for_17GW_net_with_3GW_recirculation_GW: 53.188274
+  source_required_per_active_module_GW: 5.318827
+  note: "If 5.0 GW/module already means usable thermal power, do not apply capture/deposition fractions again."
+power_balance_gate:
+  required: [P_electric_net_gt_0, Q_engineering_gt_1, full_density_temperature_power_balance]
+  no_source_only_claim: true

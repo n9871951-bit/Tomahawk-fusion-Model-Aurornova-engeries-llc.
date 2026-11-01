@@ -1,0 +1,485 @@
+[1793501589.604665] [84f825859368:25   :0]            sock.c:114  UCX  WARN  getifaddrs error: Operation not permitted
+[1793501589.604694] [84f825859368:25   :0]            sock.c:114  UCX  WARN  getifaddrs error: Operation not permitted
+[1793501589.604696] [84f825859368:25   :0]            sock.c:114  UCX  WARN  getifaddrs error: Operation not permitted
+[1793501589.604697] [84f825859368:25   :0]            sock.c:114  UCX  WARN  getifaddrs error: Operation not permitted
+[1793501589.604698] [84f825859368:25   :0]            sock.c:114  UCX  WARN  getifaddrs error: Operation not permitted
+[1793501589.604699] [84f825859368:25   :0]            sock.c:114  UCX  WARN  getifaddrs error: Operation not permitted
+BOUT++ version 5.2.0
+Revision: 650bfc6d0b952dc567fca625b2721b7ee543a608
+Code compiled on Oct 31 2026 at 21:56:04
+
+B.Dudson (University of York), M.Umansky (LLNL) 2007
+Based on BOUT by Xueqiao Xu, 1999
+
+Processor number: 0 of 1
+
+pid: 25
+
+Compile-time options:
+	Runtime error checking enabled, level 2
+	Parallel NetCDF support disabled
+	Metrics mode is 2D
+	FFT support disabled
+	Natural language support enabled
+	LAPACK support disabled
+	NetCDF support disabled
+	ADIOS2 support disabled
+	PETSc support disabled
+	Pretty function name support enabled
+	PVODE support enabled
+	Score-P support disabled
+	SLEPc support disabled
+	SUNDIALS support disabled
+	Backtrace in exceptions disabled
+	Colour in logs enabled
+	OpenMP parallelisation disabled, using 1 threads
+	Extra debug output disabled
+	Floating-point exceptions disabled
+	Signal handling support enabled
+	Field name tracking enabled
+	Message stack enabled
+	Compiled with flags : "-Wall -Wextra -Wnull-dereference -Wno-cast-function-type -DCHECK=2 -O3 -DNDEBUG"
+	Command line options for this run : /workspace/scratch/5c6b1f23ce8f/thermal_build/tomahawk_thermal -d /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second 
+Reading options file /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second (Command line)
+	Option optionfile = BOUT.inp (default)
+	Option settingsfile = BOUT.settings (default)
+Writing options to file /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.settings
+	Option mesh:type = bout (default)
+
+Getting grid data from options
+	Option mesh:calcParallelSlices_on_communicate = 1 (default)
+	Option mesh:maxregionblocksize = 64 (default)
+	Option mesh:staggergrids = 0 (default)
+	Option mesh:include_corner_cells = 1 (default)
+	Option mesh:ddz:fft_filter = 0 (default)
+	Option mesh:symmetricGlobalX = 1 (default)
+	Option optionfile = BOUT.inp (default)
+WARNING: The default of this option has changed in release 4.1.
+If you want the old setting, you have to specify mesh:symmetricGlobalY=false in BOUT.inp
+	Option mesh:symmetricGlobalY = 1 (default)
+Loading mesh
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option mesh:nx = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option mesh:ny = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option mesh:nz = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Read nz from input grid file
+	Grid size: 1 x 1 x 1
+Variable 'MXG' not in mesh options. Setting to 0
+	Option MXG = 0 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+Variable 'MYG' not in mesh options. Setting to 0
+	Option MYG = 0 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Guard cells (x,y,z): 0, 0, 0
+Variable 'ixseps1' not in mesh options. Setting to 1
+Variable 'ixseps2' not in mesh options. Setting to 1
+Variable 'jyseps1_1' not in mesh options. Setting to -1
+Variable 'jyseps1_2' not in mesh options. Setting to 0
+Variable 'jyseps2_1' not in mesh options. Setting to 0
+Variable 'jyseps2_2' not in mesh options. Setting to 0
+Variable 'ny_inner' not in mesh options. Setting to 0
+Finding value for NXPE (ideal = 1.000000)
+	Candidate value: 1
+	 -> Good value
+	Domain split (NXPE=1, NYPE=1) into domains (localNx=1, localNy=1)
+	Option IncIntShear = 0 (default)
+	Option periodicX = 0 (default)
+	Option async_send = 0 (default)
+	Option ZMIN = 0 (default)
+	Option ZMAX = 1 (default)
+	EQUILIBRIUM IS SINGLE NULL (SND) 
+Connection between top of Y processor 0 and bottom of 0 in range 0 <= x < 1
+=> This processor sending in up
+=> This processor sending in down
+WARNING adding connection: poloidal index -1 out of range
+	MYPE_IN_CORE = true
+	DXS = 1, DIN = 0. DOUT = -1
+	UXS = 1, UIN = 0. UOUT = -1
+	XIN = -1, XOUT = -1
+	Twist-shift: DI UI 
+	Option twistshift = 0 (default)
+Variable 'ShiftAngle' not in mesh options. Setting to empty vector
+No boundary regions; domain is periodic
+No boundary regions in this processor
+Constructing default regions
+	Boundary region inner X
+	Boundary region outer X
+	Option mesh:extrapolate_x = 0 (default)
+	Option mesh:extrapolate_y = 0 (default)
+Variable 'dx' not in mesh options. Setting to 1.000000e+00
+Variable 'dy' not in mesh options. Setting to 1.000000e+00
+	Option ZMIN = 0 (default)
+	Option ZMAX = 1 (default)
+Variable 'dz' not in mesh options. Setting to 6.283185e+00
+	Option mesh:paralleltransform:type = identity (default)
+Variable 'g11' not in mesh options. Setting to 1.000000e+00
+Variable 'g22' not in mesh options. Setting to 1.000000e+00
+Variable 'g33' not in mesh options. Setting to 1.000000e+00
+Variable 'g12' not in mesh options. Setting to 0.000000e+00
+Variable 'g13' not in mesh options. Setting to 0.000000e+00
+Variable 'g23' not in mesh options. Setting to 0.000000e+00
+	Local maximum error in diagonal inversion is 0.000000e+00
+	Local maximum error in off-diagonal inversion is 0.000000e+00
+Variable 'J' not in mesh options. Setting to 0.000000e+00
+	WARNING: Jacobian 'J' not found. Calculating from metric tensor
+Variable 'Bxy' not in mesh options. Setting to 0.000000e+00
+	WARNING: Magnitude of B field 'Bxy' not found. Calculating from metric tensor
+Variable 'ShiftTorsion' not in mesh options. Setting to 0.000000e+00
+	WARNING: No Torsion specified for zShift. Derivatives may not be correct
+Calculating differential geometry terms
+	Communicating connection terms
+	Option non_uniform = 1 (default)
+Variable 'd2x' not in mesh options. Setting to 0.000000e+00
+	WARNING: differencing quantity 'd2x' not found. Calculating from dx
+Variable 'd2y' not in mesh options. Setting to 0.000000e+00
+	WARNING: differencing quantity 'd2y' not found. Calculating from dy
+	done
+	Option output:enabled = false (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option restart_files:enabled = false (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option solver:type = rk4 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option solver:monitor_timestep = 0 (default)
+	Option solver:save_repeat_run_id = 0 (default)
+	Option solver:is_nonsplit_model_diffusive = 1 (default)
+	Option solver:mms = 0 (default)
+	Option solver:mms_initialise = 0 (default)
+	Option nout = 250 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option solver:nout = 250 (default)
+	Option timestep = 0.01 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option solver:output_step = 0.01 (default)
+Setting `nout` is deprecated. Please set `solver:nout` instead.Setting `timestep` is deprecated. Please set `solver:output_step` instead.	Option solver:atol = 1e-10 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option solver:rtol = 1e-09 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option solver:max_timestep = 0.001 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option solver:timestep = 0.001 (default)
+	Option solver:mxstep = 500 (default)
+	Option solver:adaptive = 0 (default)
+Setting up output (experimental output) file
+	Option restart = 0 (default)
+	Option thermal:tau_e = 1.47614200749459 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:sync_mw = 120.190267247479 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:sync_exponent = 2.5 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:external_mw = 25 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:alpha_retention = 1 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:delay_exponent = 1.5 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:profile = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/inputs/radial_profile.csv (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:time_offset = 2.4999999999999907 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:scale_min = 0.5 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:scale_max = 2 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+Setting boundary for variable W
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = 0 (default)
+	Option W:evolve_bndry = 0 (default)
+Setting boundary for variable A
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = false (default)
+	Option A:evolve_bndry = 0 (default)
+Setting boundary for variable Ein
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = false (default)
+	Option Ein:evolve_bndry = 0 (default)
+Setting boundary for variable Eout
+	Option input:transform_from_field_aligned = true (default)
+	Option input:max_recursion_depth = 0 (default)
+	Option all:function = 0.0 (default)
+	Option all:scale = 1 (default)
+	Option all:evolve_bndry = false (default)
+	Option Eout:evolve_bndry = 0 (default)
+	Option thermal:initial_w = 1154.691314798289 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:initial_a = 47.28921090420444 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:initial_ein = 2595.463913941574 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:initial_eout = 2655.8927927063146 (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+	Option thermal:csv = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/trajectory.csv (/workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.inp)
+Variable 'grid_id' not in mesh options. Setting to 
+Variable 'hypnotoad_version' not in mesh options. Setting to 
+Variable 'hypnotoad_git_hash' not in mesh options. Setting to 
+Variable 'hypnotoad_git_diff' not in mesh options. Setting to 
+Variable 'hypnotoad_geqdsk_filename' not in mesh options. Setting to 
+	Option wall_limit = -1 (default)
+	Option stopCheck = 0 (default)
+	Option stopCheckName = BOUT.stop (default)
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second (Command line)
+Solver running for 250 outputs with output timestep of 1.000000e-02
+Initialising solver
+
+	Runge-Kutta 4th-order solver
+	3d fields = 4, 2d fields = 0 neq=4, local_N=4
+Running simulation
+
+Run ID: 7eacb376-1c3b-42b1-8c6e-6f98f6d99d21
+
+Run started at  : Sat Oct 31 22:53:09 2026
+	Option restart = false (default)
+	Option append = 0 (default)
+	Option dump_on_restart = 1 (default)
+	Option input:validate = 0 (default)
+	Option input:error_on_unused_options = 1 (default)
+	Option optionfile = BOUT.inp (default)
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second (Command line)
+Sim Time  |  RHS evals  | Wall Time |  Calc    Inv   Comm    I/O   SOLVER
+
+0.000e+00          1       4.10e-04    -5.1    0.0   13.6   50.5   41.0
+|  Step 0 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.000e-02         41       4.85e-04    56.6    0.0    0.0   10.1   33.3
+/  Step 1 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.000e-02         41       4.25e-04    59.9    0.0    0.0   10.2   29.9
+-  Step 2 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.000e-02         41       4.17e-04    60.6    0.0    0.0   10.0   29.4
+\  Step 3 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.000e-02         41       4.30e-04    58.0    0.0    0.0   13.4   28.6
+|  Step 4 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.000e-02         41       4.13e-04    60.5    0.0    0.0   10.1   29.4
+/  Step 5 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.000e-02         41       4.34e-04    61.4    0.0    0.0    9.8   28.8
+-  Step 6 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.000e-02         41       4.50e-04    62.5    0.0    0.0    9.4   28.1
+\  Step 7 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.000e-02         41       4.35e-04    61.5    0.0    0.0    9.7   28.8
+|  Step 8 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.000e-02         41       4.15e-04    60.6    0.0    0.0    9.9   29.4
+/  Step 9 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.000e-01         41       4.13e-04    60.5    0.0    0.0   10.2   29.3
+-  Step 10 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.100e-01         41       4.32e-04    58.3    0.0    0.0    9.7   32.0
+\  Step 11 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.200e-01         41       4.14e-04    60.8    0.0    0.0    9.7   29.5
+|  Step 12 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.300e-01         41       4.29e-04    58.5    0.0    0.0    9.6   31.9
+/  Step 13 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.400e-01         41       4.16e-04    60.5    0.0    0.0   10.1   29.4
+-  Step 14 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.500e-01         41       4.26e-04    58.7    0.0    0.0    9.6   31.6
+\  Step 15 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.600e-01         41       4.47e-04    56.5    0.0    0.0    9.5   34.1
+|  Step 16 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.700e-01         41       4.16e-04    60.0    0.0    0.0   10.1   29.9
+/  Step 17 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.800e-01         41       4.29e-04    62.1    0.0    0.0    9.5   28.4
+-  Step 18 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.900e-01         41       4.14e-04    60.8    0.0    0.0    9.8   29.4
+\  Step 19 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.000e-01         41       4.39e-04    57.2    0.0    0.0    9.3   33.5
+|  Step 20 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.100e-01         41       4.13e-04    60.7    0.0    0.0    9.8   29.5
+/  Step 21 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.200e-01         41       4.27e-04    58.8    0.0    0.0    9.6   31.6
+-  Step 22 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.300e-01         41       4.12e-04    60.4    0.0    0.0   10.0   29.6
+\  Step 23 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.400e-01         41       4.14e-04    60.8    0.0    0.0    9.9   29.3
+|  Step 24 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.500e-01         41       4.29e-04    58.8    0.0    0.0    9.5   31.7
+/  Step 25 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.600e-01         41       4.34e-04    61.7    0.0    0.0    9.6   28.7
+-  Step 26 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.700e-01         41       4.36e-04    57.7    0.0    0.0    9.6   32.7
+\  Step 27 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.800e-01         41       4.15e-04    60.5    0.0    0.0    9.9   29.6
+|  Step 28 of 250. Elapsed 0:00:00.0 ETA 0:00:00.12.900e-01         41       4.29e-04    62.0    0.0    0.0    9.5   28.5
+/  Step 29 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.000e-01         41       4.17e-04    60.9    0.0    0.0    9.9   29.2
+-  Step 30 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.100e-01         41       4.12e-04    60.9    0.0    0.0    9.8   29.3
+\  Step 31 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.200e-01         41       4.40e-04    59.7    0.0    0.0    9.4   30.9
+|  Step 32 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.300e-01         41       4.14e-04    60.7    0.0    0.0   10.0   29.3
+/  Step 33 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.400e-01         41       4.29e-04    61.9    0.0    0.0    9.6   28.6
+-  Step 34 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.500e-01         41       4.33e-04    61.9    0.0    0.0    9.5   28.7
+\  Step 35 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.600e-01         41       4.33e-04    58.0    0.0    0.0   13.2   28.8
+|  Step 36 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.700e-01         41       4.16e-04    60.4    0.0    0.0   10.0   29.6
+/  Step 37 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.800e-01         41       4.13e-04    60.6    0.0    0.0    9.7   29.6
+-  Step 38 of 250. Elapsed 0:00:00.0 ETA 0:00:00.13.900e-01         41       4.28e-04    61.9    0.0    0.0    9.6   28.5
+\  Step 39 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.000e-01         41       4.14e-04    60.5    0.0    0.0   10.1   29.5
+|  Step 40 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.100e-01         41       4.33e-04    61.9    0.0    0.0    9.4   28.7
+/  Step 41 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.200e-01         41       4.12e-04    60.6    0.0    0.0    9.9   29.5
+-  Step 42 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.300e-01         41       4.19e-04    60.2    0.0    0.0    9.7   30.1
+\  Step 43 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.400e-01         41       4.34e-04    62.1    0.0    0.0    9.5   28.5
+|  Step 44 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.500e-01         41       5.20e-04    49.8    0.0    0.0   12.0   38.3
+/  Step 45 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.600e-01         41       4.57e-04    61.4    0.0    0.0    9.9   28.7
+-  Step 46 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.700e-01         41       4.17e-04    60.4    0.0    0.0   10.0   29.6
+\  Step 47 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.800e-01         41       4.35e-04    62.1    0.0    0.0    9.5   28.4
+|  Step 48 of 250. Elapsed 0:00:00.0 ETA 0:00:00.14.900e-01         41       4.14e-04    60.7    0.0    0.0    9.8   29.5
+/  Step 49 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.000e-01         41       4.28e-04    58.6    0.0    0.0    9.5   31.9
+-  Step 50 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.100e-01         41       4.15e-04    60.4    0.0    0.0    9.9   29.7
+\  Step 51 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.200e-01         41       4.14e-04    61.0    0.0    0.0    9.8   29.3
+|  Step 52 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.300e-01         41       7.75e-04    35.3    0.0    0.0    8.8   55.9
+/  Step 53 of 250. Elapsed 0:00:00.0 ETA 0:00:00.25.400e-01         41       4.66e-04    55.6    0.0    0.0   10.1   34.3
+-  Step 54 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.500e-01         41       4.20e-04    59.5    0.0    0.0   10.4   30.2
+\  Step 55 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.600e-01         41       4.13e-04    60.8    0.0    0.0    9.9   29.2
+|  Step 56 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.700e-01         41       4.27e-04    58.5    0.0    0.0    9.6   31.8
+/  Step 57 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.800e-01         41       4.12e-04    60.7    0.0    0.0   10.1   29.2
+-  Step 58 of 250. Elapsed 0:00:00.0 ETA 0:00:00.15.900e-01         41       4.26e-04    62.0    0.0    0.0    9.8   28.3
+\  Step 59 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.000e-01         41       4.15e-04    60.3    0.0    0.0    9.7   29.9
+|  Step 60 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.100e-01         41       4.25e-04    62.2    0.0    0.0    9.5   28.3
+/  Step 61 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.200e-01         41       5.14e-04    62.0    0.0    0.0    8.6   29.4
+-  Step 62 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.300e-01         41       4.18e-04    60.1    0.0    0.0   10.2   29.7
+\  Step 63 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.400e-01         41       4.49e-04    56.4    0.0    0.0   10.2   33.4
+|  Step 64 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.500e-01         41       4.14e-04    61.0    0.0    0.0    9.7   29.3
+/  Step 65 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.600e-01         41       4.33e-04    62.6    0.0    0.0    9.6   27.9
+-  Step 66 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.700e-01         41       4.11e-04    60.9    0.0    0.0    9.9   29.2
+\  Step 67 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.800e-01         41       4.24e-04    62.1    0.0    0.0    9.6   28.3
+|  Step 68 of 250. Elapsed 0:00:00.0 ETA 0:00:00.16.900e-01         41       4.13e-04    60.7    0.0    0.0   10.3   29.0
+/  Step 69 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.000e-01         41       4.13e-04    60.7    0.0    0.0    9.9   29.4
+-  Step 70 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.100e-01         41       4.26e-04    62.2    0.0    0.0    9.5   28.2
+\  Step 71 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.200e-01         41       4.31e-04    58.5    0.0    0.0    9.7   31.9
+|  Step 72 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.300e-01         41       4.33e-04    58.5    0.0    0.0    9.6   32.0
+/  Step 73 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.400e-01         41       5.15e-04    51.7    0.0    0.0    8.6   39.7
+-  Step 74 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.500e-01         41       4.54e-04    62.7    0.0    0.0    9.5   27.7
+\  Step 75 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.600e-01         41       4.13e-04    61.1    0.0    0.0    9.9   29.0
+|  Step 76 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.700e-01         41       5.04e-04    65.5    0.0    0.0    8.7   25.8
+/  Step 77 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.800e-01         41       4.16e-04    60.4    0.0    0.0   10.1   29.5
+-  Step 78 of 250. Elapsed 0:00:00.0 ETA 0:00:00.17.900e-01         41       4.09e-04    60.9    0.0    0.0   10.0   29.2
+\  Step 79 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.000e-01         41       4.51e-04    62.5    0.0    0.0    9.1   28.4
+|  Step 80 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.100e-01         41       4.40e-04    57.4    0.0    0.0    9.6   33.0
+/  Step 81 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.200e-01         41       4.28e-04    62.4    0.0    0.0    9.5   28.2
+-  Step 82 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.300e-01         41       4.12e-04    60.9    0.0    0.0    9.9   29.2
+\  Step 83 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.400e-01         41       4.25e-04    62.3    0.0    0.0    9.6   28.2
+|  Step 84 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.500e-01         41       4.86e-04    62.0    0.0    0.0    9.2   28.8
+/  Step 85 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.600e-01         41       4.36e-04    57.3    0.0    0.0    9.6   33.1
+-  Step 86 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.700e-01         41       4.15e-04    60.7    0.0    0.0    9.8   29.5
+\  Step 87 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.800e-01         41       4.12e-04    60.8    0.0    0.0   10.4   28.9
+|  Step 88 of 250. Elapsed 0:00:00.0 ETA 0:00:00.18.900e-01         41       4.29e-04    61.9    0.0    0.0    9.7   28.4
+/  Step 89 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.000e-01         41       4.34e-04    62.2    0.0    0.0    9.5   28.3
+-  Step 90 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.100e-01         41       4.27e-04    61.8    0.0    0.0    9.8   28.4
+\  Step 91 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.200e-01         41       4.10e-04    60.7    0.0    0.0   10.0   29.2
+|  Step 92 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.300e-01         41       4.10e-04    60.9    0.0    0.0    9.7   29.3
+/  Step 93 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.400e-01         41       4.32e-04    57.8    0.0    0.0    9.6   32.6
+-  Step 94 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.500e-01         41       4.10e-04    60.8    0.0    0.0    9.8   29.3
+\  Step 95 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.600e-01         41       4.27e-04    59.3    0.0    0.0    9.4   31.3
+|  Step 96 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.700e-01         41       4.10e-04    60.9    0.0    0.0    9.8   29.3
+/  Step 97 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.800e-01         41       4.23e-04    59.2    0.0    0.0    9.6   31.2
+-  Step 98 of 250. Elapsed 0:00:00.0 ETA 0:00:00.19.900e-01         41       4.35e-04    61.7    0.0    0.0    9.4   28.9
+\  Step 99 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.000e+00         41       4.14e-04    60.7    0.0    0.0   10.0   29.4
+|  Step 100 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.010e+00         45       4.62e-04    63.1    0.0    0.0    8.8   28.2
+/  Step 101 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.020e+00         45       4.47e-04    61.8    0.0    0.0    9.0   29.2
+-  Step 102 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.030e+00         45       4.60e-04    59.7    0.0    0.0    8.9   31.5
+\  Step 103 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.040e+00         45       4.47e-04    61.7    0.0    0.0    9.1   29.2
+|  Step 104 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.050e+00         45       4.61e-04    59.7    0.0    0.0    9.0   31.2
+/  Step 105 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.060e+00         45       4.42e-04    61.6    0.0    0.0    9.2   29.2
+-  Step 106 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.070e+00         45       4.57e-04    62.9    0.0    0.0    8.8   28.3
+\  Step 107 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.080e+00         45       4.63e-04    62.9    0.0    0.0    8.8   28.4
+|  Step 108 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.090e+00         45       4.64e-04    59.5    0.0    0.0   12.2   28.3
+/  Step 109 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.100e+00         45       4.46e-04    61.6    0.0    0.0    9.1   29.3
+-  Step 110 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.110e+00         45       4.44e-04    61.8    0.0    0.0    8.9   29.3
+\  Step 111 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.120e+00         45       4.65e-04    59.2    0.0    0.0    8.8   32.0
+|  Step 112 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.130e+00         45       4.44e-04    61.8    0.0    0.0    9.0   29.2
+/  Step 113 of 250. Elapsed 0:00:00.0 ETA 0:00:00.11.140e+00         45       4.60e-04    62.8    0.0    0.0    8.8   28.4
+-  Step 114 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.150e+00         45       5.28e-04    53.5    0.0    0.0    8.6   38.0
+\  Step 115 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.160e+00         45       4.92e-04    63.0    0.0    0.0    9.1   27.9
+|  Step 116 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.170e+00         45       4.74e-04    62.5    0.0    0.0    8.9   28.6
+/  Step 117 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.180e+00         45       4.83e-04    58.1    0.0    0.0    8.9   33.0
+-  Step 118 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.190e+00         45       4.47e-04    61.1    0.0    0.0    9.4   29.5
+\  Step 119 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.200e+00         45       4.85e-04    57.1    0.0    0.0    8.6   34.3
+|  Step 120 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.210e+00         45       4.48e-04    61.7    0.0    0.0    9.3   29.0
+/  Step 121 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.220e+00         45       5.56e-04    50.4    0.0    0.0    8.0   41.6
+-  Step 122 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.230e+00         45       4.50e-04    61.3    0.0    0.0    9.3   29.4
+\  Step 123 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.240e+00         45       4.88e-04    63.9    0.0    0.0    8.6   27.5
+|  Step 124 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.250e+00         45       4.81e-04    63.2    0.0    0.0    8.8   28.0
+/  Step 125 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.260e+00         45       4.63e-04    59.1    0.0    0.0    9.0   31.9
+-  Step 126 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.270e+00         45       4.51e-04    60.9    0.0    0.0    9.1   30.0
+\  Step 127 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.280e+00         45       4.43e-04    61.9    0.0    0.0    9.0   29.1
+|  Step 128 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.290e+00         45       4.81e-04    60.8    0.0    0.0    8.5   30.7
+/  Step 129 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.300e+00         45       4.47e-04    61.6    0.0    0.0    9.3   29.1
+-  Step 130 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.310e+00         45       4.62e-04    62.7    0.0    0.0    8.9   28.4
+\  Step 131 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.320e+00         45       5.19e-04    53.9    0.0    0.0    8.6   37.6
+|  Step 132 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.330e+00         45       5.65e-04    59.0    0.0    0.0   12.0   29.1
+/  Step 133 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.340e+00         45       4.56e-04    60.4    0.0    0.0    9.5   30.1
+-  Step 134 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.350e+00         45       4.62e-04    62.9    0.0    0.0    8.9   28.2
+\  Step 135 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.360e+00         45       4.45e-04    61.7    0.0    0.0    9.0   29.2
+|  Step 136 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.370e+00         45       5.57e-04    66.9    0.0    0.0    8.1   25.0
+/  Step 137 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.380e+00         45       4.54e-04    60.7    0.0    0.0    9.8   29.5
+-  Step 138 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.390e+00         45       5.27e-04    64.6    0.0    0.0    8.3   27.0
+\  Step 139 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.400e+00         45       5.25e-04    53.8    0.0    0.0    8.7   37.5
+|  Step 140 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.410e+00         45       4.88e-04    62.9    0.0    0.0    9.2   27.9
+/  Step 141 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.420e+00         45       6.32e-04    47.2    0.0    0.0   24.7   28.1
+-  Step 142 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.430e+00         45       4.86e-04    56.5    0.0    0.0   10.3   33.2
+\  Step 143 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.440e+00         45       4.44e-04    61.2    0.0    0.0    9.3   29.5
+|  Step 144 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.450e+00         45       5.95e-04    68.6    0.0    0.0    7.7   23.7
+/  Step 145 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.460e+00         45       5.45e-04    51.0    0.0    0.0   23.5   25.5
+-  Step 146 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.470e+00         45       4.94e-04    60.4    0.0    0.0    9.3   30.4
+\  Step 147 of 250. Elapsed 0:00:00.1 ETA 0:00:00.11.480e+00         45       4.74e-04    58.1    0.0    0.0   13.6   28.2
+|  Step 148 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.490e+00         45       4.73e-04    62.6    0.0    0.0    8.9   28.5
+/  Step 149 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.500e+00         45       4.48e-04    61.2    0.0    0.0    9.5   29.3
+-  Step 150 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.510e+00         45       4.63e-04    59.5    0.0    0.0    8.9   31.6
+\  Step 151 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.520e+00         45       4.44e-04    61.5    0.0    0.0    9.2   29.3
+|  Step 152 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.530e+00         45       4.60e-04    62.3    0.0    0.0    9.1   28.7
+/  Step 153 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.540e+00         45       4.45e-04    61.7    0.0    0.0    9.1   29.2
+-  Step 154 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.550e+00         45       4.59e-04    59.8    0.0    0.0    8.8   31.4
+\  Step 155 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.560e+00         45       4.46e-04    61.6    0.0    0.0    9.4   29.0
+|  Step 156 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.570e+00         45       4.63e-04    62.7    0.0    0.0    8.7   28.6
+/  Step 157 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.580e+00         45       4.66e-04    62.8    0.0    0.0    8.8   28.4
+-  Step 158 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.590e+00         45       4.61e-04    62.4    0.0    0.0    9.2   28.4
+\  Step 159 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.600e+00         45       4.52e-04    60.5    0.0    0.0    9.2   30.3
+|  Step 160 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.610e+00         45       4.42e-04    61.6    0.0    0.0    9.2   29.2
+/  Step 161 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.620e+00         45       4.67e-04    63.1    0.0    0.0    8.9   28.0
+-  Step 162 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.630e+00         45       4.43e-04    61.7    0.0    0.0    9.0   29.3
+\  Step 163 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.640e+00         45       4.56e-04    62.7    0.0    0.0    8.8   28.4
+|  Step 164 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.650e+00         45       4.47e-04    61.9    0.0    0.0    9.0   29.2
+/  Step 165 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.660e+00         45       4.63e-04    62.8    0.0    0.0    8.7   28.4
+-  Step 166 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.670e+00         45       4.65e-04    62.6    0.0    0.0    8.9   28.5
+\  Step 167 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.680e+00         45       4.63e-04    61.9    0.0    0.0    9.1   28.9
+|  Step 168 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.690e+00         45       4.45e-04    61.2    0.0    0.0    9.1   29.7
+/  Step 169 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.700e+00         45       4.60e-04    62.7    0.0    0.0    8.8   28.5
+-  Step 170 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.710e+00         45       4.63e-04    61.6    0.0    0.0    9.4   29.1
+\  Step 171 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.720e+00         45       4.45e-04    61.7    0.0    0.0    9.2   29.1
+|  Step 172 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.730e+00         45       4.65e-04    59.1    0.0    0.0    8.8   32.1
+/  Step 173 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.740e+00         45       4.48e-04    61.5    0.0    0.0    9.2   29.3
+-  Step 174 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.750e+00         45       4.61e-04    59.7    0.0    0.0    8.8   31.6
+\  Step 175 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.760e+00         45       4.64e-04    58.9    0.0    0.0    8.8   32.3
+|  Step 176 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.770e+00         45       4.71e-04    62.4    0.0    0.0    9.1   28.4
+/  Step 177 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.780e+00         45       4.45e-04    61.7    0.0    0.0    9.2   29.1
+-  Step 178 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.790e+00         45       4.57e-04    62.8    0.0    0.0    8.8   28.4
+\  Step 179 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.800e+00         45       4.43e-04    61.4    0.0    0.0    9.3   29.3
+|  Step 180 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.810e+00         45       4.61e-04    59.7    0.0    0.0    8.8   31.5
+/  Step 181 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.820e+00         45       4.44e-04    61.6    0.0    0.0    9.1   29.3
+-  Step 182 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.830e+00         45       4.44e-04    61.6    0.0    0.0    9.2   29.2
+\  Step 183 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.840e+00         45       4.81e-04    57.5    0.0    0.0   11.7   30.8
+|  Step 184 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.850e+00         45       4.46e-04    61.3    0.0    0.0    9.2   29.5
+/  Step 185 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.860e+00         45       4.63e-04    59.4    0.0    0.0    8.9   31.7
+-  Step 186 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.870e+00         45       4.48e-04    61.7    0.0    0.0    9.0   29.3
+\  Step 187 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.880e+00         45       4.65e-04    59.5    0.0    0.0    8.8   31.7
+|  Step 188 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.890e+00         45       4.47e-04    61.5    0.0    0.0    9.1   29.4
+/  Step 189 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.900e+00         45       4.63e-04    62.6    0.0    0.0    9.0   28.4
+-  Step 190 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.910e+00         45       4.43e-04    61.4    0.0    0.0    9.2   29.3
+\  Step 191 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.920e+00         45       4.62e-04    62.9    0.0    0.0    8.9   28.2
+|  Step 192 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.930e+00         45       4.69e-04    62.1    0.0    0.0    8.7   29.2
+/  Step 193 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.940e+00         45       4.62e-04    59.3    0.0    0.0   12.4   28.3
+-  Step 194 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.950e+00         45       4.47e-04    61.5    0.0    0.0    9.1   29.4
+\  Step 195 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.960e+00         45       4.46e-04    61.8    0.0    0.0    9.0   29.2
+|  Step 196 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.970e+00         45       4.58e-04    62.7    0.0    0.0    8.8   28.6
+/  Step 197 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.980e+00         45       4.43e-04    61.8    0.0    0.0    9.1   29.2
+-  Step 198 of 250. Elapsed 0:00:00.1 ETA 0:00:00.01.990e+00         45       4.60e-04    59.7    0.0    0.0    8.7   31.6
+\  Step 199 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.000e+00         45       4.45e-04    61.7    0.0    0.0    9.1   29.3
+|  Step 200 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.010e+00         45       4.57e-04    59.8    0.0    0.0    8.8   31.4
+/  Step 201 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.020e+00         45       4.75e-04    63.3    0.0    0.0    8.7   27.9
+-  Step 202 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.030e+00         45       4.63e-04    58.9    0.0    0.0    8.9   32.2
+\  Step 203 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.040e+00         45       4.44e-04    61.7    0.0    0.0    9.1   29.2
+|  Step 204 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.050e+00         45       4.59e-04    59.6    0.0    0.0   12.0   28.4
+/  Step 205 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.060e+00         45       4.50e-04    61.9    0.0    0.0    9.1   29.0
+-  Step 206 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.070e+00         45       4.42e-04    61.8    0.0    0.0    8.9   29.3
+\  Step 207 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.080e+00         45       4.60e-04    59.5    0.0    0.0    9.0   31.6
+|  Step 208 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.090e+00         45       4.45e-04    61.5    0.0    0.0    9.1   29.4
+/  Step 209 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.100e+00         45       4.66e-04    63.0    0.0    0.0    8.7   28.3
+-  Step 210 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.110e+00         45       4.67e-04    62.5    0.0    0.0    9.0   28.5
+\  Step 211 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.120e+00         45       4.64e-04    62.5    0.0    0.0    9.0   28.6
+|  Step 212 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.130e+00         45       4.47e-04    61.4    0.0    0.0    9.3   29.3
+/  Step 213 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.140e+00         45       5.81e-04    61.6    0.0    0.0    7.9   30.5
+-  Step 214 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.150e+00         45       4.52e-04    60.9    0.0    0.0    9.6   29.5
+\  Step 215 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.160e+00         45       5.28e-04    53.0    0.0    0.0    8.5   38.5
+|  Step 216 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.170e+00         45       4.54e-04    61.1    0.0    0.0    9.5   29.4
+/  Step 217 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.180e+00         45       5.04e-04    55.0    0.0    0.0    8.3   36.7
+-  Step 218 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.190e+00         45       4.70e-04    62.5    0.0    0.0    8.9   28.5
+\  Step 219 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.200e+00         45       4.66e-04    62.6    0.0    0.0    8.9   28.5
+|  Step 220 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.210e+00         45       4.49e-04    61.6    0.0    0.0    9.1   29.3
+/  Step 221 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.220e+00         45       4.76e-04    57.9    0.0    0.0   14.7   27.3
+-  Step 222 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.230e+00         45       4.47e-04    61.4    0.0    0.0    9.2   29.4
+\  Step 223 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.240e+00         45       4.45e-04    61.4    0.0    0.0    9.2   29.4
+|  Step 224 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.250e+00         45       4.61e-04    62.8    0.0    0.0    8.8   28.4
+/  Step 225 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.260e+00         45       4.56e-04    60.8    0.0    0.0    9.0   30.2
+-  Step 226 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.270e+00         45       4.70e-04    62.5    0.0    0.0    8.7   28.8
+\  Step 227 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.280e+00         45       4.68e-04    62.6    0.0    0.0    8.8   28.5
+|  Step 228 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.290e+00         45       4.67e-04    62.4    0.0    0.0    9.1   28.5
+/  Step 229 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.300e+00         45       4.45e-04    61.7    0.0    0.0    9.1   29.2
+-  Step 230 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.310e+00         45       4.63e-04    62.8    0.0    0.0    8.9   28.3
+\  Step 231 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.320e+00         45       4.44e-04    61.6    0.0    0.0    9.1   29.3
+|  Step 232 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.330e+00         45       4.64e-04    59.7    0.0    0.0    8.7   31.6
+/  Step 233 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.340e+00         45       4.47e-04    61.7    0.0    0.0    9.0   29.3
+-  Step 234 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.350e+00         45       4.44e-04    62.0    0.0    0.0    8.9   29.1
+\  Step 235 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.360e+00         45       4.79e-04    60.7    0.0    0.0   12.0   27.4
+|  Step 236 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.370e+00         45       4.50e-04    61.2    0.0    0.0    9.2   29.6
+/  Step 237 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.380e+00         45       4.60e-04    63.0    0.0    0.0    8.8   28.2
+-  Step 238 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.390e+00         45       4.46e-04    61.6    0.0    0.0    9.1   29.3
+\  Step 239 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.400e+00         45       4.64e-04    63.1    0.0    0.0    8.6   28.2
+|  Step 240 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.410e+00         45       4.45e-04    61.5    0.0    0.0    9.2   29.3
+/  Step 241 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.420e+00         45       4.65e-04    62.8    0.0    0.0    9.0   28.3
+-  Step 242 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.430e+00         45       4.45e-04    61.7    0.0    0.0    9.0   29.2
+\  Step 243 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.440e+00         45       4.65e-04    63.0    0.0    0.0    8.8   28.2
+|  Step 244 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.450e+00         45       4.66e-04    59.0    0.0    0.0    9.0   32.1
+/  Step 245 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.460e+00         45       4.47e-04    61.3    0.0    0.0    9.2   29.5
+-  Step 246 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.470e+00         45       4.66e-04    59.4    0.0    0.0   12.3   28.3
+\  Step 247 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.480e+00         45       4.47e-04    61.6    0.0    0.0    9.0   29.4
+|  Step 248 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.490e+00         45       4.66e-04    62.5    0.0    0.0    8.8   28.8
+/  Step 249 of 250. Elapsed 0:00:00.1 ETA 0:00:00.02.500e+00         45       4.45e-04    61.5    0.0    0.0    9.1   29.3
+-  Step 250 of 250. Elapsed 0:00:00.1 ETA 0:00:00.0
+Run finished at  : Sat Oct 31 22:53:09 2026
+Run time : 0 s
+	Option datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second (Command line)
+	Option settingsfile = BOUT.settings (default)
+Writing options to file /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/BOUT.settings
+	Option time_report:show = 0 (default)

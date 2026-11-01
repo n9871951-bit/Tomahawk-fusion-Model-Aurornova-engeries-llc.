@@ -1,0 +1,91 @@
+{
+  "model": "Tomahawk secondary-systems bounded feasibility screen",
+  "seed": 20260829,
+  "samples_per_branch": 10000,
+  "hours_per_day": 24.0,
+  "normalized_process_interface": {
+    "available_process_heat_MWth": 1.0,
+    "available_electric_MWe": 1.0
+  },
+  "scope": "Water process energy/mass balance plus simplified lithium brine mass balance",
+  "capacity_constraints_enforced": true,
+  "not_established": [
+    "Tomahawk reactor output",
+    "potable-water quality",
+    "lithium selectivity or impurity rejection",
+    "battery-grade product certification",
+    "process equipment lifetime",
+    "commercial economics",
+    "process validation despite accounting_pass coverage"
+  ],
+  "water_reference": "DOE water-energy report; seawater RO 3.0-4.7 kWh/m3",
+  "lithium_reference": "DOE geothermal lithium overview; qualitative context only",
+  "lithium_purity_assumption_summary": {
+    "purity_assumption_P10_percent": 90.99615540696946,
+    "purity_assumption_P50_percent": 94.96046021826594,
+    "purity_assumption_P90_percent": 98.93559048869346,
+    "battery_grade_screen_threshold_percent": 99.5,
+    "battery_grade_screen_coverage_percent": 3.9800000000000004
+  },
+  "lithium_capacity_feasible_summary": {
+    "rows": 5499,
+    "coverage_percent": 54.99,
+    "product_kg_day_P10": 219.64350326984788,
+    "product_kg_day_P50": 1246.575700170634,
+    "product_kg_day_P90": 4498.1440436501625
+  },
+  "model_checks": {
+    "hours_per_day": 24.0,
+    "continuous_electric_capacity_kwh_per_day": 24000.0,
+    "continuous_thermal_capacity_kwhth_per_day": 24000.0,
+    "water_max_abs_mass_balance_error_m3_day": 0.0,
+    "lithium_max_abs_recovery_identity_error_kg_day": 0.0,
+    "accounting_pass_is_subset_of_interface_capacity_pass": true
+  },
+  "branch_summary": [
+    {
+      "system": "lithium",
+      "process": "simplified_brine_mass_balance",
+      "rows": 10000,
+      "passing_rows": 5499,
+      "interface_passing_rows": 5499,
+      "accounting_pass_percent": 54.99,
+      "interface_capacity_pass_percent": 54.99,
+      "interpretation": "Accounting closure of declared assumptions; not process validation or a probability of process success.",
+      "process_validity_status": "NOT_VALIDATED"
+    },
+    {
+      "system": "water",
+      "process": "industrial_water_recovery",
+      "rows": 10000,
+      "passing_rows": 10000,
+      "interface_passing_rows": 10000,
+      "accounting_pass_percent": 100.0,
+      "interface_capacity_pass_percent": 100.0,
+      "interpretation": "Accounting closure of declared assumptions; not process validation or a probability of process success.",
+      "process_validity_status": "NOT_VALIDATED"
+    },
+    {
+      "system": "water",
+      "process": "seawater_ro",
+      "rows": 10000,
+      "passing_rows": 10000,
+      "interface_passing_rows": 10000,
+      "accounting_pass_percent": 100.0,
+      "interface_capacity_pass_percent": 100.0,
+      "interpretation": "Accounting closure of declared assumptions; not process validation or a probability of process success.",
+      "process_validity_status": "NOT_VALIDATED"
+    },
+    {
+      "system": "water",
+      "process": "thermal_desalination",
+      "rows": 10000,
+      "passing_rows": 10000,
+      "interface_passing_rows": 10000,
+      "accounting_pass_percent": 100.0,
+      "interface_capacity_pass_percent": 100.0,
+      "interpretation": "Accounting closure of declared assumptions; not process validation or a probability of process success.",
+      "process_validity_status": "NOT_VALIDATED"
+    }
+  ]
+}

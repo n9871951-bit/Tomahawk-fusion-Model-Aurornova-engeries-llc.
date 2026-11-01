@@ -1,0 +1,85 @@
+{
+  "revision": "3.4.1",
+  "source_specification": "TOMAHAWK-SIS-COMPUTATIONAL-004 Rev3.4",
+  "active_blanket": {
+    "branch_id": "S20_AQUEOUS_EV010",
+    "density_kg_m3": 1210.0,
+    "li6_isotopic_fraction": 0.9,
+    "nuclear_library": "JENDL-5",
+    "material_card": null,
+    "transport_geometry": null,
+    "transport_result": null
+  },
+  "requirements": {
+    "tbr_min": 1.15,
+    "conductor_peak_T_max": 35.0
+  },
+  "geometry": {
+    "frame": "right_handed_xyz_m",
+    "R0_m": 7.5,
+    "a_bounding_m": 3.0,
+    "reference_volume_m3": 950.0,
+    "cad_to_equilibrium_map": null
+  },
+  "profiles": {
+    "n_D0_m3": 1.2e+20,
+    "n_T0_m3": 1.2e+20,
+    "provenance": "prescribed_hot_profile_not_fill_gas"
+  },
+  "fill_state": {
+    "pressure_Pa": 0.3,
+    "temperature_K": 300.0,
+    "number_density_gas_particles_m3": 7.24297051603992e+19,
+    "species_and_hot_state_conversion": null
+  },
+  "equilibrium": {
+    "result": null,
+    "cad_field_transform": null
+  },
+  "alpha_transport": {
+    "result": null,
+    "physical_horizon_s": 0.25
+  },
+  "driver_transport": {
+    "result": null,
+    "module_energy_J": 2500000.0,
+    "repetition_Hz": 10.0
+  },
+  "active_closures": {
+    "neutron_capture_fraction": null,
+    "alpha_deposition_fraction": null,
+    "laser_absorption_fraction": null,
+    "tbr_achieved": null
+  },
+  "legacy_only": {
+    "blanket": "FLiBe",
+    "neutron_capture_fraction": 0.95,
+    "alpha_deposition_fraction": 0.9,
+    "laser_absorption_fraction": 0.86,
+    "tbr_assumption": 1.15,
+    "use_in_active_prediction": false
+  },
+  "gate_status": {
+    "G1": "UNRESOLVED",
+    "G2": "UNRESOLVED",
+    "G3": "UNRESOLVED",
+    "G4": "UNRESOLVED",
+    "G5": "NOT_ASSESSABLE",
+    "G6": "NOT_ASSESSABLE",
+    "G7": "NOT_ASSESSABLE"
+  },
+  "allocation": {
+    "machine": "Polaris",
+    "node_hours": 5000,
+    "basis": "SIS_REPORTED_NOT_JOB_LOG_VERIFIED",
+    "partition": {
+      "EV-011A": 500,
+      "EV-011B": 900,
+      "EV-011C": 1500,
+      "EV-012AB": 700,
+      "EV-012CD": 1000,
+      "review": 400
+    }
+  },
+  "schema_note": "Nulls are required data not supplied. No legacy value is substituted."
+}

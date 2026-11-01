@@ -1,0 +1,24 @@
+{
+  "schema_version": "TOMAHAWK-MAKEGRID-RUN-0.1",
+  "runner_version": "TOMAHAWK-MAKEGRID-RUNNER-1.0",
+  "started_utc": "2026-09-09T22:32:15.359896+00:00",
+  "package_dir": "/data",
+  "coil_file": "coils.tomahawk_pf",
+  "input_file": "input_xgrid.tomahawk_pf",
+  "mgrid_generated": true,
+  "native_solver_evidence": true,
+  "command": [
+    "/home/STELLOPT/MAKEGRID/Release/xgrid"
+  ],
+  "return_code": 0,
+  "log": "xgrid_tomahawk_pf.log",
+  "mgrid_candidate_files": [
+    "mgrid_tomahawk_pf.nc",
+    "mgrid_tomahawk_pf"
+  ],
+  "extcur_present": true,
+  "status": "NATIVE_MAKEGRID_COMPLETED",
+  "mgrid_file": "mgrid_tomahawk_pf.nc",
+  "mgrid_sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+  "extcur_sha256": "1db04e2d69d5e7b8ec31ee1fa3d0cd0547a3414c7614b6e574dc38eeb62bbb27"
+}

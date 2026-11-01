@@ -1,0 +1,58 @@
+{
+  "schema_version": "TOMAHAWK-CONTINUOUS-1.0",
+  "purpose": "One-folder external solver pipeline. Replace null commands and paths with real installed solvers and real input data.",
+  "stages": {
+    "MHD": {
+      "command": null,
+      "inputs": {
+        "mhd_input": "MHD/input.toml"
+      },
+      "outputs": [
+        "wout_*.nc",
+        "mhd_output.json",
+        "mhd_output.h5"
+      ],
+      "consumes_previous_output": false
+    },
+    "NEUTRONICS": {
+      "command": null,
+      "inputs": {
+        "dagmc": "NEUTRONICS/dagmc.h5m",
+        "materials": "NEUTRONICS/materials.xml",
+        "settings": "NEUTRONICS/settings.xml",
+        "cross_sections": "NEUTRONICS/cross_sections.xml"
+      },
+      "outputs": [
+        "statepoint*.h5",
+        "neutronics_output.json",
+        "tallies*.json"
+      ],
+      "consumes_previous_output": true
+    },
+    "CFD": {
+      "command": null,
+      "inputs": {
+        "cfd_mesh": "CFD/cassette.re2",
+        "cfd_case": "CFD/cassette.par"
+      },
+      "outputs": [
+        "cfd_output.json",
+        "*.vtu",
+        "*.vtk",
+        "*.csv"
+      ],
+      "consumes_previous_output": true
+    },
+    "CHF": {
+      "command": null,
+      "inputs": {
+        "chf_results": "CHF/chf_input.json"
+      },
+      "outputs": [
+        "chf_results.json",
+        "chf_results.csv"
+      ],
+      "consumes_previous_output": true
+    }
+  }
+}

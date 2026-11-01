@@ -1,0 +1,130 @@
+{
+  "file": "G2_FORCE_BOUNDARY_PASS.json",
+  "written_utc": "2026-10-23T04:53:14+00:00",
+  "G2_status": "NOT_CLOSED",
+  "force_boundary_status": "PASS",
+  "summary": "Force-balance, boundary-residual and solver-convergence checks PASS for the polished L16/M16/N9 PF634 equilibrium. G2 is not closed: the stability screen, CAD/clearance regeneration and the formal acceptance decision remain open (see 'remaining').",
+  "candidate": {
+    "equilibrium_file": "outputs/repair/newton_L16_N9_polish/fixed_boundary_newton.h5",
+    "equilibrium_sha256": "9479af3beda691d1177fb1674c7f7b70b18c390f3b23173a8f0e02adfaddf4b2",
+    "report_file": "outputs/repair/newton_L16_N9_polish/fixed_boundary_newton.report.json",
+    "report_sha256": "851c781ffd8d0f41aabbeed45cfef2260b20489e67e437ad8cd92bd57aed070b",
+    "resolution": {
+      "L": 16,
+      "M": 16,
+      "N": 9
+    },
+    "collocation_resolution": {
+      "L_grid": 32,
+      "M_grid": 32,
+      "N_grid": 18
+    },
+    "source_file": "outputs/repair/refine_L16_N9/fixed_boundary_refined_L16_N9.h5",
+    "source_sha256": "5fe3f800abc10229435dcb160cfaf1b0311b9d7cac7c828e359f60f12450a9ce",
+    "design": "PF634 (21/221/36/114/21/221 turns), exported MGRID at documented operating currents",
+    "MGRID_sha256": "8a062337fe59cd2217ce59b4b02675f17dab18ca98f0b6363bb0a2dd75034be0",
+    "PF_currents": "UNCHANGED_EXPORTED_PF634_OPERATING_CURRENTS"
+  },
+  "checks": {
+    "solver_converged": {
+      "pass": true,
+      "optimizer": "fmintr",
+      "message": "`gtol` condition satisfied.",
+      "tolerances": {
+        "ftol": 1e-09,
+        "xtol": 1e-11,
+        "gtol": 1e-11
+      },
+      "final_optimality": 7.454243886205175e-12,
+      "polish_cost_change_fraction": 0.00011322742870390458
+    },
+    "normal_field_max": {
+      "limit": 0.001,
+      "value": 0.0007361009464139127,
+      "pass": true
+    },
+    "boundary_pressure_max": {
+      "limit": 0.001,
+      "value": 0.00039497408266844704,
+      "pass": true
+    },
+    "normalized_force_rms_G2_gate": {
+      "limit": 0.001,
+      "value": 2.7793072889761663e-05,
+      "pass": true,
+      "definition": "|J x B - grad p| / <|grad(|B|^2)|/2mu0>_vol, RMS on the dense force grid"
+    },
+    "nested_surfaces": {
+      "pass": true
+    },
+    "profiles_and_flux_unchanged": {
+      "pass": true
+    },
+    "boundary_unchanged": {
+      "pass": true,
+      "max_coefficient_change_m": 0.0
+    }
+  },
+  "pressure_scaled_force": {
+    "status": "PROPOSED_LIMITS_PASS (limits not yet formally assigned)",
+    "definition": "RMS|F| / RMS|grad p|, volume-weighted, 20 radii 0.025-0.995, M32/N15 grid",
+    "proposed_limits": {
+      "all_radii": 0.0025,
+      "excluding_edge_surface": 0.001,
+      "edge_surface_rho_0p995": 0.01
+    },
+    "N9_values": {
+      "all_radii": 0.0008176227267684489,
+      "excluding_edge_surface": 0.0003378981473521586,
+      "edge_surface_rho_0p995": 0.0037211225040989114
+    },
+    "N6_values": {
+      "all_radii": 0.0009684385622569846,
+      "excluding_edge_surface": 0.0004190850404710123,
+      "edge_surface_rho_0p995": 0.004365846406927535
+    },
+    "per_radius_note": "Per-radius ratio exceeds 1% only at rho <= 0.18, where grad p is 205-18,760 N/m3; absolute force there is 216-433 N/m3, the lowest in the plasma. A per-radius limit should start at rho >= 0.2 or use an absolute floor (decision pending)."
+  },
+  "resolution_convergence": {
+    "status": "DECISION_PENDING",
+    "comparison_file": "outputs/repair/toroidal_comparison_N6_N9_polished/comparison.json",
+    "comparison_sha256": "bcd9c897d03fa38585ae1f4de233a6d2251bfad6c3ddf9cfa3dbdbf072ca35b2",
+    "both_states_converged": true,
+    "proposed_rule": "each region changes < 10% from N6 to N9, or stays below 0.1%",
+    "rule_result": {
+      "all_samples": true,
+      "excluding_edge_sample": true,
+      "core_rho_lt_0p8": true,
+      "outer_rho_0p8_to_lt_0p99": true,
+      "edge_sample_rho_0p995": false
+    },
+    "only_exception": "edge_sample_rho_0p995: 0.437% -> 0.372% (14.8% change), above the 0.1% floor",
+    "toroidal_sequence_edge_surface": {
+      "N3": 0.0643609,
+      "N6": 0.004365846406927535,
+      "N9": 0.0037211225040989114
+    },
+    "options": [
+      "Accept: all limits pass at two successive converged resolutions with >= 2.7x margin; N3->N6->N9 extrapolates to ~0.37% at the edge surface",
+      "Run N12 (toroidal mode 192, next 48-coil ripple harmonic) to meet the 10% rule strictly"
+    ]
+  },
+  "remaining": [
+    "Formal acceptance decision: assign the pressure-scaled limits and resolve the edge-surface resolution exception (record in PROPOSED_ACCEPTANCE_CRITERIA.json)",
+    "Seven-radius ideal-ballooning / Newcomb stability screen on this equilibrium (verify_repaired_stability.py): NOT_RUN",
+    "CAD regeneration for the coupled-L12 boundary: NOT_RUN",
+    "Centerline / reserved-envelope clearance on the regenerated CAD: NOT_RUN",
+    "CAD fit check: NOT_RUN"
+  ],
+  "provenance": {
+    "runs": [
+      "Kaggle refine N6 (+300 its) and N9 (300 its): Tomahawk_N6_N9_Results.zip",
+      "Kaggle A_Polish_N6, B_Polish_N9, C_Compare_N6_N9: Tomahawk_Polish_Compare_Results.zip (sha256 878e37de2254ca5e869490b238025275dac9cb2db5b0392fa281068953929014)"
+    ],
+    "polish_script_sha256": "c9ea1f67a1a28261845fbf6eb2070185e958cc1b2695691a37d8107780e280c1",
+    "repair_script_sha256": "a26cc735544595ee195659798fcd64169c411bd93c3ec056778ac4458828f78d",
+    "environment": "Python 3.12.14 standalone, requirements.lock.txt (DESC 0.17.3, JAX 0.9.2, NumPy 2.3.5), built and smoke-tested in each notebook",
+    "historical_flag": "Earlier coupled L12 outer optimizer reached its 20-iteration limit (retained in provenance)"
+  },
+  "scope": "Force/boundary/convergence checks only; not stability, geometry, hardware qualification or power output."
+}

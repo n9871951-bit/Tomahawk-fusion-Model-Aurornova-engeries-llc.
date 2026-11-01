@@ -1,0 +1,53 @@
+{
+  "schema_version": "TOMAHAWK-CONTINUOUS-FUEL-SYSTEM-FOUNDATION-OVERLAY-0.2",
+  "base_config": "Tomahawk_Continuous_Run_Config.provisional.json",
+  "status": "FOUNDATION_INTEGRATED_INPUTS_REQUIRED",
+  "stage_order": [
+    "MHD",
+    "NEUTRONICS",
+    "FUEL_SYSTEM_FOUNDATION",
+    "CFD",
+    "CHF"
+  ],
+  "stages": {
+    "FUEL_SYSTEM_FOUNDATION": {
+      "command": [
+        "python3",
+        "tomahawk_fuel_system_foundation_adapter.py",
+        "{fuel_system_input}",
+        "--output",
+        "{stage_dir}/fuel_system_foundation_output.json"
+      ],
+      "inputs": {
+        "fuel_system_input": "provisional_inputs/FUEL_CYCLE/tomahawk_fuel_system_foundation.json",
+        "neutronics_output": "{previous_output}/neutronics_output.json"
+      },
+      "outputs": [
+        "fuel_system_foundation_output.json"
+      ],
+      "consumes_previous_output": true,
+      "handoff_contract": {
+        "from_neutronics": [
+          "reaction_rate_s",
+          "realized_TBR",
+          "tritium_bred_kg_s",
+          "nuclear_data_manifest"
+        ],
+        "to_plant_ledger": [
+          "D2_mass_in_product_kg_s",
+          "T2_mass_in_product_kg_s",
+          "P_fuel_cycle_W",
+          "Q_fuel_cycle_W",
+          "DLE_li_recovered_kg_s",
+          "HTO_to_CECE_rate"
+        ]
+      }
+    }
+  },
+  "gate_policy": {
+    "DLE": "requires_brine_flow_density_and_assay",
+    "ALSB": "requires_realized_3D_neutronics_TBR_and_HTO_capture",
+    "CECE_PEM": "requires_recovery_purity_delay_and_auxiliary_loads",
+    "G6": "do_not_claim_until_time_dependent_inventory_is_positive_with_losses_and_reserve"
+  }
+}

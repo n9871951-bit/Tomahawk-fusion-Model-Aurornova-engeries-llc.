@@ -1,0 +1,80 @@
+{
+  "model_version": "Tomahawk Rev2.2 frozen external-input evaluator",
+  "model_revision": "REV22-FROZEN-20260825",
+  "model_spec_sha256": "ca406cee9733fea0a5969369e1dc9ffd0d4d4994c883f260bee042716f1be661",
+  "run_time_utc": "2026-08-26T04:32:08.110782+00:00",
+  "python_version": "3.12.13",
+  "numpy_version": "2.3.5",
+  "pandas_version": "2.2.3",
+  "quadrature_nodes": 32,
+  "save_full_case_output": false,
+  "all_implementation_checks_pass": true,
+  "datasets": [
+    {
+      "role": "broad_global_stress",
+      "filename": "Tomahawk_Rev22_Broad_Input_Dataset.csv",
+      "description": "broad global stress distribution; not expected to pass most gates",
+      "path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Broad_Input_Dataset.csv",
+      "sha256": "25c2253c8f4ad169fb1e5a2a0499f94290fbb393d629e6310bc68047a40057ca",
+      "dataset_id": "broad_global_stress",
+      "spec_path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Broad_Input_Spec.json",
+      "spec_sha256": "733081a2e088d8ac4b67f827c5bbcc1c417165613ec10a083900f8ab9b2ebcc6",
+      "rows": 100000,
+      "evaluated_seconds": 0.10661082000001443,
+      "repeated_output_identical": true
+    },
+    {
+      "role": "independent_computational_holdout",
+      "filename": "Tomahawk_Rev22_Independent_Holdout_Input_Dataset.csv",
+      "description": "space-filling broad-range holdout for software/model reproducibility",
+      "path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Independent_Holdout_Input_Dataset.csv",
+      "sha256": "0896b071ee881ce97541af2844d440d47b3d95c03cb9485fddb704501fc6d2a2",
+      "dataset_id": "INDEPENDENT_HOLDOUT_BROAD_LHS_V1",
+      "spec_path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Independent_Holdout_Input_Spec.json",
+      "spec_sha256": "8e9c91f03f44a0e8001fc774037e07ebab3da9d9e69aad289dd30788c03fa5d1",
+      "rows": 100000,
+      "evaluated_seconds": 0.10071080299996993,
+      "repeated_output_identical": true
+    },
+    {
+      "role": "controlled_envelope_v2",
+      "filename": "Tomahawk_Rev22_Controlled_Envelope_v2_Input_Dataset.csv",
+      "description": "proposed design/tolerance envelope; not measured uncertainty",
+      "path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Controlled_Envelope_v2_Input_Dataset.csv",
+      "sha256": "ec9575de38d7d4704ca41e34b0b292e86cf9d1de295997da2a77d26f0ef8ae1d",
+      "dataset_id": "CONTROLLED_ENVELOPE_V2",
+      "spec_path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Controlled_Envelope_v2_Input_Spec.json",
+      "spec_sha256": "a4ed7d1183178c324e9e43d2869ca74f2befcb4aec1e90dc87ee6893e96dfc21",
+      "rows": 100000,
+      "evaluated_seconds": 0.11570301900007962,
+      "repeated_output_identical": true
+    },
+    {
+      "role": "multifactor_improved_envelope",
+      "filename": "Tomahawk_Rev22_Multifactor_Improved_Envelope_Input_Dataset.csv",
+      "description": "proposed improvement scenario; not measured hardware performance",
+      "path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Multifactor_Improved_Envelope_Input_Dataset.csv",
+      "sha256": "4fd1f320de4cea7e8816e7f2d916f7807c24b26ee7c78562ab2c16b61692959c",
+      "dataset_id": "MULTIFACTOR_IMPROVED_ENVELOPE_V1",
+      "spec_path": "/workspace/scratch/9740310843df/Tomahawk_Rev22_Multifactor_Improved_Envelope_Input_Spec.json",
+      "spec_sha256": "8496148ad24dce74a466803dbab2bef81cf05cbd7e6503e97d58b013ec28e6a6",
+      "rows": 100000,
+      "evaluated_seconds": 0.10262952300001871,
+      "repeated_output_identical": true
+    }
+  ],
+  "outputs": [
+    "individual_gate_rates.png",
+    "investor_validation_report.md",
+    "quadrature_convergence.csv",
+    "scenario_pass_rates.png",
+    "validation_audit_sample.csv",
+    "validation_checks.csv",
+    "validation_gate_rates.csv",
+    "validation_manifest.json",
+    "validation_sensitivity.csv",
+    "validation_summary.csv",
+    "validation_top_passing_cases.csv"
+  ],
+  "scope": "computational verification and conditional external-input scenario screening; not physical validation"
+}

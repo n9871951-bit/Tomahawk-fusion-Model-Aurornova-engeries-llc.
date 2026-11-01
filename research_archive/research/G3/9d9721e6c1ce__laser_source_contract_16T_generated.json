@@ -1,0 +1,543 @@
+{
+  "schema_version": "TOMAHAWK-GENERATED-DENSE-TARGET-SOURCE-SCREEN-16T-1.0",
+  "case_id": "TOMAHAWK_GENERATED_REPLENISHED_COLUMN_SCREEN_16T_20260929",
+  "status": "GENERATED_DESIGN_NUMERICAL_SCREEN_COMPLETE_PHYSICAL_QUALIFICATION_OPEN",
+  "calculation_enabled": true,
+  "calculation_scope": "Generated dense-target/corona and direct optical wall-source screen only",
+  "reactor_qualified": false,
+  "bulk_plasma_transient_source_qualified": false,
+  "selected_optical_case": "return_capture_25mm",
+  "laser_conversion_and_wall_loss": {
+    "eta_laser_to_plasma": 0.7035880997530601,
+    "eta_laser_to_plasma_boundary": "PLASMA MEANS GENERATED DENSE TARGET/CORONA HERE. This is laser removal by absorption, including subsequent feed ionization, emitted radiation, escaping enthalpy and stored heat. It is not a calibrated transfer efficiency into the bulk confined torus.",
+    "fraction_stray_laser_to_liquid_wall": 0.0,
+    "wall_fraction_semantics": "Energy actually absorbed from direct/reflected laser rays by the prescribed static wall, divided by total incident module laser energy. Multiple wall hits conserve each joule.",
+    "fraction_returning_through_ports": 0.29641190024693986,
+    "cycle_average_incident_optical_power_W": 25000000.0,
+    "cycle_average_absorbed_target_power_W": 17589702.4938265,
+    "cycle_average_direct_stray_laser_wall_power_W": 0.0,
+    "cycle_average_returning_optical_power_W": 7410297.506173497,
+    "uncollected_return_variant_fraction_stray_laser_to_liquid_wall": 0.29641190021223335,
+    "uncollected_return_variant_cycle_average_stray_wall_power_W": 7410297.505305833,
+    "uncollected_return_variant_status": "REJECTED_BY_FIRST_HIT_WALL_HEAT_SCREEN",
+    "model_limits": [
+      "no target-generated diffuse optical scattering",
+      "no missed-target illumination model",
+      "smooth static wall proxy",
+      "no qualified optical receiver/isolator/beam dump for returning light"
+    ]
+  },
+  "pulse_definition_required": {
+    "pulse_shape": "synchronized, nonoverlapping rectangular preconditioning then spike",
+    "pulse_duration_s": 5e-09,
+    "fast_spike_duration_s": 1e-11,
+    "repetition_rate_Hz": 10.0,
+    "total_pulse_energy_J": 2500000.0,
+    "energy_split": {
+      "f_pre": 0.6212410509612667,
+      "f_spike": 0.3787589490387333,
+      "status": "COMPUTED_FOR_GENERATED_RESIDENCE_FLOW_THERMAL_OBJECTIVE"
+    },
+    "pre_energy_J": 1553102.6274031668,
+    "spike_energy_J": 946897.3725968332,
+    "pre_peak_power_W": 310620525480633.4,
+    "spike_peak_power_W": 9.468973725968333e+16,
+    "pre_duty_factor": 5e-08,
+    "spike_duty_factor": 1e-10,
+    "pre_eta_pulse_average": 0.8835958334339481,
+    "spike_eta_pulse_average": 0.4083391190045294,
+    "preconditioning_objective": "Te=2 keV in the generated replenished corona at end of 5 ns. No ignition/gain criterion was solved."
+  },
+  "per_port_allocation_and_timing": [
+    {
+      "port_id": "A1",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 2.3770229350515777e-17,
+      "launch_spike_start_s": 5.0000000237702295e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        7.5,
+        0.0,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.9822301798965295,
+        0.0031899297294156153,
+        0.18765313226469954
+      ]
+    },
+    {
+      "port_id": "B1",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.0293435542609876e-20,
+      "launch_spike_start_s": 5.0000000000102935e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        6.929096493834651,
+        2.8701257427381734,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.9062416261634265,
+        0.3788303274025399,
+        -0.18765313226469937
+      ]
+    },
+    {
+      "port_id": "A2",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 4.6496688489277255e-10,
+      "launch_spike_start_s": 5.464966884892773e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        5.303300858899107,
+        5.303300858899106,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.6516133160761415,
+        0.6561245579624978,
+        0.3806581809849507
+      ]
+    },
+    {
+      "port_id": "B2",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 4.649668673782008e-10,
+      "launch_spike_start_s": 5.464966867378201e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        2.870125742738174,
+        6.929096493834651,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.3509242079344386,
+        0.8555416702503832,
+        -0.38065818098495086
+      ]
+    },
+    {
+      "port_id": "A3",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.1435891665632122e-09,
+      "launch_spike_start_s": 6.143589166563212e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        4.592425496802575e-16,
+        7.5,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.003189929729415565,
+        0.8142238172969845,
+        0.5805423323881286
+      ]
+    },
+    {
+      "port_id": "B3",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.1435891543386954e-09,
+      "launch_spike_start_s": 6.1435891543386955e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -2.870125742738173,
+        6.929096493834651,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.31453707590377195,
+        0.7510239864260372,
+        -0.5805423323881287
+      ]
+    },
+    {
+      "port_id": "A4",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.8847708656857835e-09,
+      "launch_spike_start_s": 6.884770865685784e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -5.303300858899106,
+        5.303300858899107,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.447237740620588,
+        0.44272649873423175,
+        0.7771561301843537
+      ]
+    },
+    {
+      "port_id": "B4",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.884770856975327e-09,
+      "launch_spike_start_s": 6.884770856975327e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -6.929096493834651,
+        2.8701257427381743,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.5826178908605475,
+        0.23787547701704617,
+        -0.7771561301843537
+      ]
+    },
+    {
+      "port_id": "A5",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.88477086568605e-09,
+      "launch_spike_start_s": 6.88477086568605e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -7.5,
+        9.18485099360515e-16,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.6292997486613202,
+        -0.0031899297294155377,
+        0.777156130184354
+      ]
+    },
+    {
+      "port_id": "B5",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.88477085697959e-09,
+      "launch_spike_start_s": 6.88477085697959e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -6.929096493834652,
+        -2.8701257427381726,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.5801764243448347,
+        -0.2437696985913589,
+        -0.7771561301843538
+      ]
+    },
+    {
+      "port_id": "A6",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.143589166564347e-09,
+      "launch_spike_start_s": 6.143589166564347e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -5.3033008588991075,
+        -5.303300858899106,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.5734875616711159,
+        -0.5779988035574726,
+        0.5805423323881286
+      ]
+    },
+    {
+      "port_id": "B6",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 1.1435891543386557e-09,
+      "launch_spike_start_s": 6.143589154338656e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -2.8701257427381712,
+        -6.929096493834652,
+        0.0
+      ],
+      "target_normal_xyz": [
+        -0.3086428543294594,
+        -0.7534654529417496,
+        -0.5805423323881286
+      ]
+    },
+    {
+      "port_id": "A7",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 4.6496688489178325e-10,
+      "launch_spike_start_s": 5.464966884891783e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        -1.3777276490407722e-15,
+        -7.5,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.003189929729415445,
+        -0.924710318747201,
+        0.3806581809849505
+      ]
+    },
+    {
+      "port_id": "B7",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 4.6496686737876e-10,
+      "launch_spike_start_s": 5.46496686737876e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        2.8701257427381752,
+        -6.92909649383465,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.3568184295087517,
+        -0.8531002037346705,
+        -0.3806581809849509
+      ]
+    },
+    {
+      "port_id": "A8",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 2.376576919265289e-17,
+      "launch_spike_start_s": 5.000000023765769e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        5.303300858899105,
+        -5.3033008588991075,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.6967972418340969,
+        -0.6922859999477402,
+        0.1876531322646994
+      ]
+    },
+    {
+      "port_id": "B8",
+      "shot_energy_J": 156250.0,
+      "pre_energy_J": 97068.91421269793,
+      "spike_energy_J": 59181.08578730207,
+      "pre_peak_power_W": 19413782842539.586,
+      "spike_peak_power_W": 5918108578730208.0,
+      "launch_pre_start_s": 0.0,
+      "launch_spike_start_s": 5e-09,
+      "target_pre_start_s": 1.004093871437065e-08,
+      "target_spike_start_s": 1.504093871437065e-08,
+      "launch_reference": "incoming-beam intersection with the liquid free surface; external optical path not included",
+      "aperture_radius_m": 0.025,
+      "target_focus_xyz_m": [
+        6.929096493834652,
+        -2.8701257427381717,
+        0.0
+      ],
+      "target_normal_xyz": [
+        0.908683092679139,
+        -0.37293610582822706,
+        -0.18765313226469946
+      ]
+    }
+  ],
+  "whole_shot_optical_energy_ledgers": {
+    "return_capture_25mm": {
+      "dense_target_absorbed_fraction": 0.7035880997530601,
+      "wall_absorbed": 0.0,
+      "aperture_or_geometric_escape": 0.29641190024693986,
+      "secondary_target_interception": 0.0,
+      "numerical_residual": 0.0
+    },
+    "uncollected_tilted_return_10mm": {
+      "dense_target_absorbed_fraction": 0.7035880997530601,
+      "wall_absorbed": 0.29641190021223335,
+      "aperture_or_geometric_escape": 6.225509754593465e-12,
+      "secondary_target_interception": 0.0,
+      "numerical_residual": 2.848112892593555e-11
+    }
+  },
+  "target_energy_ledger_J": {
+    "incident_optical": 2500000.0,
+    "absorbed": 1758970.2493826502,
+    "reflected": 741029.7506173498,
+    "radiation_emitted": 27907.014306991532,
+    "escaping_enthalpy": 1164817.7570727654,
+    "feed_ionization": 1983.9320463444512,
+    "stored_thermal_increase": 564261.54595655,
+    "initial_preionized_state_energy_outside_shot": 25316.118783266193
+  },
+  "generated_design_inputs": {
+    "geometry": "16 separate locally planar, uniform-temperature fully ionized equimolar D-T columns at recovered centerline-control foci",
+    "density_profile": "n_e(z)=5*n_critical*z/L, 0<z<L; opaque 5*n_critical substrate",
+    "column_length_m": 0.00062905,
+    "maximum_density_over_nc": 5.0,
+    "beam_radius_m": 0.0006,
+    "beam_shape": "spatial top-hat; replaces recovered Gaussian waist with an explicit generated uniform-column assumption",
+    "initial_electron_temperature_eV": 200.0,
+    "initial_ion_temperature_eV": 200.0,
+    "preconditioning_electron_goal_eV": 2000.0,
+    "mean_ion_mass_u": 2.5,
+    "eos": "nonrelativistic ideal, fully ionized D/T, C_e=C_i=1.5*N_e*e",
+    "density_evolution": "prescribed fixed-density corona maintained by generated neutral-DT replenishment at a residence rate c_s/L; ionization energy and escaping enthalpy are debited from laser absorption",
+    "radiation": "optically thin free-free loss using NRL coefficient 1.69e-38 in SI with temperature in eV",
+    "electron_ion_exchange": "density-weighted Spitzer exchange, nu_T=2*m_e/m_i*nu_ei",
+    "preconditioning_objective": "minimum rectangular 5 ns optical energy reaching Te=2000 eV at end of pre; remaining shot energy goes into rectangular 10 ps spike",
+    "fusion_reactions": "not modeled; preconditioning thermal objective is not an ignition criterion",
+    "replenishment_model": {
+      "residence_velocity": "c_s=sqrt((5/3)*e*(Te+Ti)/m_i)",
+      "neutral_feed_temperature_eV": 0.0,
+      "ionization_energy_per_atom_eV": 13.6,
+      "enthalpy_multiplier": 1.6666666666666667,
+      "status": "generated open-system lumped closure, not a solved ablation/Euler boundary"
+    }
+  },
+  "optical_layout": {
+    "aperture_radius_m": 0.025,
+    "target_normal_tilt_rad": 0.0031899351393760217,
+    "return_capture_stress": {
+      "status": "PASS",
+      "tested_rays": 2448,
+      "target_normal_error_bound_rad": 0.0005,
+      "maximum_distance_of_return_ray_from_own_port_center_m": 0.022820202111823704,
+      "aperture_radius_m": 0.025,
+      "minimum_sampled_aperture_clearance_m": 0.002179797888176297,
+      "rays_outside_capture_aperture": 0,
+      "scope": "Finite geometric stress screen. No measured pointing distribution, diffuse scattering, optical isolator or beam-dump qualification."
+    },
+    "wall_dielectric_proxy": "epsilon_proxy=0.83*epsilon_Pb_Werner+0.17*epsilon_Li_Inagaki at 351 nm; atom-fraction interpolation is a generated phenomenological ansatz, not measured liquid-Pb17Li optics"
+  },
+  "magnetic_field": {
+    "axis_target_T": 16.0,
+    "preferred_MGRID": "mgrid_tomahawk_tf48_16T_PERIODIC_FP64.nc",
+    "preserved_native_MGRID": "mgrid_tomahawk_tf48_16T_PERIODIC_NATIVE.nc",
+    "nfp": 48,
+    "planes_per_period": 32,
+    "equivalent_full_torus_planes": 1536,
+    "native_XGRID_verified": true,
+    "native_current_normalization_A_per_turn": -125000.0,
+    "field_verification_report": "field_validation/native_16T_periodic_grid_verification.json"
+  },
+  "recovered_bulk_steady_state_screen_reference": {
+    "P_total_absorbed_heating_required_W": 155293526.9,
+    "P_alpha_to_plasma_W": 186072047.5,
+    "P_external_laser_absorbed_required_W": 0.0,
+    "status": "UNCHANGED SELECTED CAD-A2 SCREEN REFERENCE. These bulk-torus quantities are not the generated dense-column energy boundary."
+  },
+  "numeric_blockers_completed_for_this_generated_case": [
+    "target profile and initial state card",
+    "explicit replenishment and thermal objective",
+    "pulse energy split",
+    "timing schedule",
+    "direct optical wall fraction and conserved ledger",
+    "active 16 T MGRID and CAD/PF samples"
+  ],
+  "physical_qualification_still_open": [
+    "Verify a target/ablation/EOS solution that actually maintains the generated 629.05 micrometre ramp and the chosen sonic residence closure.",
+    "Calibrate target-to-bulk-torus energy transfer and ignition/gain; emitted radiation and escaping enthalpy wall deposition remain separate source maps.",
+    "Measure actual Pb17Li/oxide optical response and target diffuse scattering; static specular capture does not establish a hardware stray-light fraction.",
+    "Design and qualify the receiver/isolator/beam dump for 741 kJ reflected per shot, including the 10 ps return.",
+    "Complete structural, cooling, quench and equilibrium qualification separately from vacuum-field numerical checks."
+  ],
+  "mandatory_guards": [
+    "Use this contract only with the declared generated target and optical case; changing the model inputs requires recomputation.",
+    "Do not use the dense-target eta as a qualified efficiency heating the bulk torus.",
+    "Zero direct optical wall heating in the capture case does not set emitted radiation, outflow enthalpy, alpha or neutron wall heating to zero.",
+    "Never infer wall fraction from 1-eta unless the optical ledger routes that energy to the wall.",
+    "Apply stored S-mode currents; do not amplitude-rescale the old 14 T grid.",
+    "Retain nfp=48 when interpolating the preferred periodic TF grid; sample PF separately on its own coordinates."
+  ]
+}

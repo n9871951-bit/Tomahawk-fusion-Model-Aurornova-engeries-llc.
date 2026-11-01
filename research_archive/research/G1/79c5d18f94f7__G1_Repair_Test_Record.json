@@ -1,0 +1,12 @@
+{
+  "tests_run": 49,
+  "failures": 0,
+  "errors": 0,
+  "native_FreeCAD_executed": false,
+  "native_workflow_tests_use_mocks": true,
+  "Kaggle_jobs_rerun": false,
+  "script_filename": "tomahawk_entire_model.py",
+  "script_sha256": "5408770e41c686a0af20527f5493bac914b30e83b8f96830ed31e216dd9abd60",
+  "script_bytes": 916529,
+  "limitations": "Mathematical/software tests only. Native CAD and formal G1 approval remain pending."
+}

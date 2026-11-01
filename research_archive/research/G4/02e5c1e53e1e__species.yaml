@@ -1,0 +1,35 @@
+schema_version: "1.0"
+file_role: plasma_species_information
+units_system: SI
+normalization: densities_are_m^-3_temperatures_are_keV
+status: reference_species_definition_not_a_measurement
+species:
+  electron:
+    symbol: e-
+    charge_number: -1
+    mass_amu: 0.000548579909
+  deuterium:
+    symbol: D+
+    charge_number: 1
+    mass_amu: 2.0135532127
+  tritium:
+    symbol: T+
+    charge_number: 1
+    mass_amu: 3.0155007162
+  alpha:
+    symbol: He2+
+    charge_number: 2
+    mass_amu: 4.0015061791
+fuel_definition:
+  reaction: D + T -> alpha + neutron
+  equal_fuel_density_in_reference_profiles: true
+quasineutrality:
+  equation: "n_e = n_D + n_T + 2*n_alpha + sum(Z_j*n_j)"
+  reference_impurity_density: 0.0
+  reference_Z_eff: 1.0
+ash:
+  n_alpha_in_profiles: 0.0
+  note: "The profile table is a no-ash reference realization; add solved ash dilution before a plant claim."
+provenance:
+  source: "Tomahawk Rev 2.1 design baseline carried from the user's project records"
+  profile_table: "04_plasma/profiles.csv"

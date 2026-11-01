@@ -1,0 +1,43 @@
+{
+  "schema_version": "TOMAHAWK-MHD-CORRECTION-INPUT-1.0",
+  "case_id": "REV1_7_MAGNETIC_CORRECTION_SCREEN",
+  "data_status": "MODEL_DERIVED_INPUTS_NOT_QUALIFIED",
+  "geometry": {
+    "coordinate_frame": "right_handed_xyz",
+    "major_radius_m": 7.5,
+    "minor_radius_m": 3.0,
+    "tf_centerlines": "MHD/cad_a2_tf48_interleaved_centerlines.csv",
+    "units": "m",
+    "status": "analytic screening topology; replace with released CAD before solver use"
+  },
+  "equilibrium_route": "FREE_BOUNDARY_3D_MHD_REQUIRED",
+  "tf_coils": {
+    "coil_table": "MHD/mhd_coil_table_tf48_correction.csv",
+    "current_schedule": "MHD/cad_a2_tf48_interleaved_currents.csv",
+    "turns_per_coil": 100,
+    "current_target_A": 109374.99999473072,
+    "current_limit_A": 401934.4881008213,
+    "magnetic_axis_target_T": 14.0,
+    "edge_ripple_threshold_percent": 1.0,
+    "status": "model-derived and not as-built"
+  },
+  "profiles": {
+    "pressure_source": "MHD/mhd_profile_sweep.csv",
+    "q_current_target": "MHD/mhd_shear_target.csv",
+    "q_target": "q(rho) = 1.20 + 5.00 rho^2",
+    "status": "target profile; not a solved equilibrium"
+  },
+  "required_solver_closure": [
+    "PF/shaping coil geometry, currents, and engineering limits",
+    "free-boundary 3-D equilibrium and mgrid/MAKEGRID input",
+    "p(psi), F(psi), and plasma-current/current-drive closure",
+    "convergence and force-balance residuals",
+    "nonlinear MHD stability spectrum"
+  ],
+  "qualification_status": {
+    "tf_ripple_screen": "PASS_FOR_ANALYTIC_48_COIL_SCREENING_TOPOLOGY",
+    "suydam_and_ballooning": "TARGET_PROFILE_PROXY_ONLY",
+    "self_consistent_equilibrium": "BLOCKED",
+    "qualified_design": "BLOCKED"
+  }
+}

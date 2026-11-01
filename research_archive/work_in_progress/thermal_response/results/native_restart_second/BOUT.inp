@@ -1,0 +1,35 @@
+MXG = 0
+MYG = 0
+nout = 250
+timestep = 0.01
+[mesh]
+nx = 1
+ny = 1
+nz = 1
+[output]
+enabled = false
+[restart_files]
+enabled = false
+[all]
+bndry_all = none
+[solver]
+type = rk4
+atol = 1e-10
+rtol = 1e-9
+max_timestep = 0.001
+[thermal]
+profile = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/inputs/radial_profile.csv
+csv = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_second/trajectory.csv
+tau_e = 1.4761420074945899
+sync_mw = 120.190267247479
+sync_exponent = 2.5
+external_mw = 25
+alpha_retention = 1
+delay_exponent = 1.5
+initial_w = 1154.6913147982891
+initial_a = 47.289210904204438
+initial_ein = 2595.463913941574
+initial_eout = 2655.8927927063146
+time_offset = 2.4999999999999907
+scale_min = 0.5
+scale_max = 2

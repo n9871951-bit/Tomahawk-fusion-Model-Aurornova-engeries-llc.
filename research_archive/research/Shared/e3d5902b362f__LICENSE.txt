@@ -1,0 +1,19 @@
+PROPRIETARY — ALL RIGHTS RESERVED
+
+Copyright © 2026 AuroraNova Engeries LLC.
+
+The Tomahawk Fusion Architecture simulation model, equations, source code,
+configuration files, documentation, and associated technical materials are
+proprietary works of AuroraNova Engeries LLC.
+
+No permission is granted to copy, reproduce, modify, distribute, publish,
+sublicense, reverse engineer, train another model on, or use these materials
+for commercial or noncommercial purposes without prior written authorization
+from AuroraNova Engeries LLC.
+
+Uploading this file or the associated model to a hosting service does not
+transfer ownership or intellectual-property rights. Access is provided only
+for the authorized preliminary evaluation purpose identified by the owner.
+
+For authorization requests, contact:
+AuroraNovaEnergies@outlook.com

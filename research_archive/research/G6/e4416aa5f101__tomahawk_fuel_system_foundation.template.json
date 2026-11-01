@@ -1,0 +1,93 @@
+{
+  "schema_version": "TOMAHAWK-FUEL-SYSTEM-FOUNDATION-0.2",
+  "case_id": "TOMAHAWK_FOUNDATION_CASE_001",
+  "source_document": {
+    "name": "tech summary new fuel system.pdf",
+    "sha256": "399fbf7373cba67f2e7f7d9a01ca9bb34eac7030a5789bc1a2be9822c41b1522"
+  },
+  "time": {
+    "dt_s": null,
+    "horizon_s": null
+  },
+  "nuclear_source": {
+    "source_status": "REQUIRED_FROM_3D_NEUTRONICS",
+    "tbr": null,
+    "reaction_rate_s": null,
+    "tritium_bred_kg_s": null
+  },
+  "dle": {
+    "feedstock": "DESALINATION_REJECT_BRINE",
+    "brine_flow_m3_s": null,
+    "brine_density_kg_m3": null,
+    "li_concentration_ppm": 0.5,
+    "recovery_per_pass": null,
+    "declared_recovery_range": {
+      "min": 0.7,
+      "max": 0.9
+    },
+    "sorbent_family": [
+      "MANGANESE_OXIDE_LITHIUM_ION_SIEVE",
+      "TITANIUM_OXIDE_LITHIUM_ION_SIEVE"
+    ]
+  },
+  "alsb": {
+    "salt_case": "LiOH_OR_LiNO3",
+    "medium": "AQUEOUS",
+    "pressure_class": "LOW_PRESSURE",
+    "li6_atom_fraction": null,
+    "lithium_inventory_kg": null,
+    "hto_capture_efficiency": null,
+    "design_tbr_floor": 1.05,
+    "realized_tbr_status": "REQUIRED_FROM_3D_NEUTRONICS"
+  },
+  "cece_lpce": {
+    "alsb_slipstream_fraction": null,
+    "lpce_temperature_C": {
+      "min": 40.0,
+      "max": 80.0
+    },
+    "tritium_lpce_transfer_efficiency": null,
+    "deuterium_lpce_transfer_efficiency": null,
+    "lpce_delay_s": null,
+    "auxiliary_power_W": null,
+    "process_heat_W": null,
+    "catalyst_family": "HYDROPHOBIC_PLATINUM_BASED"
+  },
+  "pem": {
+    "deuterium_feed_to_pem_kg_s": null,
+    "tritium_product_recovery_efficiency": null,
+    "deuterium_product_recovery_efficiency": null,
+    "pem_delay_s": null,
+    "auxiliary_power_W": null,
+    "process_heat_W": null,
+    "oxygen_product": "O2"
+  },
+  "fuel_return": {
+    "product_species": "D2_T2_MIXTURE",
+    "tritium_product_purity": null,
+    "deuterium_product_purity": null,
+    "direct_to_ignition": true
+  },
+  "inventory": {
+    "initial_kg": {
+      "D": null,
+      "T": null
+    },
+    "reserve_kg": {
+      "D": null,
+      "T": null
+    },
+    "permeation_loss_kg_s": {
+      "T": null
+    },
+    "other_loss_kg_s": {
+      "D": null,
+      "T": null
+    }
+  },
+  "provenance": {
+    "architecture_status": "FOUNDATIONAL_DESIGN_DESCRIPTION",
+    "performance_status": "OPEN",
+    "no_measured_results_embedded": true
+  }
+}

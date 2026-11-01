@@ -1,0 +1,140 @@
+{
+  "schema_version": "TOMAHAWK-MAGNETIC-CORRECTION-REPORT-1.0",
+  "status": "CORRECTION_SCREEN_COMPLETE_WITH_EXTERNAL_EQUILIBRIUM_BLOCKER",
+  "baseline_failure_preserved": true,
+  "method": {
+    "tf": "exact finite-segment Biot-Savart sum matching the resolved CAD-A2 screen",
+    "shear": "explicit q/current-profile target evaluated with local Suydam and s-alpha formulas; not a GS/VMEC/DESC equilibrium"
+  },
+  "baseline_16_coil": {
+    "coil_count": 16,
+    "flattop_time_s": 1.0,
+    "current_A": [
+      326782.82967560005
+    ],
+    "plasma_inboard_R_m": 4.5,
+    "plasma_outboard_R_m": 10.5,
+    "coil_inner_leg_R_m": 3.3009999999999953,
+    "coil_outer_leg_R_m": 11.699000000000002,
+    "axis": {
+      "radius_m": 7.5,
+      "Bphi_min_T": 13.88562982918004,
+      "Bphi_max_T": 13.99999999999989,
+      "Bphi_mean_T": 13.943181456267073,
+      "ripple_percent": 0.41014017442120415
+    },
+    "plasma_edge": {
+      "radius_m": 10.5,
+      "Bphi_min_T": 7.799142001671598,
+      "Bphi_max_T": 13.007223967536385,
+      "Bphi_mean_T": 9.98290926315142,
+      "ripple_percent": 25.031194652503938
+    },
+    "tf_ripple_pass": false
+  },
+  "topology_count_sweep": [
+    {
+      "coil_count": 16,
+      "current_A": 328114.47156503034,
+      "edge_ripple_percent": 25.03119465250371,
+      "passes_1_percent_gate": false
+    },
+    {
+      "coil_count": 24,
+      "current_A": 218749.7482850573,
+      "edge_ripple_percent": 10.38560713269506,
+      "passes_1_percent_gate": false
+    },
+    {
+      "coil_count": 32,
+      "current_A": 164062.49336794222,
+      "edge_ripple_percent": 4.318046975850853,
+      "passes_1_percent_gate": false
+    },
+    {
+      "coil_count": 48,
+      "current_A": 109374.99999473072,
+      "edge_ripple_percent": 0.7539178029174242,
+      "passes_1_percent_gate": true
+    },
+    {
+      "coil_count": 64,
+      "current_A": 82031.24999999543,
+      "edge_ripple_percent": 0.1325522395587539,
+      "passes_1_percent_gate": true
+    }
+  ],
+  "correction_48_coil": {
+    "coil_count": 48,
+    "turns_per_coil": 100,
+    "current_A": 109374.99999473072,
+    "current_limit_A": 401934.4881008213,
+    "current_below_limit": true,
+    "axis": {
+      "radius_m": 7.5,
+      "Bphi_min_T": 13.999999913018858,
+      "Bphi_max_T": 14.000000085658646,
+      "Bphi_mean_T": 13.999999999999984,
+      "ripple_percent": 6.1657067391119e-07
+    },
+    "plasma_edge": {
+      "radius_m": 10.5,
+      "Bphi_min_T": 9.925029392530401,
+      "Bphi_max_T": 10.075819351949622,
+      "Bphi_mean_T": 10.000592338209094,
+      "ripple_percent": 0.7539178029174242
+    },
+    "tf_ripple_pass": true,
+    "clearance_positive": true,
+    "geometry_status": "analytic interleaved screening topology, not released mechanical CAD"
+  },
+  "shear_target_proxy": {
+    "status": "TARGET_PROFILE_PROXY_NOT_SOLVED_EQUILIBRIUM",
+    "q_profile": "q(rho) = 1.20 + 5.00 rho^2",
+    "q_axis_target": 1.2,
+    "q95_target": 5.7125,
+    "I_p_95_target_A": 13270897.155361047,
+    "I_p_95_target_MA": 13.270897155361046,
+    "j_phi_profile": "derived from I_p(r) proportional to r^2/q(r); positive centrally peaked target",
+    "min_suydam_D_proxy": 0.023102961733323567,
+    "min_suydam_D_at_rho": 0.04,
+    "max_ballooning_alpha_over_alpha_crit": 0.7666949534956689,
+    "min_shear": 0.01324503311258278,
+    "max_shear": 1.586776859504132,
+    "n_gradeable_surfaces": 61,
+    "suydam_interchange_target_proxy_pass": true,
+    "ballooning_s_alpha_target_proxy_pass": true,
+    "assumptions": [
+      "14 T toroidal field held as the plasma-axis screening target",
+      "supplied pressure profile is retained",
+      "q and current profile are explicit design targets, not measured or solved profiles"
+    ],
+    "required_next_validation": [
+      "fixed-boundary or free-boundary Grad-Shafranov solve with p(psi), F(psi), and plasma-current closure",
+      "3-D free-boundary equilibrium including PF/shaping coils and mgrid/MAKEGRID",
+      "nonlinear stability and transport validation"
+    ]
+  },
+  "gates": {
+    "baseline_tf_ripple_screen_pass": false,
+    "correction_tf_ripple_screen_pass": true,
+    "suydam_target_profile_proxy_pass": true,
+    "ballooning_target_profile_proxy_pass": true,
+    "self_consistent_equilibrium_pass": false,
+    "qualified_design_pass": false
+  },
+  "interpretation": [
+    "The 48-coil branch clears the unchanged 1% TF-ripple screening threshold in the exact finite-filament calculation.",
+    "The q/current target removes the pressure-only flat-shear assumption in the local proxy, but it is not evidence that the real device sustains that profile.",
+    "The correction remains blocked until PF/shaping coils, free-boundary equilibrium, current-drive closure, and nonlinear stability are supplied and solved.",
+    "No gate was passed by changing the threshold or deleting the baseline failure."
+  ],
+  "remaining_blockers": [
+    "PF/shaping coil input",
+    "free-boundary 3-D MHD equilibrium",
+    "validated plasma-current/current-drive closure",
+    "nonlinear MHD stability spectrum",
+    "orbit-resolved alpha transport",
+    "qualified neutronics, CFD/CHT, and CHF"
+  ]
+}

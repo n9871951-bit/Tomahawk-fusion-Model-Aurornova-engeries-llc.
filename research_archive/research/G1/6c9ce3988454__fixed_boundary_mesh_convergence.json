@@ -1,0 +1,38 @@
+{
+  "schema_version": "TOMAHAWK-FIXED-BOUNDARY-MESH-CHECK-1.0",
+  "purpose": "Grid-resolution check for the corrected fixed-boundary toroidal equilibrium screen.",
+  "diagnostic_scope": "The two runs use the same prescribed geometric-rho pressure/current model, finite-difference Delta-star operator, radial-ray flux-surface extraction, and local Suydam/s-alpha proxy definitions.",
+  "runs": [
+    {
+      "grid": [
+        161,
+        161
+      ],
+      "gs_residual_relative": 2.524097445082773e-12,
+      "divB_relative": 1.3080883571078067e-14,
+      "q_at_rho_0_96": 5.847941471510578,
+      "q_ratio_at_rho_0_96": 1.0068769751223448,
+      "max_abs_q_target_relative_error": 0.0529565006250905,
+      "min_suydam_D": 2.4483330469176594,
+      "max_ballooning_alpha_over_alpha_crit": 0.45237129435685913,
+      "fixed_boundary_correction_screen_pass": true,
+      "source_report": "fixed_boundary_correction_report.json"
+    },
+    {
+      "grid": [
+        201,
+        201
+      ],
+      "gs_residual_relative": 3.5492214965064024e-12,
+      "divB_relative": 1.4261725691012933e-14,
+      "q_at_rho_0_96": 5.850852733095264,
+      "q_ratio_at_rho_0_96": 1.0073782253951902,
+      "max_abs_q_target_relative_error": 0.0529694205741712,
+      "min_suydam_D": 2.091625121322182,
+      "max_ballooning_alpha_over_alpha_crit": 0.45272462338845343,
+      "fixed_boundary_correction_screen_pass": true,
+      "source_report": "independent rerun of Tomahawk_MHD_FixedBoundary_Correction.py at 201 x 201"
+    }
+  ],
+  "interpretation": "The corrected edge-q ratio and ballooning proxy are stable across the two grids; the minimum Suydam D remains positive. This supports numerical repeatability of this screening diagnostic, not qualification of the device or proof of a self-consistent free-boundary equilibrium."
+}

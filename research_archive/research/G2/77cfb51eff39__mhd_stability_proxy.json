@@ -1,0 +1,23 @@
+{
+  "n_surfaces_evaluated": 64,
+  "n_low_shear_surfaces_unassessed": 0,
+  "rho_eff_range": [
+    0.1893873170583159,
+    0.989573893957881
+  ],
+  "min_suydam_D": -0.35731408959800104,
+  "min_suydam_D_at_rho_eff": 0.6940348872386801,
+  "max_ballooning_alpha_over_alpha_crit": 35.78158285292302,
+  "ballooning_stability_margin_min": -34.78158285292303,
+  "ballooning_alpha_crit_coefficient": 0.6,
+  "ballooning_alpha_crit_provenance": "large-aspect-ratio circular-plasma s-alpha first-stability threshold, Connor-Hastie-Taylor PRL 40, 396 (1978); screening threshold only, not shape-corrected",
+  "min_gradeable_shear": 0.05,
+  "method": "q(psi) = d(Phi_toroidal)/d(psi) via area integration on the existing axisymmetric grid; Suydam and s-alpha criteria evaluated at each resolved flux surface",
+  "limitations": [
+    "Large-aspect-ratio, circular-cross-section analytic criteria; no shape/elongation/triangularity correction to the ballooning threshold.",
+    "Not a full n -> infinity ballooning eigenvalue solve; no second-stability access assessment.",
+    "Low-shear and negative-shear surfaces are excluded from the pass/fail grade, not certified stable.",
+    "Ideal MHD only: no resistive, kinetic, or non-axisymmetric (n != 0) mode assessment."
+  ],
+  "status": "LOCAL_INTERCHANGE_AND_BALLOONING_SCREENING_PROXY"
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "TOMAHAWK-CONTINUOUS-1.0",
+  "purpose": "Generated one-folder wiring for the provisional input bundle; commands remain null until real solvers are selected.",
+  "stages": {
+    "MHD": {
+      "command": null,
+      "inputs": {
+        "mhd_input": "provisional_inputs/MHD/mhd_input.json"
+      },
+      "outputs": [
+        "mhd_output.json",
+        "wout_*.nc",
+        "mhd_output.h5"
+      ],
+      "consumes_previous_output": false
+    },
+    "NEUTRONICS": {
+      "command": null,
+      "inputs": {
+        "dagmc": "provisional_inputs/NEUTRONICS/dagmc.h5m",
+        "materials": "provisional_inputs/NEUTRONICS/materials.xml",
+        "settings": "provisional_inputs/NEUTRONICS/settings.xml",
+        "cross_sections": "provisional_inputs/NEUTRONICS/cross_sections.xml"
+      },
+      "outputs": [
+        "statepoint*.h5",
+        "neutronics_output.json",
+        "tallies*.json"
+      ],
+      "consumes_previous_output": true
+    },
+    "CFD": {
+      "command": null,
+      "inputs": {
+        "cfd_mesh": "provisional_inputs/CFD/cassette.re2",
+        "cfd_case": "provisional_inputs/CFD/cassette.par"
+      },
+      "outputs": [
+        "cfd_output.json",
+        "*.vtu",
+        "*.vtk",
+        "*.csv"
+      ],
+      "consumes_previous_output": true
+    },
+    "CHF": {
+      "command": null,
+      "inputs": {
+        "chf_results": "provisional_inputs/CHF/chf_input.json"
+      },
+      "outputs": [
+        "chf_results.json",
+        "chf_results.csv"
+      ],
+      "consumes_previous_output": true
+    }
+  },
+  "note": "Do not run until null commands and REQUIRED files are replaced with real solver executables and data."
+}

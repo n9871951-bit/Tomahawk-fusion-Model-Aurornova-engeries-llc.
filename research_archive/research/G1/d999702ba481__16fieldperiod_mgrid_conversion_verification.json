@@ -1,0 +1,31 @@
+{
+  "status": "PASS_EXACT_16_FIELD_PERIOD_REPRESENTATION",
+  "field_baseline_T": 16.0,
+  "physical_TF_coils": 48,
+  "physical_coils_per_field_period": 3,
+  "source_grid": {
+    "name": "mgrid_tomahawk_tf48_16T_PERIODIC_FP64.nc",
+    "nfp": 48,
+    "kp": 32,
+    "raw_coil_current_A": -125000.0
+  },
+  "derived_grid": {
+    "name": "mgrid_tomahawk_tf48_16FIELD_16T_PERIODIC_FP64.nc",
+    "nfp": 16,
+    "kp": 96,
+    "radial_nodes": 201,
+    "vertical_nodes": 201,
+    "raw_coil_current_A": -125000.0
+  },
+  "angular_spacing_deg": 0.234375,
+  "full_torus_angular_planes": 1536,
+  "source_centerline_coil_count": 48,
+  "segments_per_physical_coil": 512,
+  "maximum_centerline_spacing_error_rad": 3.6914915568786455e-15,
+  "exact_plane_expansion_max_abs_error_T": 0.0,
+  "axis_Bphi_T_from_source_verification": 16.000000098666238,
+  "edge_ripple_percent_from_source_verification": 0.7556405502813015,
+  "edge_ripple_limit_percent": 1.0,
+  "method": "The independently verified FP64 nfp=48, kp=32 planes repeat three times over each 22.5-degree nfp=16 period. All three field components are copied without interpolation or amplitude changes.",
+  "scope": "Exact symmetry re-indexing of the verified 48-coil vacuum-field grid; no additional MHD equilibrium or hardware qualification."
+}

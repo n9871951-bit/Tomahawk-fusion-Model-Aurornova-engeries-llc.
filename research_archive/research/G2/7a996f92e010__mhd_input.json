@@ -1,0 +1,51 @@
+{
+  "schema_version": "TOMAHAWK-MHD-INPUT-1.0",
+  "case_id": "REV1_7_PROVISIONAL_MHD_SCREEN",
+  "model_version": "CAD-A2-WHOLE-CONCEPT-1.7-MULTIPHYSICS-DOMAINS",
+  "data_status": "PROVISIONAL_INPUTS_NOT_EQUILIBRIUM_RESULT",
+  "geometry": {
+    "plasma_domain_step": "../Solver_Geometry/MHD_Plasma_Domain.step",
+    "vacuum_region_step": "../Solver_Geometry/MHD_Vacuum_Region.step",
+    "coil_regions_step": "../Solver_Geometry/MHD_Coil_And_Casing_Regions.step",
+    "units": "m in solver; STEP source is mm"
+  },
+  "equilibrium_route": "VMEC_FREE_BOUNDARY_OR_QUALIFIED_EQUIVALENT",
+  "coil_table": "mhd_coil_table.csv",
+  "profiles": "mhd_profile_sweep.csv",
+  "screening_parameters": {
+    "major_radius_m": 7.5,
+    "reference_volume_m3": 950.0,
+    "central_ion_temperature_keV": 22.0,
+    "central_electron_temperature_keV": 18.0,
+    "magnetic_field_target_T": 35.0,
+    "tau_E_screening_target_s": 2.7,
+    "tau_E_screening_target_provenance": "derived deterministic target from corrected active-profile balance with 20% margin; not a measured confinement result",
+    "reference_condition_correction": {
+      "tau_E_s": 1.36,
+      "self_heating_ratio": 0.63,
+      "definition": "deposited alpha power / modeled losses",
+      "provenance": "user-provided correction, 2026-08-29",
+      "status": "REFERENCE_RESULT_TO_BE_RECONCILED_TO_CURRENT_RADIAL_PROFILE",
+      "use_in_current_profile_prediction": false
+    },
+    "secondary_heat_removal_fraction_by_scenario": {
+      "full_incident_stress": 0.5,
+      "layer_screen": 0.0,
+      "transport_screen": 0.0
+    },
+    "secondary_heat_removal_provenance": "50% full-incident heat split to secondary systems as an explicit design screening assumption; no validated deposition or secondary-system capacity result",
+    "tf_screening_branch": "CAD_A2_MODEL_DERIVED_CENTERLINE",
+    "tf_turns_per_coil": 100,
+    "tf_current_target_A": 326782.82967560005,
+    "tf_current_schedule_status": "MODEL_DERIVED_NOT_AS_BUILT",
+    "tf_ripple_screening_max_percent": 1.0,
+    "water_property_model": "IAPWS_IF97_R1_IAPWS08_IAPWS11"
+  },
+  "required_before_solver": [
+    "as-built coil current by conductor and turn",
+    "PF/shaping coil table and free-boundary mgrid/MAKEGRID input",
+    "pressure, density, Ti, Te profiles from a specified source",
+    "resistivity, viscosity, and transport closure",
+    "initial perturbation spectrum and time-step/convergence plan"
+  ]
+}

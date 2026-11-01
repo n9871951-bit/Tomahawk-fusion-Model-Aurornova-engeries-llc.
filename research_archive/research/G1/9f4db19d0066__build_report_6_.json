@@ -1,0 +1,3217 @@
+{
+  "native_execution": "COMPLETED_CONCEPT_BUILD_BOUNDARY_G1_NUMERICAL_PASS",
+  "built": [
+    {
+      "name": "FirstWall_W_Armor",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.6985483185952148,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "FirstWall_CuCrZr_Sink",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 17.04661252210571,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Separate_HT_Loop_Volume",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 17.153514275770753,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "HT_Loop_Backwall",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 17.258380135574217,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Blanket_Inner_Containment",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 10.407393444210937,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "S20_Aqueous_Blanket",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 369.98277264988934,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "Blanket_Outer_Containment",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 19.729358584940186,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Shield_Engineering_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 80.10919186920044,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Vacuum_Vessel",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 51.030833886399414,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_01_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734561,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_01_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.107559693563655,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_02_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.491863811373454,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_02_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636587,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_03_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734561,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_03_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.107559693563657,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_04_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734535,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_04_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636587,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_05_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.491863811373456,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_05_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636587,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_06_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734515,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_06_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636596,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_07_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.491863811373453,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_07_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636596,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_08_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.491863811373453,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_08_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636596,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_09_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734561,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_09_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.107559693563655,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_10_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734572,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_10_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.107559693563654,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_11_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734541,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_11_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636616,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_12_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734541,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_12_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.107559693563657,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_13_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734557,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_13_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.107559693563655,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_14_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734528,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_14_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636558,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_15_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734548,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_15_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1075596935636607,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_16_Winding_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.4918638113734546,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Coil_16_Casing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.107559693563657,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Enclosure",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 48.23278956605359,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Thermal_Shield_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 15.440280309037476,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_01_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.01566398855080145,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_01_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0003620622701409235,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_01_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292698,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_02_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.01566398855080145,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_02_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014091736,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_02_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292698,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_03_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.020702580095450743,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_03_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014091866,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_03_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02563539605329261,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_04_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.020702580095450774,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_04_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014091963,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_04_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02563539605329282,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_05_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02306575719395575,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_05_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0003620622701409158,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_05_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02563539605329269,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_06_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.023065757193955705,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_06_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014091763,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_06_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292698,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_07_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017626649580665073,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_07_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0003620622701409141,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_07_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292722,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_08_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017626649580665073,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_08_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0003620622701409158,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_08_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292715,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_09_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.01762664958066506,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_09_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014090906,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_09_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02563539605329273,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_10_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017626649580665083,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_10_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014091145,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_10_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292663,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_11_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02306575719395572,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_11_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0003620622701409167,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_11_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02563539605329277,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_12_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.023065757193955674,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_12_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014091047,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_12_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292746,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_13_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.020702580095450767,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_13_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0003620622701409248,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_13_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02563539605329276,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_14_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.020702580095450788,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_14_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014092056,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_14_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.02563539605329271,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_15_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.015663988550801495,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_15_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00036206227014090993,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_15_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292736,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "LASER_16_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.015663988550801485,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_16_Window_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0003620622701409224,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_16_Final_Optic_Housing",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.025635396053292774,
+      "representation": "OPTICAL_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "FUEL_DIAGNOSTIC_17_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00430380600622941,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "FUEL_DIAGNOSTIC_18_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0043038060062294175,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "FUEL_DIAGNOSTIC_19_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00430380600622941,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "FUEL_DIAGNOSTIC_20_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0043038060062294175,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "EXHAUST_21_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.03142579810952861,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "EXHAUST_22_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.03142579810952861,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "EXHAUST_23_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.03142579810952857,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "EXHAUST_24_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.03142579810952861,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "BLANKET_SERVICE_25_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.021486660000218913,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "BLANKET_SERVICE_26_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.021486660000218868,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "BLANKET_SERVICE_27_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.021486660000218823,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "BLANKET_SERVICE_28_Duct",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.021486660000218854,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_CuCrZr_Grooved_Core",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.010909188955996225,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Separate_Rear_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000379,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Mo_Face",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.002499999999999502,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_MoCu_Graded_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005000000000000151,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Active_Braze_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0005000000000004258,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_AlN_Insulator",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.009999999999999728,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Helium_Leak_Interspace",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000082,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF01_Outer_Containment_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.010000000000000132,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Supply_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005646064440784365,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Return_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005646064440784527,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Connected_Coolant_Domain",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.11764144543038263,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF01_RF_Folded_Strap_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.003905999999999987,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Removable_Port_Sleeve",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.28157703012942314,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Supply_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873267,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Supply_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873272,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Supply_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873267,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Supply_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873267,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Supply_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017240374411545183,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Return_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873267,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Return_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873275,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Return_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873265,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Return_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873267,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF01_Return_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017239990120981697,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_CuCrZr_Grooved_Core",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.010909188955996277,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Separate_Rear_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000383,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Mo_Face",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0024999999999995143,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_MoCu_Graded_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00500000000000014,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Active_Braze_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0005000000000004249,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_AlN_Insulator",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00999999999999973,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Helium_Leak_Interspace",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.01250000000000007,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF02_Outer_Containment_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.010000000000000146,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Supply_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005646064440784406,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Return_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005646064440784516,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Connected_Coolant_Domain",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.11764144543038257,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF02_RF_Folded_Strap_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.003905999999999987,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Removable_Port_Sleeve",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.2815770301294222,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Supply_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873262,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Supply_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873262,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Supply_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873262,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Supply_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873262,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Supply_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.01724037441154519,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Return_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873265,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Return_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873265,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Return_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873265,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Return_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873265,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF02_Return_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0172399901209817,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_CuCrZr_Grooved_Core",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.010909188955996362,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Separate_Rear_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000384,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Mo_Face",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0024999999999995156,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_MoCu_Graded_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005000000000000139,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Active_Braze_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0005000000000004245,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_AlN_Insulator",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00999999999999973,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Helium_Leak_Interspace",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000075,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF03_Outer_Containment_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.010000000000000148,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Supply_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0056460644407843145,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Return_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005646064440784587,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Connected_Coolant_Domain",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.11764144543038267,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF03_RF_Folded_Strap_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0039059999999999876,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Removable_Port_Sleeve",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.2815770301294216,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Supply_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00426943949587327,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Supply_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00426943949587327,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Supply_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873267,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Supply_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.00426943949587327,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Supply_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017240374411545155,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Return_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873275,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Return_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873272,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Return_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873275,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Return_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873275,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF03_Return_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017239990120981714,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_CuCrZr_Grooved_Core",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.010909188955996444,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Separate_Rear_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000378,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Mo_Face",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.002499999999999503,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_MoCu_Graded_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005000000000000152,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Active_Braze_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0005000000000004243,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_AlN_Insulator",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.009999999999999728,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Helium_Leak_Interspace",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000082,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF04_Outer_Containment_Cover",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.01000000000000013,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Supply_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005646064440784374,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Return_Header",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.005646064440784571,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Connected_Coolant_Domain",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.11764144543038262,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": true
+    },
+    {
+      "name": "RF04_RF_Folded_Strap_Envelope",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0039059999999999876,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Removable_Port_Sleeve",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.2815770301294229,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Supply_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0042694394958732685,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Supply_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873267,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Supply_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873263,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Supply_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0042694394958732685,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Supply_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017240374411545193,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Return_Tap1",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0042694394958732685,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Return_Tap2",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0042694394958732685,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Return_Tap3",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.004269439495873265,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Return_Tap4",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0042694394958732685,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF04_Return_Collector",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.017239990120981697,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF_Supply_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.333478618616785,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF_Return_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.333478618616785,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "Blanket_Supply_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1467393868013496,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "Blanket_Return_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 1.1467393868013496,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "HT_Supply_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.817763837940197,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "HT_Return_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.817763837940197,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "Helium_Supply_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.15159712360073846,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "Helium_Return_Ring",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.15159712360073613,
+      "representation": "PIPE_ROUTING_CONCEPT",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_00",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999998,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_00",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999999,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_01",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0075000000000000015,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_01",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000004,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_02",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0075000000000000015,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_02",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000006,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_03",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999998,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_03",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999999,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_04",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999999,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_04",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999999,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_05",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0075,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_05",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.0125,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_06",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000001,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_06",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000004,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_07",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999998,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_07",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999995,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_08",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999998,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_08",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999995,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_09",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000003,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_09",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000006,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_10",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000003,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_10",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000002,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_11",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999996,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_11",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999995,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_12",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999998,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_12",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999995,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_13",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999999,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_13",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999999,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_14",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007500000000000003,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_14",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012500000000000002,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Tile_15",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.007499999999999997,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Exhaust_Sink_15",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.012499999999999995,
+      "representation": "UNSOLVED_STRIKE_ZONE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Foundation_Slab",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 435.07031040000004,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_00",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_00",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999995,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_01",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.17999999999999994,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_01",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999995,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_02",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.17999999999999997,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_02",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.059849999999999896,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_03",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_03",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.059849999999999966,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_04",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18000000000000002,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_04",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999995,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_05",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.17999999999999994,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_05",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999995,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_06",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.17999999999999994,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_06",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.059849999999999896,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_07",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_07",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999998,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_08",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_08",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999995,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_09",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_09",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999994,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_10",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.17999999999999994,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_10",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.059849999999999896,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_11",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_11",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999995,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_12",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_12",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999995,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_13",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_13",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.05984999999999997,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_14",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.17999999999999994,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_14",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.059849999999999896,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryostat_Pedestal_15",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.18,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Support_15",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.059849999999999945,
+      "representation": "CONCEPT_SOLID",
+      "fluid_domain": false
+    },
+    {
+      "name": "Maintenance_Handling_Rail",
+      "document": "reactor",
+      "solids": 1,
+      "volume_m3": 0.8038101912379625,
+      "representation": "HANDLING_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_01_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_02_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_03_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_04_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_05_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_06_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_07_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_08_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_09_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_10_ACTIVE_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_11_STANDBY_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Module_12_STANDBY_Envelope",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 6788.017108084498,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Laser_Driver_Hall",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 4864.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF_Power_And_Control",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1440.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Magnet_Power_And_Protection",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1584.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Cryoplant",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2880.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Tritium_Extraction_Containment",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2640.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Fuel_Storage_And_Injection",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1296.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Vacuum_And_Exhaust_Processing",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1890.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Hot_Cell_And_Remote_Maintenance",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 4320.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Separate_HT_Primary_Heat_Exchangers",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2799.9999999999995,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "RF_Demineralized_Water_Cooling",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2155.9999999999995,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "S20_Breeder_Loop_Treatment",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2155.9999999999995,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "sCO2_Turbine_Generator",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 3120.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "sCO2_Compressors_Recuperators",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 3360.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "sCO2_Coolers_Heat_Rejection",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 3600.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Water_Recovery",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1680.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Lithium_Brine_Recovery",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1680.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Reverse_Osmosis",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1680.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Thermal_Desalination",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1680.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Electrical_Switchyard",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2799.9999999999995,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "Controls_Safety_And_Diagnostics",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 1512.0,
+      "representation": "SITE_ENVELOPE",
+      "fluid_domain": false
+    },
+    {
+      "name": "North_Utility_Corridor",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2559.9999999999995,
+      "representation": "ROUTING_CORRIDOR",
+      "fluid_domain": false
+    },
+    {
+      "name": "South_Utility_Corridor",
+      "document": "plant",
+      "solids": 1,
+      "volume_m3": 2720.0,
+      "representation": "ROUTING_CORRIDOR",
+      "fluid_domain": false
+    }
+  ],
+  "failed": [],
+  "engineering_approval": "NONE",
+  "g1_status": "BOUNDARY_AUDIT_PASSED_BEFORE_ASSEMBLY",
+  "plasma": {
+    "input_sha256": "57f39c1ae8e6e0a3f4360443c8d78db22dc605ffe76ef3288b4d11ba223ab009",
+    "volume_m3": 949.9997413200989,
+    "input_unchanged": false,
+    "original_step_sha256": "8317664cb1d897872fa73a4a73255ce7b5a4e32e2f18921a3d09f4dc066d2899",
+    "change": "Periodic seam reconstruction; original STEP preserved separately."
+  },
+  "legacy_filament_comparison": "REMOVED_DISJOINT_NON_SOLVER_REFERENCE",
+  "new_vacuum_envelope_containment": {
+    "outside_volume_m3": 0.0,
+    "status": "PASS",
+    "proposed_tolerance_m3": 1e-06
+  },
+  "multiphysics_exports": {
+    "directory": "Solver_Geometry",
+    "files": {
+      "MHD_Plasma_Domain.step": {
+        "route": "MHD_CONFINEMENT",
+        "objects": 1,
+        "sha256": "f1dfbc764889c1d50b680c2d02139690377e9f725bf790491063d0bdaae6b344"
+      },
+      "MHD_Vacuum_Region.step": {
+        "route": "MHD_CONFINEMENT",
+        "objects": 1,
+        "sha256": "860c0bbdb29698d995aa302f54fcf7140136770e2271f41f1dcfc24f1fdd5177"
+      },
+      "MHD_Coil_And_Casing_Regions.step": {
+        "route": "MHD_CONFINEMENT",
+        "objects": 32,
+        "sha256": "edeae805e2476cf53281cd3a4c0c06cc443b411122d139b2d95c5c62ff5e7c02"
+      },
+      "MHD_First_Wall_Regions.step": {
+        "route": "MHD_CONFINEMENT",
+        "objects": 2,
+        "sha256": "b899e1fe40dc854a10921e48139c27bc3b8ad28d22b7c2a58b47ed0ad20ec961"
+      },
+      "NEUTRONICS_MATERIAL_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 6,
+        "sha256": "95c90b6f09e86a3a63f28d347ffa7b4acdf8324222081fa0a71ec77d0c0313ee"
+      },
+      "NEUTRONICS_MATERIAL_AlN.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "d33cc5b797ada137073cb1657a1e5cd969d34e849936857ea72b296ad28fc655"
+      },
+      "NEUTRONICS_MATERIAL_BRAZE_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "3225588293c2cd6412dbc92254cfc0ded4b36c5e05d8c91109a7475022f896a2"
+      },
+      "NEUTRONICS_MATERIAL_CONCRETE.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 1,
+        "sha256": "43ed389c320f8ddbbe07b106b0dae5794e858831891931100d18986cb3419be0"
+      },
+      "NEUTRONICS_MATERIAL_CONDUCTOR_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "f60a94fbfc65e7339f68687770e18b35e7c43a4d91282365f0244b6915c2cdfc"
+      },
+      "NEUTRONICS_MATERIAL_CONDUCTOR_UNSPECIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 16,
+        "sha256": "c0d05552e0e3c42468a22f9ba31a77b859730b6a983045dea2b094a3c0e63deb"
+      },
+      "NEUTRONICS_MATERIAL_CuCrZr.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 25,
+        "sha256": "ee31b75bfee787faeb7fcb13590261673ea0603ad2bf76ac779fe65e563f53b5"
+      },
+      "NEUTRONICS_MATERIAL_DUCT_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 28,
+        "sha256": "436dd8e88f7bd5048e04685ffdc5b0f5901f828e2469a16bd9679c48353dd904"
+      },
+      "NEUTRONICS_MATERIAL_HEADER_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 8,
+        "sha256": "323c73c8baa9fd8c11569e190d20fbe944eb31c36b2fe760959c1b156ad89cd0"
+      },
+      "NEUTRONICS_MATERIAL_HELIUM.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "edbcbacff0bad25d6f23e34a2d4f27b362aea15b47c9dc04faf95d1f8ef98783"
+      },
+      "NEUTRONICS_MATERIAL_HELIUM_PIPE.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 2,
+        "sha256": "37e8bad59ee80ec74617b49c04dbd8bcf65e39c7a892cd478e9284b506fd202e"
+      },
+      "NEUTRONICS_MATERIAL_HOUSING_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 16,
+        "sha256": "d24aa121f85c568ff1827f3379f694dca4e208300a5df221ff6405e689da30b3"
+      },
+      "NEUTRONICS_MATERIAL_HT_FLUID_UNSPECIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 1,
+        "sha256": "b80bf849a9e73300057682bc15517a97f49fcb2459008977dc18fc0d7201d8b9"
+      },
+      "NEUTRONICS_MATERIAL_HT_LOOP_PIPE.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 2,
+        "sha256": "6751c8a2c0f6c8405e41bb70bf3e252d0e35051bea986a817015e0013ea2599e"
+      },
+      "NEUTRONICS_MATERIAL_Mo.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "b6aeb313ac80d90af0cbc701be1b2e465e96d3abed2d49b1aeca7fb3c50c53eb"
+      },
+      "NEUTRONICS_MATERIAL_MoCu_GRADED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "6dbbdbc50a71840a9704ffc29bcf0371e8201a0c8968416cf300841f24dd0b3e"
+      },
+      "NEUTRONICS_MATERIAL_ODS_FeCrAl.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 2,
+        "sha256": "fbef57685c512c4ac6daa23f75df4f7eb330cd8789790cc3279b0ec8c51109de"
+      },
+      "NEUTRONICS_MATERIAL_OPTICAL_MATERIAL_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 16,
+        "sha256": "a4a5a39c15911fb8d314edf0773d2f37b5bdfd6a3610514fa2f1913342d8f7d0"
+      },
+      "NEUTRONICS_MATERIAL_PIPE_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 40,
+        "sha256": "38f1c931abda3cf57722386465d2cc03428eb9ca078336f761867a12d5647096"
+      },
+      "NEUTRONICS_MATERIAL_S20_AQUEOUS_EV010.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 1,
+        "sha256": "b14b931a9b9acedd7437f321a787a4ac8e786af7a266a3d5aabe5dd8645950b7"
+      },
+      "NEUTRONICS_MATERIAL_S20_LOOP_PIPE.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 2,
+        "sha256": "8ba6bf828b3d5c02478f4e582edab4d896d428cc954acdc1427bb298e80646e1"
+      },
+      "NEUTRONICS_MATERIAL_SHIELD_UNSPECIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 1,
+        "sha256": "589e59c9b0db4e80e0df9bd86a4c5bd36b2f0f44d7596c8ef3d98ef059f60e4b"
+      },
+      "NEUTRONICS_MATERIAL_SLEEVE_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "4c79deef97d34a0df3a9ecc304cf68bba8b7d04d1f28f096b394a1cf28aa2065"
+      },
+      "NEUTRONICS_MATERIAL_STAINLESS_STEEL.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 1,
+        "sha256": "e6815c43ed713513cedd39278acb4ea23b789b43d494b908be538594df328165"
+      },
+      "NEUTRONICS_MATERIAL_STEEL.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 1,
+        "sha256": "ea3d0a7798a87a5493e9bb93a05ebbf3b88da6588f0476980a657c6f17b932f3"
+      },
+      "NEUTRONICS_MATERIAL_STRUCTURAL_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 16,
+        "sha256": "77aceabfe341cb5a4e33d97c00210c92b7aef2d8afe9cb6fb9e45b7016f9e731"
+      },
+      "NEUTRONICS_MATERIAL_STRUCTURAL_STEEL.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 16,
+        "sha256": "de1a6398e33b8ae99a978bee5f4836d7a163838ae6b6b9eb85b60bdbf170ebff"
+      },
+      "NEUTRONICS_MATERIAL_SUPPORT_ALLOY_UNQUALIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 16,
+        "sha256": "c992b1f0c4e037b8913c46ea2c0e2f0d9bdf4ada05c3f09384db4d021936542c"
+      },
+      "NEUTRONICS_MATERIAL_THERMAL_SHIELD_UNSPECIFIED.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 1,
+        "sha256": "15eb8cece50486fa846ee56f0313ca0427f6cf262a6f2d6a6b86130d7b9160be"
+      },
+      "NEUTRONICS_MATERIAL_W.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 17,
+        "sha256": "81fd14029296ed51fc7bb827230cbe4d32756e5733539d3a719b48a52bb639e0"
+      },
+      "NEUTRONICS_MATERIAL_WATER.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 4,
+        "sha256": "0c271535f31cac16e3f19236c253365718a4f64e3dda65613b253415ac86668d"
+      },
+      "NEUTRONICS_MATERIAL_WATER_LOOP_PIPE.step": {
+        "route": "OPENMC_DAGMC_PREP",
+        "objects": 2,
+        "sha256": "026494f45ddec27ea617c5652f06e229b2e040a25f2b86b5836059c54e8b473c"
+      },
+      "CFD_RF_Connected_Coolant_Domains.step": {
+        "route": "CFD_CHT_CHF",
+        "objects": 4,
+        "sha256": "0509ac5aeca3663aa47160c8dad00806ac57cf75a55cb1eb61ad83d41e96558c"
+      },
+      "CFD_RF_Cassette_Solid_Regions.step": {
+        "route": "CFD_CHT_CHF",
+        "objects": 44,
+        "sha256": "3f48c3ea375576c779eb355ff50b25c95d1015ec04b198919b1697e6d0e66c1d"
+      },
+      "CFD_RF_External_Routing_Walls.step": {
+        "route": "CFD_CHT_CHF",
+        "objects": 40,
+        "sha256": "a28d265c3612511963ec719dc1f6ff3a99fb4fd5c033e4b039c5eaa96edb4028"
+      }
+    },
+    "boundary_seed_count": 32,
+    "status": "CAD_DOMAINS_EXPORTED_SOLVER_MESH_AND_PHYSICS_RUN_NOT_EXECUTED"
+  },
+  "exports": {
+    "reactor": "Tomahawk_reactor_CONCEPT_FULL.step",
+    "plant": "Tomahawk_plant_CONCEPT_FULL.step"
+  },
+  "checkpoint_events": [
+    {
+      "key": "85458e2e484ddb0691dd8fca2fbd5faef757ebe6707d886232b342e0474d9f28",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "3857d70aec3b168105ef2d70845ff38c550d112ab10b30b56784d5fcd54ef808",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "e5264026cc64ec70a7abbeb436c20112bc80e49d749cd52ffc739cf184898af9",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "39614e728df8dbd97a2ceccf9e1862699049905e7443065f8ea838ed2e618827",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "28d8b4cadacd90e214ef9b9489e1a1dbb96c3d13deca13d14e78338c794ae16b",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "315269a50f90ce4678a939f8bde1f4a15d961ed5c47f624ac40f1e3009500c5d",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "71505f6e95636e17609c4537246c1f0af3f6ac22bc7233db534355fbcd06e3ed",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "95d60ceb24d2bc08e4b0e764337265b32b1a1d45a26abb01e3caab8e37936755",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "cd4b5c165f1d06fe024f42c0c127f788af0557b81224bb16e1373c449ea5f164",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "b8f1f9720400ff4c6afdb3620dcca571d5c839066e9596e29f0746af5aae663d",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "2d08b97ac10372f34fd31db343ad4c2d220d1de5841a406d6b348402102e1d5f",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "3ad0b23148cec779cba3c94b1012e94037c4da4c3c6020d843a2ea13fa86db78",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "a11e00287c887b980d2da7e7d7ecca4941305d7780071c0b9595922ca120d31c",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "8084b7fe62abf56e945f426830a5fce52df86da74e6ff9f59a9c857fe5b31323",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "14f028b42a9838e57095a20e4ce1ceead6ce97f21bc88ed03f74d8b1f0aa7435",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "3147070446f75e8e09b2b2bf8c6069cc05986b554efd5b44c82b37e78f10876f",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "d560695eed138504b94290f12467e0a6348822dbcefd8d959480fa1690ab1235",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "2977218c485a44b1082844442ac5f7d214934aa0d73d66880d18dd5ff648022b",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "d84ffa8afa72815b9d0ef3028e5ba2ce2f587fbb477303a9eb0d948b01518d15",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "2869f6d4b772065ee3e008082053be0d991713da72e9cacef3be58a3f4c6e16f",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "d69bc6b4228ad4986a8ad29e924ed8dad9c6b344a57d604c415921d4810eca21",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "a61677e02bcba5a04ed5d80f1e11aeb4d8301633800956988c9a0bada9ced908",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "9827be2d548a921066b78eafa9c0f45fd8688757706faebcbdc7519e63dfa34f",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "0a6adbb2c0bf5d2e55dd894fcbff9a76ab8300fbe82e74f70f056bb64677aad4",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "0f3f5a2c22c3536096497ac863f1f898496e9a08324385da0f075bcc3d2abc48",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "c8fb32aa6fba27bf9b7cdd92a47d813c5ed8eab1474815532d8a3dc11022df23",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "e59177745bbbc86965d2e62246906bdf8c2503c278a335e9397708a9b45e7863",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "a42abbfc81a1c1db6e0b3bdd4f0d9cc50306060e7d262be45c858f0a557e67e7",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "db958370bcb4cd16c5bb46809878eb6abf5610b360847e68bfe0a9dddb8a1125",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "2fe80f3be0306fa42e53bb3e1bcfa3f62c397c883761fe4fec9ccdf9963f593d",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "2f0c10bd425bfb08c954f0c88c8145b10e1f349b425882ece3adccce365341f6",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "d3512c17161b8c96457c30103a349f630e6b2dd0da2db6a9e192a800b3f4d904",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "03ac28a771cb372cac7bc99e8cdd71db03266731a8844b0b41e66f1c282e5922",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "7b17ae67c2d6a6ba9730274a954d273a43a4a76ebf993773f213ef8cc7baddec",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "87a7119fe010dd186e19a585ecc76f7dd77ba75ab8de37025722256bf246b12c",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "9ce83fe159dd2ca77533c69fd58d2e2b909439d0414c08dff88a395c745fcb2a",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "45fa05b1400a6f704ff0a5dd0256a394001a9225f97c413793f722daf446b0d2",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "5f455d0e12676933fceea414207ec2c465383c88d78890e97d4c6d02c610eceb",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "33a1d9c562481f330000773e596cd6576ca35d462befc001f07773c316e5e640",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "0b0501da4aacc1359be579602df18fe5983fa65c4e8e5bfd53733d0add8855b8",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "0dd398faed477a5a564c592ca8418951f8374c74de25a46fceda20f3db8324c2",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "e0b6f8198106e9edd0b1234a4aeb46bc6dba31501c90b54a69bac456a7d395d3",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "0a2ec8a4140a03f9ece6cbf5ca7743ad6e3fe28a1d54e4d91a78011ca8c9e196",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "eb837362cd50f5db6ff569cf9cce2ad978940391bc6d1ae9f0ce9b6d6864182b",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "584475608da1a444f4c8eae888a91efdaf2cfe0ac924f23f353397deac59475c",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "04d53f27e4adb94b2458c401dbdc863294a9b733c8cbfa81f7fc39d869f7e364",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "e7850adcecdb7537a9b54aba959b2bb7a0ce8e5722d3247d7faafc0273af9eed",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "df801069a5bdf33df202abde8b2bd9c40d15965af3500096b990ac61834f0570",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "e4aedfbe7d3230ab6dc5e0073d36d89d77addc55d41461e6c058034ce0b14756",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "6fc7d069b32d7879e83922a4cc63119ac6b5e2adb9db67fa28771823c64061cb",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "46e2ead13f553df7dc3639a7596f8a970edb91bc6b0f09196cda8e9536572f09",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "edf87508afa8cb3ea74ee959deef161e5d576d659b110a45767d68326dd00622",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "dac7e5487573322dc50e21911a11d39323c2c10df5c33c4e8fe3c4ef75680334",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "e726a0562cc9a66a3ca360182ea16aced6b0790d0b0f80129e6f5b17b76a3134",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "45eeca2c85b42badac375ce63c1dfa956fc6afa14627c82dcbacda52b348863a",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "8a2edcd543d74c08f33d19ba1bb3ff01d0baa4719d606df58c6251b8dc0501fe",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "95d3b6cefcdfbf85c5d1c5116a051c17865106bde728c42c7cb4a5e97e105c84",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "588cb2823fd3ac9e7316f6dfddb8fb427a678bda5fb36ce993f4ca8bfa902c79",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "46cb83224ea6f552f632b5c5ee93e42959af2e31ac69beb9cdfee5fa7f4cdd85",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "90053d207c3b898da38c39ca57baa712561d85653b06a5a6a3e6f887b9827ea5",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "2af867c7eeb1eaec84befddeaa6e3ba85328f73c1ac077548a6d0cd9d4c028fb",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "1f5708e9107f9ea7c159bdfaf617acb1e3bdf4c6acb3efd086b3ebe9591d2d5a",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "1810aaec0734d2ec85623a2c4f9e59d12027029d8a0c16180975483088a6b4e0",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "08e7c9c566a51cda5552dd90a95914a415b13debe2daff14a5df044cea88ad3c",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "128c08f67ad906bbb6f5c69cd1163009ce18f3780cff6f813eb2b5341ba6d39d",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "0e5cf08347c3dd40b649c6245290c8e32320b94f0d7fee1c2d66bb2ae2957260",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "3f9c0bd9850b8722d9e1799872b75f313410b5616fa5d3a83c8fe6457be58db6",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "75a9c17e3ba4dbcf151ccda29b967b38523bac2deb734933f3717076ccf13fb0",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "b108b8a212bf8e6d049df382a5a5b2de9ce59002e6372c8e212183a532278d0a",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "1b203a22964e03370c2c0b15c3f663e2cc4104688e16e85ccc4512dea0834153",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "da2484c04f3db6762df84807908c85532f5bfd9632586019b5e3902b9eec8ed2",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "6aadbd44bbd24ce9fdaedd1b30d0355af0d584b0bb84c61e21c28b14f834079a",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "b96d3f65c896b299918f52e0999295bb45c302a7a786a7f74144dc27f025de2e",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "2c82dc843770507c3c8bd1b20741b008ddf533e232f0e3a777637d8819229f0a",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "bb9ce6c76bc40b461dccb9cbaf6fffcf65e46a2e70903a2fc30743b92cdc4743",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "3772cac4afa2b12974c7c60ee97f1944cb3bd831211061c65ef1adf7f54f94ac",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "560888591820f5e027693b0e0262bab9a0ce785bfa71470f2dae846e18de76d2",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "218d36a5af83c9928f294e15290656c41f057cbe5317252ab847919812e98fc0",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "91978df58da5c399c5914f0c7c0050a6b42d25ba89d8b2db96b6a9450713e0d9",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "534b1f37eabf01d5cbb39f1cb5be74f8fc79b14331c08fa0f97c2ab9449ab510",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "ad987f290c56066415efc3cebcb57e7d49410035cc9215a02848c0d689f8b69d",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "86a123c780697654980165d9ce93f116f433e05d8642649a3f95b5be11e76888",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    },
+    {
+      "key": "f78b6c5db03f092e31ac8210da5d4661bdde4176185735f71163992b7f33491d",
+      "action": "REUSED_HASH_VERIFIED_SHAPE"
+    }
+  ],
+  "assembly_build_accepted": true,
+  "bop_checks": "EXECUTED_PER_OBJECT",
+  "assembly_interference": "NOT_FULLY_VERIFIED_PIPING_JOINTS_AND_PRESSURE_SEALS_REQUIRE_ENGINEERING",
+  "native_CAD_executed": true,
+  "g1_audit": {
+    "status": "PASS_PROPOSED_NUMERICAL_CHECKS",
+    "checks": {
+      "brep_valid": {
+        "status": "PASS",
+        "value": null
+      },
+      "one_closed_solid": {
+        "status": "PASS",
+        "value": null
+      },
+      "brep_bop_check": {
+        "status": "PASS",
+        "value": null
+      },
+      "volume_reconciliation_proposed": {
+        "status": "PASS",
+        "value": 2.722946327304854e-07
+      },
+      "step_roundtrip": {
+        "status": "PASS",
+        "value": {
+          "relative_volume_error": 0.0,
+          "bbox_error_m": 0.0,
+          "bbox_method": "optimal_no_triangulation_without_shape_tolerance",
+          "tolerance_inclusive_bbox_error_m_diagnostic": 0.0
+        }
+      },
+      "finest_mesh_self_intersections": {
+        "status": "PASS",
+        "value": null
+      },
+      "refinement_increases_resolution": {
+        "status": "PASS",
+        "value": [
+          10768,
+          19872,
+          34006
+        ]
+      },
+      "mesh_topology_all_levels": {
+        "status": "PASS",
+        "value": null
+      },
+      "mesh_volume_accuracy_proposed": {
+        "status": "PASS",
+        "value": 0.0012225032068042818
+      },
+      "mesh_refinement_proposed": {
+        "status": "PASS",
+        "value": {
+          "volume_relative_change": 0.0005786343455553285,
+          "area_relative_change": 0.0003139070370999818
+        }
+      },
+      "sampled_periodicity_proposed": {
+        "status": "PASS",
+        "value": {
+          "max_distance_m": 5.116292349150194e-07,
+          "samples_per_direction": 128,
+          "limitation": "Sampled diagnostic, not exact symmetry or proof of fundamental period 16."
+        }
+      },
+      "partitioned_surface_topology": {
+        "status": "PASS",
+        "value": {
+          "solids": 1,
+          "shells": 1,
+          "faces": 64,
+          "edges": 128,
+          "closed": true,
+          "brep_valid": true
+        },
+        "requirement": "one valid closed solid/shell retaining at least 64 bounded faces"
+      },
+      "native_seam_positions_and_normals": {
+        "status": "PASS",
+        "value": {
+          "u": {
+            "position_gap_m": 0.0,
+            "normal_jump_deg": 2.195417273151203e-12
+          },
+          "v": {
+            "position_gap_m": 0.0,
+            "normal_jump_deg": 4.945167978574568e-12
+          }
+        },
+        "proposed_tolerances": {
+          "position_gap_m": 1e-06,
+          "normal_angle_deg": 0.01
+        }
+      }
+    },
+    "details": {
+      "freecad_version": [
+        "1",
+        "1",
+        "3",
+        "20260725 (Git shallow)",
+        "Unknown",
+        "2026/07/25 04:52:02",
+        "grafted,grafted",
+        "145529fe741292ff0b3977a01195bf0247425794"
+      ],
+      "checkpoint_key": "9c115772ef527ad523b823c1d28505be8ae9b23c45ea57db2bb98c9dd41487f4",
+      "brep_counts": {
+        "Solids": 1,
+        "Shells": 1,
+        "Faces": 64,
+        "Edges": 128,
+        "Vertexes": 64
+      },
+      "cad_volume_m3": 949.9997413200989,
+      "cad_area_m2": 766.2399667989152,
+      "bbox_m": [
+        -10.510000000100003,
+        -10.510000000100003,
+        -2.1489694325490003,
+        10.510000000100005,
+        10.510000000100003,
+        2.1489694325490003
+      ],
+      "mesh_refinement": [
+        {
+          "vertices": 5384,
+          "triangles": 10768,
+          "edges": 16152,
+          "exact_duplicate_vertices_identified": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_edge_orientations": 0,
+          "degenerate_triangles": 0,
+          "duplicate_triangles": 0,
+          "connected_components": 1,
+          "euler_characteristic": 0,
+          "genus": 1.0,
+          "watertight_manifold": true,
+          "signed_volume_m3": 944.3644938406907,
+          "area_m2": 765.0138594435564,
+          "note": "Topology alone does not test triangle self-intersections.",
+          "deflection_mm": 20.0,
+          "angular_deflection_rad": 0.15,
+          "global_orientation_flip": false,
+          "relative_volume_error": 0.005931841067217154
+        },
+        {
+          "vertices": 9936,
+          "triangles": 19872,
+          "edges": 29808,
+          "exact_duplicate_vertices_identified": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_edge_orientations": 0,
+          "degenerate_triangles": 0,
+          "duplicate_triangles": 0,
+          "connected_components": 1,
+          "euler_characteristic": 0,
+          "genus": 1.0,
+          "watertight_manifold": true,
+          "signed_volume_m3": 948.2886611112754,
+          "area_m2": 765.7570878297879,
+          "note": "Topology alone does not test triangle self-intersections.",
+          "deflection_mm": 10.0,
+          "angular_deflection_rad": 0.10606601717798213,
+          "global_orientation_flip": false,
+          "relative_volume_error": 0.0018011375523596103
+        },
+        {
+          "vertices": 17003,
+          "triangles": 34006,
+          "edges": 51009,
+          "exact_duplicate_vertices_identified": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_edge_orientations": 0,
+          "degenerate_triangles": 0,
+          "duplicate_triangles": 0,
+          "connected_components": 1,
+          "euler_characteristic": 0,
+          "genus": 1.0,
+          "watertight_manifold": true,
+          "signed_volume_m3": 948.8383635898718,
+          "area_m2": 765.9975398479475,
+          "note": "Topology alone does not test triangle self-intersections.",
+          "deflection_mm": 5.0,
+          "angular_deflection_rad": 0.075,
+          "global_orientation_flip": false,
+          "relative_volume_error": 0.0012225032068042818
+        }
+      ],
+      "elapsed_seconds": 65.20299999997951,
+      "checkpoint_events": [
+        {
+          "stage": "complete_audit",
+          "action": "REUSED_VERIFIED_CHECKPOINT"
+        }
+      ],
+      "this_run_elapsed_seconds": 1.4679999999934807,
+      "all_native_checks_reused": true
+    },
+    "repaired_step_sha256": "57f39c1ae8e6e0a3f4360443c8d78db22dc605ffe76ef3288b4d11ba223ab009",
+    "surface_topology": "U_AND_V_NATIVE_PERIODIC_SEWN_4X16_PATCHES",
+    "surface_patch_grid": [
+      4,
+      16
+    ],
+    "surface_patch_count_expected_minimum": 64,
+    "builder_revision": "NATIVE_PERIODIC_SEWN_PATCHES_4X16_REV1",
+    "formal_G1_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+    "scope": "PLASMA_BOUNDARY_ONLY_NOT_FULL_ASSEMBLY_OR_CONFINEMENT",
+    "boundary_cache_reused": true
+  },
+  "model_version": "CAD-A2-WHOLE-CONCEPT-1.7-MULTIPHYSICS-DOMAINS",
+  "all_in_one_path": true,
+  "new_physics_run": false,
+  "G1_approved": false,
+  "formal_G1_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+  "Kaggle_evidence_register": "Kaggle_Evidence_Register.md",
+  "simulation_prep": {
+    "requested": true,
+    "status": "NATIVE_MULTI_REGION_EXPORTS_INCLUDED",
+    "archive": "Tomahawk_Simulation_Prep.zip",
+    "region_policy": "CONNECTED_RF_COLLECTORS_BOOLEAN_UNIONED; MATERIAL_AND_FLUID_REGIONS_REMAIN_SEPARATE"
+  },
+  "multiphysics_contract": "Tomahawk_Multiphysics_Physics_Contract.json"
+}

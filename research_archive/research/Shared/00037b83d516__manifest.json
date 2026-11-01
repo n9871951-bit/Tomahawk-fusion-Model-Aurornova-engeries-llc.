@@ -1,0 +1,515 @@
+{
+  "runner_version": "TOMAHAWK-REV2.5-CAD-A2-CLOSURE-1.0-KAGGLE",
+  "model_version": "CAD-A2-WHOLE-CONCEPT-1.7-MULTIPHYSICS-DOMAINS",
+  "label": "real_full",
+  "started_utc": "2026-09-07T04:09:59Z",
+  "elapsed_s": 4.7856810092926025,
+  "overall_status": "SCREENING_FAIL_REVISE",
+  "input_source_status": "BUNDLE_INPUTS_VERIFIED",
+  "input_root": "/home/claude/real_run",
+  "input_files": {
+    "mhd_input": {
+      "path": "/home/claude/real_run/MHD/mhd_input.json",
+      "sha256": "7a996f92e0103ce985a6f1ede7ae69621e15feb907a81a4e674112cfbc1f74c7",
+      "present": true
+    },
+    "profile": {
+      "path": "/home/claude/real_run/MHD/mhd_profile_sweep.csv",
+      "sha256": "22791f2054c690d2c8e34402cf37f3eec1d3bab02bd071918f4573c5b3caf9ea",
+      "present": true
+    },
+    "cfd_sweep": {
+      "path": "/home/claude/real_run/CFD/cfd_cht_parameter_sweep.csv",
+      "sha256": "d89474c494ebc69446c0925cce78fc32e99b14168fb9a3bb4ac15f2bed541981",
+      "present": true
+    },
+    "chf_input": {
+      "path": "/home/claude/real_run/CHF/chf_input.json",
+      "sha256": "267efa7ba967b2483d891d41576833e9fe794c739c0f7628f6ff79c4e8d11760",
+      "present": true
+    },
+    "cad_a2_winding_envelope": {
+      "path": "/home/claude/real_run/MHD/cad_a2_winding_envelope.csv",
+      "sha256": "85e0766f6e18dd9119cdceb96116ab0d38b091b190883f2c934e936a17b029a9",
+      "present": true
+    },
+    "cad_a2_coil_centerlines": {
+      "path": "/home/claude/real_run/MHD/cad_a2_coil_centerlines.csv",
+      "sha256": "9f92a7702d7136d8da5bbb6c79bbab17ccf8c84c058ecdaa8af5c73c0a7bcb31",
+      "present": true
+    },
+    "cad_a2_coil_currents": {
+      "path": "/home/claude/real_run/MHD/cad_a2_coil_currents.csv",
+      "sha256": "b328ace3dc25e8f26719a87069298d06abee9ccb954aef69cddcbe817e9193f1",
+      "present": true
+    },
+    "cad_kaggle_reconciliation": {
+      "path": "/home/claude/real_run/MHD/cad_kaggle_reconciliation.json",
+      "sha256": "e7a9b02845a9bda106cc7d9d321735af4a4112cce3f6f0f3cb1ff39d4aae8fcf",
+      "present": true
+    },
+    "water_property_sources": {
+      "path": "/home/claude/real_run/MHD/water_property_sources.json",
+      "sha256": "c9c0da44658b48914e6756f3a3e7c527e73dfde5209e5045955cc75bbf7c40cb",
+      "present": true
+    },
+    "dataset_manifest": {
+      "path": "/home/claude/real_run/dataset_manifest.json",
+      "sha256": "4fb4f47adbc1e2e88b37d9ee7984345d784ecd5916bd496b3563b29c84d5a905",
+      "present": true
+    }
+  },
+  "input_audit": {
+    "passed": true,
+    "root": "/home/claude/real_run",
+    "manifest_sha256": "4fb4f47adbc1e2e88b37d9ee7984345d784ecd5916bd496b3563b29c84d5a905",
+    "verified_file_count": 22,
+    "verified_files": {
+      "CAD/source_cad_a1/CAD_A1_Dimension_Results.json": "c7ff55551468e378ee8ea6643ffcf6991cb1cd88fc195baba750e45b2efb76ee",
+      "CAD/source_cad_a1/tomahawk_assembly_config.json": "11859d684c3e9e61e2a3e96e1e3bdea67966f5639775a8f67d834ffb7fae0d5c",
+      "CFD/cfd_case_manifest.json": "685164bf4544eb7d89735734baef3dbe842c53928e54ec14bfe2dfe225660a7b",
+      "CFD/cfd_cht_parameter_sweep.csv": "d89474c494ebc69446c0925cce78fc32e99b14168fb9a3bb4ac15f2bed541981",
+      "CHF/chf_input.json": "267efa7ba967b2483d891d41576833e9fe794c739c0f7628f6ff79c4e8d11760",
+      "MHD/cad_a2_coil_centerlines.csv": "9f92a7702d7136d8da5bbb6c79bbab17ccf8c84c058ecdaa8af5c73c0a7bcb31",
+      "MHD/cad_a2_coil_currents.csv": "b328ace3dc25e8f26719a87069298d06abee9ccb954aef69cddcbe817e9193f1",
+      "MHD/cad_a2_winding_envelope.csv": "85e0766f6e18dd9119cdceb96116ab0d38b091b190883f2c934e936a17b029a9",
+      "MHD/cad_kaggle_reconciliation.json": "e7a9b02845a9bda106cc7d9d321735af4a4112cce3f6f0f3cb1ff39d4aae8fcf",
+      "MHD/mhd_coil_table.csv": "b915de4b22f511a9fb538069f4fb6dd979582fdf8457d5cac5101de5a58138f2",
+      "MHD/mhd_input.json": "7a996f92e0103ce985a6f1ede7ae69621e15feb907a81a4e674112cfbc1f74c7",
+      "MHD/mhd_profile_sweep.csv": "22791f2054c690d2c8e34402cf37f3eec1d3bab02bd071918f4573c5b3caf9ea",
+      "MHD/recovered_coil_table.csv": "a1ccf1f57b45a1d55643f7b4587d41cb2ce98f785b734aa8d40fe236eada44ad",
+      "MHD/source_kaggle_model_derived/coil_centerlines.csv": "8c36893a4d3285a78a0e04e299e3423a7d0f0b7627fc7488b50352a7535b9d40",
+      "MHD/source_kaggle_model_derived/coil_currents.csv": "5f04930ec6a6d9b637483703842b67772d612f5585ef935ff86fa3f3d2e76cf6",
+      "MHD/source_kaggle_model_derived/field_limits.yaml": "7b77953a2b7b949d054731cbfcba67a44d14ef187dfcd42f70e59b6083abda3d",
+      "MHD/water_property_sources.json": "c9c0da44658b48914e6756f3a3e7c527e73dfde5209e5045955cc75bbf7c40cb",
+      "NEUTRONICS/material_region_map.csv": "71f93d50b97141ad3421f6fcd875181e30b5847ae9d6a1abd36ade67dacf236e",
+      "NEUTRONICS/openmc_input_manifest.json": "9874b6e4f4845c7bc951050d51b25556cf38f10bc7233a0b81632b34237008f9",
+      "NEUTRONICS/source_sweep.csv": "f83773ef7ffd14f8c6e18fd347ad3e2843b8b932c2d118355fda026c46fc3a12",
+      "README.md": "c0d0c9249590ca5910a394730abc85833a5f37b456e173465e5c15248f9e6a68",
+      "Tomahawk_Continuous_Run_Config.provisional.json": "a56c3f2d31bd13d9386cd48c33b2371c064dabf62935eb18bf2f2dcfd9d9898e"
+    },
+    "model_version": "CAD-A2-WHOLE-CONCEPT-1.7-MULTIPHYSICS-DOMAINS",
+    "cad_a2_turns_per_coil": 100,
+    "water_property_sources_status": "VERIFIED_OFFICIAL_IAPWS_RELEASES"
+  },
+  "config": {
+    "R0_m": 7.5,
+    "a_m": 3.0,
+    "kappa": 1.0,
+    "CAD_volume_m3": 950.0,
+    "B0_plasma_T": 14.0,
+    "Bpeak_coil_T": 35.0,
+    "Z_eff": 1.0,
+    "tau_E_s": 2.7,
+    "reference_condition_tau_E_s": 1.36,
+    "alpha_deposition_fraction": 0.9,
+    "auxiliary_absorbed_MW": 20.0,
+    "rf_face_area_m2": 2.5,
+    "water_roughness_m": 1e-05,
+    "heated_length_m": 2.318,
+    "pressure_drop_limit_Pa": 100000.0,
+    "CuCrZr_temperature_limit_K": 573.15,
+    "minimum_DNBR": 1.3,
+    "tf_ripple_screening_max_percent": 1.0,
+    "GS_residual_tolerance": 0.002,
+    "divB_relative_tolerance": 2e-10,
+    "q95_proxy_min": 2.0,
+    "beta_N_proxy_max": 3.5,
+    "beta_axis_proxy_max_percent": 5.0,
+    "tau_E_margin_min": 0.2,
+    "reference_self_heating_reconciliation_tolerance": 0.02,
+    "secondary_heat_removal_fraction_by_scenario": {
+      "full_incident_stress": 0.5,
+      "layer_screen": 0.0,
+      "transport_screen": 0.0
+    },
+    "secondary_heat_removal_provenance": "50% full-incident heat split to secondary systems as an explicit design screening assumption; no validated deposition or secondary-system capacity result",
+    "active_tau_E_screening_target_provenance": "derived deterministic target from corrected active-profile balance with 20% margin; not a measured confinement result",
+    "reference_self_heating_ratio": 0.63,
+    "reference_self_heating_definition": "deposited alpha power / modeled losses",
+    "reference_self_heating_provenance": "user-provided correction, 2026-08-29",
+    "reference_self_heating_source_status": "REFERENCE_RESULT_TO_BE_RECONCILED_TO_CURRENT_RADIAL_PROFILE",
+    "reference_self_heating_used_as_model_input": false
+  },
+  "Bosch_Hale_DT": {
+    "B_G_sqrt_keV": 34.3827,
+    "mrc2_keV": 1124656.0,
+    "C1": 1.17302e-09,
+    "C2": 0.0151361,
+    "C3": 0.0751886,
+    "C4": 0.00460643,
+    "C5": 0.0135,
+    "C6": -0.00010675,
+    "C7": 1.366e-05,
+    "source": "Bosch and Hale, Nuclear Fusion 32 (1992) 611-631"
+  },
+  "profile_metrics": {
+    "rows": 11,
+    "rho_min": 0.0,
+    "rho_max": 1.0,
+    "central_density_m3": 1.1e+20,
+    "central_electron_temperature_keV": 18.0,
+    "central_ion_temperature_keV": 22.0,
+    "central_pressure_Pa_supplied": 704958.0,
+    "central_pressure_Pa_reconstructed": 704957.71896,
+    "maximum_pressure_closure_relative_error": 2.097250512691012e-06,
+    "gates": {
+      "finite_values": true,
+      "flux_strictly_increasing": true,
+      "flux_bounded_0_1": true,
+      "positive_density_and_temperature": true,
+      "pressure_closure_pass": true
+    },
+    "profile_consistency_pass": true,
+    "density_definition": "total quasi-neutral DT ion/electron density; nD=nT=n_total/2",
+    "status": "PROVISIONAL_PROFILE_CONSISTENCY_CHECK"
+  },
+  "equilibrium_metrics": {
+    "solver_method": "scipy_sparse_direct",
+    "gs_iterations": 1,
+    "gs_residual_relative": 5.803565234658677e-13,
+    "unit_solve_residual_relative": 7.352245982167327e-17,
+    "divB_relative": 3.95516952522712e-15,
+    "psi_axis_Wb": 10.951723243826853,
+    "p_axis_MPa": 0.7049577189599999,
+    "p_volume_average_MPa": 0.35418129350965455,
+    "I_p_solved_MA": 13.685629422477746,
+    "I_p_95_MA": 12.358139797824444,
+    "q95_cylindrical_proxy": 6.134418386604248,
+    "beta_axis_percent": 0.9039550983576138,
+    "beta_volume_percent": 0.45416055090973917,
+    "beta_N_proxy": 1.3937790180757077,
+    "grid_toroidal_volume_m3": 1335.8695007810013,
+    "CAD_volume_m3": 950.0,
+    "grid_to_CAD_volume_ratio": 1.4061784218747382,
+    "magnetic_pressure_axis_MPa": 77.98592211502871,
+    "magnetic_pressure_coil_MPa": 487.4120132189295,
+    "gates": {
+      "GS_residual_pass": true,
+      "divB_pass": true,
+      "positive_pressure_pass": true,
+      "pressure_monotonic_pass": true,
+      "q95_proxy_pass": true,
+      "beta_N_proxy_pass": true,
+      "beta_axis_proxy_pass": true,
+      "equilibrium_numerical_pass": true,
+      "ideal_MHD_proxy_pass": true
+    },
+    "status": "FIXED_BOUNDARY_AXISYMMETRIC_SCREEN_NOT_3D_MHD"
+  },
+  "mhd_stability_proxy": {
+    "n_surfaces_evaluated": 64,
+    "n_low_shear_surfaces_unassessed": 0,
+    "rho_eff_range": [
+      0.1893873170583159,
+      0.989573893957881
+    ],
+    "min_suydam_D": -0.35731408959800104,
+    "min_suydam_D_at_rho_eff": 0.6940348872386801,
+    "max_ballooning_alpha_over_alpha_crit": 35.78158285292302,
+    "ballooning_stability_margin_min": -34.78158285292303,
+    "ballooning_alpha_crit_coefficient": 0.6,
+    "ballooning_alpha_crit_provenance": "large-aspect-ratio circular-plasma s-alpha first-stability threshold, Connor-Hastie-Taylor PRL 40, 396 (1978); screening threshold only, not shape-corrected",
+    "min_gradeable_shear": 0.05,
+    "method": "q(psi) = d(Phi_toroidal)/d(psi) via area integration on the existing axisymmetric grid; Suydam and s-alpha criteria evaluated at each resolved flux surface",
+    "limitations": [
+      "Large-aspect-ratio, circular-cross-section analytic criteria; no shape/elongation/triangularity correction to the ballooning threshold.",
+      "Not a full n -> infinity ballooning eigenvalue solve; no second-stability access assessment.",
+      "Low-shear and negative-shear surfaces are excluded from the pass/fail grade, not certified stable.",
+      "Ideal MHD only: no resistive, kinetic, or non-axisymmetric (n != 0) mode assessment."
+    ],
+    "status": "LOCAL_INTERCHANGE_AND_BALLOONING_SCREENING_PROXY"
+  },
+  "tf_ripple_screen_CAD_A2_MODEL_DERIVED": {
+    "geometry_branch": "CAD_A2_MODEL_DERIVED_CENTERLINE",
+    "current_derivation": "KAGGLE_100_TURN_REFERENCE_REMAP_AND_CAD_A2_BIOT_SAVART_B0_RERUN",
+    "scope_note": "TF (toroidal-field) ripple diagnostic only. Does NOT constitute a free-boundary POLOIDAL equilibrium solve; no PF/shaping coil data was supplied. PF/free-boundary closure remains a separate blocked gate.",
+    "provenance_warning": "CAD-A2 uses the exact CAD-A2 centerline generated from the Rev1.7 winding envelope and a separate model-derived current rerun using the 100-turn reference count recovered from the Kaggle output. It is not an as-built electrical schedule.",
+    "method": "Exact closed-form Biot-Savart (Hanson & Hirshman 2002) summed over all real coil filament segments; validated against the analytic on-axis field of a circular loop to 7 significant figures (see accompanying test).",
+    "coil_count": 16,
+    "turns_per_coil": [
+      100
+    ],
+    "flattop_current_A": [
+      326782.82967560005
+    ],
+    "coil_inner_leg_R_m": 3.3009999999999953,
+    "coil_outer_leg_R_m": 11.699000000000002,
+    "plasma_inboard_R_m": 4.5,
+    "plasma_outboard_R_m": 10.5,
+    "inboard_clearance_m": 1.1990000000000047,
+    "outboard_clearance_m": 1.1990000000000016,
+    "ripple_at_axis": {
+      "radius_m": 7.5,
+      "Bphi_min_T": 13.885683157960555,
+      "Bphi_max_T": 13.99999999999989,
+      "Bphi_mean_T": 13.943628846375201,
+      "ripple_percent": 0.4099481493488213
+    },
+    "ripple_at_plasma_outboard_edge": {
+      "radius_m": 10.5,
+      "Bphi_min_T": 7.8003763177907235,
+      "Bphi_max_T": 13.007223967536385,
+      "Bphi_mean_T": 10.006722764760742,
+      "ripple_percent": 25.023777746333263
+    },
+    "edge_evaluation_status": "EVALUATED",
+    "ripple_screening_threshold_percent": 1.0,
+    "ripple_screening_threshold_provenance": "Literature range ~0.3-0.5% (ITER; de Vries et al., Nucl. Fusion 48, 035007, 2008) up to ~2% tolerated in tight-aspect-ratio compact devices before mitigation (FAST, ORNL-EPR). This is a provisional screening threshold, not a certified design limit.",
+    "screening_gates": {
+      "tf_coil_plasma_clearance_positive": true,
+      "tf_ripple_within_screening_threshold_at_plasma_edge": false
+    },
+    "controlling_gate": true,
+    "status": "CAD_A2_MODEL_DERIVED_SCREENING_RESULT"
+  },
+  "tf_ripple_screen_LEGACY_BRANCH_ADVISORY_ONLY": {
+    "geometry_branch": "LEGACY_KAGGLE_MODEL_DERIVED_FILAMENT_CENTERLINE",
+    "current_derivation": "KAGGLE_OUTPUT_LEGACY_B0_TARGET",
+    "scope_note": "TF (toroidal-field) ripple diagnostic only. Does NOT constitute a free-boundary POLOIDAL equilibrium solve; no PF/shaping coil data was supplied. PF/free-boundary closure remains a separate blocked gate.",
+    "provenance_warning": "Legacy branch retained only as a non-controlling comparison; its current and centerline are not combined with CAD-A2 geometry.",
+    "method": "Exact closed-form Biot-Savart (Hanson & Hirshman 2002) summed over all real coil filament segments; validated against the analytic on-axis field of a circular loop to 7 significant figures (see accompanying test).",
+    "coil_count": 16,
+    "turns_per_coil": [
+      100
+    ],
+    "flattop_current_A": [
+      321547.59048065706
+    ],
+    "coil_inner_leg_R_m": 4.15,
+    "coil_outer_leg_R_m": 10.850000000000001,
+    "plasma_inboard_R_m": 4.5,
+    "plasma_outboard_R_m": 10.5,
+    "inboard_clearance_m": 0.34999999999999964,
+    "outboard_clearance_m": 0.3500000000000014,
+    "ripple_at_axis": {
+      "radius_m": 7.5,
+      "Bphi_min_T": 13.442580099227827,
+      "Bphi_max_T": 14.000017012852645,
+      "Bphi_mean_T": 13.723749066013411,
+      "ripple_percent": 2.031283377984036
+    },
+    "ripple_at_plasma_outboard_edge": {
+      "radius_m": 10.5,
+      "Bphi_min_T": 4.961814741174379,
+      "Bphi_max_T": 27.22082919073056,
+      "Bphi_mean_T": 10.07175317052491,
+      "ripple_percent": 69.16465439152202
+    },
+    "edge_evaluation_status": "EVALUATED",
+    "ripple_screening_threshold_percent": 1.0,
+    "ripple_screening_threshold_provenance": "Literature range ~0.3-0.5% (ITER; de Vries et al., Nucl. Fusion 48, 035007, 2008) up to ~2% tolerated in tight-aspect-ratio compact devices before mitigation (FAST, ORNL-EPR). This is a provisional screening threshold, not a certified design limit.",
+    "screening_gates": {
+      "tf_coil_plasma_clearance_positive": true,
+      "tf_ripple_within_screening_threshold_at_plasma_edge": false
+    },
+    "controlling_gate": false,
+    "status": "LEGACY_BRANCH_ADVISORY_ONLY_NOT_A_CONTROLLING_GATE"
+  },
+  "confinement_metrics": {
+    "fusion_GW_module": 1.039640646628467,
+    "alpha_GW_module": 0.2067467194999792,
+    "alpha_deposited_GW_module": 0.1860720475499813,
+    "neutron_GW_module": 0.8328939271284875,
+    "bremsstrahlung_GW_module": 0.009998229179060783,
+    "bremsstrahlung_equation": "P_brem = 5.35e-37 * Z_eff * n_e^2 * sqrt(T_e_keV)",
+    "bremsstrahlung_temperature_units": "keV",
+    "transport_loss_GW_module": 0.14529529769507699,
+    "modeled_total_loss_GW_module": 0.15529352687413775,
+    "thermal_energy_GJ_module": 0.39229730377670785,
+    "absorbed_auxiliary_MW_module": 20.0,
+    "Q_fusion_over_absorbed_auxiliary": 51.98203233142334,
+    "Q_fusion_over_modeled_losses": 6.694681147083963,
+    "alpha_self_heating_ratio": 1.1981957734837776,
+    "tau_E_assumption_s": 2.7,
+    "active_tau_E_screening_target_s": 2.7,
+    "active_tau_E_screening_target_provenance": "derived deterministic target from corrected active-profile balance with 20% margin; not a measured confinement result",
+    "tau_E_required_for_alpha_balance_s": 2.2280274682876855,
+    "tau_E_margin_ratio": 0.21183425179001114,
+    "net_alpha_margin_GW_module": 0.030778520675843538,
+    "triple_product_nT_keV_s_m3": 2.2001281069751143e+21,
+    "volume_weighted_density_m3": 7.41305550343423e+19,
+    "volume_weighted_Ti_keV": 10.992259014722546,
+    "volume_weighted_Te_keV": 8.994106031922204,
+    "reactivity_at_volume_weighted_Ti_m3_s": 1.430564419131331e-22,
+    "reactivity_model": "Bosch and Hale, Nuclear Fusion 32 (1992) 611-631",
+    "volume_weighting": "normalized-radius weight 2*rho; screening approximation",
+    "self_heating_definition": "deposited alpha power / (bremsstrahlung + W/tau_E)",
+    "reference_condition_self_heating_ratio": 0.63,
+    "reference_condition_self_heating_ratio_computed": 0.6234569281317045,
+    "reference_condition_tau_E_s": 1.36,
+    "reference_condition_self_heating_ratio_delta": 0.0065430718682955025,
+    "reference_condition_self_heating_definition": "deposited alpha power / modeled losses",
+    "reference_condition_self_heating_provenance": "user-provided correction, 2026-08-29",
+    "reference_condition_self_heating_source_status": "REFERENCE_RESULT_TO_BE_RECONCILED_TO_CURRENT_RADIAL_PROFILE",
+    "reference_condition_self_heating_used_as_model_input": false,
+    "reference_condition_reconciliation_tolerance": 0.02,
+    "reference_condition_reconciliation_status": "RECONCILED_TO_CURRENT_PROFILE",
+    "gates": {
+      "alpha_self_heating_pass": true,
+      "tau_E_margin_pass": true,
+      "reference_self_heating_reconciliation_pass": true
+    },
+    "status": "0D_DT_POWER_AND_CONFINEMENT_SCREEN_NOT_BURNING_PLASMA_VALIDATION"
+  },
+  "coolant_summary": {
+    "rows": 972,
+    "max_pressure_drop_Pa": 33300.648834036125,
+    "max_bulk_rise_K": 15.933117218662936,
+    "max_wall_temperature_K": 471.16426057424326,
+    "maximum_declared_Darcy_check_error_Pa": 375.4942659638764,
+    "min_DNBR_screening": 3.0058559004262113,
+    "minimum_DNBR_required": 1.3,
+    "secondary_heat_routing": {
+      "fractions_by_scenario": {
+        "full_incident_stress": 0.5,
+        "layer_screen": 0.0,
+        "transport_screen": 0.0
+      },
+      "provenance": "50% full-incident heat split to secondary systems as an explicit design screening assumption; no validated deposition or secondary-system capacity result",
+      "energy_balance": "incident heat = secondary routed heat + cassette-local heat",
+      "secondary_system_capacity_status": "NOT_MODELED; routed heat is reported but not qualified"
+    },
+    "gates": {
+      "hydraulic_screen_pass": true,
+      "thermal_capacity_screen_pass": true,
+      "wall_temperature_screen_pass": true,
+      "chf_correlation_screen_pass": true,
+      "chf_correlation_within_validated_range": true,
+      "water_property_model_pass": true,
+      "coolant_screen_pass": true
+    },
+    "scenario_summary": {
+      "full_incident_stress": {
+        "rows": 324,
+        "secondary_heat_removal_fraction": [
+          0.5
+        ],
+        "max_incident_heat_load_W_per_cassette": 10000000.0,
+        "max_secondary_heat_routed_W_per_cassette": 5000000.0,
+        "max_local_heat_load_W_per_cassette": 5000000.0,
+        "max_heat_balance_residual_W": 0.0,
+        "max_pressure_drop_Pa": 33300.648834036125,
+        "max_bulk_rise_K": 15.933117218662936,
+        "max_wall_temperature_K": 471.16426057424326,
+        "min_DNBR_screening": 3.0058559004262113,
+        "screen_pass": true
+      },
+      "layer_screen": {
+        "rows": 324,
+        "secondary_heat_removal_fraction": [
+          0.0
+        ],
+        "max_incident_heat_load_W_per_cassette": 1930000.0,
+        "max_secondary_heat_routed_W_per_cassette": 0.0,
+        "max_local_heat_load_W_per_cassette": 1930000.0,
+        "max_heat_balance_residual_W": 0.0,
+        "max_pressure_drop_Pa": 33300.648834036125,
+        "max_bulk_rise_K": 6.150183246403894,
+        "max_wall_temperature_K": 395.6335045816579,
+        "min_DNBR_screening": 7.878853348370953,
+        "screen_pass": true
+      },
+      "transport_screen": {
+        "rows": 324,
+        "secondary_heat_removal_fraction": [
+          0.0
+        ],
+        "max_incident_heat_load_W_per_cassette": 1625000.0,
+        "max_secondary_heat_routed_W_per_cassette": 0.0,
+        "max_local_heat_load_W_per_cassette": 1625000.0,
+        "max_heat_balance_residual_W": 0.0,
+        "max_pressure_drop_Pa": 33300.648834036125,
+        "max_bulk_rise_K": 5.1782630960654545,
+        "max_wall_temperature_K": 388.12963468662906,
+        "min_DNBR_screening": 9.368469205673028,
+        "screen_pass": true
+      }
+    },
+    "water_properties_status": "IAPWS_CORRELATIONS_VERIFIED",
+    "water_property_model": {
+      "standards": {
+        "thermodynamics": "IAPWS-IF97 Region 1",
+        "viscosity": "IAPWS 2008 industrial branch (mu2=1)",
+        "thermal_conductivity": "IAPWS 2011 industrial branch (lambda2=0)"
+      },
+      "verification": {
+        "status": "IAPWS_CORRELATIONS_VERIFIED",
+        "check_count": 14,
+        "sources": {
+          "if97_region_1": "https://iapws.org/technical-guidance/release/IF97-Rev.download",
+          "viscosity_2008": "https://iapws.org/technical-guidance/release/viscosity.download",
+          "thermal_conductivity_2011": "https://iapws.org/technical-guidance/release/ThCond.download"
+        }
+      },
+      "state_policy": "T/P states outside IF97 Region 1 are blocked; no constant-value fallback is permitted."
+    },
+    "CHF_status": "BIASI_1967_CORRELATION_SCREEN_NOT_A_QUALIFIED_CHF_RESULT",
+    "CHF_provenance": "Biasi (1967) empirical CHF correlation; local equilibrium quality estimated from bulk subcooling via a Watson-correlation latent-heat estimate, not a full IAPWS steam-table enthalpy balance. This narrows but does not remove the qualified_CHF external-solver blocker -- it is a validated *correlation*, not a certified CHF test or a mechanistic sub-channel code result.",
+    "status": "IAPWS_PROPERTY_COOLANT_HYDRAULIC_AND_ENERGY_SCREEN"
+  },
+  "uncertainty_summary": {
+    "cases": 4096,
+    "seed": 20260906,
+    "all_gate_passes": 0,
+    "all_gate_pass_percent": 0.0,
+    "best_alpha_self_heating_ratio": 2.5516142118787926,
+    "best_tau_E_margin_ratio": 1.733615881842245,
+    "best_q95_proxy": 12.501167453348158,
+    "note": "Reduced scaling screen; it does not re-solve Grad-Shafranov per sample.",
+    "status": "REDUCED_UNCERTAINTY_SCREEN"
+  },
+  "gates": {
+    "GS_residual_pass": true,
+    "divB_pass": true,
+    "positive_pressure_pass": true,
+    "pressure_monotonic_pass": true,
+    "q95_proxy_pass": true,
+    "beta_N_proxy_pass": true,
+    "beta_axis_proxy_pass": true,
+    "equilibrium_numerical_pass": true,
+    "ideal_MHD_proxy_pass": true,
+    "finite_values": true,
+    "flux_strictly_increasing": true,
+    "flux_bounded_0_1": true,
+    "positive_density_and_temperature": true,
+    "pressure_closure_pass": true,
+    "alpha_self_heating_pass": true,
+    "tau_E_margin_pass": true,
+    "reference_self_heating_reconciliation_pass": true,
+    "input_bundle_verified": true,
+    "profile_consistency_pass": true,
+    "confinement_numerical_screen_pass": true,
+    "coolant_screen_pass": true,
+    "chf_correlation_screen_pass": true,
+    "water_property_model_pass": true,
+    "suydam_interchange_proxy_pass": false,
+    "ballooning_s_alpha_proxy_pass": false,
+    "local_ideal_MHD_interchange_ballooning_proxy_pass": false,
+    "tf_ripple_screen_pass": false,
+    "pf_shaping_coil_input": "BLOCKED_REQUIRED_PF_COIL_DATA",
+    "free_boundary_3D_MHD": "BLOCKED_REQUIRED_PF_COILS_AND_MGRID",
+    "nonlinear_MHD_stability_spectrum": "BLOCKED_EXTERNAL_SOLVER",
+    "orbit_resolved_alpha_transport": "BLOCKED_EXTERNAL_SOLVER",
+    "qualified_neutronics_tallies": "BLOCKED_EXTERNAL_SOLVER",
+    "qualified_CFD_CHT": "BLOCKED_EXTERNAL_SOLVER",
+    "qualified_CHF": "BLOCKED_EXTERNAL_SOLVER",
+    "confinement_feasibility_screen_pass": false
+  },
+  "plots": {
+    "plots_status": "GENERATED"
+  },
+  "limitations": [
+    "Fixed-boundary axisymmetric Grad-Shafranov solve; no free-boundary coil fit.",
+    "B0 plasma field, tau_E, alpha deposition, and coolant properties are explicit screening assumptions.",
+    "q95 and beta_N are cylindrical/normalized proxies, not stability eigenvalue results.",
+    "Suydam interchange and s-alpha ballooning checks are local, large-aspect-ratio, circular-cross-section analytic proxies (Connor-Hastie-Taylor 1978); they narrow but do not remove the nonlinear_MHD_stability_spectrum external-solver blocker.",
+    "CHF is now screened with the Biasi (1967) correlation (local equilibrium quality from a Watson-correlation subcooling estimate, not a full IAPWS enthalpy balance); this narrows but does not remove the qualified_CHF external-solver blocker.",
+    "The TF ripple screen is run on a separate CAD-A2 centerline with a model-derived 100-turn current rerun; the legacy branch is retained only as an advisory comparison. This is not a free-boundary poloidal equilibrium because PF/shaping coil data and mgrid are absent.",
+    "D-T reaction rate uses a Maxwellian Bosch-Hale fit; no kinetic or orbit-resolved transport.",
+    "The recorded reference-condition self-heating correction is compared to the current profile and is never substituted for it.",
+    "Coolant rho, mu, k, and cp use verified IAPWS-IF97 Region 1, IAPWS-2008, and IAPWS-2011 industrial branches; CHF remains a Biasi correlation screen and not qualified CFD/CHF validation.",
+    "No DAGMC/OpenMC nuclear-data transport, CFD/CHT, or qualified CHF correlation was run."
+  ],
+  "status": "SCREENING_ARTIFACT_NOT_ENGINEERING_VALIDATION"
+}

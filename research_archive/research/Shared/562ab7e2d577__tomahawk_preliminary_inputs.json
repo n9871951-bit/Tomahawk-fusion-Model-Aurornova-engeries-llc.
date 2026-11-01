@@ -1,0 +1,77 @@
+{
+  "model_name": "Tomahawk preliminary RF-cassette thermal/neutronics screen",
+  "revision": "screening-0.1",
+  "active_modules": 10,
+  "major_radius_m": 7.5,
+  "minor_radius_m": 3.0,
+  "module_cad_plasma_volume_m3": 950.0,
+  "neutron_wall_load_MW_m2": 4.0,
+  "dt_neutron_energy_MeV": 14.1,
+  "dt_total_energy_MeV": 17.6,
+  "rf_power_per_module_MW": 15.0,
+  "rf_wall_loss_fraction_nominal": 0.02,
+  "rf_wall_loss_fraction_sweep": [
+    0.005,
+    0.01,
+    0.02,
+    0.05,
+    0.1
+  ],
+  "rf_cassette_count_per_module": 4,
+  "rf_cassette_area_per_m2": 2.5,
+  "plasma_heat_to_cassette_per_module_MW": 0.0,
+  "coolant_name": "subcooled high-purity demineralized water",
+  "coolant_cp_J_kgK": 4180.0,
+  "coolant_inlet_C": 125.0,
+  "coolant_pressure_MPa": 4.0,
+  "coolant_deltaT_allowed_K": 30.0,
+  "coolant_h_W_m2K": 20000.0,
+  "cucrzr_temperature_screen_limit_C": 300.0,
+  "materials": [
+    {
+      "name": "AlN insert",
+      "density_kg_m3": 3260.0,
+      "thickness_m": 0.002,
+      "conductivity_W_mK": 170.0,
+      "qprime_n_low_W_m3": 25000000.0,
+      "qprime_n_nominal_W_m3": 50000000.0,
+      "qprime_n_high_W_m3": 125000000.0
+    },
+    {
+      "name": "Ag-Cu-Ti braze (prototype)",
+      "density_kg_m3": 9000.0,
+      "thickness_m": 0.0001,
+      "conductivity_W_mK": 40.0,
+      "qprime_n_low_W_m3": 50000000.0,
+      "qprime_n_nominal_W_m3": 100000000.0,
+      "qprime_n_high_W_m3": 200000000.0
+    },
+    {
+      "name": "Molybdenum face sheet",
+      "density_kg_m3": 10220.0,
+      "thickness_m": 0.0001,
+      "conductivity_W_mK": 138.0,
+      "qprime_n_low_W_m3": 75000000.0,
+      "qprime_n_nominal_W_m3": 120000000.0,
+      "qprime_n_high_W_m3": 250000000.0
+    },
+    {
+      "name": "Mo-Cu graded transition",
+      "density_kg_m3": 8500.0,
+      "thickness_m": 0.001,
+      "conductivity_W_mK": 220.0,
+      "qprime_n_low_W_m3": 75000000.0,
+      "qprime_n_nominal_W_m3": 150000000.0,
+      "qprime_n_high_W_m3": 250000000.0
+    },
+    {
+      "name": "CuCrZr strap",
+      "density_kg_m3": 8900.0,
+      "thickness_m": 0.005,
+      "conductivity_W_mK": 300.0,
+      "qprime_n_low_W_m3": 50000000.0,
+      "qprime_n_nominal_W_m3": 100000000.0,
+      "qprime_n_high_W_m3": 200000000.0
+    }
+  ]
+}

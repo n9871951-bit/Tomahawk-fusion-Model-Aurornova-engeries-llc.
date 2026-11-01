@@ -1,0 +1,113 @@
+IncIntShear = false		# type: bool, source: default
+MXG = 0		# type: int, doc: Number of guard cells on each side in X, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+MYG = 0		# type: int, doc: Number of guard cells on each side in Y, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+ZMAX = 1		# type: BoutReal, source: default
+ZMIN = 0		# type: BoutReal, source: default
+append = false		# type: bool, doc: Add new outputs to the end of existing files? If false, overwrite files., source: default
+async_send = false		# type: bool, doc: Whether to use asyncronous MPI sends, source: default
+datadir = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first		# type: string, source: Command line
+dump_on_restart = true		# type: bool, doc: Write initial state as time point 0?, source: default
+non_uniform = true		# type: bool, source: default
+nout = 250		# type: int, doc: Number of output steps, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+optionfile = BOUT.inp		# type: string, source: default
+periodicX = false		# type: bool, doc: Make grid periodic in X?, source: default
+restart = false		# type: bool, doc: Load state from restart files?, source: default
+settingsfile = BOUT.settings		# type: string, source: default
+stopCheck = false		# type: bool, doc: Check if a file exists, and exit if it does., source: default
+stopCheckName = BOUT.stop		# type: string, doc: Name of file whose existence triggers a stop, source: default
+timestep = 0.01		# type: BoutReal, doc: Output time step size, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+twistshift = false		# type: bool, doc: Apply a Twist-Shift boundary using ShiftAngle?, source: default
+wall_limit = -1		# type: BoutReal, doc: Wall time limit in hours. By default (< 0), no limit, source: default
+
+[A]
+evolve_bndry = false		# type: bool, source: default
+
+[Ein]
+evolve_bndry = false		# type: bool, source: default
+
+[Eout]
+evolve_bndry = false		# type: bool, source: default
+
+[W]
+evolve_bndry = false		# type: bool, source: default
+
+[all]
+bndry_all = none		# unused value (marked conditionally used), source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+evolve_bndry = false		# type: bool, source: default
+function = 0.0		# type: string, source: default
+scale = 1		# type: BoutReal, source: default
+
+[input]
+error_on_unused_options = true		# type: bool, doc: Error if there are any unused options before starting the main simulation, source: default
+max_recursion_depth = 0		# type: string, doc: Maximum recursion depth allowed in expressions. 0 = no recursion; -1 = unlimited, source: default
+transform_from_field_aligned = true		# type: string, source: default
+validate = false		# type: bool, doc: Check for unused options and stop, source: default
+
+[mesh]
+calcParallelSlices_on_communicate = true		# type: bool, doc: Calculate parallel slices on all communicated fields, source: default
+extrapolate_x = false		# type: bool, source: default
+extrapolate_y = false		# type: bool, source: default
+include_corner_cells = true		# type: bool, doc: Communicate corner guard and boundary cells. Can be set to false if you are sure that you will not need these cells, for mixed derivatives D2DXDY (or anything else), for example if your grid has orthogonal x- and y-directions. This might slightly reduce communication time., source: default
+maxregionblocksize = 64		# type: int, doc: (Advanced) Sets the maximum size of continguous blocks when creating Regions, source: default
+nx = 1		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+ny = 1		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+nz = 1		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+staggergrids = false		# type: bool, doc: Enable staggered grids. By default, all variables are cell centred, source: default
+symmetricGlobalX = true		# type: bool, source: default
+symmetricGlobalY = true		# type: bool, source: default
+type = bout		# type: string, source: default
+
+[mesh:ddz]
+fft_filter = 0		# type: BoutReal, source: default
+
+[mesh:paralleltransform]
+type = identity		# type: string, source: default
+
+[output]
+enabled = false		# type: bool, doc: Write output files, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+
+[restart_files]
+enabled = false		# type: bool, doc: Write restart files, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+
+[run]
+finished = Sat Oct 31 22:53:09 2026
+		# unused value (NOT marked conditionally used), source: Output
+revision = 650bfc6d0b952dc567fca625b2721b7ee543a608		# unused value (NOT marked conditionally used), source: Output
+run_id = 89a192bf-2fc1-4769-8604-0655465a064c		# unused value (NOT marked conditionally used), source: Output
+run_restart_from = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz		# unused value (NOT marked conditionally used), source: Output
+started = Sat Oct 31 22:53:09 2026
+		# unused value (NOT marked conditionally used), source: Output
+version = 5.2.0		# unused value (NOT marked conditionally used), source: Output
+
+[solver]
+adaptive = false		# type: bool, doc: Adapt internal timestep using 'atol' and 'rtol'., source: default
+atol = 1e-10		# type: BoutReal, doc: Absolute tolerance, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+is_nonsplit_model_diffusive = true		# type: bool, doc: If not a split operator, treat RHS as diffusive?, source: default
+max_timestep = 0.001		# type: BoutReal, doc: Maximum timestep, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+mms = false		# type: bool, doc: Use Method of Manufactured Solutions to track error scaling, source: default
+mms_initialise = false		# type: bool, doc: Use MMS solution for field initial conditions, source: default
+monitor_timestep = false		# type: bool, doc: Call monitors on internal timesteps, source: default
+mxstep = 500		# type: int, doc: Maximum number of steps between outputs, source: default
+nout = 250		# type: int, doc: Number of output steps. Overrides global setting., source: default
+output_step = 0.01		# type: BoutReal, doc: Output time step size. Overrides global 'timestep' setting., source: default
+rtol = 1e-9		# type: BoutReal, doc: Relative tolerance, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+save_repeat_run_id = false		# type: bool, doc: Write run_id and run_restart_from at every output timestep, to make it easier to concatenate output data sets in time, source: default
+timestep = 0.001		# type: BoutReal, doc: Starting timestep, source: default
+type = rk4		# type: string, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+
+[thermal]
+alpha_retention = 1		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+csv = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/trajectory.csv		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+delay_exponent = 1.5		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+external_mw = 25		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+initial_a = 55.755798804851551		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+initial_ein = 0		# type: BoutReal, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+initial_eout = 0		# type: BoutReal, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+initial_w = 1206.6536056623875		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+profile = /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/inputs/radial_profile.csv		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+scale_max = 2		# type: BoutReal, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+scale_min = 0.5		# type: BoutReal, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+sync_exponent = 2.5		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+sync_mw = 120.190267247479		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+tau_e = 1.4761420074945899		# source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp
+time_offset = 0		# type: BoutReal, source: /workspace/scratch/5c6b1f23ce8f/Tomahawk_Plasma_Calculation/results/native_restart_first/BOUT.inp

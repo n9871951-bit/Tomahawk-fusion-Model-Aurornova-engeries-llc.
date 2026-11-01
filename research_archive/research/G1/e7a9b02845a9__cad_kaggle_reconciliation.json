@@ -1,0 +1,130 @@
+{
+  "schema_version": "TOMAHAWK-COIL-RECONCILIATION-1.0",
+  "status": "CAD_A2_MODEL_DERIVED_SCREENING_BRANCH_NOT_AS_BUILT",
+  "finding": "The Kaggle output supplies the 100-turn reference count and legacy current schedule. This release keeps that legacy branch separate and adds a new CAD-A2 centerline/current branch. The CAD-A2 current is a Biot-Savart B0-target rerun, not an as-built electrical schedule.",
+  "kaggle_source": {
+    "archive_name": "tomahawk_inputs_model_derived_rev3_2(1).zip",
+    "archive_sha256": "b057788501869bbef4e23d7ab58c1aab655f444a55a056ed08c055e4cb94a41e",
+    "source_paths": [
+      "tomahawk_inputs_model_derived_rev3_2/02_field/coil_centerlines.csv",
+      "tomahawk_inputs_model_derived_rev3_2/02_field/coil_currents.csv",
+      "tomahawk_inputs_model_derived_rev3_2/02_field/field_limits.yaml"
+    ],
+    "turns_per_coil": 100,
+    "coil_count": 16,
+    "toroidal_angles_deg": [
+      0.0,
+      22.5,
+      45.0,
+      67.5,
+      90.0,
+      112.5,
+      135.0,
+      157.5,
+      180.0,
+      202.5,
+      225.0,
+      247.5,
+      270.0,
+      292.5,
+      315.0,
+      337.5
+    ],
+    "B0_target_T": 14.0,
+    "B0_scan_T": [
+      12.0,
+      14.0,
+      16.0
+    ],
+    "Bpeak_coil_T": 35.0,
+    "current_target_A": 321547.59048065706,
+    "current_limit_A": 401934.4881008213,
+    "ramp": [
+      {
+        "time_s": 0.0,
+        "fraction": 0.0,
+        "current_A": 0.0
+      },
+      {
+        "time_s": 0.01,
+        "fraction": 0.5,
+        "current_A": 160773.79524032853
+      },
+      {
+        "time_s": 0.02,
+        "fraction": 1.0,
+        "current_A": 321547.59048065706
+      },
+      {
+        "time_s": 1.0,
+        "fraction": 1.0,
+        "current_A": 321547.59048065706
+      }
+    ],
+    "legacy_centerline": {
+      "R0_m": 7.5,
+      "semiaxis_a_m": 3.35,
+      "semiaxis_b_m": 2.45,
+      "segments_per_coil": 512,
+      "frame": "right_handed_xyz",
+      "current_sign_convention": "increasing_theta_in_local_poloidal_plane"
+    }
+  },
+  "cad_a1_cross_check": {
+    "source_archive_name": "Tomahawk_CAD_A1_Python_Package.zip",
+    "source_archive_sha256": "a2b6d02b1a7e69c3f0004ed5fa721285698a643fb16ddb73fd81b1a511083cd4",
+    "config_field": "coils.turns_reference",
+    "turns_reference": 100,
+    "winding_pack_section": null,
+    "interpretation": "The CAD-A1 package corroborates 100 as a reference value, but it does not provide a conductor-level winding section or qualified electrical design."
+  },
+  "cad_a2_source": {
+    "script_name": "Tomahawk_Rev1_7_Multiphysics_CAD_Export.py",
+    "script_sha256": "e41f953800a05f87a04b3050f08fb8630d3a389f38f2bbe22b8835c72893bd1d",
+    "model_version": "CAD-A2-WHOLE-CONCEPT-1.7-MULTIPHYSICS-DOMAINS",
+    "embedded_boundary_sha256": "8317664cb1d897872fa73a4a73255ce7b5a4e32e2f18921a3d09f4dc066d2899",
+    "coil_count": 16,
+    "coil_phase_deg": 0.0,
+    "winding_envelope": {
+      "inner_a_m": 4.074,
+      "inner_b_m": 3.274,
+      "outer_a_m": 4.324,
+      "outer_b_m": 3.524,
+      "centerline_a_m": 4.199,
+      "centerline_b_m": 3.399,
+      "toroidal_width_m": 0.25,
+      "casing_inner_a_m": 4.034,
+      "casing_inner_b_m": 3.234,
+      "casing_outer_a_m": 4.364,
+      "casing_outer_b_m": 3.564,
+      "casing_toroidal_width_m": 0.33
+    },
+    "missing_from_cad_a2": [
+      "turn count per coil/conductor",
+      "current per turn/conductor",
+      "conductor cross-section and packing factor",
+      "free-boundary mgrid/MAKEGRID input"
+    ]
+  },
+  "use_rule": "Use source_kaggle_model_derived files only for the legacy model-derived branch. Use cad_a2_winding_envelope.csv for the CAD-A2 geometric envelope. A solver-ready CAD-A2 coil schedule requires an electrical design or a field rerun using the CAD-A2 centerline/envelope.",
+  "cad_a2_model_derived": {
+    "coil_count": 16,
+    "turns_per_coil": 100,
+    "R0_m": 7.5,
+    "centerline_a_m": 4.199,
+    "centerline_b_m": 3.399,
+    "segments_per_coil": 512,
+    "B0_target_T": 14.0,
+    "current_target_A": 326782.82967560005,
+    "current_limit_A": 401934.4881008213,
+    "legacy_reference_current_A": 321547.59048065706,
+    "schedule_status": "MODEL_DERIVED_NOT_AS_BUILT",
+    "derivation": "100-turn count recovered from the Kaggle output; current rerun on the CAD-A2 centerline using the same closed-form filamentary Biot-Savart method.",
+    "controlling_screen_branch": true
+  },
+  "resolution": {
+    "legacy_branch": "comparison_only_advisory",
+    "cad_a2_branch": "ripple_screening_branch_used_by_notebook",
+    "poloidal_free_boundary": "BLOCKED_REQUIRED_PF_COILS_AND_MGRID"
+  }
+}

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(tomahawk_thermal LANGUAGES CXX)
+find_package(bout++ REQUIRED)
+add_executable(tomahawk_thermal tomahawk_thermal.cxx)
+target_link_libraries(tomahawk_thermal PRIVATE bout++::bout++)
+target_compile_features(tomahawk_thermal PRIVATE cxx_std_17)

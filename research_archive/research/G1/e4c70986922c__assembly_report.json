@@ -1,0 +1,12 @@
+{
+  "version": "CAD-A1.0",
+  "status": "FAILED_NO_APPROVAL",
+  "scope": "LAYOUT_AND_CASSETTE_CORE_CANDIDATE_NOT_FULL_ENGINEERING_ASSEMBLY",
+  "input_sha256": "8317664cb1d897872fa73a4a73255ce7b5a4e32e2f18921a3d09f4dc066d2899",
+  "config_sha256": "11859d684c3e9e61e2a3e96e1e3bdea67966f5639775a8f67d834ffb7fae0d5c",
+  "script_sha256": "ad4eaea1312ba20cfad2debd30d5160230da3680185acd2934ca0547f0c72290",
+  "native_freecad_executed": false,
+  "output_folder": "C:\\Users\\Nicol\\OneDrive\\Desktop\\Tomahawk_CAD_Assembly\\CAD_A1_20260902_151107_0sidynct",
+  "error": "BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\n",
+  "traceback": "Traceback (most recent call last):\n  File \"C:/Users/Nicol/Downloads/tomahawk_assembly.py\", line 567, in run\n    report.update(native_build(config,dim,source,out,parent/'Component_Checkpoints'))\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Users/Nicol/Downloads/tomahawk_assembly.py\", line 377, in native_build\n    shapes, meta=stage('plasma',{'sha256':CORRECTED_SHA},\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Users/Nicol/Downloads/tomahawk_assembly.py\", line 371, in stage\n    meta[key]=shape_info(shape,counts[key])\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:/Users/Nicol/Downloads/tomahawk_assembly.py\", line 337, in shape_info\n    shape.check(True)  # OCC BOP check raises on native errors.\n    ^^^^^^^^^^^^^^^^^\nValueError: BOP check found the following errors:\nError in Face: BOPAlgo SelfIntersect\n\n"
+}

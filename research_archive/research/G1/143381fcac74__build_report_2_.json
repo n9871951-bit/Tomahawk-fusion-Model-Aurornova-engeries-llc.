@@ -1,0 +1,244 @@
+{
+  "native_execution": "BLOCKED_G1_BOUNDARY_CHECKS",
+  "native_CAD_executed": true,
+  "assembly_build_accepted": false,
+  "g1_audit": {
+    "status": "REVIEW_REQUIRED",
+    "checks": {
+      "brep_valid": {
+        "status": "PASS",
+        "value": null
+      },
+      "one_closed_solid": {
+        "status": "PASS",
+        "value": null
+      },
+      "brep_bop_check": {
+        "status": "PASS",
+        "value": null
+      },
+      "volume_reconciliation_proposed": {
+        "status": "PASS",
+        "value": 2.722946327304854e-07
+      },
+      "step_roundtrip": {
+        "status": "FAIL",
+        "value": {
+          "relative_volume_error": 0.0,
+          "bbox_error_m": 4.2831037999846444e-05
+        }
+      },
+      "finest_mesh_self_intersections": {
+        "status": "PASS",
+        "value": null
+      },
+      "refinement_increases_resolution": {
+        "status": "PASS",
+        "value": [
+          10768,
+          19872,
+          34006
+        ]
+      },
+      "mesh_topology_all_levels": {
+        "status": "PASS",
+        "value": null
+      },
+      "mesh_volume_accuracy_proposed": {
+        "status": "PASS",
+        "value": 0.0012225032068042818
+      },
+      "mesh_refinement_proposed": {
+        "status": "PASS",
+        "value": {
+          "volume_relative_change": 0.0005786343455553285,
+          "area_relative_change": 0.0003139070370999818
+        }
+      },
+      "sampled_periodicity_proposed": {
+        "status": "PASS",
+        "value": {
+          "max_distance_m": 5.116292349150194e-07,
+          "samples_per_direction": 128,
+          "limitation": "Sampled diagnostic, not exact symmetry or proof of fundamental period 16."
+        }
+      },
+      "partitioned_surface_topology": {
+        "status": "PASS",
+        "value": {
+          "solids": 1,
+          "shells": 1,
+          "faces": 64,
+          "edges": 128,
+          "closed": true,
+          "brep_valid": true
+        },
+        "requirement": "one valid closed solid/shell retaining at least 64 bounded faces"
+      },
+      "native_seam_positions_and_normals": {
+        "status": "PASS",
+        "value": {
+          "u": {
+            "position_gap_m": 0.0,
+            "normal_jump_deg": 2.195417273151203e-12
+          },
+          "v": {
+            "position_gap_m": 0.0,
+            "normal_jump_deg": 4.945167978574568e-12
+          }
+        },
+        "proposed_tolerances": {
+          "position_gap_m": 1e-06,
+          "normal_angle_deg": 0.01
+        }
+      }
+    },
+    "details": {
+      "freecad_version": [
+        "1",
+        "1",
+        "3",
+        "20260725 (Git shallow)",
+        "Unknown",
+        "2026/07/25 04:52:02",
+        "grafted,grafted",
+        "145529fe741292ff0b3977a01195bf0247425794"
+      ],
+      "checkpoint_key": "09430b4cd2a7e020ae5bc5bb86da322f4763312defe328fb697995c1f8e57086",
+      "brep_counts": {
+        "Solids": 1,
+        "Shells": 1,
+        "Faces": 64,
+        "Edges": 128,
+        "Vertexes": 64
+      },
+      "cad_volume_m3": 949.9997413200989,
+      "cad_area_m2": 766.2399667989152,
+      "bbox_m": [
+        -10.51004283081,
+        -10.51004283081,
+        -2.149012263487,
+        10.51004283081,
+        10.51004283081,
+        2.149012263487
+      ],
+      "mesh_refinement": [
+        {
+          "vertices": 5384,
+          "triangles": 10768,
+          "edges": 16152,
+          "exact_duplicate_vertices_identified": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_edge_orientations": 0,
+          "degenerate_triangles": 0,
+          "duplicate_triangles": 0,
+          "connected_components": 1,
+          "euler_characteristic": 0,
+          "genus": 1.0,
+          "watertight_manifold": true,
+          "signed_volume_m3": 944.3644938406907,
+          "area_m2": 765.0138594435564,
+          "note": "Topology alone does not test triangle self-intersections.",
+          "deflection_mm": 20.0,
+          "angular_deflection_rad": 0.15,
+          "global_orientation_flip": false,
+          "relative_volume_error": 0.005931841067217154
+        },
+        {
+          "vertices": 9936,
+          "triangles": 19872,
+          "edges": 29808,
+          "exact_duplicate_vertices_identified": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_edge_orientations": 0,
+          "degenerate_triangles": 0,
+          "duplicate_triangles": 0,
+          "connected_components": 1,
+          "euler_characteristic": 0,
+          "genus": 1.0,
+          "watertight_manifold": true,
+          "signed_volume_m3": 948.2886611112754,
+          "area_m2": 765.7570878297879,
+          "note": "Topology alone does not test triangle self-intersections.",
+          "deflection_mm": 10.0,
+          "angular_deflection_rad": 0.10606601717798213,
+          "global_orientation_flip": false,
+          "relative_volume_error": 0.0018011375523596103
+        },
+        {
+          "vertices": 17003,
+          "triangles": 34006,
+          "edges": 51009,
+          "exact_duplicate_vertices_identified": 0,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "nonmanifold_vertices": 0,
+          "inconsistent_edge_orientations": 0,
+          "degenerate_triangles": 0,
+          "duplicate_triangles": 0,
+          "connected_components": 1,
+          "euler_characteristic": 0,
+          "genus": 1.0,
+          "watertight_manifold": true,
+          "signed_volume_m3": 948.8383635898718,
+          "area_m2": 765.9975398479475,
+          "note": "Topology alone does not test triangle self-intersections.",
+          "deflection_mm": 5.0,
+          "angular_deflection_rad": 0.075,
+          "global_orientation_flip": false,
+          "relative_volume_error": 0.0012225032068042818
+        }
+      ],
+      "elapsed_seconds": 42.34399999998277,
+      "checkpoint_events": [
+        {
+          "stage": "brep_checks",
+          "action": "COMPUTED_AND_CHECKPOINTED"
+        },
+        {
+          "stage": "cad_exports_roundtrip",
+          "action": "COMPUTED_AND_CHECKPOINTED"
+        },
+        {
+          "stage": "mesh_20_0",
+          "action": "COMPUTED_AND_CHECKPOINTED"
+        },
+        {
+          "stage": "mesh_10_0",
+          "action": "COMPUTED_AND_CHECKPOINTED"
+        },
+        {
+          "stage": "mesh_5_0",
+          "action": "COMPUTED_AND_CHECKPOINTED"
+        },
+        {
+          "stage": "mesh_exports",
+          "action": "COMPUTED_AND_CHECKPOINTED"
+        },
+        {
+          "stage": "sampled_periodicity",
+          "action": "COMPUTED_AND_CHECKPOINTED"
+        }
+      ]
+    },
+    "repaired_step_sha256": "57f39c1ae8e6e0a3f4360443c8d78db22dc605ffe76ef3288b4d11ba223ab009",
+    "surface_topology": "U_AND_V_NATIVE_PERIODIC_SEWN_4X16_PATCHES",
+    "surface_patch_grid": [
+      4,
+      16
+    ],
+    "surface_patch_count_expected_minimum": 64,
+    "builder_revision": "NATIVE_PERIODIC_SEWN_PATCHES_4X16_REV1",
+    "formal_G1_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+    "scope": "PLASMA_BOUNDARY_ONLY_NOT_FULL_ASSEMBLY_OR_CONFINEMENT",
+    "boundary_cache_reused": false
+  },
+  "new_physics_run": false,
+  "G1_approved": false,
+  "formal_G1_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+  "Kaggle_evidence_register": "Kaggle_Evidence_Register.md"
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "TOMAHAWK-LASER-ALPHA-SOURCE-CONTRACT-1.0",
+  "status": "INPUTS_REQUIRED_FAIL_CLOSED",
+  "purpose": "Prevent alpha self-heating from being double-counted as both plasma heating and direct laser-wall heat.",
+  "alpha_self_heating": {
+    "fraction_reference": 0.63,
+    "reference_status": "USER_CARRIED_SCREENING_REFERENCE_NOT_RECOMPUTED",
+    "required_replacement": "Compute from escaped/deposited alpha power using the qualified plasma transport and orbit-loss model.",
+    "P_alpha_to_plasma_W": null,
+    "P_alpha_generated_W": null,
+    "formula": "P_alpha_to_plasma = f_alpha_self_heat * P_alpha_generated"
+  },
+  "plasma_heating_balance": {
+    "P_total_absorbed_heating_required_W": null,
+    "P_RF_absorbed_W": null,
+    "P_other_absorbed_W": null,
+    "P_external_laser_absorbed_required_W": null,
+    "formula": "P_external_laser_absorbed_required = max(0, P_total_absorbed_heating_required - P_alpha_to_plasma - P_RF_absorbed - P_other_absorbed)"
+  },
+  "laser_conversion_and_wall_loss": {
+    "eta_laser_to_plasma": null,
+    "fraction_stray_laser_to_liquid_wall": null,
+    "P_laser_incident_W": null,
+    "P_stray_laser_to_liquid_wall_W": null,
+    "formulas": [
+      "P_laser_incident = P_external_laser_absorbed_required / eta_laser_to_plasma",
+      "P_stray_laser_to_liquid_wall = P_laser_incident * fraction_stray_laser_to_liquid_wall"
+    ]
+  },
+  "other_plasma_facing_surface_sources": {
+    "P_bremsstrahlung_to_wall_W": null,
+    "P_synchrotron_to_wall_W": null,
+    "P_escaped_alpha_to_wall_W": null,
+    "P_other_radiation_to_wall_W": null,
+    "rule": "Escaped alpha power may be a wall source; deposited alpha self-heating may not be copied into a wall source."
+  },
+  "pulse_definition_required": {
+    "pulse_shape": null,
+    "pulse_duration_s": null,
+    "repetition_rate_Hz": null,
+    "duty_factor": null,
+    "distinguish_peak_from_cycle_average": true
+  },
+  "laser_port_allocation": [
+    {
+      "name": "laser_upper_01",
+      "physical_tag": 20,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_upper_02",
+      "physical_tag": 21,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_upper_03",
+      "physical_tag": 22,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_upper_04",
+      "physical_tag": 23,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_upper_05",
+      "physical_tag": 24,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_upper_06",
+      "physical_tag": 25,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_upper_07",
+      "physical_tag": 26,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_upper_08",
+      "physical_tag": 27,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_01",
+      "physical_tag": 28,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_02",
+      "physical_tag": 29,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_03",
+      "physical_tag": 30,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_04",
+      "physical_tag": 31,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_05",
+      "physical_tag": 32,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_06",
+      "physical_tag": 33,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_07",
+      "physical_tag": 34,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    },
+    {
+      "name": "laser_lower_08",
+      "physical_tag": 35,
+      "fraction_of_stray_wall_power": null,
+      "temporal_phase_s": null,
+      "peak_multiplier": null
+    }
+  ],
+  "mandatory_solver_guards": [
+    "All fractions must be within [0,1].",
+    "The 16 port allocation fractions must sum to one when wall laser power is nonzero.",
+    "P_external_laser_absorbed_required may not be negative.",
+    "Deposited alpha self-heating may appear only in the plasma balance.",
+    "Escaped alpha power must be derived independently before assignment to a wall boundary.",
+    "A transient solve requires pulse shape, duration, repetition rate, and per-port allocation.",
+    "Peak and cycle-averaged heat fluxes must be stored as different variables."
+  ],
+  "calculation_enabled": false,
+  "blockers": [
+    "qualified alpha deposition fraction",
+    "required absorbed plasma-heating power",
+    "laser-to-plasma efficiency",
+    "stray-laser wall fraction",
+    "laser pulse waveform and repetition rate",
+    "per-port power allocation",
+    "background plasma-radiation source terms"
+  ]
+}

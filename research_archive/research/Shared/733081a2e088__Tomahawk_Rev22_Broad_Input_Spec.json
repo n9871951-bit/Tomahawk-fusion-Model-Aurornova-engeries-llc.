@@ -1,0 +1,102 @@
+{
+  "dataset": "Tomahawk_Rev22_Broad_Input_Dataset.csv",
+  "rows": 100000,
+  "seed": 20260825,
+  "sampling": "independent uniform samples within each declared interval",
+  "purpose": "external inputs for a frozen Rev2.2 evaluator",
+  "ranges": {
+    "gamma_n": {
+      "min": 0.5,
+      "max": 1.0
+    },
+    "density_scale": {
+      "min": 0.85,
+      "max": 1.2
+    },
+    "fuel_fraction": {
+      "min": 0.8,
+      "max": 1.0
+    },
+    "deuterium_fraction": {
+      "min": 0.45,
+      "max": 0.55
+    },
+    "Ti0_keV": {
+      "min": 15.0,
+      "max": 25.0
+    },
+    "Ti_edge_keV": {
+      "min": 0.2,
+      "max": 5.0
+    },
+    "gamma_T": {
+      "min": 0.5,
+      "max": 2.0
+    },
+    "Te_to_Ti": {
+      "min": 0.8,
+      "max": 1.2
+    },
+    "B0_T": {
+      "min": 12.0,
+      "max": 16.0
+    },
+    "tau_E_s": {
+      "min": 0.35,
+      "max": 2.0
+    },
+    "Z_eff": {
+      "min": 1.0,
+      "max": 2.0
+    },
+    "alpha_deposition": {
+      "min": 0.75,
+      "max": 0.98
+    },
+    "laser_coupling": {
+      "min": 0.6,
+      "max": 0.9
+    },
+    "repetition_rate_Hz": {
+      "min": 8.0,
+      "max": 12.0
+    },
+    "wallplug_efficiency": {
+      "min": 0.1,
+      "max": 0.2
+    },
+    "neutron_heat_capture": {
+      "min": 0.9,
+      "max": 0.99
+    },
+    "alpha_heat_capture": {
+      "min": 0.85,
+      "max": 0.99
+    },
+    "high_grade_heat_fraction": {
+      "min": 0.7,
+      "max": 0.98
+    },
+    "eta_high_grade": {
+      "min": 0.36,
+      "max": 0.45
+    },
+    "eta_low_grade": {
+      "min": 0.08,
+      "max": 0.2
+    },
+    "nonlaser_aux_GWe": {
+      "min": 0.6,
+      "max": 1.6
+    },
+    "TBR": {
+      "min": 0.88,
+      "max": 1.2
+    },
+    "tritium_process_eff": {
+      "min": 0.97,
+      "max": 0.995
+    }
+  },
+  "warning": "The controlled envelope is a proposed design/tolerance envelope, not measured uncertainty data."
+}

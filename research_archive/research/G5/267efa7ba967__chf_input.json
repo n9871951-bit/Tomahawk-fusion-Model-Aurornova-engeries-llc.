@@ -1,0 +1,25 @@
+{
+  "schema_version": "TOMAHAWK-CHF-INPUT-1.0",
+  "case_id": "REV1_7_PROVISIONAL_CHF_POSTPROCESS",
+  "data_status": "PROVISIONAL_BOUNDARY_CONDITIONS_CORRELATION_NOT_SELECTED",
+  "correlation": "REQUIRED_APPLICABILITY_QUALIFIED_CORRELATION_OR_LUT",
+  "upstream_cfd_csv": "../CFD/cfd_cht_parameter_sweep.csv",
+  "required_local_fields": {
+    "pressure_Pa": "REQUIRED_FROM_CFD",
+    "mass_flux_kg_m2_s": "REQUIRED_FROM_CFD",
+    "quality": "REQUIRED_FROM_CFD",
+    "heated_length_m": "REQUIRED_FROM_GEOMETRY",
+    "hydraulic_diameter_m": "REQUIRED_FROM_MESH",
+    "local_heat_flux_W_m2": "REQUIRED_FROM_CFD_OR_TRANSPORT"
+  },
+  "acceptance": {
+    "minimum_DNBR": 1.3,
+    "maximum_CuCrZr_temperature_K": 573.15,
+    "maximum_pressure_drop_Pa": 100000.0
+  },
+  "required_before_solver": [
+    "select a correlation or LUT after checking pressure, mass flux, quality, geometry, and heated length applicability",
+    "supply local CFD heat flux/state fields",
+    "report uncertainty and correlation validity range"
+  ]
+}

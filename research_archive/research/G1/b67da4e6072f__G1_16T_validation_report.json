@@ -1,0 +1,66 @@
+{
+  "package": "Tomahawk 16 T G1 boundary and field validation evidence",
+  "field_baseline_T": 16.0,
+  "historical_native_G1_numerical_status": "COMPLETED_CONCEPT_BUILD_BOUNDARY_G1_NUMERICAL_PASS",
+  "historical_native_G1_audit_status": "PASS_PROPOSED_NUMERICAL_CHECKS",
+  "historical_native_G1_formal_status": "UNRESOLVED_PENDING_INTERFACE_REVIEW",
+  "historical_native_G1_approval": false,
+  "historical_native_G1_boundary_topology": "U_AND_V_NATIVE_PERIODIC_SEWN_4X16_PATCHES",
+  "historical_native_G1_patch_count": 64,
+  "historical_native_G1_native_checks_passed": 13,
+  "current_supplied_cad_boundary_check": {
+    "status": "PASS_CAD_BOUNDARY_BREP_AND_16FOLD_SAMPLED_GEOMETRY",
+    "source_fcstd": "Tomahawk_Liquid_Wall(2).FCStd",
+    "source_fcstd_sha256": "0c376002d1c0a77ee4b57c7e4dd42ff460e85d0a8776a75f7820ee929dbb1fb8",
+    "brep_member": "EV007_Plasma_Boundary.Shape.brp",
+    "brep_sha256": "06e36bebce98a0cf8ba9d97c860ffff1fa6abdd84424a8e1465e3368ee00fbc8",
+    "source_units": "mm",
+    "analysis_units": "m",
+    "conversion": 0.001,
+    "occt_brep_valid": true,
+    "closed_shell": true,
+    "topology": {
+      "faces": 12288,
+      "vertices": 73728
+    },
+    "brep_volume_m3": 946.9077307355444,
+    "recovered_native_g1_step_volume_m3": 949.9997413200989,
+    "faceted_to_native_step_volume_relative_difference": 0.003254748869992219,
+    "sampled_rotational_correspondence": {
+      "claimed_periods": 16,
+      "max_nearest_vertex_distance_m_by_direction": [
+        8.379242331653923e-15,
+        8.188600426433445e-15
+      ],
+      "limitation": "Sampled vertex correspondence; not a global exact-periodicity certificate."
+    },
+    "scope": "Current faceted EV007 plasma boundary subshape from supplied CAD. The separately recovered smooth 4x16 native audit evidence is included as an unchanged historical run record."
+  },
+  "active_16T_field_mapping_check": {
+    "status": "PASS_16T_CAD_PLASMA_BOUNDARY_FIELD_MAPPING",
+    "active_field_baseline_T": 16.0,
+    "cad_boundary_vertex_count": 6144,
+    "mgrid_tf": "mgrid_tomahawk_tf48_16T_PERIODIC_FP64.nc",
+    "mgrid_tf_sha256": "7d1b3eac3593848fae85a71d6ece280e49b19b949c7e97b3cc7512b6ff8b9b33",
+    "mgrid_pf": "mgrid_tomahawk_pf (1)(1).nc",
+    "mgrid_pf_sha256": "027aabea0dde0962c66e9825a859f913faa707ae6f604f69f55a940bc154962e",
+    "tf_nfp": 48,
+    "tf_planes_per_period": 32,
+    "tf_physical_per_turn_current_A": -125000.0,
+    "tf_field_arrays_finite": true,
+    "pf_field_arrays_finite": true,
+    "tf_interpolation_vs_direct_max_vector_error_T": 0.00040124561259899784,
+    "tf_interpolation_vs_direct_max_relative_error": 2.349129600877534e-05,
+    "combined_tf_plus_pf_magnitude_range_T": [
+      11.370048035454511,
+      26.731095897811713
+    ],
+    "48_coil_centerline_geometry": {
+      "48_fold_geometry_max_error_m": 9.414691248821327e-14,
+      "uniform_coil_angle_max_error_rad": 2.6645352591003757e-15
+    },
+    "scope": "Vacuum-field interpolation and CAD-boundary correspondence only; does not solve MHD equilibrium or confer formal G1 approval."
+  },
+  "source_of_historical_G1_report": "Recovered build_report(6).json, model CAD-A2-WHOLE-CONCEPT-1.7-MULTIPHYSICS-DOMAINS; original report retained verbatim.",
+  "interpretation": "The recovered G1 numerical boundary pass is real and complete for its smooth reconstructed EV007 boundary. This package adds an independent audit of the current faceted EV007 subshape and samples the active 16 T MGRID field directly on that CAD boundary. Formal interface acceptance remains unsigned."
+}
